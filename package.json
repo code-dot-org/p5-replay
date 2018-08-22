@@ -1,0 +1,15 @@
+{
+  "name": "@code-dot-org/p5-replay",
+  "version": "0.0.0",
+  "description": "Node.js .gif generator for p5.js sketches",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/code-dot-org/p5-replay.git"
+  },
+  "author": "Josh Lory <josh.lory@code.org>",
+  "license": "Apache-2.0"
+}
