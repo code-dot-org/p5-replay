@@ -4,6 +4,7 @@
   "description": "Node.js .gif generator for p5.js sketches",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd node_modules; cp @code-dot-org/p5.play/lib/p5.play.js p5/lib/addons",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,5 +12,10 @@
     "url": "git+ssh://git@github.com/code-dot-org/p5-replay.git"
   },
   "author": "Josh Lory <josh.lory@code.org>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@code-dot-org/p5.play": "1.2.2-cdo",
+    "canvas": "^1.6.11",
+    "p5": "^0.7.1"
+  }
 }
