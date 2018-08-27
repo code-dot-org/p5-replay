@@ -49,15 +49,15 @@ function finishVideo() {
 const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
 const sprite = p5Inst.createSprite();
 
-function generateFrame() {
+async function generateFrame(n) {
   // Replay the capture.
-  sprite.position = createVector(200, 200);
+  sprite.position = createVector(200 + 10 * n, 200);
   sprite.addAnimation('default', anim);
   sprite.tint = 'blue';
   p5Inst.background('#fff');
   p5Inst.drawSprites();
 
-  return new Promise((resolve, reject) => {
+  return await new Promise((resolve, reject) => {
     // Write an image.
     const pngStream = canvas.pngStream();
     pngStream.on('error', reject);
@@ -66,4 +66,10 @@ function generateFrame() {
   });
 }
 
-generateFrame().then(finishVideo);
+async function generateVideo() {
+  for (let i = 0; i < 20; i++) {
+    await generateFrame(i);
+  }
+}
+
+generateVideo().then(finishVideo);
