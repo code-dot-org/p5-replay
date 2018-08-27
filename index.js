@@ -1,4 +1,6 @@
-const fs = require('fs');
+const Stream = require('stream');
+const spawn = require('child_process').spawn;
+const ffmpeg = require('ffmpeg-static');
 const Canvas = require('./node_modules/canvas');
 
 // Mock the browser environment for p5.
@@ -31,6 +33,16 @@ canvas.style = {};
 p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
 p5Inst._renderer.resize(WIDTH, HEIGHT);
 
+// Spawn the ffmpeg process.
+const toEncode = new Stream();
+toEncode.writable = true;
+toEncode.readable = true;
+const child = spawn(ffmpeg.path, ['-i', 'pipe:', '-movflags', 'faststart', '-pix_fmt', 'yuv420p', 'video.mp4']);
+child.stdout.pipe(process.stdout);
+child.stderr.pipe(process.stdout);
+toEncode.pipe(child.stdin);
+
+// Replay the capture.
 anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
 const sprite = p5Inst.createSprite();
 sprite.position = createVector(200, 200);
@@ -40,7 +52,9 @@ p5Inst.background('#fff');
 p5Inst.drawSprites();
 
 // Write an image.
-const out = fs.createWriteStream('test.png');
-const stream = canvas.pngStream();
-stream.on('data', chunk => out.write(chunk));
-stream.on('end', () => console.log('done'));
+const pngStream = canvas.pngStream();
+pngStream.on('data', chunk => toEncode.emit('data', chunk));
+pngStream.on('end', () => {
+  console.log('done');
+  toEncode.emit('end');
+});
