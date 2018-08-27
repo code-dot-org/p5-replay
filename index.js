@@ -21,7 +21,7 @@ window.Image = Canvas.Image;
 window.ImageData = Canvas.ImageData;
 
 const p5 = require('./node_modules/p5');
-require('./node_modules/p5/lib/addons/p5.play.js');
+require('./node_modules/p5/lib/addons/p5.play');
 
 const WIDTH = 400;
 const HEIGHT = 400;
@@ -37,7 +37,7 @@ p5Inst._renderer.resize(WIDTH, HEIGHT);
 const toEncode = new Stream();
 toEncode.writable = true;
 toEncode.readable = true;
-const child = spawn(ffmpeg.path, ['-i', 'pipe:', '-movflags', 'faststart', '-pix_fmt', 'yuv420p', 'video.mp4']);
+const child = spawn(ffmpeg.path, ['-r', '30', '-i', 'pipe:', '-movflags', 'faststart', '-crf', '18', '-pix_fmt', 'yuv420p', 'video.mp4']);
 child.stdout.pipe(process.stdout);
 child.stderr.pipe(process.stdout);
 toEncode.pipe(child.stdin);
@@ -47,15 +47,28 @@ function finishVideo() {
 }
 
 const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
+const replay = require('./test/fixtures/replay.json');
 const sprite = p5Inst.createSprite();
+sprite.addAnimation('default', anim);
+const sprites = {};
+sprites[5] = sprite;
 
 async function generateFrame(n) {
-  // Replay the capture.
-  sprite.position = createVector(200 + 10 * n, 200);
-  sprite.addAnimation('default', anim);
-  sprite.tint = 'blue';
-  p5Inst.background('#fff');
-  p5Inst.drawSprites();
+  const entry = replay[n];
+  if (entry) {
+    for (let [n, modifiers] of Object.entries(entry)) {
+      for (let [prop, value] of Object.entries(modifiers)) {
+        if (prop === 'x' || prop === 'y') {
+          sprites[n].position[prop] = value;
+        } else {
+          sprites[n][prop] = value;
+        }
+      }
+    }
+
+    p5Inst.background('#fff');
+    p5Inst.drawSprites();
+  }
 
   return await new Promise((resolve, reject) => {
     // Write an image.
@@ -67,7 +80,7 @@ async function generateFrame(n) {
 }
 
 async function generateVideo() {
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < replay.length; i++) {
     await generateFrame(i);
   }
 }
