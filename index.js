@@ -42,19 +42,28 @@ child.stdout.pipe(process.stdout);
 child.stderr.pipe(process.stdout);
 toEncode.pipe(child.stdin);
 
-// Replay the capture.
-anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
-const sprite = p5Inst.createSprite();
-sprite.position = createVector(200, 200);
-sprite.addAnimation('default', anim);
-sprite.tint = 'blue';
-p5Inst.background('#fff');
-p5Inst.drawSprites();
-
-// Write an image.
-const pngStream = canvas.pngStream();
-pngStream.on('data', chunk => toEncode.emit('data', chunk));
-pngStream.on('end', () => {
-  console.log('done');
+function finishVideo() {
   toEncode.emit('end');
-});
+}
+
+const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
+const sprite = p5Inst.createSprite();
+
+function generateFrame() {
+  // Replay the capture.
+  sprite.position = createVector(200, 200);
+  sprite.addAnimation('default', anim);
+  sprite.tint = 'blue';
+  p5Inst.background('#fff');
+  p5Inst.drawSprites();
+
+  return new Promise((resolve, reject) => {
+    // Write an image.
+    const pngStream = canvas.pngStream();
+    pngStream.on('error', reject);
+    pngStream.on('data', chunk => toEncode.emit('data', chunk));
+    pngStream.on('end', resolve);
+  });
+}
+
+generateFrame().then(finishVideo);
