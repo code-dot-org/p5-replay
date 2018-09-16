@@ -1,3 +1,26 @@
-.idea
-.DS_Store
 node_modules
+
+# Project-specific
+out.txt
+logs
+notes
+.awscredentials
+endpoints.json
+artifacts
+
+# IDE Stuff
+**/.idea
+**/venv
+
+# OS STUFF
+.DS_Store
+.tmp
+
+# Stuff from Docker volume
+.babel.json
+.bash_history
+.serverlessrc
+.aws
+.config
+.npm
+.serverless
