@@ -1,10 +1,11 @@
 const Stream = require('stream');
 const spawn = require('child_process').spawn;
-const Canvas = require('./node_modules/canvas');
+const Canvas = require('canvas');
+const fs = require('fs');
 
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT']
 
-module.exports.runTestExport = () => {
+module.exports.runTestExport = async (callback) => {
   // Mock the browser environment for p5.
   global.window = global;
   window.performance = {now: Date.now};
@@ -15,7 +16,7 @@ module.exports.runTestExport = () => {
       if (type !== 'canvas') {
         throw new Error('Cannot create type.');
       }
-      return new Canvas();
+      return Canvas.createCanvas();
     }
   };
   window.screen = {};
@@ -32,7 +33,7 @@ module.exports.runTestExport = () => {
 
 // Create our emulated canvas.
   const p5Inst = new p5();
-  const canvas = new Canvas(WIDTH, HEIGHT);
+  const canvas = Canvas.createCanvas(WIDTH, HEIGHT);
   canvas.style = {};
   p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
   p5Inst._renderer.resize(WIDTH, HEIGHT);
@@ -41,8 +42,8 @@ module.exports.runTestExport = () => {
   const toEncode = new Stream();
   toEncode.writable = true;
   toEncode.readable = true;
-  const child = spawn("ffmpeg",
-    ['-r', '30', '-i', 'pipe:', '-movflags', 'faststart', '-crf', '18', '-pix_fmt', 'yuv420p', 'video.mp4']
+  const child = spawn("binaries/ffmpeg/ffmpeg",
+    ['-r', '30', '-i', 'pipe:', '-movflags', 'faststart', '-crf', '18', '-pix_fmt', 'yuv420p', '/tmp/video.mp4']
   );
   child.stdout.pipe(process.stdout);
   child.stderr.pipe(process.stdout);
@@ -50,10 +51,18 @@ module.exports.runTestExport = () => {
 
   function finishVideo() {
     toEncode.emit('end');
+    console.log("File emitted, grabbing stats");
+    const outputPath = '/tmp/video.mp4';
+    statsString = JSON.stringify(fs.statSync(outputPath));
+    const response = {
+      statusCode: 200,
+      body: statsString
+    };
+    console.log("Returning stats: " + statsString);
   }
 
-  const anim = p5Inst.loadAnimation('./test/fixtures/animation/sprite.png');
-  const replay = require('./test/fixtures/animation/replay.json');
+  const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
+  const replay = require('./test/fixtures/replay.json');
   const sprite = p5Inst.createSprite();
   sprite.addAnimation('default', anim);
   const sprites = {};

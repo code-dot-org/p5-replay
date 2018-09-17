@@ -19,8 +19,8 @@
   "author": "Josh Lory <josh.lory@code.org>",
   "license": "Apache-2.0",
   "dependencies": {
+    "canvas": "^2.0.0-alpha.13",
     "@code-dot-org/p5.play": "1.2.2-cdo",
-    "canvas": "^1.6.11",
     "p5": "^0.7.1",
     "aws-sdk": "^2.173.0"
   },

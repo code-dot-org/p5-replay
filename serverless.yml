@@ -20,7 +20,7 @@ provider:
   name: aws
   runtime: nodejs8.10
   profile: p5-replay # add [p5-replay] credential set to ~/.aws/credentials
-  timeout: 300
+  timeout: 30 # max for API gateway function
   stage: ${file(./config.yml):stage}
   region: ${file(./config.yml):region}
   memorySize: ${file(./config.yml):memorySize}

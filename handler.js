@@ -2,7 +2,6 @@
 // const { getDestinationBucket, getFfmpegParameters } = require('./src/env');
 // const { ffprobe, ffmpeg } = require('./src/ffmpeg');
 // const { createReadStream } = require('fs');
-const { runTestExport } = require('./replayToMovie');
 
 // module.exports.main = async (event, context, callback) => {
 //   const {eventName, bucket, key} = getFileInformation(event);
@@ -19,6 +18,15 @@ const { runTestExport } = require('./replayToMovie');
 //   }
 // };
 
+// const canvas = require("canvas");
+const { runTestExport } = require('./replayToMovie');
 module.exports.runTest = async (event, context, callback) => {
-  runTestExport();
+  await runTestExport(callback);
+  const response = {
+    statusCode: 200,
+    body: "Finished"
+  };
+  callback(null, response);
+  // console.log("test");
+  // console.log(canvas);
 };
