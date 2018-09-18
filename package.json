@@ -5,12 +5,7 @@
   "scripts": {
     "postinstall": "cd node_modules; cp @code-dot-org/p5.play/lib/p5.play.js p5/lib/addons",
     "deploy": "serverless deploy",
-    "stack-create": "sls deploy -v",
-    "stack-destroy": "sls remove -v",
-    "logs": "sls logs -f ffmpeg -t",
-    "test": "ava test/**/*.test.js",
-    "test-watch": "npm run test -- --watch",
-    "test-ci": "npm run test -- --verbose"
+    "stack-destroy": "sls remove -v"
   },
   "repository": {
     "type": "git",
@@ -19,14 +14,13 @@
   "author": "Josh Lory <josh.lory@code.org>",
   "license": "Apache-2.0",
   "dependencies": {
-    "canvas": "^2.0.0-alpha.13",
+    "node-pre-gyp": "0.9.1",
+    "canvas": "2.0.0-alpha.13",
     "@code-dot-org/p5.play": "1.2.2-cdo",
     "p5": "^0.7.1",
-    "aws-sdk": "^2.173.0"
+    "aws-sdk": "^2.173.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "ava": "^0.24.0",
-    "fs-extra": "^5.0.0",
-    "serverless-s3-remover": "^0.4.1"
   }
 }

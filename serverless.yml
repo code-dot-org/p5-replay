@@ -1,71 +1,33 @@
+service: p5-replay-service
 
-# Service name
-service: serverless-ffmpeg
-
-#custom:
-  # Configure these
-#  source_bucket: ${file(./config.yml):source_bucket}
-#  destination_bucket: ${file(./config.yml):destination_bucket}
-#  ffmpeg_params: ${file(./config.yml):ffmpeg_params}
-  # Leave as is
-#  remover:
-#     buckets:
-#       - ${self:custom.source_bucket}
-#       - ${self:custom.destination_bucket}
-
-#plugins:
-#  - serverless-s3-remover
+custom:
+  destination_bucket: p5-replay-videos
 
 provider:
   name: aws
   runtime: nodejs8.10
-  profile: p5-replay # add [p5-replay] credential set to ~/.aws/credentials
-  timeout: 30 # max for API gateway function
-  stage: ${file(./config.yml):stage}
-  region: ${file(./config.yml):region}
-  memorySize: ${file(./config.yml):memorySize}
-#  environment:
-#    DESTINATION_BUCKET: ${self:custom.destination_bucket}
-#    FFMPEG_PARAMS: ${self:custom.ffmpeg_params}
+  profile: p5-replay # make sure to set up .awscredentials locally, following .awscredentials.sample as template
+  timeout: 30 # for API gateway function must be <= 30
+  stage: dev
+  region: us-east-1
+  memorySize: 1024
+  environment:
+    DESTINATION_BUCKET: ${self:custom.destination_bucket}
   iamRoleStatements:
-    # List buckets
-#    - Effect: Allow
-#      Action:
-#        - s3:ListBucket
-#      Resource:
-#        - Fn::Join:
-#          - ""
-#          - - "arn:aws:s3:::"
-#            - ${self:custom.source_bucket}
-#        - Fn::Join:
-#          - ""
-#          - - "arn:aws:s3:::"
-#            - ${self:custom.destination_bucket}
-#     Operate in buckets
-#    - Effect: Allow
-#      Action:
-#        - s3:PutObject
-#        - s3:GetObject
-#        - s3:DeleteObject
-#      Resource:
-#        - Fn::Join:
-#          - ""
-#          - - "arn:aws:s3:::"
-#            - ${self:custom.source_bucket}
-#            - "/*"
-#        - Fn::Join:
-#          - ""
-#          - - "arn:aws:s3:::"
-#            - ${self:custom.destination_bucket}
-#            - "/*"
+    - Effect: Allow
+      Action:
+        - s3:ListBucket
+        - s3:PutObject
+        - s3:GetObject
+        - s3:DeleteObject
+      Resource:
+        - Fn::Join:
+          - ""
+          - - "arn:aws:s3:::"
+            - ${self:custom.destination_bucket}
+            - "/*"
 
 functions:
-#  ffmpeg:
-#    handler: handler.main
-#    events:
-#      - s3:
-#          bucket: ${self:custom.source_bucket} # This will create the source bucket
-#          event: s3:ObjectCreated:*
   runTest:
     handler: handler.runTest
     events:
@@ -73,11 +35,49 @@ functions:
           path: runTest
           method: get
           cors: true
+# Example lambda that triggers when an S3 object is created.
+# Note that to use this, self:custom.source_bucket must be added to
+# the iamRoleStatements above and also specified in the custom section
+#  ffmpeg:
+#    handler: handler.main
+#    events:
+#      - s3:
+#          bucket: ${self:custom.source_bucket} # This will create the source bucket
+#          event: s3:ObjectCreated:*
 
-#resources:
-#  Resources:
-#    # Make the output bucket
-#    FfmpegDestination:
-#      Type: AWS::S3::Bucket
-#      Properties:
-#        BucketName: ${self:custom.destination_bucket}
+resources:
+  Resources:
+    S3BucketPermissions:
+      Type: AWS::S3::BucketPolicy
+      Properties:
+        Bucket: ${self:custom.destination_bucket}
+        PolicyDocument:
+          Statement:
+            - Principal: "*"
+              Action:
+                - s3:GetObject
+              Effect: Allow
+              Sid: "PublicReadPermission"
+              Resource:
+                - Fn::Join:
+                  - ""
+                  - - "arn:aws:s3:::"
+                    - ${self:custom.destination_bucket}
+                    - "/*"
+    UploadDestination:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.destination_bucket}
+        AccessControl: PublicRead
+        # TODO: verify that CORS requests work
+        CorsConfiguration:
+          CorsRules:
+          - AllowedMethods:
+            - GET
+            - PUT
+            - POST
+            - HEAD
+            AllowedOrigins:
+            - "*"
+            AllowedHeaders:
+            - "*"
