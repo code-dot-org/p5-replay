@@ -12,7 +12,7 @@ const SPRITE_COUNT = parseInt(myArgs[1]);
 const sprites = [];
 for (let i = 0; i < SPRITE_COUNT; ++i) {
   sprites.push({
-    tint: "rgba(255,15,0,1)",
+    tint: "rgba(255,255,255,1)",
     x: 200 + 400 * (Math.random() - .5),
     y: 200 + 400 * (Math.random() - .5),
   });
@@ -28,8 +28,8 @@ for (let i = 0; i < FRAMES; ++i) {
       y: sprites[j].y
     };
     // Random wiggle
-    sprites[j].x += 3 * (Math.random() - .5);
-    sprites[j].y += 3 * (Math.random() - .5);
+    sprites[j].x += 5 * (Math.random() - .5);
+    sprites[j].y += 5 * (Math.random() - .5);
   }
   frames.push(frameData);
 }

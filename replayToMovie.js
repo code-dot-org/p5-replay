@@ -2,6 +2,8 @@ const Stream = require('stream');
 const spawn = require('child_process').spawn;
 const Canvas = require('canvas');
 
+const FFMPEG_PATH = (process.platform === "darwin") ? "/usr/local/bin/ffmpeg" : "binaries/ffmpeg/ffmpeg";
+
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
@@ -31,7 +33,7 @@ function loadReplay() {
   return require('./test/fixtures/replay.json');
 }
 
-module.exports.runTestExport = async (callback, outputPath) => {
+module.exports.runTestExport = async (outputPath) => {
   const WIDTH = 400;
   const HEIGHT = 400;
 
@@ -45,7 +47,7 @@ module.exports.runTestExport = async (callback, outputPath) => {
   const toEncode = new Stream();
   toEncode.writable = true;
   toEncode.readable = true;
-  const child = spawn("binaries/ffmpeg/ffmpeg",
+  const child = spawn(FFMPEG_PATH,
     ['-r', '30', '-i', 'pipe:', '-movflags', 'faststart', '-crf', '18', '-pix_fmt', 'yuv420p', outputPath]
   );
   // child.stdout.pipe(process.stdout);
@@ -61,31 +63,21 @@ module.exports.runTestExport = async (callback, outputPath) => {
   const replay = loadReplay();
 
   const sprites = {};
-  const spriteIndices = new Set();
-  for (let i = 0; i < replay.length; ++i) {
-    const entry = replay[i];
-    if (entry) {
-      for (let [n, modifiers] of Object.entries(entry)) {
-        spriteIndices.add(n);
-      }
-    }
-  }
-
-  for (let n of spriteIndices) {
-    const sprite = p5Inst.createSprite();
-    sprite.addAnimation('default', anim);
-    sprites[n] = sprite;
-  }
 
   async function generateFrame(n) {
     const entry = replay[n];
     if (entry) {
-      for (let [n, modifiers] of Object.entries(entry)) {
+      for (let [spriteName, modifiers] of Object.entries(entry)) {
+        if (!sprites[spriteName]) { // lazy create sprites
+          const sprite = p5Inst.createSprite();
+          sprite.addAnimation('default', anim);
+          sprites[spriteName] = sprite;
+        }
         for (let [prop, value] of Object.entries(modifiers)) {
           if (prop === 'x' || prop === 'y') {
-            sprites[n].position[prop] = value;
+            sprites[spriteName].position[prop] = value;
           } else {
-            sprites[n][prop] = value;
+            sprites[spriteName][prop] = value;
           }
         }
       }

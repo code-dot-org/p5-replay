@@ -8,7 +8,7 @@ const UPLOAD_KEY = 'videos';
 module.exports.runTest = async (event, context, callback) => {
   const uuid = uuidv4();
   const outputPath = '/tmp/video-' + uuid + '.mp4';
-  await runTestExport(callback, outputPath);
+  await runTestExport(outputPath);
   console.log("Export complete, uploading");
   await uploadFolder(BUCKET, UPLOAD_KEY, '/tmp/');
   console.log("Upload complete, returning response");
