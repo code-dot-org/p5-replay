@@ -17,6 +17,7 @@ module.exports.runTest = async (event, context, callback) => {
     stats: fs.statSync(outputPath),
     s3Path: 'http://s3.amazonaws.com/' + BUCKET + '/' + UPLOAD_KEY + '/video-' + uuid + '.mp4'
   });
+  fs.unlinkSync(outputPath);
   const response = {
     statusCode: 200,
     body: responseBody
@@ -36,8 +37,6 @@ function upload(Bucket, Key, Body, ContentEncoding, ContentType) {
     Body: Body,
     ContentEncoding: ContentEncoding,
     ContentType: ContentType
-  }).on('httpUploadProgress', ({loaded, total}) => {
-    console.log(`Uploading ${Key} to ${Bucket}: (${Math.round(100 * loaded / total)}%) ${loaded} / ${total}`);
   }).promise();
 }
 

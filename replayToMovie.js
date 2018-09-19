@@ -27,6 +27,10 @@ const p5 = require('./node_modules/p5');
 require('./node_modules/p5/lib/addons/p5.play');
 const p5Inst = new p5();
 
+function loadReplay() {
+  return require('./test/fixtures/replay.json');
+}
+
 module.exports.runTestExport = async (callback, outputPath) => {
   const WIDTH = 400;
   const HEIGHT = 400;
@@ -54,11 +58,24 @@ module.exports.runTestExport = async (callback, outputPath) => {
   }
 
   const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
-  const replay = require('./test/fixtures/replay.json');
-  const sprite = p5Inst.createSprite();
-  sprite.addAnimation('default', anim);
+  const replay = loadReplay();
+
   const sprites = {};
-  sprites[5] = sprite;
+  const spriteIndices = new Set();
+  for (let i = 0; i < replay.length; ++i) {
+    const entry = replay[i];
+    if (entry) {
+      for (let [n, modifiers] of Object.entries(entry)) {
+        spriteIndices.add(n);
+      }
+    }
+  }
+
+  for (let n of spriteIndices) {
+    const sprite = p5Inst.createSprite();
+    sprite.addAnimation('default', anim);
+    sprites[n] = sprite;
+  }
 
   async function generateFrame(n) {
     const entry = replay[n];
@@ -79,10 +96,10 @@ module.exports.runTestExport = async (callback, outputPath) => {
 
     return await new Promise((resolve, reject) => {
       // Write an image.
-      const pngStream = canvas.pngStream();
-      pngStream.on('error', reject);
-      pngStream.on('data', chunk => toEncode.emit('data', chunk));
-      pngStream.on('end', resolve);
+      const jpegStream = canvas.jpegStream();
+      jpegStream.on('error', reject);
+      jpegStream.on('data', chunk => toEncode.emit('data', chunk));
+      jpegStream.on('end', resolve);
     });
   }
 

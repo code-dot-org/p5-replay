@@ -10,7 +10,7 @@ provider:
   timeout: 30 # for API gateway function must be <= 30
   stage: dev
   region: us-east-1
-  memorySize: 1024
+  memorySize: 3008
   environment:
     DESTINATION_BUCKET: ${self:custom.destination_bucket}
   iamRoleStatements:

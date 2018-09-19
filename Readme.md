@@ -8,6 +8,7 @@ Generates a movie file based on a p5 animation replay file, and uploads it to S3
 * Copy the `.awscredentials.sample` file to `.awscredentials` and enter your credentials there
 * \[TODO\] Don't change the `node-canvas` version away from 2.0.0-alpha.13 - later releases seem to cause `node-gyp` problems
 * Run the `build_and_deploy.sh` script, which will create a Docker image to build the application and upload it to AWS Lambda using the Serverless framework
+  * The first time this runs the Docker part will take a while to download, and there may be some red error text, but that's fine, it should complete quickly the next times it is run.
   * \[TODO\]: this may not fully work yet on the CDO account, where AWS credentials have limited permissions  
 
 ## Built With
