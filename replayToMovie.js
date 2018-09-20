@@ -111,7 +111,9 @@ module.exports.runTestExport = async (outputPath) => {
 
   async function generateVideo() {
     for (let i = 0; i < replay.length; i++) {
-      console.log('Generating frame ' + i);
+      if (i % 100 === 0) {
+        console.log('Generating frame ' + i);
+      }
       await generateFrame(i);
     }
   }
