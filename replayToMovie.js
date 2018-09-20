@@ -1,6 +1,7 @@
 const Stream = require('stream');
 const spawn = require('child_process').spawn;
 const Canvas = require('canvas');
+const streamifier = require('streamifier');
 
 const FFMPEG_PATH = (process.platform === "darwin") ? "/usr/local/bin/ffmpeg" : "binaries/ffmpeg/ffmpeg";
 
@@ -48,7 +49,18 @@ module.exports.runTestExport = async (outputPath) => {
   toEncode.writable = true;
   toEncode.readable = true;
   const child = spawn(FFMPEG_PATH,
-    ['-r', '30', '-i', 'pipe:', '-movflags', 'faststart', '-crf', '18', '-pix_fmt', 'yuv420p', outputPath]
+    [
+      '-f', 'rawvideo',
+      '-pix_fmt', 'argb',
+      '-video_size', `${WIDTH}x${HEIGHT}`,
+      '-framerate', '30',
+      '-i', 'pipe:',
+      outputPath,
+      '-pix_fmt', 'yuv420p',
+      '-framerate', '30',
+      '-movflags', 'faststart',
+      '-crf', '18',
+    ]
   );
   // child.stdout.pipe(process.stdout);
   // child.stderr.pipe(process.stdout);
@@ -88,10 +100,12 @@ module.exports.runTestExport = async (outputPath) => {
 
     return await new Promise((resolve, reject) => {
       // Write an image.
-      const jpegStream = canvas.jpegStream();
-      jpegStream.on('error', reject);
-      jpegStream.on('data', chunk => toEncode.emit('data', chunk));
-      jpegStream.on('end', resolve);
+      const imageStream = streamifier.createReadStream(canvas.toBuffer('raw'));
+      imageStream.on('error', reject);
+      imageStream.on('data', chunk => {
+        toEncode.emit('data', chunk)
+      });
+      imageStream.on('end', resolve);
     });
   }
 
@@ -110,9 +124,9 @@ module.exports.runTestExport = async (outputPath) => {
       console.log('Error during encoding: ' + err);
       reject();
     });
-    child.on('exit', function() {
-      console.log('Encoding complete');
-      resolve();
+    child.on('exit', function(val) {
+      console.log('Encoding complete with return value ' + val);
+      val === 0 ? resolve() : reject();
     });
   });
 };
