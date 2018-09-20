@@ -50,16 +50,13 @@ module.exports.runTestExport = async (outputPath) => {
   toEncode.readable = true;
   const child = spawn(FFMPEG_PATH,
     [
-      '-f', 'rawvideo',
-      '-pix_fmt', 'argb',
-      '-video_size', `${WIDTH}x${HEIGHT}`,
-      '-framerate', '30',
       '-i', 'pipe:',
       outputPath,
       '-pix_fmt', 'yuv420p',
       '-framerate', '30',
       '-movflags', 'faststart',
       '-crf', '18',
+      '-threads', '4',
     ]
   );
   // child.stdout.pipe(process.stdout);
@@ -100,7 +97,7 @@ module.exports.runTestExport = async (outputPath) => {
 
     return await new Promise((resolve, reject) => {
       // Write an image.
-      const imageStream = streamifier.createReadStream(canvas.toBuffer('raw'));
+      const imageStream = canvas.createJPEGStream();
       imageStream.on('error', reject);
       imageStream.on('data', chunk => {
         toEncode.emit('data', chunk)
@@ -131,5 +128,9 @@ module.exports.runTestExport = async (outputPath) => {
       val === 0 ? resolve() : reject();
     });
   });
+
+  for (const [key, sprite] of Object.entries(sprites)) {
+    sprite.remove();
+  }
 };
 
