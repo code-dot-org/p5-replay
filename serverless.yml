@@ -1,7 +1,7 @@
 service: p5-replay-service
 
 custom:
-  destination_bucket: p5-replay-videos
+  destination_bucket: cdo-p5-replay-videos
 
 provider:
   name: aws
