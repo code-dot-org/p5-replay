@@ -1,3 +1,19 @@
-.idea
-.DS_Store
+.bash_history
+.serverlessrc
+.aws
+.config
+.npm
+.serverless
+
+# Project-specific
+.awscredentials
 node_modules
+yarn-error.log
+
+# IDE Stuff
+**/.idea
+**/venv
+
+# OS STUFF
+.DS_Store
+.tmp

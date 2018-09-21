@@ -1,11 +1,11 @@
 {
   "name": "@code-dot-org/p5-replay",
   "version": "0.0.0",
-  "description": "Node.js .gif generator for p5.js sketches",
-  "main": "index.js",
+  "description": "Node.js .gif generator for p5.js sketches; AWS Lambda/Serverless setup based on https://github.com/kvaggelakos/serverless-ffmpeg",
   "scripts": {
     "postinstall": "cd node_modules; cp @code-dot-org/p5.play/lib/p5.play.js p5/lib/addons",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "serverless deploy",
+    "stack-destroy": "sls remove -v"
   },
   "repository": {
     "type": "git",
@@ -14,9 +14,14 @@
   "author": "Josh Lory <josh.lory@code.org>",
   "license": "Apache-2.0",
   "dependencies": {
+    "streamifier": "^0.1.1",
+    "node-pre-gyp": "0.9.1",
+    "canvas": "2.0.0-alpha.13",
     "@code-dot-org/p5.play": "1.2.2-cdo",
-    "canvas": "^1.6.11",
-    "ffmpeg-static": "2.3.0",
-    "p5": "^0.7.1"
+    "p5": "^0.7.1",
+    "aws-sdk": "^2.173.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
   }
 }
