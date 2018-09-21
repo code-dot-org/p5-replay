@@ -35,6 +35,13 @@ functions:
           path: runTest
           method: get
           cors: true
+  render:
+    handler: handler.render
+    events:
+      - http:
+          path: render
+          method: post
+          cors: true
 # Example lambda that triggers when an S3 object is created.
 # Note that to use this, self:custom.source_bucket must be added to
 # the iamRoleStatements above and also specified in the custom section

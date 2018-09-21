@@ -30,11 +30,7 @@ const p5 = require('./node_modules/p5');
 require('./node_modules/p5/lib/addons/p5.play');
 const p5Inst = new p5();
 
-function loadReplay() {
-  return require('./test/fixtures/replay.json');
-}
-
-module.exports.runTestExport = async (outputPath) => {
+module.exports.runTestExport = async (outputPath, replay) => {
   const WIDTH = 400;
   const HEIGHT = 400;
 
@@ -56,11 +52,10 @@ module.exports.runTestExport = async (outputPath) => {
       '-framerate', '30',
       '-movflags', 'faststart',
       '-crf', '18',
-      '-threads', '4',
     ]
   );
-  // child.stdout.pipe(process.stdout);
-  // child.stderr.pipe(process.stdout);
+  child.stdout.pipe(process.stdout);
+  child.stderr.pipe(process.stdout);
   toEncode.pipe(child.stdin);
 
   function finishVideo() {
@@ -68,11 +63,10 @@ module.exports.runTestExport = async (outputPath) => {
     toEncode.emit('end');
   }
 
+  // TODO: look up sprites/animations from in-memory cache
   const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
-  const replay = loadReplay();
 
-  const sprites = {};
-
+  const sprites = {}; // lazily initialized when used
   async function generateFrame(n) {
     const entry = replay[n];
     if (entry) {
