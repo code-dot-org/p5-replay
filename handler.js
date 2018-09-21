@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { runTestExport } = require('./replayToMovie');
 const uuidv4 = require('uuid/v4');
+const {tmpdir} = require('os');
 
 const BUCKET = process.env.DESTINATION_BUCKET;
 const UPLOAD_KEY = 'videos';
@@ -43,12 +44,12 @@ module.exports.render = async (event, context, callback) => {
   await renderVideo(replay, callback);
 };
 
-// TODO: module.exports.renderFromS3, and set up Serverless handler
-const renderFromS3 = async (event, context, callback) => {
+module.exports.renderFromS3 = async (event, context, callback) => {
   const srcBucket = event.Records[0].s3.bucket.name;
-    // Object key may have spaces or unicode non-ASCII characters.
   const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
-  const replayJSON = await download(srcBucket, srcKey);
+  const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
+  const replayJSON = fs.readFileSync(tmpPath);
+  fs.unlinkSync(tmpPath);
   const replay = JSON.parse(replayJSON);
   await renderVideo(replay, callback);
 };
@@ -85,12 +86,12 @@ function uploadFolder(bucket, key, folder, contentEncoding, contentType) {
   })
 }
 
-function download(Bucket, Key) {
+function download_and_return_tmp_path(Bucket, Key) {
   console.log(`Downloading file: ${Key} from bucket: ${Bucket}`);
 
   return new Promise((resolve, reject) => {
     const destPath = join(tmpdir(), basename(Key));
-    const file = createWriteStream(destPath);
+    const file = fs.createWriteStream(destPath);
     file.on('close', () => resolve(destPath));
     file.on('error', reject);
 

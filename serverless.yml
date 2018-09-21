@@ -2,6 +2,7 @@ service: p5-replay-service
 
 custom:
   destination_bucket: cdo-p5-replay-videos
+  source_bucket: cdo-p5-replay-inputs
 
 provider:
   name: aws
@@ -26,6 +27,11 @@ provider:
           - - "arn:aws:s3:::"
             - ${self:custom.destination_bucket}
             - "/*"
+        - Fn::Join:
+          - ""
+          - - "arn:aws:s3:::"
+            - ${self:custom.source_bucket}
+            - "/*"
 
 functions:
   runTest:
@@ -42,15 +48,13 @@ functions:
           path: render
           method: post
           cors: true
-# Example lambda that triggers when an S3 object is created.
-# Note that to use this, self:custom.source_bucket must be added to
-# the iamRoleStatements above and also specified in the custom section
-#  ffmpeg:
-#    handler: handler.main
-#    events:
-#      - s3:
-#          bucket: ${self:custom.source_bucket} # This will create the source bucket
-#          event: s3:ObjectCreated:*
+  renderFromS3:
+    handler: handler.renderFromS3
+    timeout: 90
+    events:
+      - s3:
+          bucket: ${self:custom.source_bucket} # This will create the source bucket
+          event: s3:ObjectCreated:*
 
 resources:
   Resources:
