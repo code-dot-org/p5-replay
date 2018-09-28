@@ -1,14 +1,23 @@
 const fs = require('fs');
-const { runTestExport } = require('./replayToMovie');
 const uuidv4 = require('uuid/v4');
 const {tmpdir} = require('os');
+const AWS = require('aws-sdk');
+const s3 = new AWS.S3();
+const { join, basename } = require('path');
+
+const { runTestExport } = require('./replayToMovie');
 
 const BUCKET = process.env.DESTINATION_BUCKET;
+const SOURCE_BUCKET = process.env.SOURCE_BUCKET;
 const UPLOAD_KEY = 'videos';
 
-async function renderVideo(replay, callback) {
+function getOutputURL(uuid) {
+  return 'http://s3.amazonaws.com/' + BUCKET + '/' + UPLOAD_KEY + '/video-' + uuid + '.mp4'
+}
+
+async function renderVideo(replay, callback, forceUUID = null) {
   try {
-    const uuid = uuidv4();
+    const uuid = forceUUID || uuidv4();
     const outputPath = '/tmp/video-' + uuid + '.mp4';
     await runTestExport(outputPath, replay);
 
@@ -22,7 +31,7 @@ async function renderVideo(replay, callback) {
     responseBody = JSON.stringify({
       path: outputPath,
       stats: fileStats, // TODO: probably don't need to return this to the client, may want to check size somewhere though
-      s3Path: 'http://s3.amazonaws.com/' + BUCKET + '/' + UPLOAD_KEY + '/video-' + uuid + '.mp4'
+      s3Path: getOutputURL(uuid)
     });
     const response = {
       statusCode: 200,
@@ -51,7 +60,28 @@ module.exports.renderFromS3 = async (event, context, callback) => {
   const replayJSON = fs.readFileSync(tmpPath);
   fs.unlinkSync(tmpPath);
   const replay = JSON.parse(replayJSON);
-  await renderVideo(replay, callback);
+  await renderVideo(replay, callback, srcKey);
+};
+
+/**
+ * Returns a URL to upload an animation JSON file to via a PUT request
+ */
+module.exports.getS3UploadURL = async (event, context, callback) => {
+  const uuid = uuidv4();
+  const expirationInSeconds = 60 * 10;
+  const url = s3.getSignedUrl('putObject', {
+    Bucket: SOURCE_BUCKET,
+    Key: uuid,
+    Expires: expirationInSeconds
+  });
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      uploadURL: url,
+      resultLocation: getOutputURL(uuid)
+    }),
+  };
+  callback(null, response);
 };
 
 module.exports.runTest = async (event, context, callback) => {
@@ -60,10 +90,6 @@ module.exports.runTest = async (event, context, callback) => {
 };
 
 // S3 functions modified from https://github.com/kvaggelakos/serverless-ffmpeg
-const AWS = require('aws-sdk');
-const { join, basename } = require('path');
-const s3 = new AWS.S3();
-
 function upload(Bucket, Key, Body, ContentEncoding, ContentType) {
   return s3.putObject({
     Bucket: Bucket,

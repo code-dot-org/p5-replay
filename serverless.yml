@@ -1,8 +1,8 @@
-service: p5-replay-service
+service: eric-test-p5-replay-service
 
 custom:
-  destination_bucket: cdo-p5-replay-videos
-  source_bucket: cdo-p5-replay-inputs
+  destination_bucket: eric-cdo-p5-replay-videos
+  source_bucket: eric-cdo-p5-replay-inputs
 
 provider:
   name: aws
@@ -14,6 +14,7 @@ provider:
   memorySize: 3008
   environment:
     DESTINATION_BUCKET: ${self:custom.destination_bucket}
+    SOURCE_BUCKET: ${self:custom.source_bucket}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -55,6 +56,14 @@ functions:
       - s3:
           bucket: ${self:custom.source_bucket} # This will create the source bucket
           event: s3:ObjectCreated:*
+  getS3UploadURL:
+    handler: handler.getS3UploadURL
+    timeout: 5
+    events:
+      - http:
+          path: getS3UploadURL
+          method: get
+          cors: true
 
 resources:
   Resources:
