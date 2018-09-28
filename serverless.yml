@@ -1,8 +1,8 @@
-service: eric-test-p5-replay-service
+service: p5-replay-service
 
 custom:
-  destination_bucket: eric-cdo-p5-replay-videos
-  source_bucket: eric-cdo-p5-replay-inputs
+  destination_bucket: cdo-p5-replay-videos
+  source_bucket: cdo-p5-replay-inputs
 
 provider:
   name: aws
