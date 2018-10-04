@@ -6,4 +6,4 @@ cd "${0%/*}"
 echo -e '\n---------- Creating build container ----------\n'
 docker build -t p5-replay/ffmpeg -f ./Dockerfile .
 echo -e '\n---------- Extracting binary ----------\n'
-docker run -v ${PWD}/:/root/ --rm --entrypoint cp --user $UID:$UID p5-replay/build ffmpeg/build/ffmpeg /root/
+docker run -v ${PWD}/:/root/ --rm --entrypoint cp --user $UID:$UID p5-replay/ffmpeg ffmpeg/build/ffmpeg /root/

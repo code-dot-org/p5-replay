@@ -24,12 +24,15 @@ RUN cd ffmpeg && \
         --enable-avfilter \
         --enable-swresample \
         --enable-swscale \
+        --enable-filter=scale \
+        --enable-demuxer=rawvideo \
+        --enable-demuxer=image2pipe \
+        --enable-decoder=rawvideo \
         --enable-encoder=libx264 \
         --enable-protocol=pipe \
-        --enable-muxer=mp4 \
-        --enable-filter=scale \
+        --enable-protocol=file \
         --enable-gpl \
         --enable-libx264 \
+        --enable-muxer=mp4 \
     && \
     make -j
-VOLUME /build

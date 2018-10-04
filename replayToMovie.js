@@ -41,27 +41,27 @@ module.exports.runTestExport = async (outputPath, replay) => {
   p5Inst._renderer.resize(WIDTH, HEIGHT);
 
 // Spawn the ffmpeg process.
+  let args = [
+    '-f', 'image2pipe',
+    '-r', '30',
+    '-c:v', 'rawvideo',
+    '-pix_fmt', 'argb',
+    '-s', `${WIDTH}x${HEIGHT}`,
+    '-frame_size', '640000',
+    '-i', 'pipe:0',
+    '-crf', '18',
+    '-movflags', 'faststart',
+    outputPath,
+  ];
+  console.log(`${FFMPEG_PATH} ${args.join(' ')}`);
+  const child = spawn(FFMPEG_PATH, args);
+  child.stdout.pipe(process.stdout);
+  child.stderr.pipe(process.stdout);
+
   const toEncode = new Stream();
   toEncode.writable = true;
   toEncode.readable = true;
-  const child = spawn(FFMPEG_PATH,
-    [
-      '-i', 'pipe:',
-      outputPath,
-      '-pix_fmt', 'yuv420p',
-      '-framerate', '30',
-      '-movflags', 'faststart',
-      '-crf', '18',
-    ]
-  );
-  child.stdout.pipe(process.stdout);
-  child.stderr.pipe(process.stdout);
   toEncode.pipe(child.stdin);
-
-  function finishVideo() {
-    console.log('Finishing video');
-    toEncode.emit('end');
-  }
 
   // TODO: look up sprites/animations from in-memory cache
   const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
@@ -89,15 +89,8 @@ module.exports.runTestExport = async (outputPath, replay) => {
       p5Inst.drawSprites();
     }
 
-    return await new Promise((resolve, reject) => {
-      // Write an image.
-      const imageStream = canvas.createJPEGStream();
-      imageStream.on('error', reject);
-      imageStream.on('data', chunk => {
-        toEncode.emit('data', chunk)
-      });
-      imageStream.on('end', resolve);
-    });
+    // Write an image.
+    toEncode.emit('data', canvas.toBuffer('raw'));
   }
 
   async function generateVideo() {
@@ -109,7 +102,12 @@ module.exports.runTestExport = async (outputPath, replay) => {
     }
   }
 
-  await generateVideo().then(finishVideo);
+  function finishVideo() {
+    console.log('Finishing video');
+    toEncode.emit('end');
+  }
+
+  await generateVideo();
   console.log('Video generation complete');
   await new Promise((resolve, reject) => {
     console.log('Waiting for ffmpeg to encode');
@@ -121,10 +119,10 @@ module.exports.runTestExport = async (outputPath, replay) => {
       console.log('Encoding complete with return value ' + val);
       val === 0 ? resolve() : reject();
     });
+    finishVideo();
   });
 
   for (const [key, sprite] of Object.entries(sprites)) {
     sprite.remove();
   }
 };
-
