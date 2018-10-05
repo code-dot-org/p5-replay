@@ -31,7 +31,16 @@ const p5Inst = new p5();
 const WIDTH = 400;
 const HEIGHT = 400;
 
-module.exports.runTestExport = (replay, writer) => {
+module.exports.runTestExport = async (outputPath, replay) => {
+  let [pipe, promise] = module.exports.renderVideo(outputPath);
+  module.exports.renderImages(replay, pipe);
+  await promise.catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+};
+
+module.exports.renderImages = (replay, writer) => {
 // Create our emulated canvas.
   const canvas = Canvas.createCanvas(WIDTH, HEIGHT);
   canvas.style = {};
@@ -41,50 +50,34 @@ module.exports.runTestExport = (replay, writer) => {
   // TODO: look up sprites/animations from in-memory cache
   const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
   const sprites = {}; // lazily initialized when used
-  function generateFrame(n) {
-    const entry = replay[n];
-    if (entry) {
-      for (let [spriteName, modifiers] of Object.entries(entry)) {
-        if (!sprites[spriteName]) { // lazy create sprites
-          const sprite = p5Inst.createSprite();
-          sprite.addAnimation('default', anim);
-          sprites[spriteName] = sprite;
-        }
-        for (let [prop, value] of Object.entries(modifiers)) {
-          if (prop === 'x' || prop === 'y') {
-            sprites[spriteName].position[prop] = value;
-          } else {
-            sprites[spriteName][prop] = value;
-          }
-        }
+
+  replay.forEach(entry => {
+    Object.entries(entry).forEach(([spriteName, modifiers]) => {
+      if (!sprites[spriteName]) { // lazy create sprites
+        const sprite = p5Inst.createSprite();
+        sprite.addAnimation('default', anim);
+        sprites[spriteName] = sprite;
       }
-
-      p5Inst.background('#fff');
-      p5Inst.drawSprites();
-    }
-
+      Object.entries(modifiers).forEach(([prop, value]) => {
+        if (prop === 'x' || prop === 'y') {
+          sprites[spriteName].position[prop] = value;
+        } else {
+          sprites[spriteName][prop] = value;
+        }
+      });
+    });
+    p5Inst.background('#fff');
+    p5Inst.drawSprites();
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
-  }
+  });
 
-  function generateVideo() {
-    for (let i = 0; i < replay.length; i++) {
-      if (i % 100 === 0) {
-        // console.error('Generating frame ' + i);
-      }
-      generateFrame(i);
-    }
-  }
-
-  generateVideo();
-
-  for (const [key, sprite] of Object.entries(sprites)) {
-    sprite.remove();
-  }
+  Object.values(sprites).forEach(sprite => sprite.remove());
+  writer.end();
   console.error('finished');
 };
 
-module.exports.renderVideo = (input, outputFile) => {
+module.exports.renderVideo = (outputFile) => {
   // Spawn the ffmpeg process.
   let args = [
     '-f', 'image2pipe',
@@ -101,11 +94,11 @@ module.exports.renderVideo = (input, outputFile) => {
     outputFile
   ];
   let options = {
-    stdio: [input, 'inherit', 'inherit']
+    stdio: ['pipe', 'inherit', 'inherit']
   };
   console.log(`${FFMPEG_PATH} ${args.join(' ')}`);
   const child = spawn(FFMPEG_PATH, args, options);
-  return new Promise((resolve, reject) => {
+  const promise = new Promise((resolve, reject) => {
     console.log('Waiting for ffmpeg to encode');
     child.on('error', function(err) {
       console.log('Error during encoding: ' + err);
@@ -116,4 +109,5 @@ module.exports.renderVideo = (input, outputFile) => {
       val === 0 ? resolve() : reject();
     });
   });
+  return [child.stdin, promise];
 };

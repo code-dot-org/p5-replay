@@ -14,7 +14,6 @@
   "author": "Josh Lory <josh.lory@code.org>",
   "license": "Apache-2.0",
   "dependencies": {
-    "streamifier": "^0.1.1",
     "node-pre-gyp": "0.9.1",
     "canvas": "2.0.0-alpha.13",
     "@code-dot-org/p5.play": "1.2.2-cdo",
