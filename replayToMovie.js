@@ -1,7 +1,5 @@
-const Stream = require('stream');
 const spawn = require('child_process').spawn;
 const Canvas = require('canvas');
-const streamifier = require('streamifier');
 
 const FFMPEG_PATH = (process.platform === "darwin") ? "/usr/local/bin/ffmpeg" : "binaries/ffmpeg/ffmpeg";
 
@@ -30,44 +28,20 @@ const p5 = require('./node_modules/p5');
 require('./node_modules/p5/lib/addons/p5.play');
 const p5Inst = new p5();
 
-module.exports.runTestExport = async (outputPath, replay) => {
-  const WIDTH = 400;
-  const HEIGHT = 400;
+const WIDTH = 400;
+const HEIGHT = 400;
 
+module.exports.runTestExport = (replay, writer) => {
 // Create our emulated canvas.
   const canvas = Canvas.createCanvas(WIDTH, HEIGHT);
   canvas.style = {};
   p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
   p5Inst._renderer.resize(WIDTH, HEIGHT);
 
-// Spawn the ffmpeg process.
-  let args = [
-    '-f', 'image2pipe',
-    '-r', '30',
-    '-c:v', 'rawvideo',
-    '-pix_fmt', 'argb',
-    '-s', `${WIDTH}x${HEIGHT}`,
-    '-frame_size', '640000',
-    '-i', 'pipe:0',
-    '-crf', '18',
-    '-movflags', 'faststart',
-    outputPath,
-  ];
-  console.log(`${FFMPEG_PATH} ${args.join(' ')}`);
-  const child = spawn(FFMPEG_PATH, args);
-  child.stdout.pipe(process.stdout);
-  child.stderr.pipe(process.stdout);
-
-  const toEncode = new Stream();
-  toEncode.writable = true;
-  toEncode.readable = true;
-  toEncode.pipe(child.stdin);
-
   // TODO: look up sprites/animations from in-memory cache
   const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
-
   const sprites = {}; // lazily initialized when used
-  async function generateFrame(n) {
+  function generateFrame(n) {
     const entry = replay[n];
     if (entry) {
       for (let [spriteName, modifiers] of Object.entries(entry)) {
@@ -90,26 +64,48 @@ module.exports.runTestExport = async (outputPath, replay) => {
     }
 
     // Write an image.
-    toEncode.emit('data', canvas.toBuffer('raw'));
+    writer.write(canvas.toBuffer('raw'));
   }
 
-  async function generateVideo() {
+  function generateVideo() {
     for (let i = 0; i < replay.length; i++) {
       if (i % 100 === 0) {
-        console.log('Generating frame ' + i);
+        // console.error('Generating frame ' + i);
       }
-      await generateFrame(i);
+      generateFrame(i);
     }
   }
 
-  function finishVideo() {
-    console.log('Finishing video');
-    toEncode.emit('end');
-  }
+  generateVideo();
 
-  await generateVideo();
-  console.log('Video generation complete');
-  await new Promise((resolve, reject) => {
+  for (const [key, sprite] of Object.entries(sprites)) {
+    sprite.remove();
+  }
+  console.error('finished');
+};
+
+module.exports.renderVideo = (input, outputFile) => {
+  // Spawn the ffmpeg process.
+  let args = [
+    '-f', 'image2pipe',
+    '-r', '30',
+    '-c:v', 'rawvideo',
+    '-pix_fmt', 'argb',
+    '-s', `${WIDTH}x${HEIGHT}`,
+    '-frame_size', (WIDTH * HEIGHT * 4),
+    '-i', 'pipe:0',
+    '-crf', '18',
+    '-movflags', 'faststart',
+    '-f', 'mp4',
+    '-y',
+    outputFile
+  ];
+  let options = {
+    stdio: [input, 'inherit', 'inherit']
+  };
+  console.log(`${FFMPEG_PATH} ${args.join(' ')}`);
+  const child = spawn(FFMPEG_PATH, args, options);
+  return new Promise((resolve, reject) => {
     console.log('Waiting for ffmpeg to encode');
     child.on('error', function(err) {
       console.log('Error during encoding: ' + err);
@@ -119,10 +115,5 @@ module.exports.runTestExport = async (outputPath, replay) => {
       console.log('Encoding complete with return value ' + val);
       val === 0 ? resolve() : reject();
     });
-    finishVideo();
   });
-
-  for (const [key, sprite] of Object.entries(sprites)) {
-    sprite.remove();
-  }
 };

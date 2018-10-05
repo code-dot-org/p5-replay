@@ -1,12 +1,5 @@
-const fs = require('fs');
-const { runTestExport } = require('./replayToMovie');
-const uuidv4 = require('uuid/v4');
+const {runTestExport} = require('./replayToMovie');
+const replay = require('./test/fixtures/replay.json');
 
-
-(async function() {
-  const uuid = uuidv4();
-  const outputPath = '/tmp/video-' + uuid + '.mp4';
-  const replay = require('./test/fixtures/replay.json');
-  await runTestExport(outputPath, replay);
-  console.log(`Video saved to ${outputPath}`)
-})();
+process.stdout._handle.setBlocking(true);
+runTestExport(replay, process.stdout);
