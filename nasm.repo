@@ -1,0 +1,6 @@
+[nasm]
+name=The Netwide Assembler
+baseurl=http://www.nasm.us/pub/nasm/stable/linux/
+enabled=1
+gpgcheck=0
+priority=1
