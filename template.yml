@@ -18,6 +18,7 @@ Globals:
     Environment:
       Variables:
         DESTINATION_BUCKET: !Ref DestinationBucketName
+        QUALITY: 33
   Api:
     Cors: "'*'"
 
@@ -26,8 +27,6 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref SourceBucketName
-      AccessControl: PublicRead
-      # TODO: verify that CORS requests work
       CorsConfiguration:
         CorsRules:
           - AllowedMethods: [GET, PUT, POST, HEAD]
@@ -37,12 +36,21 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref DestinationBucketName
-      AccessControl: PublicRead
       CorsConfiguration:
         CorsRules:
           - AllowedMethods: [GET, PUT, POST, HEAD]
             AllowedOrigins: ['*']
             AllowedHeaders: ['*']
+  DestinationBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DestinationBucket
+      PolicyDocument:
+        Statement:
+        - Action: ['s3:GetObject']
+          Effect: Allow
+          Resource: !Sub "arn:aws:s3:::${DestinationBucket}/*"
+          Principal: '*'
   RunTest:
     Type: AWS::Serverless::Function
     Properties:

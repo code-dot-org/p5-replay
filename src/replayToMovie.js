@@ -3,6 +3,7 @@ const Canvas = require('canvas');
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
+const CRF = process.env.QUALITY || 23;
 
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
@@ -94,7 +95,7 @@ module.exports.renderVideo = (outputFile) => {
     '-s', `${WIDTH}x${HEIGHT}`,
     '-frame_size', (WIDTH * HEIGHT * 4),
     '-i', 'pipe:0',
-    '-crf', '18',
+    '-crf', CRF.toString(),
     '-movflags', 'faststart',
     '-f', 'mp4',
     '-preset', 'ultrafast',
