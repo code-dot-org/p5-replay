@@ -1,7 +1,8 @@
 const spawn = require('child_process').spawn;
 const Canvas = require('canvas');
 
-const FFMPEG_PATH = (process.platform === "darwin") ? "/usr/local/bin/ffmpeg" : "binaries/ffmpeg/ffmpeg";
+const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
+const LOCAL = process.env.AWS_SAM_LOCAL;
 
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
@@ -31,8 +32,15 @@ const p5Inst = new p5();
 const WIDTH = 400;
 const HEIGHT = 400;
 
+function debug(str) {
+  if (LOCAL) {
+    console.log(str);
+  }
+}
+
 module.exports.runTestExport = async (outputPath, replay) => {
   let [pipe, promise] = module.exports.renderVideo(outputPath);
+  pipe._handle.setBlocking(true);
   module.exports.renderImages(replay, pipe);
   await promise.catch(err => {
     console.error(err);
@@ -80,9 +88,8 @@ module.exports.renderImages = (replay, writer) => {
 module.exports.renderVideo = (outputFile) => {
   // Spawn the ffmpeg process.
   let args = [
-    '-f', 'image2pipe',
+    '-f', 'rawvideo',
     '-r', '30',
-    '-c:v', 'rawvideo',
     '-pix_fmt', 'argb',
     '-s', `${WIDTH}x${HEIGHT}`,
     '-frame_size', (WIDTH * HEIGHT * 4),
@@ -90,22 +97,28 @@ module.exports.renderVideo = (outputFile) => {
     '-crf', '18',
     '-movflags', 'faststart',
     '-f', 'mp4',
+    '-preset', 'ultrafast',
+    '-tune', 'zerolatency',
+    '-profile:v', 'baseline',
+    '-level', '3.0',
+    '-pix_fmt', 'yuv420p',
     '-y',
     outputFile
   ];
+  const stdout = LOCAL ? 'inherit' : 'ignore';
   let options = {
-    stdio: ['pipe', 'inherit', 'inherit']
+    stdio: ['pipe', stdout, stdout]
   };
-  console.log(`${FFMPEG_PATH} ${args.join(' ')}`);
+  debug(`${FFMPEG_PATH} ${args.join(' ')}`);
   const child = spawn(FFMPEG_PATH, args, options);
   const promise = new Promise((resolve, reject) => {
-    console.log('Waiting for ffmpeg to encode');
+    debug('Waiting for ffmpeg to encode');
     child.on('error', function(err) {
-      console.log('Error during encoding: ' + err);
+      console.error('Error during encoding: ' + err);
       reject();
     });
     child.on('exit', function(val) {
-      console.log('Encoding complete with return value ' + val);
+      debug('Encoding complete with return value ' + val);
       val === 0 ? resolve() : reject();
     });
   });

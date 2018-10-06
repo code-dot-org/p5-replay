@@ -4,7 +4,14 @@ const uuidv4 = require('uuid/v4');
 const {tmpdir} = require('os');
 
 const BUCKET = process.env.DESTINATION_BUCKET;
+const LOCAL = process.env.AWS_SAM_LOCAL;
 const UPLOAD_KEY = 'videos';
+
+function debug(str) {
+  if (LOCAL) {
+    console.log(str);
+  }
+}
 
 async function renderVideo(replay, callback) {
   try {
@@ -12,29 +19,27 @@ async function renderVideo(replay, callback) {
     const outputPath = '/tmp/video-' + uuid + '.mp4';
     await runTestExport(outputPath, replay);
 
-    console.log("Export complete, uploading");
+    debug("Export complete, uploading");
     await uploadFolder(BUCKET, UPLOAD_KEY, '/tmp/');
 
     const fileStats = fs.statSync(outputPath);
     fs.unlinkSync(outputPath); // Delete file when done
 
-    console.log("Upload complete, returning response");
-    responseBody = JSON.stringify({
+    debug("Upload complete, returning response");
+    const responseBody = JSON.stringify({
       path: outputPath,
       stats: fileStats, // TODO: probably don't need to return this to the client, may want to check size somewhere though
       s3Path: 'http://s3.amazonaws.com/' + BUCKET + '/' + UPLOAD_KEY + '/video-' + uuid + '.mp4'
     });
-    const response = {
+    callback(null, {
       statusCode: 200,
-      body: responseBody,
-    };
-    callback(null, response);
+      body: responseBody
+    });
   } catch (error) {
-    const response = {
+    callback(null, {
       statusCode: 500,
-      body: JSON.stringify(error),
-    };
-    callback(null, response);
+      body: JSON.stringify(error)
+    });
   }
 }
 
@@ -65,6 +70,9 @@ const { join, basename } = require('path');
 const s3 = new AWS.S3();
 
 function upload(Bucket, Key, Body, ContentEncoding, ContentType) {
+  if (LOCAL) {
+    return Promise.resolve();
+  }
   return s3.putObject({
     Bucket: Bucket,
     Key: Key,
@@ -79,15 +87,15 @@ function uploadFolder(bucket, key, folder, contentEncoding, contentType) {
     const files = fs.readdirSync(folder);
     Promise.all(
       files.map((file) => {
-        console.log("Uploading file to " + file);
-        return upload(bucket, `${key}/${file}`, fs.createReadStream(join(folder, file), contentEncoding, contentType));
+        debug("Uploading file to " + file);
+        return upload(bucket, `${key}/${file}`, fs.createReadStream(join(folder, file)), contentEncoding, contentType);
       })
     ).then(resolve).catch(reject);
   })
 }
 
 function download_and_return_tmp_path(Bucket, Key) {
-  console.log(`Downloading file: ${Key} from bucket: ${Bucket}`);
+  debug(`Downloading file: ${Key} from bucket: ${Bucket}`);
 
   return new Promise((resolve, reject) => {
     const destPath = join(tmpdir(), basename(Key));
@@ -95,9 +103,15 @@ function download_and_return_tmp_path(Bucket, Key) {
     file.on('close', () => resolve(destPath));
     file.on('error', reject);
 
-    s3.getObject({Bucket, Key})
-      .on('error', reject)
-      .createReadStream()
-      .pipe(file);
+    if (LOCAL) {
+      const replay = JSON.stringify(require('./test/fixtures/replay.json'));
+      file.write(replay);
+      file.end();
+    } else {
+      s3.getObject({Bucket, Key})
+        .on('error', reject)
+        .createReadStream()
+        .pipe(file);
+    }
   });
 }

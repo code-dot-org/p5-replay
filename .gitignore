@@ -6,9 +6,11 @@
 .serverless
 
 # Project-specific
-.awscredentials
-node_modules
+**/node_modules
 yarn-error.log
+.cache
+**/.yarn
+**/binaries
 
 # IDE Stuff
 **/.idea
