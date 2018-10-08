@@ -65,6 +65,7 @@ module.exports.runTest = async (event, context, callback) => {
 };
 
 // S3 functions modified from https://github.com/kvaggelakos/serverless-ffmpeg
+// noinspection NpmUsedModulesInstalled
 const AWS = require('aws-sdk');
 const { join, basename } = require('path');
 const s3 = new AWS.S3();

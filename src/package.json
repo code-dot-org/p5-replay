@@ -19,7 +19,6 @@
     "canvas": "2.0.0-alpha.13",
     "@code-dot-org/p5.play": "1.2.2-cdo",
     "p5": "^0.7.1",
-    "aws-sdk": "^2.173.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

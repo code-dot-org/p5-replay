@@ -63,16 +63,17 @@ module.exports.renderImages = (replay, writer) => {
 
   replay.forEach(entry => {
     Object.entries(entry).forEach(([spriteName, modifiers]) => {
-      if (!sprites[spriteName]) { // lazy create sprites
-        const sprite = p5Inst.createSprite();
+      let sprite;
+      if (!(sprite = sprites[spriteName])) { // lazy create sprites
+        sprite = p5Inst.createSprite();
         sprite.addAnimation('default', anim);
         sprites[spriteName] = sprite;
       }
       Object.entries(modifiers).forEach(([prop, value]) => {
         if (prop === 'x' || prop === 'y') {
-          sprites[spriteName].position[prop] = value;
+          sprite.position[prop] = value;
         } else {
-          sprites[spriteName][prop] = value;
+          sprite[prop] = value;
         }
       });
     });

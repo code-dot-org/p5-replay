@@ -2,9 +2,6 @@
 // Usage:
 // node generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
 
-// TODO: replayToMovie.js doesn't support this output yet, it needs to
-// be modified to support multiple sprites
-
 const myArgs = process.argv.slice(2);
 const FRAMES = parseInt(myArgs[0]);
 const SPRITE_COUNT = parseInt(myArgs[1]);
