@@ -1,0 +1,48 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  p5-replay service IAM role.
+  Note: CAPABILITY_IAM capability is required to deploy this stack.
+
+Parameters:
+  DestinationBucketName:
+    Type: String
+  SourceBucketName:
+    Type: String
+
+Resources:
+  p5ReplayRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: ['sts:AssumeRole']
+            Effect: Allow
+            Principal: {Service: [lambda.amazonaws.com]}
+      Path: /
+      Policies:
+        - PolicyName: p5ReplayRolePolicy
+          PolicyDocument:
+            Statement:
+              Effect: Allow
+              Action:
+                - "s3:GetObject"
+                - "s3:ListBucket"
+                - "s3:GetBucketLocation"
+                - "s3:GetObjectVersion"
+                - "s3:PutObject"
+                - "s3:GetLifecycleConfiguration"
+                - "s3:PutLifecycleConfiguration"
+                - "s3:DeleteObject"
+              Resource:
+                - "arn:aws:s3:::${SourceBucketName}"
+                - "arn:aws:s3:::${SourceBucketName}/*"
+                - "arn:aws:s3:::${DestinationBucketName}"
+                - "arn:aws:s3:::${DestinationBucketName}/*"
+      ManagedPolicyArns:
+        - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+
+Outputs:
+  p5ReplayRole:
+    Description: P5 Replay Role ARN
+    Value: !GetAtt p5ReplayRole.Arn
+    Export: {Name: p5ReplayRole}
