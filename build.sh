@@ -17,6 +17,7 @@ docker run \
 echo -e '\n---------- Creating ffmpeg build container ----------\n'
 docker build -t p5-replay/ffmpeg -f ./ffmpeg.dockerfile .
 echo -e '\n---------- Extracting binary ----------\n'
+rm -rf src/binaries/ffmpeg
 mkdir -p src/binaries/ffmpeg
 docker run \
     -v ${PWD}/src:/root/ \

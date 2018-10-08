@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Node.js .mp4 generator for p5.js sketches",
   "scripts": {
-    "test": "/bin/bash -c 'sam local invoke --event <(sam local generate-event s3 put) RenderFromS3'",
+    "test": "sam local generate-event s3 put | sam local invoke --template ../template.yml RenderFromS3",
     "postinstall": "cd node_modules; cp @code-dot-org/p5.play/lib/p5.play.js p5/lib/addons",
     "deploy": "serverless deploy",
     "stack-destroy": "sls remove -v"
