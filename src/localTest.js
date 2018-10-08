@@ -1,3 +1,4 @@
+process.env.AWS_SAM_LOCAL = true;
 const {runTestExport} = require('./replayToMovie');
 const uuidv4 = require('uuid/v4');
 

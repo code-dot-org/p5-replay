@@ -16,6 +16,10 @@ RUN yum install -y \
 COPY nasm.repo /etc/yum.repos.d/
 RUN yum update -y
 
+ENV CFLAGS '-flto -ffat-lto-objects -Ofast'
+ENV CXXFLAGS "$CFLAGS"
+ENV LDFLAGS '-flto=8'
+
 RUN git clone --depth 1 git://git.videolan.org/x264
 RUN cd x264 && \
     ./configure \
@@ -30,9 +34,6 @@ RUN git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 RUN cd ffmpeg && \
     mkdir build && \
     cd build && \
-    CFLAGS='-flto -ffat-lto-objects' \
-    CXXFLAGS='-flto -ffat-lto-objects' \
-    LDFLAGS='-flto=8' \
     ../configure \
         --disable-all \
         --enable-ffmpeg \

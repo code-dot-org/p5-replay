@@ -1,4 +1,5 @@
 const spawn = require('child_process').spawn;
+const os = require('os');
 const Canvas = require('canvas');
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
@@ -83,7 +84,7 @@ module.exports.renderImages = (replay, writer) => {
 
   Object.values(sprites).forEach(sprite => sprite.remove());
   writer.end();
-  console.error('finished');
+  debug('finished');
 };
 
 module.exports.renderVideo = (outputFile) => {
@@ -91,7 +92,7 @@ module.exports.renderVideo = (outputFile) => {
   let args = [
     '-f', 'rawvideo',
     '-r', '30',
-    '-pix_fmt', 'argb',
+    '-pix_fmt', (os.endianness() === 'LE' ? 'bgra' : 'argb'),
     '-s', `${WIDTH}x${HEIGHT}`,
     '-frame_size', (WIDTH * HEIGHT * 4),
     '-i', 'pipe:0',
