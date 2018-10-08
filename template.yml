@@ -56,8 +56,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: handler.runTest
-      Policies:
-        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+      Role: !ImportValue IAM-p5ReplayRoleARN
       Events:
         Get:
           Type: Api
@@ -69,8 +68,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: handler.render
-      Policies:
-        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+      Role: !ImportValue IAM-p5ReplayRoleARN
       Events:
         Post:
           Type: Api
@@ -82,9 +80,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: handler.renderFromS3
-      Policies:
-        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
-        - S3CrudPolicy: {BucketName: !Ref SourceBucketName}
+      Role: !ImportValue IAM-p5ReplayRoleARN
       Events:
         Created:
           Type: S3
