@@ -15,6 +15,7 @@ window.performance = {now: Date.now};
 window.document = {
   hasFocus: () => {
   },
+  getElementsByTagName: () => [],
   createElement: type => {
     if (type !== 'canvas') {
       throw new Error('Cannot create type.');
@@ -23,16 +24,49 @@ window.document = {
   }
 };
 window.screen = {};
-window.addEventListener = () => {
-};
+window.addEventListener = () => {};
 window.Image = Canvas.Image;
 window.ImageData = Canvas.ImageData;
-const p5 = require('./node_modules/p5');
-require('./node_modules/p5/lib/addons/p5.play');
-const p5Inst = new p5();
 
+// Initialize p5
+// sprite and move values copied from cdo/apps/src/dance/p5.dance.js
+// TODO elijah: find a less-fragile way to manage this shared data
+const SPRITE_NAMES = ["ALIEN", "BEAR", "CAT", "DOG", "DUCK", "FROG", "MOOSE", "PINEAPPLE", "ROBOT", "SHARK", "UNICORN"];
+const MOVE_NAMES = ["Rest", "ClapHigh", "Clown", "Dab", "DoubleJam", "Drop", "Floss", "Fresh", "Kick", "Roll", "ThisOrThat", "Thriller"];
+
+const IMAGE_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_sm/";
+const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
+
+const p5 = require('./node_modules/p5');
+require('./node_modules/p5/lib/addons/p5.play');
+const p5Inst = new p5(function (p5obj) {
+  p5obj._fixedSpriteAnimationFrameSizes = true;
+});
+
+function loadNewSpriteSheet(urlOrPath) {
+  return new Promise(function (resolve, reject) {
+    p5Inst.loadImage(urlOrPath, resolve, reject);
+  }).then(function (image) {
+    return p5Inst.loadSpriteSheet(image, 300, 300, 24);
+  });
+}
+
+async function initialize() {
+  // Load spritesheets
+  for (let i = 0; i < SPRITE_NAMES.length; i++) {
+    const spriteName = SPRITE_NAMES[i];
+    debug(`loading animations for ${spriteName}`);
+    ANIMATIONS[spriteName] = [];
+    for (let j = 0; j < MOVE_NAMES.length; j++) {
+      const moveName = MOVE_NAMES[j];
+      const file = IMAGE_BASE + spriteName + "_" + moveName + ".png";
+      const spriteSheet = await loadNewSpriteSheet(file);
+      ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet))
+    }
+  }
+}
 
 function debug(str) {
   if (LOCAL) {
@@ -43,6 +77,7 @@ function debug(str) {
 module.exports.runTestExport = async (outputPath, replay) => {
   let [pipe, promise] = module.exports.renderVideo(outputPath);
   pipe._handle.setBlocking(true);
+  await initialize();
   module.exports.renderImages(replay, pipe);
   await promise.catch(err => {
     console.error(err);
@@ -51,39 +86,42 @@ module.exports.runTestExport = async (outputPath, replay) => {
 };
 
 module.exports.renderImages = (replay, writer) => {
-// Create our emulated canvas.
+  // Create our emulated canvas.
   const canvas = Canvas.createCanvas(WIDTH, HEIGHT);
   canvas.style = {};
   p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
   p5Inst._renderer.resize(WIDTH, HEIGHT);
 
-  // TODO: look up sprites/animations from in-memory cache
-  const anim = p5Inst.loadAnimation('./test/fixtures/sprite.png');
-  const sprites = {}; // lazily initialized when used
-
+  const sprites = [];
   replay.forEach(entry => {
-    Object.entries(entry).forEach(([spriteName, modifiers]) => {
-      let sprite;
-      if (!(sprite = sprites[spriteName])) { // lazy create sprites
-        sprite = p5Inst.createSprite();
-        sprite.addAnimation('default', anim);
-        sprites[spriteName] = sprite;
-      }
-      Object.entries(modifiers).forEach(([prop, value]) => {
-        if (prop === 'x' || prop === 'y') {
-          sprite.position[prop] = value;
-        } else {
-          sprite[prop] = value;
+    if (entry && entry.length) {
+      entry.forEach(function (sprite, i) {
+        if (!sprites[i]) {
+          sprites[i] = p5Inst.createSprite();
+
+          ANIMATIONS[sprite.style].forEach(function (animation, j) {
+            sprites[i].addAnimation("anim" + j, animation);
+          });
         }
+
+        sprites[i].changeAnimation(sprite.animationLabel);
+        sprites[i].mirrorX(sprite.mirrorX);
+        sprites[i].rotation = sprite.rotation;
+        sprites[i].scale = sprite.scale;
+        sprites[i].tint = "hsb(" + (Math.round(sprite.tint) % 360) + ", 100%, 100%)";
+        sprites[i].setFrame(sprite.animationFrame);
+        sprites[i].x = sprite.x;
+        sprites[i].y = sprite.y;
       });
-    });
+    }
+
     p5Inst.background('#fff');
     p5Inst.drawSprites();
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
   });
 
-  Object.values(sprites).forEach(sprite => sprite.remove());
+  sprites.forEach(sprite => sprite.remove());
   writer.end();
   debug('finished');
 };
