@@ -5,10 +5,14 @@ Description: p5-replay service
 Parameters:
   DestinationBucketName:
     Type: String
-    Default: cdo-p5-replay-destination
   SourceBucketName:
     Type: String
-    Default: cdo-p5-replay-source
+  HostedZoneName:
+    Type: String
+    AllowedPattern: '.*\.$'
+    ConstraintDescription: Must end with trailing dot `.`
+  DomainName:
+    Type: String
 
 Globals:
   Function:
@@ -56,8 +60,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: handler.runTest
-      Policies:
-        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+      Role: !ImportValue p5ReplayRole
       Events:
         Get:
           Type: Api
@@ -69,8 +72,7 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: handler.render
-      Policies:
-        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+      Role: !ImportValue p5ReplayRole
       Events:
         Post:
           Type: Api
@@ -82,12 +84,38 @@ Resources:
     Properties:
       CodeUri: ./src
       Handler: handler.renderFromS3
-      Policies:
-        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
-        - S3CrudPolicy: {BucketName: !Ref SourceBucketName}
+      Role: !ImportValue p5ReplayRole
       Events:
         Created:
           Type: S3
           Properties:
             Bucket: !Ref SourceBucket
             Events: 's3:ObjectCreated:*'
+  APICertificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      ValidationMethod: DNS
+  APIDomainName:
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      CertificateArn: !Ref APICertificate
+      DomainName: !Ref DomainName
+  APIBasePathMapping:
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      DomainName: !Ref APIDomainName
+      RestApiId: !Ref ServerlessRestApi
+      Stage: Prod
+  APIDomain:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: !Ref HostedZoneName
+      Name: !Ref DomainName
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt APIDomainName.DistributionDomainName
+        HostedZoneId: !GetAtt APIDomainName.DistributionHostedZoneId
+Outputs:
+  ApiUrl:
+    Value: !Sub "https://${DomainName}"

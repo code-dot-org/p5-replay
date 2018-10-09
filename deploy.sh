@@ -14,4 +14,4 @@ aws cloudformation package \
 aws cloudformation deploy \
   --template-file ${OUTPUT_TEMPLATE} \
   --stack-name ${STACK} \
-  --capabilities CAPABILITY_IAM
+  "$@"
