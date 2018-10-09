@@ -1,0 +1,93 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: p5-replay service
+
+Parameters:
+  DestinationBucketName:
+    Type: String
+    Default: cdo-p5-replay-destination
+  SourceBucketName:
+    Type: String
+    Default: cdo-p5-replay-source
+
+Globals:
+  Function:
+    Runtime: nodejs8.10
+    Timeout: 30
+    MemorySize: 3008
+    Environment:
+      Variables:
+        DESTINATION_BUCKET: !Ref DestinationBucketName
+        QUALITY: 33
+  Api:
+    Cors: "'*'"
+
+Resources:
+  SourceBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref SourceBucketName
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods: [GET, PUT, POST, HEAD]
+            AllowedOrigins: ['*']
+            AllowedHeaders: ['*']
+  DestinationBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref DestinationBucketName
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods: [GET, PUT, POST, HEAD]
+            AllowedOrigins: ['*']
+            AllowedHeaders: ['*']
+  DestinationBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DestinationBucket
+      PolicyDocument:
+        Statement:
+        - Action: ['s3:GetObject']
+          Effect: Allow
+          Resource: !Sub "arn:aws:s3:::${DestinationBucket}/*"
+          Principal: '*'
+  RunTest:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.runTest
+      Policies:
+        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+      Events:
+        Get:
+          Type: Api
+          Properties:
+            Path: /runTest
+            Method: get
+  Render:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.render
+      Policies:
+        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+      Events:
+        Post:
+          Type: Api
+          Properties:
+            Path: /render
+            Method: post
+  RenderFromS3:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.renderFromS3
+      Policies:
+        - S3CrudPolicy: {BucketName: !Ref DestinationBucketName}
+        - S3CrudPolicy: {BucketName: !Ref SourceBucketName}
+      Events:
+        Created:
+          Type: S3
+          Properties:
+            Bucket: !Ref SourceBucket
+            Events: 's3:ObjectCreated:*'
