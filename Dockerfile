@@ -4,4 +4,4 @@ RUN curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum
 RUN yum install -y nodejs yarn
 WORKDIR /build
 ENV HOME=/build
-ENTRYPOINT yarn --prod --cache-folder /tmp
+CMD yarn --prod --cache-folder /tmp
