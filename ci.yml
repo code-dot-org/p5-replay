@@ -1,0 +1,137 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: p5-replay Continuous Integration pipeline
+
+Parameters:
+  ArtifactBucket:
+    Type: String
+    Description: Name of existing S3 bucket for storing pipeline artifacts
+  GitHubOwner:
+    Type: String
+    Description: GitHub repository owner
+  GitHubRepo:
+    Type: String
+    Default: p5-replay
+    Description: GitHub repository name
+  GitHubBranch:
+    Type: String
+    Default: master
+    Description: GitHub repository branch
+  GitHubToken:
+    Type: String
+    Description: GitHub repository OAuth token
+    NoEcho: true
+  CodePipelineServiceRoleName:
+    Type: String
+    Description: CodePipeline Service Role name
+    Default: AWS-CodePipeline-Service
+
+Resources:
+  Pipeline:
+    Type: AWS::CodePipeline::Pipeline
+    Properties:
+      RoleArn: !Sub "arn:aws:iam::${AWS::AccountId}:role/${CodePipelineServiceRoleName}"
+      ArtifactStore:
+        Type: S3
+        Location: !Ref ArtifactBucket
+      Stages:
+        - Name: Source
+          Actions:
+            - Name: Source
+              RunOrder: 1
+              ActionTypeId:
+                Category: Source
+                Owner: ThirdParty
+                Version: 1
+                Provider: GitHub
+              Configuration:
+                Owner: !Ref GitHubOwner
+                Repo: !Ref GitHubRepo
+                Branch: !Ref GitHubBranch
+                OAuthToken: !Ref GitHubToken
+                PollForSourceChanges: false
+              OutputArtifacts: [Name: Repo]
+        - Name: Build
+          Actions:
+            - Name: Build
+              RunOrder: 1
+              ActionTypeId:
+                Category: Build
+                Owner: AWS
+                Version: 1
+                Provider: CodeBuild
+              InputArtifacts: [Name: Repo]
+              Configuration:
+                ProjectName: !Ref Build
+              OutputArtifacts: [Name: Package]
+        - Name: Deploy
+          Actions:
+            - Name: CreateChangeSet
+              RunOrder: 1
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: 1
+                Provider: CloudFormation
+              InputArtifacts: [Name: Package]
+              Configuration:
+                ActionMode: CHANGE_SET_REPLACE
+                ChangeSetName: ProdChangeSet
+                RoleArn: !ImportValue p5ReplayCFNRole
+                StackName: !Ref AWS::StackName
+                TemplatePath: Package::output.yml
+              OutputArtifacts: [Name: ChangeSet]
+            - Name: Deploy
+              RunOrder: 2
+              ActionTypeId:
+                Category: Deploy
+                Owner: AWS
+                Version: 1
+                Provider: CloudFormation
+              InputArtifacts: [Name: ChangeSet]
+              Configuration:
+                ActionMode: CHANGE_SET_EXECUTE
+                ChangeSetName: ProdChangeSet
+                StackName: !Ref AWS::StackName
+  Webhook:
+    Type: AWS::CodePipeline::Webhook
+    Properties:
+      AuthenticationConfiguration:
+        SecretToken: !Ref AWS::AccountId
+      Filters:
+        - JsonPath: "$.ref"
+          MatchEquals: refs/heads/{Branch}
+      Authentication: GITHUB_HMAC
+      TargetPipeline: !Ref Pipeline
+      TargetAction: Source
+      Name: p5-replay-webhook
+      TargetPipelineVersion: !GetAtt Pipeline.Version
+      RegisterWithThirdParty: true
+  Build:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      Artifacts:
+        Type: CODEPIPELINE
+      Environment:
+        ComputeType: BUILD_GENERAL1_LARGE
+        Image: aws/codebuild/docker:17.09.0
+        Type: LINUX_CONTAINER
+      ServiceRole: !ImportValue p5ReplayCodeBuildRole
+      Source:
+        Type: CODEPIPELINE
+        GitCloneDepth: 1
+        BuildSpec: !Sub |
+          version: 0.2
+          env:
+            variables:
+              OUTPUT_TEMPLATE: output.yml
+              STACK: ${AWS::StackName}
+              S3_BUCKET: !Ref ArtifactBucket
+          phases:
+            install:
+              commands:
+                - /bin/bash ./build.sh
+            build:
+              commands:
+                - /bin/bash ./package.sh
+          artifacts:
+            files: [output.yml]

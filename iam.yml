@@ -8,6 +8,8 @@ Parameters:
     Type: String
   SourceBucketName:
     Type: String
+  ArtifactBucket:
+    Type: String
 
 Resources:
   p5ReplayRole:
@@ -41,8 +43,66 @@ Resources:
       ManagedPolicyArns:
         - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 
+  p5ReplayCFNRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: ['sts:AssumeRole']
+            Effect: Allow
+            Principal: {Service: [cloudformation.amazonaws.com]}
+        Version: '2012-10-17'
+      Path: /
+      Policies:
+        - PolicyName: ManageResourcesAccess
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "apigateway:*"
+                  - "lambda:*"
+                Resource: '*'
+  p5ReplayCodeBuildRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: ['sts:AssumeRole']
+            Effect: Allow
+            Principal: {Service: [codebuild.amazonaws.com]}
+        Version: '2012-10-17'
+      Path: /service-role/
+      Policies:
+        - PolicyName: CodeBuildResourcesAccess
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "logs:CreateLogGroup"
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
+                Resource:
+                  - !Sub "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/*"
+              - Effect: Allow
+                Action:
+                  - "s3:PutObject"
+                  - "s3:GetObject"
+                  - "s3:GetObjectVersion"
+                  - "s3:ListBucket"
+                Resource:
+                  - !Sub "arn:aws:s3:::codepipeline-${AWS::Region}-*"
+                  - !Sub "arn:aws:s3:::${ArtifactBucket}/*"
+                  - !Sub "arn:aws:s3:::${ArtifactBucket}"
 Outputs:
   p5ReplayRole:
     Description: P5 Replay Role ARN
     Value: !GetAtt p5ReplayRole.Arn
     Export: {Name: p5ReplayRole}
+  p5ReplayCFNRole:
+    Description: P5 Replay CFN Role ARN
+    Value: !GetAtt p5ReplayCFNRole.Arn
+    Export: {Name: p5ReplayCFNRole}
+  p5ReplayCodeBuildRole:
+    Description: P5 Replay CodeBuild Role ARN
+    Value: !GetAtt p5ReplayCodeBuildRole.Arn
+    Export: {Name: p5ReplayCodeBuildRole}

@@ -1,15 +1,9 @@
 #!/bin/bash -xe
 
-S3_BUCKET=${S3_BUCKET-'cf-templates-p9nfb0gyyrpf-us-east-1'}
+export OUTPUT_TEMPLATE=${OUTPUT_TEMPLATE-$(mktemp)}
+./package.sh
+
 STACK=${STACK-'p5-replay'}
-
-TEMPLATE=template.yml
-OUTPUT_TEMPLATE=$(mktemp)
-
-aws cloudformation package \
-  --template-file ${TEMPLATE} \
-  --s3-bucket ${S3_BUCKET} \
-  --output-template-file ${OUTPUT_TEMPLATE}
 
 aws cloudformation deploy \
   --template-file ${OUTPUT_TEMPLATE} \
