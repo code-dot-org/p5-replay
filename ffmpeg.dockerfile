@@ -13,7 +13,7 @@ RUN yum install -y \
     git \
     curl \
     tar
-COPY nasm.repo /etc/yum.repos.d/
+ADD nasm.repo /etc/yum.repos.d/
 RUN yum update -y
 
 ENV CFLAGS '-flto -ffat-lto-objects -Ofast'
