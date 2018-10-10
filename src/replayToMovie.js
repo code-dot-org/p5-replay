@@ -39,8 +39,8 @@ const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
 
-const p5 = require('./node_modules/p5');
-require('./node_modules/p5/lib/addons/p5.play');
+const p5 = require('./node_modules/@code-dot-org/p5.play/p5.js');
+require('./node_modules/@code-dot-org/p5.play/lib/p5.play.js');
 const p5Inst = new p5(function (p5obj) {
   p5obj._fixedSpriteAnimationFrameSizes = true;
 });
