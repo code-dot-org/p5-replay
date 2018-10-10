@@ -1,10 +1,14 @@
 #!/bin/bash -xe
 
-S3_BUCKET=${S3_BUCKET-'cf-templates-p9nfb0gyyrpf-us-east-1'}
-STACK=${STACK-'p5-replay'}
+# Deploys API service CloudFormation stack.
 
+S3_BUCKET=${S3_BUCKET?Required}
+
+STACK=${STACK-'p5-replay'}
 TEMPLATE=template.yml
 OUTPUT_TEMPLATE=$(mktemp)
+
+./build.sh
 
 aws cloudformation package \
   --template-file ${TEMPLATE} \
