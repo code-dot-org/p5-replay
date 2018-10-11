@@ -53,18 +53,19 @@ function loadNewSpriteSheet(urlOrPath) {
   });
 }
 
-async function initialize() {
-  // Load spritesheets
-  for (let i = 0; i < SPRITE_NAMES.length; i++) {
-    const spriteName = SPRITE_NAMES[i];
-    debug(`loading animations for ${spriteName}`);
-    ANIMATIONS[spriteName] = [];
-    for (let j = 0; j < MOVE_NAMES.length; j++) {
-      const moveName = MOVE_NAMES[j];
-      const file = IMAGE_BASE + spriteName + "_" + moveName + ".png";
-      const spriteSheet = await loadNewSpriteSheet(file);
-      ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet))
-    }
+async function loadSprite(spriteName) {
+  debug(Object.keys(ANIMATIONS));
+  if (ANIMATIONS[spriteName]) {
+    return;
+  }
+
+  debug(`loading animations for ${spriteName}`);
+  ANIMATIONS[spriteName] = [];
+  for (let j = 0; j < MOVE_NAMES.length; j++) {
+    const moveName = MOVE_NAMES[j];
+    const file = IMAGE_BASE + spriteName + "_" + moveName + ".png";
+    const spriteSheet = await loadNewSpriteSheet(file);
+    ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet))
   }
 }
 
@@ -77,15 +78,14 @@ function debug(str) {
 module.exports.runTestExport = async (outputPath, replay) => {
   let [pipe, promise] = module.exports.renderVideo(outputPath);
   pipe._handle.setBlocking(true);
-  await initialize();
-  module.exports.renderImages(replay, pipe);
+  await module.exports.renderImages(replay, pipe);
   await promise.catch(err => {
     console.error(err);
     process.exit(1);
   });
 };
 
-module.exports.renderImages = (replay, writer) => {
+module.exports.renderImages = async (replay, writer) => {
   // Create our emulated canvas.
   const canvas = Canvas.createCanvas(WIDTH, HEIGHT);
   canvas.style = {};
@@ -93,33 +93,35 @@ module.exports.renderImages = (replay, writer) => {
   p5Inst._renderer.resize(WIDTH, HEIGHT);
 
   const sprites = [];
-  replay.forEach(entry => {
-    if (entry && entry.length) {
-      entry.forEach(function (sprite, i) {
-        if (!sprites[i]) {
-          sprites[i] = p5Inst.createSprite();
+  for (const frame of replay) {
+    for (let i = 0; i < frame.length; i++) {
+      const entry = frame[i];
 
-          ANIMATIONS[sprite.style].forEach(function (animation, j) {
-            sprites[i].addAnimation("anim" + j, animation);
-          });
-        }
+      if (!sprites[i]) {
+        sprites[i] = p5Inst.createSprite();
+        await loadSprite(entry.style);
+        ANIMATIONS[entry.style].forEach(function (animation, j) {
+          sprites[i].addAnimation("anim" + j, animation);
+        });
+      }
 
-        sprites[i].changeAnimation(sprite.animationLabel);
-        sprites[i].mirrorX(sprite.mirrorX);
-        sprites[i].rotation = sprite.rotation;
-        sprites[i].scale = sprite.scale;
-        sprites[i].tint = "hsb(" + (Math.round(sprite.tint) % 360) + ", 100%, 100%)";
-        sprites[i].setFrame(sprite.animationFrame);
-        sprites[i].x = sprite.x;
-        sprites[i].y = sprite.y;
-      });
+      const sprite = sprites[i];
+
+      sprite.changeAnimation(entry.animationLabel);
+      sprite.mirrorX(entry.mirrorX);
+      sprite.rotation = entry.rotation;
+      sprite.scale = entry.scale;
+      sprite.tint = "hsb(" + (Math.round(entry.tint) % 360) + ", 100%, 100%)";
+      sprite.setFrame(entry.animationFrame);
+      sprite.x = entry.x;
+      sprite.y = entry.y;
     }
 
     p5Inst.background('#fff');
     p5Inst.drawSprites();
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
-  });
+  }
 
   sprites.forEach(sprite => sprite.remove());
   writer.end();
