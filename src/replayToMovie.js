@@ -111,7 +111,7 @@ module.exports.renderImages = async (replay, writer) => {
       sprite.mirrorX(entry.mirrorX);
       sprite.rotation = entry.rotation;
       sprite.scale = entry.scale;
-      sprite.tint = "hsb(" + (Math.round(entry.tint) % 360) + ", 100%, 100%)";
+      sprite.tint = entry.tint === undefined ? undefined : "hsb(" + (Math.round(entry.tint) % 360) + ", 100%, 100%)";
       sprite.setFrame(entry.animationFrame);
       sprite.x = entry.x;
       sprite.y = entry.y;
