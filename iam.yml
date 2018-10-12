@@ -8,6 +8,12 @@ Parameters:
     Type: String
   SourceBucketName:
     Type: String
+  ArtifactBucket:
+    Type: String
+    Description: Name of existing S3 bucket for storing pipeline artifacts
+  TemplateBucket:
+    Type: String
+    Description: Name of existing S3 bucket for storing CloudFormation template artifacts
 
 Resources:
   p5ReplayRole:
@@ -34,15 +40,86 @@ Resources:
                 - "s3:PutLifecycleConfiguration"
                 - "s3:DeleteObject"
               Resource:
-                - "arn:aws:s3:::${SourceBucketName}"
-                - "arn:aws:s3:::${SourceBucketName}/*"
-                - "arn:aws:s3:::${DestinationBucketName}"
-                - "arn:aws:s3:::${DestinationBucketName}/*"
+                - !Sub "arn:aws:s3:::${SourceBucketName}*"
+                - !Sub "arn:aws:s3:::${DestinationBucketName}*"
       ManagedPolicyArns:
         - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 
+  p5ReplayCFNRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: ['sts:AssumeRole']
+            Effect: Allow
+            Principal: {Service: [cloudformation.amazonaws.com]}
+        Version: '2012-10-17'
+      Path: /
+      Policies:
+        - PolicyName: ManageResourcesAccess
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "apigateway:*"
+                  - "lambda:*"
+                  - "cloudformation:*"
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - "s3:GetObject"
+                Resource:
+                  - !Sub "arn:aws:s3:::${TemplateBucket}/*"
+              - Effect: Allow
+                Action:
+                  - "iam:PassRole"
+                Resource:
+                  - !GetAtt p5ReplayRole.Arn
+  p5ReplayCodeBuildRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: ['sts:AssumeRole']
+            Effect: Allow
+            Principal: {Service: [codebuild.amazonaws.com]}
+        Version: '2012-10-17'
+      Path: /service-role/
+      Policies:
+        - PolicyName: CodeBuildResourcesAccess
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "logs:CreateLogGroup"
+                  - "logs:CreateLogStream"
+                  - "logs:PutLogEvents"
+                Resource:
+                  - !Sub "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/*"
+              - Effect: Allow
+                Action:
+                  - "s3:*"
+                Resource:
+                  - !Sub "arn:aws:s3:::${ArtifactBucket}/*"
+                  - !Sub "arn:aws:s3:::${ArtifactBucket}"
+                  - !Sub "arn:aws:s3:::${TemplateBucket}/*"
+                  - !Sub "arn:aws:s3:::${TemplateBucket}"
+              - Effect: Allow
+                Action:
+                  - "cloudformation:DescribeStacks"
+                Resource: '*'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser'
 Outputs:
   p5ReplayRole:
     Description: P5 Replay Role ARN
     Value: !GetAtt p5ReplayRole.Arn
     Export: {Name: p5ReplayRole}
+  p5ReplayCFNRole:
+    Description: P5 Replay CFN Role ARN
+    Value: !GetAtt p5ReplayCFNRole.Arn
+    Export: {Name: p5ReplayCFNRole}
+  p5ReplayCodeBuildRole:
+    Description: P5 Replay CodeBuild Role ARN
+    Value: !GetAtt p5ReplayCodeBuildRole.Arn
+    Export: {Name: p5ReplayCodeBuildRole}
