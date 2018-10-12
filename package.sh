@@ -21,9 +21,9 @@ aws cloudformation package \
 JQ_FILTER='{Parameters: .Stacks[].Parameters | map({(.ParameterKey): .ParameterValue}) | add}'
 
 aws cloudformation describe-stacks --stack-name ${STACK} | \
-  jq ${JQ_FILTER} \
+  jq "${JQ_FILTER}" \
     > ${TEMPLATE_CONFIG}
 
 aws cloudformation describe-stacks --stack-name ${STAGING_STACK} | \
-  jq ${JQ_FILTER} \
+  jq "${JQ_FILTER}" \
     > ${STAGING_TEMPLATE_CONFIG}
