@@ -180,7 +180,7 @@ Resources:
               TEMPLATE_BUCKET: ${TemplateBucket}
               OUTPUT_TEMPLATE: output.yml
               STACK: ${StackName}
-              STAGING_STACK: ${StackName}
+              STAGING_STACK: ${StagingStackName}
               TEMPLATE_CONFIG: configuration.json
               STAGING_TEMPLATE_CONFIG: configuration-staging.json
           phases:
