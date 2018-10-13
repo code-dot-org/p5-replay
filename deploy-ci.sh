@@ -2,10 +2,18 @@
 
 # Deploys the CI-service CloudFormation stack.
 
+S3_BUCKET=${S3_BUCKET?Required}
 STACK=${STACK-'p5-replay-ci'}
 
 TEMPLATE=ci.yml
-aws cloudformation deploy \
+OUTPUT_TEMPLATE=$(mktemp)
+
+aws cloudformation package \
   --template-file ${TEMPLATE} \
+  --s3-bucket ${S3_BUCKET} \
+  --output-template-file ${OUTPUT_TEMPLATE}
+
+aws cloudformation deploy \
+  --template-file ${OUTPUT_TEMPLATE} \
   --stack-name ${STACK} \
   "$@"
