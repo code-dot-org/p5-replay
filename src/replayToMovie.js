@@ -36,7 +36,7 @@ window.ImageData = Canvas.ImageData;
 const SPRITE_NAMES = ["ALIEN", "BEAR", "CAT", "DOG", "DUCK", "FROG", "MOOSE", "PINEAPPLE", "ROBOT", "SHARK", "UNICORN"];
 const MOVE_NAMES = ["Rest", "ClapHigh", "Clown", "Dab", "DoubleJam", "Drop", "Floss", "Fresh", "Kick", "Roll", "ThisOrThat", "Thriller"];
 
-const IMAGE_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_sm/";
+const IMAGE_BASE = "./images/";
 const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
