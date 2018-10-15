@@ -20,7 +20,9 @@ window.document = {
     if (type !== 'canvas') {
       throw new Error('Cannot create type.');
     }
-    return Canvas.createCanvas();
+    const created = Canvas.createCanvas();
+    created.style = {};
+    return created;
   }
 };
 window.screen = {};
@@ -45,6 +47,11 @@ const p5Inst = new p5(function (p5obj) {
   p5obj._fixedSpriteAnimationFrameSizes = true;
 });
 
+// Create our emulated canvas.
+const canvas = window.document.createElement('canvas');
+p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
+p5Inst._renderer.resize(WIDTH, HEIGHT);
+
 function loadNewSpriteSheet(urlOrPath) {
   return new Promise(function (resolve, reject) {
     p5Inst.loadImage(urlOrPath, resolve, reject);
@@ -54,7 +61,6 @@ function loadNewSpriteSheet(urlOrPath) {
 }
 
 async function loadSprite(spriteName) {
-  debug(Object.keys(ANIMATIONS));
   if (ANIMATIONS[spriteName]) {
     return;
   }
@@ -86,12 +92,6 @@ module.exports.runTestExport = async (outputPath, replay) => {
 };
 
 module.exports.renderImages = async (replay, writer) => {
-  // Create our emulated canvas.
-  const canvas = Canvas.createCanvas(WIDTH, HEIGHT);
-  canvas.style = {};
-  p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
-  p5Inst._renderer.resize(WIDTH, HEIGHT);
-
   const sprites = [];
   for (const frame of replay) {
     for (let i = 0; i < frame.length; i++) {
@@ -111,7 +111,8 @@ module.exports.renderImages = async (replay, writer) => {
       sprite.mirrorX(entry.mirrorX);
       sprite.rotation = entry.rotation;
       sprite.scale = entry.scale;
-      sprite.tint = entry.tint === undefined ? undefined : "hsb(" + (Math.round(entry.tint) % 360) + ", 100%, 100%)";
+      // Ignoring tint for now; it causees perf issues
+      //sprite.tint = entry.tint === undefined ? undefined : "hsb(" + (Math.round(entry.tint) % 360) + ", 100%, 100%)";
       sprite.setFrame(entry.animationFrame);
       sprite.x = entry.x;
       sprite.y = entry.y;
