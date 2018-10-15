@@ -22,7 +22,7 @@ Globals:
     Environment:
       Variables:
         DESTINATION_BUCKET: !Ref DestinationBucketName
-        QUALITY: 33
+        QUALITY: 23
   Api:
     Cors: "'*'"
 
