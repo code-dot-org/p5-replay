@@ -97,13 +97,19 @@ module.exports.renderVideo = (outputFile) => {
     '-s', `${WIDTH}x${HEIGHT}`,
     '-frame_size', (WIDTH * HEIGHT * 4),
     '-i', 'pipe:0',
-    '-crf', CRF.toString(),
-    '-movflags', 'faststart',
     '-f', 'mp4',
+    // https://trac.ffmpeg.org/wiki/Encode/H.264#crf
+    '-crf', CRF.toString(),
+    // https://trac.ffmpeg.org/wiki/Encode/H.264#faststartforwebvideo
+    '-movflags', 'faststart',
+    // https://trac.ffmpeg.org/wiki/Encode/H.264#Preset
     '-preset', 'ultrafast',
+    // https://trac.ffmpeg.org/wiki/Encode/H.264#Tune
     '-tune', 'zerolatency',
+    // https://trac.ffmpeg.org/wiki/Encode/H.264#Alldevices
     '-profile:v', 'baseline',
     '-level', '3.0',
+    // https://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers
     '-pix_fmt', 'yuv420p',
     '-y',
     outputFile
