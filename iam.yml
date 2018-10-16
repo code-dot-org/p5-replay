@@ -29,7 +29,7 @@ Resources:
         - PolicyName: p5ReplayRolePolicy
           PolicyDocument:
             Statement:
-              Effect: Allow
+            - Effect: Allow
               Action:
                 - "s3:GetObject"
                 - "s3:ListBucket"
@@ -42,6 +42,13 @@ Resources:
               Resource:
                 - !Sub "arn:aws:s3:::${SourceBucketName}*"
                 - !Sub "arn:aws:s3:::${DestinationBucketName}*"
+            - Effect: Allow
+              Action:
+                - "codepipeline:GetPipelineState"
+                - "codepipeline:GetPipelineExecution"
+                - "codepipeline:PutApprovalResult"
+                - "cloudformation:DescribeStacks"
+              Resource: '*'
       ManagedPolicyArns:
         - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 

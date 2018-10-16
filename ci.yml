@@ -1,4 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
 Description: p5-replay Continuous Integration pipeline
 
 Parameters:
@@ -35,11 +36,30 @@ Parameters:
     Type: String
     Description: Staging application stack name
     Default: p5-replay-staging
+  SlackApprovalWebhookUrl:
+    Type: String
+    NoEcho: true
+    Description: Slack Webhook URL for manual approval actions
+  SlackSigningSecret:
+    Type: String
+    NoEcho: true
+    Description: Slack signing secret for manual approval actions
+  SlackPipelineWebhookUrl:
+    Type: String
+    NoEcho: true
+    Description: Slack Webhook URL for pipeline event notifications
+
+Globals:
+  Function:
+    Runtime: nodejs8.10
+    Timeout: 10
+    MemorySize: 3008
 
 Resources:
   Pipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
+      Name: !Ref StackName
       RoleArn: !Sub "arn:aws:iam::${AWS::AccountId}:role/${CodePipelineServiceRoleName}"
       ArtifactStore:
         Type: S3
@@ -76,7 +96,7 @@ Resources:
               OutputArtifacts: [Name: Package]
         - Name: Staging
           Actions:
-            - Name: CreateChangeSet
+            - Name: Prepare
               RunOrder: 1
               ActionTypeId:
                 Category: Deploy
@@ -92,7 +112,7 @@ Resources:
                 TemplatePath: Package::output.yml
                 TemplateConfiguration: Package::configuration-staging.json
               OutputArtifacts: [Name: StagingChangeSet]
-            - Name: ExecuteChangeSet
+            - Name: Deploy
               RunOrder: 2
               ActionTypeId:
                 Category: Deploy
@@ -106,7 +126,7 @@ Resources:
                 StackName: !Ref StagingStackName
         - Name: Production
           Actions:
-            - Name: CreateChangeSet
+            - Name: Prepare
               RunOrder: 1
               ActionTypeId:
                 Category: Deploy
@@ -122,7 +142,7 @@ Resources:
                 TemplatePath: Package::output.yml
                 TemplateConfiguration: Package::configuration.json
               OutputArtifacts: [Name: ProdChangeSet]
-            - Name: ApproveChangeSet
+            - Name: Approval
               RunOrder: 2
               ActionTypeId:
                 Category: Approval
@@ -131,8 +151,8 @@ Resources:
                 Version: 1
               Configuration:
                 NotificationArn: !Ref BuildApprovalSNS
-                CustomData: !Sub "A new ${StackName} build is ready for deploy."
-            - Name: ExecuteChangeSet
+                CustomData: !Sub "${StackName} build awaiting approval to Production."
+            - Name: Deploy
               RunOrder: 3
               ActionTypeId:
                 Category: Deploy
@@ -206,3 +226,56 @@ Resources:
     Type: AWS::ECR::Repository
   BuildApprovalSNS:
     Type: AWS::SNS::Topic
+  ApprovalRequest:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./ciApproval
+      Handler: request.requestApproval
+      Role: !ImportValue p5ReplayRole
+      Environment:
+        Variables:
+          SLACK_WEBHOOK_URL: !Ref SlackApprovalWebhookUrl
+          STACK_NAME: !Ref StackName
+      Events:
+        ApprovalRequest:
+          Type: SNS
+          Properties:
+            Topic: !Ref BuildApprovalSNS
+  ApprovalRespond:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./ciApproval
+      Handler: response.respondApproval
+      Role: !ImportValue p5ReplayRole
+      Environment:
+        Variables:
+          SLACK_SIGNING_SECRET: !Ref SlackSigningSecret
+      Events:
+        ApprovalRespond:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+  SlackPipelineEvent:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./ciApproval
+      Handler: stateChange.handler
+      Role: !ImportValue p5ReplayRole
+      Environment:
+        Variables:
+          SLACK_WEBHOOK_URL: !Ref SlackPipelineWebhookUrl
+      Events:
+        Pipeline:
+          Type: CloudWatchEvent
+          Properties:
+            Pattern:
+              detail-type:
+                - CodePipeline Stage Execution State Change
+              detail:
+                pipeline:
+                  - !Ref Pipeline
+Outputs:
+  ApprovalResponseUrl:
+    Description: "Approval Response URL"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
