@@ -1,0 +1,27 @@
+{
+  "name": "@code-dot-org/p5-replay",
+  "version": "0.0.0",
+  "description": "Node.js .mp4 generator for p5.js sketches",
+  "scripts": {
+    "test": "docker run --rm -v $PWD:/wrk p5-replay/build-service /bin/bash -c 'cd /wrk && node /wrk/localTest.js'",
+    "test-sam": "sam local generate-event s3 put | sam local invoke --template ../template.yml RenderFromS3",
+    "postinstall": "cd node_modules; cp @code-dot-org/p5.play/lib/p5.play.js p5/lib/addons",
+    "deploy": "serverless deploy",
+    "stack-destroy": "sls remove -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/code-dot-org/p5-replay.git"
+  },
+  "author": "Josh Lory <josh.lory@code.org>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "node-pre-gyp": "0.9.1",
+    "canvas": "2.0.0-alpha.13",
+    "@code-dot-org/p5.play": "1.2.2-cdo",
+    "p5": "^0.7.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+  }
+}

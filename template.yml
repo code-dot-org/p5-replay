@@ -1,0 +1,135 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: p5-replay service
+
+Parameters:
+  DestinationBucketName:
+    Type: String
+  SourceBucketName:
+    Type: String
+  HostedZoneName:
+    Type: String
+    AllowedPattern: '.*\.$'
+    ConstraintDescription: Must end with trailing dot `.`
+  DomainName:
+    Type: String
+
+Globals:
+  Function:
+    Runtime: nodejs8.10
+    Timeout: 30
+    MemorySize: 3008
+    Environment:
+      Variables:
+        SOURCE_BUCKET: !Ref SourceBucketName
+        DESTINATION_BUCKET: !Ref DestinationBucketName
+        QUALITY: 33
+  Api:
+    Cors: "'*'"
+
+Resources:
+  SourceBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref SourceBucketName
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods: [GET, PUT, POST, HEAD]
+            AllowedOrigins: ['*']
+            AllowedHeaders: ['*']
+  DestinationBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref DestinationBucketName
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods: [GET, PUT, POST, HEAD]
+            AllowedOrigins: ['*']
+            AllowedHeaders: ['*']
+  DestinationBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DestinationBucket
+      PolicyDocument:
+        Statement:
+        - Action: ['s3:GetObject']
+          Effect: Allow
+          Resource: !Sub "arn:aws:s3:::${DestinationBucket}/*"
+          Principal: '*'
+  RunTest:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.runTest
+      Role: !ImportValue p5ReplayRole
+      Events:
+        Get:
+          Type: Api
+          Properties:
+            Path: /runTest
+            Method: get
+  Render:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.render
+      Role: !ImportValue p5ReplayRole
+      Events:
+        Post:
+          Type: Api
+          Properties:
+            Path: /render
+            Method: post
+  RenderFromS3:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.renderFromS3
+      Role: !ImportValue p5ReplayRole
+      Events:
+        Created:
+          Type: S3
+          Properties:
+            Bucket: !Ref SourceBucket
+            Events: 's3:ObjectCreated:*'
+  GetS3UploadURL:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./src
+      Handler: handler.getS3UploadURL
+      Timeout: 5
+      Role: !ImportValue p5ReplayRole
+      Events:
+        Get:
+          Type: Api
+          Properties:
+            Path: /getS3UploadURL
+            Method: get
+  APICertificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      ValidationMethod: DNS
+  APIDomainName:
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      CertificateArn: !Ref APICertificate
+      DomainName: !Ref DomainName
+  APIBasePathMapping:
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      DomainName: !Ref APIDomainName
+      RestApiId: !Ref ServerlessRestApi
+      Stage: Prod
+  APIDomain:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: !Ref HostedZoneName
+      Name: !Ref DomainName
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt APIDomainName.DistributionDomainName
+        HostedZoneId: !GetAtt APIDomainName.DistributionHostedZoneId
+Outputs:
+  ApiUrl:
+    Value: !Sub "https://${DomainName}"

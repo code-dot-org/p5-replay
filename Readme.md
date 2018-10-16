@@ -5,19 +5,17 @@ Generates a movie file based on a p5 animation replay file, and uploads it to S3
 
 ## Building/deploying
 * Make sure the Docker daemon is installed and running (https://docs.docker.com/install/)
-* The bucket name specified in `serverless.yml` *must be unique globally* because of S3's global bucket namespace - you might need to change it if it already exists (an error will occur when deploying if so)
-* Copy the `.awscredentials.sample` file to `.awscredentials` and enter your credentials there
+* The bucket name specified in `template.yml` *must be unique globally* because of S3's global bucket namespace - you might need to change it if it already exists (an error will occur when deploying if so)
 * \[TODO\] Don't change the `node-canvas` version away from 2.0.0-alpha.13 - later releases seem to cause `node-gyp` problems
-* Run the `build_and_deploy.sh` script, which will create a Docker image to build the application and upload it to AWS Lambda using the Serverless framework
+* Run the `build.sh` script, which will create a Docker image to build the application binaries
   * The first time this runs the Docker part will take a while to download, and there may be some red error text, but that's fine, it should complete quickly the next times it is run.
-  * \[TODO\]: this may not fully work yet on the CDO account, where AWS credentials have limited permissions. For testing and development, the AWS free tier should have enough resources to temporarily develop against a personal account.  
+* Run the `deploy.sh` script to deploy the application CloudFormation stack.
 
 ## Local Testing
-Local testing is possible on OS X, but not yet end-to-end (in the future we could pull in `serverless-offline` to make this possible). The local test does not use the same `ffmpeg` binaries as the ones run on AWS, so be aware that behavior may differ.
+Local testing is possible via [`sam local`](https://github.com/awslabs/aws-sam-cli) and Docker:
 
-* `brew install pkg-config cairo pango libpng jpeg giflib` (dependencies need to be installed locally)
-* `yarn install`
-* `node localTest.js` will generate a video locally based on `test/fixtures/replay.json`
+* [Install](https://github.com/awslabs/aws-sam-cli/blob/develop/docs/installation.rst) the `AWS SAM CLI`
+* `yarn test`
 
 ## Remote Testing
 The Serverless deploy should display two endpoints after completion:
@@ -32,7 +30,6 @@ The `runTest` endpoint will generate a video based on the `replay.json` file dep
 
 ## Built With
 
-* [Serverless](https://github.com/serverless/serverless) - The Serverless Framework
-* [FFMPEG](https://github.com/FFmpeg/FFmpeg) - A collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
+* [FFMPEG](https://github.com/FFmpeg/FFmpeg)
 * [node-canvas](https://github.com/Automattic/node-canvas)
 * [Docker](https://www.docker.com)
