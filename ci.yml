@@ -36,18 +36,20 @@ Parameters:
     Type: String
     Description: Staging application stack name
     Default: p5-replay-staging
-  SlackApprovalWebhookUrl:
+  SlackApprovalChannel:
     Type: String
-    NoEcho: true
-    Description: Slack Webhook URL for manual approval actions
+    Description: Slack channel for manual approval actions
   SlackSigningSecret:
     Type: String
     NoEcho: true
     Description: Slack signing secret for manual approval actions
-  SlackPipelineWebhookUrl:
+  SlackToken:
     Type: String
     NoEcho: true
-    Description: Slack Webhook URL for pipeline event notifications
+    Description: Slack app Oauth token
+  SlackPipelineChannel:
+    Type: String
+    Description: Slack channel ID for pipeline event notifications
 
 Globals:
   Function:
@@ -234,7 +236,8 @@ Resources:
       Role: !ImportValue p5ReplayRole
       Environment:
         Variables:
-          SLACK_WEBHOOK_URL: !Ref SlackApprovalWebhookUrl
+          SLACK_CHANNEL: !Ref SlackApprovalChannel
+          SLACK_TOKEN: !Ref SlackToken
           STACK_NAME: !Ref StackName
       Events:
         ApprovalRequest:
@@ -264,7 +267,8 @@ Resources:
       Role: !ImportValue p5ReplayRole
       Environment:
         Variables:
-          SLACK_WEBHOOK_URL: !Ref SlackPipelineWebhookUrl
+          SLACK_CHANNEL: !Ref SlackPipelineChannel
+          SLACK_TOKEN: !Ref SlackToken
       Events:
         Pipeline:
           Type: CloudWatchEvent
