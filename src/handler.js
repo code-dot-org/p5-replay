@@ -55,7 +55,11 @@ async function renderVideo(replay, callback, forceUUID = null) {
 module.exports.render = async (event, context, callback) => {
   const replayJSON = event.body;
   const replay = JSON.parse(replayJSON);
-  await renderVideo(replay, callback);
+  if (replay.log && replay.id) {
+    await renderVideo(replay.log, callback, replay.id);
+  } else {
+    await renderVideo(replay, callback);
+  }
 };
 
 module.exports.renderFromS3 = async (event, context, callback) => {
