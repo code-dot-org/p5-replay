@@ -1,17 +1,11 @@
-const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
+const SLACK_TOKEN = process.env.SLACK_TOKEN;
+const SLACK_CHANNEL = process.env.SLACK_CHANNEL;
 const STACK_NAME = process.env.STACK_NAME;
-
-const https = require('https');
-const url = require('url');
-const requestOptions = url.parse(SLACK_WEBHOOK_URL);
-requestOptions.method = 'POST';
-requestOptions.headers = {
-  'Content-Type': 'application/json'
-};
 
 const AWS = require('aws-sdk');
 const codePipeline = new AWS.CodePipeline();
 const cloudFormation = new AWS.CloudFormation();
+const slackApi = require('./slackApi');
 
 /**
  * Lambda function for creating a CI-approval Slack Message Button in response to
@@ -26,21 +20,10 @@ const cloudFormation = new AWS.CloudFormation();
  * @see https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CodePipeline.html#getPipelineExecution-property
  * @see https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudFormation.html#describeStacks-property
  * @see https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-json-format.html
+ * @see https://api.slack.com/methods/chat.postMessage
  */
-module.exports.requestApproval = async function (event, context, callback) {
+module.exports.requestApproval = async function (event) {
   console.log(`Request received: ${JSON.stringify(event)}`);
-  let req = https.request(requestOptions, function (res) {
-    if (res.statusCode === 200) {
-      callback(null, 'posted to slack');
-    } else {
-      callback('status code: ' + res.statusCode);
-    }
-  });
-
-  req.on('error', function (e) {
-    console.log('problem with request: ' + e.message);
-    callback(e.message);
-  });
 
   const data = JSON.parse(event.Records[0].Sns.Message);
   const token = data.approval.token;
@@ -70,10 +53,32 @@ module.exports.requestApproval = async function (event, context, callback) {
     false: ':exclamation:'
   };
 
+  const payload = {
+    true: {
+      approve: true,
+      approvalText: emoji[true],
+      codePipelineToken: token,
+      codePipelineName: pipelineName,
+      stage: stage,
+      action: action
+    },
+    false: {
+      approve: false,
+      approvalText: emoji[false],
+      codePipelineToken: token,
+      codePipelineName: pipelineName,
+      stage: stage,
+      action: action
+    }
+  };
+
   const slackMessage = {
-    text: `Build <${revisionUrl}|${STACK_NAME}@${revisionId}> awaiting approval to <${currentUrl}|${stage}>.`,
+    username: STACK_NAME,
+    channel: SLACK_CHANNEL,
     attachments: [
       {
+        text: `Build <${revisionUrl}|\`${revisionId}\`> awaiting approval to <${currentUrl}|${stage}>.`,
+        mrkdwn_in: ["text"],
         fallback: "Unable to approve from fallback",
         callback_id: "ci_approval",
         color: "#3AA3E3",
@@ -84,18 +89,11 @@ module.exports.requestApproval = async function (event, context, callback) {
             text: `${emoji[true]} Approve`,
             style: "primary",
             type: "button",
-            value: JSON.stringify({
-              approve: true,
-              approvalText: emoji[true],
-              codePipelineToken: token,
-              codePipelineName: pipelineName,
-              stage: stage,
-              action: action
-            }),
+            value: JSON.stringify(payload[true]),
             confirm: {
               title: "Are you sure?",
               text: `Approve to ${stage} ${emoji[true]}`,
-              ok_text: `Yes`,
+              ok_text: "Yes",
               dismiss_text: "No"
             }
           },
@@ -103,19 +101,12 @@ module.exports.requestApproval = async function (event, context, callback) {
             name: action,
             text: `${emoji[false]} Reject`,
             type: "button",
-            value: JSON.stringify({
-              approve: false,
-              approvalText: emoji[false],
-              codePipelineToken: token,
-              codePipelineName: pipelineName,
-              stage: stage,
-              action: action
-            })
+            value: JSON.stringify(payload[false])
           }
         ]
       }
     ]
   };
-  req.write(JSON.stringify(slackMessage));
-  req.end();
+
+  await slackApi('chat.postMessage', slackMessage, SLACK_TOKEN);
 };

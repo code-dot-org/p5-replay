@@ -1,44 +1,26 @@
-// Send Auto Scaling notifications to production channel.
-const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
+const SLACK_TOKEN = process.env.SLACK_TOKEN;
+const SLACK_CHANNEL = process.env.SLACK_CHANNEL;
+const slackApi = require('./slackApi');
 
-const https = require('https');
-const url = require('url');
-const slack_req_opts = url.parse(SLACK_WEBHOOK_URL);
-slack_req_opts.method = 'POST';
-slack_req_opts.headers = {
-  'Content-Type': 'application/json'
-};
+const AWS = require('aws-sdk');
+const codePipeline = new AWS.CodePipeline();
 
 /**
  * Lambda function for forwarding a CloudWatch Event SNS message to Slack.
  */
-exports.handler = function (event, context, callback) {
-  var req = https.request(slack_req_opts, function (res) {
-    if (res.statusCode === 200) {
-      callback(null, 'posted to slack');
-    } else {
-      callback('status code: ' + res.statusCode);
-    }
-  });
-
-  req.on('error', function (e) {
-    console.log('problem with request: ' + e.message);
-    callback(e.message);
-  });
-
-  var message;
-  var detail = event.detail;
-  var type = event['detail-type'];
+exports.handler = async function (event) {
+  console.log(`Request received: ${JSON.stringify(event)}`);
+  let message;
   switch (event.source) {
     case "aws.codepipeline":
-      message = codePipeline(detail, type);
+      message = await codePipelineMessage(event.detail, event['detail-type']);
       break;
     default:
       message = {};
       break;
   }
-  req.write(JSON.stringify(message));
-  req.end();
+  const method = message.ts ? 'chat.update' : 'chat.postMessage';
+  await slackApi(method, message, SLACK_TOKEN);
 };
 
 /**
@@ -60,7 +42,21 @@ exports.handler = function (event, context, callback) {
     }
  * @param type detail-type string.
  */
-function codePipeline(detail, type) {
+async function codePipelineMessage(detail, type) {
+  const executionId = detail['execution-id'];
+  const pipeline = detail.pipeline;
+  const execution = await codePipeline.getPipelineExecution({
+    pipelineName: pipeline,
+    pipelineExecutionId: executionId
+  }).promise();
+  const artifact = execution.pipelineExecution.artifactRevisions[0];
+  let revisionUrl = '';
+  let revisionId = 'unknown';
+  if (artifact) {
+    revisionUrl = artifact.revisionUrl;
+    revisionId = artifact.revisionId.substring(0, 7);
+  }
+
   const stateColors = {
     STARTED: 'warning',
     SUCCEEDED: 'good',
@@ -68,10 +64,42 @@ function codePipeline(detail, type) {
     CANCELED: 'danger'
   };
 
-  return {
+  const message = {
+    username: pipeline,
+    channel: SLACK_CHANNEL,
     attachments: [{
-      title: `[${detail.pipeline}] ${detail.stage} ${detail.state.toLowerCase()}`,
+      title: `[<${revisionUrl}|@${revisionId}>] ${detail.stage} ${detail.state.toLowerCase()}`,
+      fallback: executionId,
       color: stateColors[detail.state],
     }]
   };
+
+  if (detail.state !== 'STARTED') {
+    // Search Slack channel history for previously-started stage's original message,
+    // so we can update instead of posting a new message.
+    const historyJson = await slackApi('channels.history', {
+      channel: SLACK_CHANNEL,
+      oldest: artifact.created
+    }, SLACK_TOKEN);
+    const history = JSON.parse(historyJson);
+    if (history.ok) {
+      const oldMessage = history.messages.filter(message =>
+        message.attachments && message.attachments.some(attachment =>
+        attachment.fallback === executionId &&
+        attachment.title.match(detail.stage)
+        )).pop();
+      if (oldMessage) {
+        // Update the original message by reusing its timestamp.
+        message.ts = oldMessage.ts;
+
+        // Append the stage-execution duration to the message.
+        const elapsed = Date.now() - message.ts * 1000;
+        const elapsedString = new Date(elapsed).toUTCString().split(' ')[4];
+        message.attachments[0].title += ` (${elapsedString})`;
+        message.attachments[0].ts = Date.now() / 1000;
+      }
+    }
+  }
+
+  return message;
 }
