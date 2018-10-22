@@ -11,6 +11,10 @@ const BUCKET = process.env.DESTINATION_BUCKET;
 const SOURCE_BUCKET = process.env.SOURCE_BUCKET;
 const LOCAL = process.env.AWS_SAM_LOCAL;
 const UPLOAD_KEY = 'videos';
+const HEADERS = {
+  'Content-Type': 'application/json',
+  'Access-Control-Allow-Origin': '*'
+};
 
 function debug(str) {
   if (LOCAL) {
@@ -42,7 +46,8 @@ async function renderVideo(replay, callback, forceUUID = null) {
     });
     callback(null, {
       statusCode: 200,
-      body: responseBody
+      body: responseBody,
+      headers: HEADERS
     });
   } catch (error) {
     callback(null, {
@@ -89,6 +94,7 @@ module.exports.getS3UploadURL = async (event, context, callback) => {
       uploadURL: url,
       resultLocation: getOutputURL(uuid)
     }),
+    headers: HEADERS
   };
   callback(null, response);
 };
