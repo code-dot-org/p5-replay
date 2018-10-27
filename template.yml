@@ -110,26 +110,60 @@ Resources:
     Properties:
       DomainName: !Ref DomainName
       ValidationMethod: DNS
-  APIDomainName:
-    Type: AWS::ApiGateway::DomainName
-    Properties:
-      CertificateArn: !Ref APICertificate
-      DomainName: !Ref DomainName
-  APIBasePathMapping:
-    Type: AWS::ApiGateway::BasePathMapping
-    Properties:
-      DomainName: !Ref APIDomainName
-      RestApiId: !Ref ServerlessRestApi
-      Stage: Prod
-  APIDomain:
+  Domain:
     Type: AWS::Route53::RecordSet
     Properties:
       HostedZoneName: !Ref HostedZoneName
       Name: !Ref DomainName
       Type: A
       AliasTarget:
-        DNSName: !GetAtt APIDomainName.DistributionDomainName
-        HostedZoneId: !GetAtt APIDomainName.DistributionHostedZoneId
+        DNSName: !GetAtt CDN.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2 # static ID for cloudfront aliases
+  CDN:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Aliases: [!Ref DomainName]
+        ViewerCertificate:
+          AcmCertificateArn: !Ref APICertificate
+          MinimumProtocolVersion: TLSv1
+          SslSupportMethod: sni-only
+        Origins:
+          - Id: API
+            # ServerlessRestApi is the Implicit API Logical Resource ID created by SAM, Prod is the default Stage name.
+            # Ref: https://awslabs.github.io/serverless-application-model/internals/generated_resources.html#api
+            DomainName: !Sub "${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com"
+            OriginPath: /Prod
+            CustomOriginConfig: {OriginProtocolPolicy: https-only}
+          - Id: SourceBucket
+            DomainName: !GetAtt SourceBucket.DomainName
+            S3OriginConfig: {}
+          - Id: DestinationBucket
+            DomainName: !GetAtt DestinationBucket.DomainName
+            S3OriginConfig: {}
+        DefaultCacheBehavior:
+          TargetOriginId: API
+          AllowedMethods: [DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT]
+          Compress: true
+          DefaultTTL: 0
+          ForwardedValues: {QueryString: false}
+          ViewerProtocolPolicy: redirect-to-https
+        CacheBehaviors:
+          - TargetOriginId: SourceBucket
+            PathPattern: /source/*
+            AllowedMethods: [DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT]
+            Compress: true
+            DefaultTTL: 0
+            ForwardedValues: {QueryString: false}
+            ViewerProtocolPolicy: redirect-to-https
+          - TargetOriginId: DestinationBucket
+            PathPattern: /videos/*
+            AllowedMethods: [GET, HEAD, OPTIONS]
+            Compress: true
+            DefaultTTL: 0
+            ForwardedValues: {QueryString: false}
+            ViewerProtocolPolicy: redirect-to-https
 Outputs:
   ApiUrl:
     Value: !Sub "https://${DomainName}"
