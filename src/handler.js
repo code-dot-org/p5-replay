@@ -75,7 +75,7 @@ module.exports.renderFromS3 = async (event, context, callback) => {
   const replayJSON = fs.readFileSync(tmpPath);
   fs.unlinkSync(tmpPath);
   const replay = JSON.parse(replayJSON);
-  await renderVideo(replay, callback, srcKey);
+  await renderVideo(replay, callback, srcKey.replace(`${SOURCE_KEY}/`, ''));
 };
 
 /**
