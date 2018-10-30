@@ -129,6 +129,9 @@ Resources:
           AcmCertificateArn: !Ref APICertificate
           MinimumProtocolVersion: TLSv1
           SslSupportMethod: sni-only
+        CustomErrorResponses:
+          - ErrorCode: 403
+            ErrorCachingMinTTL: 0
         Origins:
           - Id: API
             # ServerlessRestApi is the Implicit API Logical Resource ID created by SAM, Prod is the default Stage name.
