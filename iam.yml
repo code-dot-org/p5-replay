@@ -71,6 +71,8 @@ Resources:
                   - "apigateway:*"
                   - "lambda:*"
                   - "cloudformation:*"
+                  - "cloudfront:*"
+                  - "route53:*"
                 Resource: '*'
               - Effect: Allow
                 Action:

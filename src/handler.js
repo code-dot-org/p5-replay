@@ -10,7 +10,8 @@ const { runTestExport } = require('./replayToMovie');
 const BUCKET = process.env.DESTINATION_BUCKET;
 const SOURCE_BUCKET = process.env.SOURCE_BUCKET;
 const LOCAL = process.env.AWS_SAM_LOCAL;
-const UPLOAD_KEY = 'videos';
+const SOURCE_KEY = 'source';
+const DEST_KEY = 'videos';
 const HEADERS = {
   'Content-Type': 'application/json',
   'Access-Control-Allow-Origin': '*'
@@ -23,7 +24,7 @@ function debug(str) {
 }
 
 function getOutputURL(uuid) {
-  return 'http://s3.amazonaws.com/' + BUCKET + '/' + UPLOAD_KEY + '/video-' + uuid + '.mp4'
+  return `/${DEST_KEY}/video-${uuid}.mp4`;
 }
 
 async function renderVideo(replay, callback, forceUUID = null) {
@@ -33,7 +34,7 @@ async function renderVideo(replay, callback, forceUUID = null) {
     await runTestExport(outputPath, replay);
 
     debug("Export complete, uploading");
-    await uploadFolder(BUCKET, UPLOAD_KEY, '/tmp/');
+    await uploadFolder(BUCKET, DEST_KEY, '/tmp/');
 
     const fileStats = fs.statSync(outputPath);
     fs.unlinkSync(outputPath); // Delete file when done
@@ -85,7 +86,7 @@ module.exports.getS3UploadURL = async (event, context, callback) => {
   const expirationInSeconds = 60 * 10;
   const url = s3.getSignedUrl('putObject', {
     Bucket: SOURCE_BUCKET,
-    Key: uuid,
+    Key: `${SOURCE_KEY}/${uuid}`,
     Expires: expirationInSeconds
   });
   const response = {
