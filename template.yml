@@ -158,7 +158,7 @@ Resources:
             AllowedMethods: [DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT]
             Compress: true
             DefaultTTL: 0
-            ForwardedValues: {QueryString: false}
+            ForwardedValues: {QueryString: true}
             ViewerProtocolPolicy: redirect-to-https
           - TargetOriginId: DestinationBucket
             PathPattern: /videos/*
