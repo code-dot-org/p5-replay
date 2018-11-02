@@ -93,6 +93,12 @@ function loadNewSpriteSheet(spriteName, moveName) {
   });
 
   return Promise.all([image, jsonData]).then(([image, jsonData]) => {
+    // from https://github.com/code-dot-org/dance-party/blob/763de665816848b81f93f7e194d9ae0a35f5d1b7/src/p5.dance.js#L175-L178:
+    // Passing true as the 3rd arg to loadSpriteSheet() indicates that we want
+    // it to load the image as a Image (instead of a p5.Image), which avoids
+    // a canvas creation. This makes it possible to run on mobile Safari in
+    // iOS 12 with canvas memory limits.
+    // TODO elijah: see if this makes a perf difference on labmda, either way
     return p5Inst.loadSpriteSheet(
       image,
       jsonData.frames,
