@@ -13,8 +13,8 @@ process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
-const IMAGE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/"
-const IMAGE_BASE = "./images/";
+const SPRITE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/"
+const SPRITE_BASE = "./sprites/";
 const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
