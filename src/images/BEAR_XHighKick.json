@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "BEAR_XHighKick_00.png",
+	"frame": {"x":750,"y":1,"w":180,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":73,"w":180,"h":200},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_02.png",
+	"frame": {"x":1115,"y":1,"w":182,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":79,"w":182,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_04.png",
+	"frame": {"x":1484,"y":1,"w":183,"h":185},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":88,"w":183,"h":185},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_06.png",
+	"frame": {"x":1669,"y":1,"w":184,"h":177},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":96,"w":184,"h":177},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_08.png",
+	"frame": {"x":1299,"y":1,"w":183,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":85,"w":183,"h":188},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_10.png",
+	"frame": {"x":932,"y":1,"w":181,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":75,"w":181,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_12.png",
+	"frame": {"x":572,"y":1,"w":176,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":65,"w":176,"h":208},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_14.png",
+	"frame": {"x":408,"y":1,"w":162,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":53,"y":57,"w":162,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_16.png",
+	"frame": {"x":271,"y":1,"w":135,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":50,"w":135,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_18.png",
+	"frame": {"x":164,"y":1,"w":105,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":46,"w":105,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_20.png",
+	"frame": {"x":1,"y":1,"w":82,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":44,"w":82,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XHighKick_22.png",
+	"frame": {"x":85,"y":1,"w":77,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":44,"w":77,"h":229},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "BEAR_XHighKick.png",
+	"format": "RGBA8888",
+	"size": {"w":1854,"h":231},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3a8a0783e2e44a0d23a9a27c8286f12f:6e000e9bf976dfa81779f81075a0939f:739499432b3ec8a3e8bdf69d12c7eb13$"
+}
+}

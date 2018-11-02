@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "PINEAPPLE_Dab_00000.png",
+	"frame": {"x":376,"y":1145,"w":78,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":25,"w":78,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00002.png",
+	"frame": {"x":1,"y":1122,"w":77,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":26,"w":77,"h":246},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00004.png",
+	"frame": {"x":412,"y":899,"w":82,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":28,"w":82,"h":244},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00006.png",
+	"frame": {"x":319,"y":899,"w":91,"h":241},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":31,"w":91,"h":241},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00008.png",
+	"frame": {"x":221,"y":895,"w":96,"h":239},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":33,"w":96,"h":239},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00010.png",
+	"frame": {"x":402,"y":659,"w":92,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":34,"w":92,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00012.png",
+	"frame": {"x":1,"y":882,"w":82,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":34,"w":82,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00014.png",
+	"frame": {"x":324,"y":659,"w":76,"h":236},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":36,"w":76,"h":236},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00016.png",
+	"frame": {"x":246,"y":659,"w":76,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":38,"w":76,"h":234},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00018.png",
+	"frame": {"x":1,"y":650,"w":101,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":99,"y":42,"w":101,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00020.png",
+	"frame": {"x":152,"y":432,"w":131,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":48,"w":131,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00022.png",
+	"frame": {"x":158,"y":214,"w":149,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":56,"w":149,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00024.png",
+	"frame": {"x":1,"y":1,"w":157,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":61,"w":157,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00026.png",
+	"frame": {"x":160,"y":1,"w":157,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":61,"w":157,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00028.png",
+	"frame": {"x":319,"y":1,"w":156,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":60,"w":156,"h":212},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00030.png",
+	"frame": {"x":1,"y":214,"w":155,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":59,"w":155,"h":213},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00032.png",
+	"frame": {"x":309,"y":215,"w":153,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":56,"w":153,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00034.png",
+	"frame": {"x":1,"y":429,"w":149,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":53,"w":149,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00036.png",
+	"frame": {"x":285,"y":433,"w":146,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":48,"w":146,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00038.png",
+	"frame": {"x":104,"y":658,"w":140,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":42,"w":140,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00040.png",
+	"frame": {"x":85,"y":890,"w":134,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":95,"y":34,"w":134,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00042.png",
+	"frame": {"x":80,"y":1130,"w":122,"h":243},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":29,"w":122,"h":243},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00044.png",
+	"frame": {"x":204,"y":1136,"w":92,"h":245},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":27,"w":92,"h":245},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Dab_00046.png",
+	"frame": {"x":298,"y":1142,"w":76,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":26,"w":76,"h":246},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "PINEAPPLE_Dab.png",
+	"format": "RGBA8888",
+	"size": {"w":495,"h":1393},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3116ecc73b1b6824339ba3ae017f4838:af87d93886f56fee4eddba2b6950207c:f2347b4fbb4d03c8d3557b4ce59d94e5$"
+}
+}

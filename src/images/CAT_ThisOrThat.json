@@ -1,0 +1,396 @@
+{"frames": [
+
+{
+	"filename": "CAT_ThisOrThat_00.png",
+	"frame": {"x":533,"y":666,"w":80,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":46,"w":80,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_01.png",
+	"frame": {"x":615,"y":668,"w":81,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_02.png",
+	"frame": {"x":698,"y":668,"w":81,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":46,"w":81,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_03.png",
+	"frame": {"x":188,"y":663,"w":82,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":47,"w":82,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_04.png",
+	"frame": {"x":870,"y":441,"w":84,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":48,"w":84,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_05.png",
+	"frame": {"x":690,"y":441,"w":86,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":49,"w":86,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_06.png",
+	"frame": {"x":401,"y":439,"w":86,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":51,"w":86,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_07.png",
+	"frame": {"x":1,"y":437,"w":88,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":53,"w":88,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_08.png",
+	"frame": {"x":541,"y":219,"w":91,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":55,"w":91,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_09.png",
+	"frame": {"x":1,"y":218,"w":97,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":117,"y":57,"w":97,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_10.png",
+	"frame": {"x":227,"y":1,"w":102,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":58,"w":102,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_11.png",
+	"frame": {"x":331,"y":1,"w":106,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":58,"w":106,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_12.png",
+	"frame": {"x":1,"y":1,"w":108,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":59,"w":108,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_13.png",
+	"frame": {"x":439,"y":1,"w":110,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":58,"w":110,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_14.png",
+	"frame": {"x":100,"y":218,"w":111,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":57,"w":111,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_15.png",
+	"frame": {"x":213,"y":219,"w":109,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":56,"w":109,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_16.png",
+	"frame": {"x":734,"y":219,"w":105,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":54,"w":105,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_17.png",
+	"frame": {"x":188,"y":439,"w":98,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":52,"w":98,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_18.png",
+	"frame": {"x":778,"y":441,"w":90,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":49,"w":90,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_19.png",
+	"frame": {"x":272,"y":663,"w":85,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":117,"y":47,"w":85,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_20.png",
+	"frame": {"x":781,"y":668,"w":85,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":46,"w":85,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_21.png",
+	"frame": {"x":340,"y":893,"w":83,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":45,"w":83,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_22.png",
+	"frame": {"x":425,"y":895,"w":82,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":45,"w":82,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_23.png",
+	"frame": {"x":509,"y":896,"w":81,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":45,"w":81,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_24.png",
+	"frame": {"x":868,"y":669,"w":81,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_25.png",
+	"frame": {"x":592,"y":898,"w":81,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":81,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_26.png",
+	"frame": {"x":675,"y":898,"w":82,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":45,"w":82,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_27.png",
+	"frame": {"x":759,"y":898,"w":84,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":45,"w":84,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_28.png",
+	"frame": {"x":1,"y":888,"w":87,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":46,"w":87,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_29.png",
+	"frame": {"x":1,"y":660,"w":89,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":48,"w":89,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_30.png",
+	"frame": {"x":489,"y":440,"w":92,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":50,"w":92,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_31.png",
+	"frame": {"x":91,"y":437,"w":95,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":94,"y":53,"w":95,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_32.png",
+	"frame": {"x":634,"y":219,"w":98,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":55,"w":98,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_33.png",
+	"frame": {"x":324,"y":219,"w":100,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":88,"y":56,"w":100,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_34.png",
+	"frame": {"x":551,"y":1,"w":108,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":58,"w":108,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_35.png",
+	"frame": {"x":661,"y":1,"w":113,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":58,"w":113,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_36.png",
+	"frame": {"x":111,"y":1,"w":114,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":59,"w":114,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_37.png",
+	"frame": {"x":776,"y":1,"w":115,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":58,"w":115,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_38.png",
+	"frame": {"x":426,"y":219,"w":113,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":56,"w":113,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_39.png",
+	"frame": {"x":841,"y":219,"w":114,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":54,"w":114,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_40.png",
+	"frame": {"x":288,"y":439,"w":111,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":52,"w":111,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_41.png",
+	"frame": {"x":583,"y":440,"w":105,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":50,"w":105,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_42.png",
+	"frame": {"x":92,"y":660,"w":94,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":94,"y":48,"w":94,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_43.png",
+	"frame": {"x":359,"y":664,"w":86,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":47,"w":86,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_44.png",
+	"frame": {"x":447,"y":666,"w":84,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":47,"w":84,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_45.png",
+	"frame": {"x":90,"y":888,"w":82,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":46,"w":82,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_46.png",
+	"frame": {"x":174,"y":892,"w":81,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":46,"w":81,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "CAT_ThisOrThat_47.png",
+	"frame": {"x":257,"y":892,"w":81,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":46,"w":81,"h":228},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "CAT_Thisorthat.png",
+	"format": "RGBA8888",
+	"size": {"w":956,"h":1128},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0bbb6538a27cc441d1de9070dc0ff3d3:2b52f52570ba294566be192e794e3b41:bc566e3cf3612a0567e5e6ec24f45101$"
+}
+}

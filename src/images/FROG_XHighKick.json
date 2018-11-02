@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "FROG_XHighKick_00.png",
+	"frame": {"x":383,"y":1,"w":156,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":74,"w":156,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_02.png",
+	"frame": {"x":686,"y":1,"w":158,"h":191},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":81,"w":158,"h":191},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_04.png",
+	"frame": {"x":1004,"y":1,"w":160,"h":183},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":89,"w":160,"h":183},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_06.png",
+	"frame": {"x":1491,"y":1,"w":160,"h":171},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":101,"w":160,"h":171},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_08.png",
+	"frame": {"x":1328,"y":1,"w":161,"h":172},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":44,"y":100,"w":161,"h":172},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_10.png",
+	"frame": {"x":1166,"y":1,"w":160,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":51,"y":92,"w":160,"h":180},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_12.png",
+	"frame": {"x":846,"y":1,"w":156,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":84,"w":156,"h":188},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_14.png",
+	"frame": {"x":541,"y":1,"w":143,"h":196},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":76,"w":143,"h":196},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_16.png",
+	"frame": {"x":262,"y":1,"w":119,"h":201},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":71,"w":119,"h":201},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_18.png",
+	"frame": {"x":165,"y":1,"w":95,"h":205},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":90,"y":67,"w":95,"h":205},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_20.png",
+	"frame": {"x":1,"y":1,"w":84,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":65,"w":84,"h":207},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "FROG_XHighKick_22.png",
+	"frame": {"x":87,"y":1,"w":76,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":65,"w":76,"h":207},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "FROG_XHighKick.png",
+	"format": "RGBA8888",
+	"size": {"w":1652,"h":209},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1d51fc1b274fddc41e0a178f6fc71939:77209878d58d1d0650812bbee7c77f9c:acac1bc026192a9ca618bfa1bd3901f9$"
+}
+}

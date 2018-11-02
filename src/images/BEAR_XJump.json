@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "BEAR_XJump_00.png",
+	"frame": {"x":172,"y":1,"w":158,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":18,"w":158,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_02.png",
+	"frame": {"x":332,"y":1,"w":158,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":19,"w":158,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_04.png",
+	"frame": {"x":1,"y":1,"w":169,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":22,"w":169,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_06.png",
+	"frame": {"x":584,"y":1,"w":197,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":51,"y":31,"w":197,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_08.png",
+	"frame": {"x":783,"y":1,"w":210,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":44,"y":48,"w":210,"h":213},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_10.png",
+	"frame": {"x":995,"y":1,"w":177,"h":205},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":66,"w":177,"h":205},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_12.png",
+	"frame": {"x":1281,"y":1,"w":147,"h":197},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":76,"w":147,"h":197},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_14.png",
+	"frame": {"x":1550,"y":1,"w":130,"h":193},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":85,"y":80,"w":130,"h":193},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_16.png",
+	"frame": {"x":1682,"y":1,"w":124,"h":191},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":88,"y":82,"w":124,"h":191},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_18.png",
+	"frame": {"x":1430,"y":1,"w":118,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":79,"w":118,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_20.png",
+	"frame": {"x":1174,"y":1,"w":105,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":69,"w":105,"h":204},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "BEAR_XJump_22.png",
+	"frame": {"x":492,"y":1,"w":90,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":55,"w":90,"h":218},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "BEAR_XJump.png",
+	"format": "RGBA8888",
+	"size": {"w":1807,"h":220},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:007dcdf824a8b588cba6ea09b5ef1b56:3ed6f762717d5c78c71b05eb12161897:2aa2819a18b1705df3f7f25a144289cd$"
+}
+}

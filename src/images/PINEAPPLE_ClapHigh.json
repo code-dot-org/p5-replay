@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "PINEAPPLE_ClapHigh_00000.png",
+	"frame": {"x":457,"y":1,"w":78,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":25,"w":78,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00002.png",
+	"frame": {"x":1009,"y":248,"w":77,"h":245},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":27,"w":77,"h":245},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00004.png",
+	"frame": {"x":99,"y":250,"w":75,"h":243},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":29,"w":75,"h":243},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00006.png",
+	"frame": {"x":802,"y":249,"w":78,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":34,"w":78,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00008.png",
+	"frame": {"x":1088,"y":238,"w":84,"h":235},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":37,"w":84,"h":235},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00010.png",
+	"frame": {"x":1174,"y":237,"w":89,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":38,"w":89,"h":234},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00012.png",
+	"frame": {"x":1161,"y":1,"w":94,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":38,"w":94,"h":234},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00014.png",
+	"frame": {"x":1050,"y":1,"w":109,"h":235},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":37,"w":109,"h":235},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00016.png",
+	"frame": {"x":882,"y":249,"w":125,"h":236},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":87,"y":36,"w":125,"h":236},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00018.png",
+	"frame": {"x":647,"y":249,"w":153,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":77,"y":34,"w":153,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00020.png",
+	"frame": {"x":396,"y":250,"w":141,"h":239},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":99,"y":33,"w":141,"h":239},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00022.png",
+	"frame": {"x":176,"y":250,"w":120,"h":241},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":31,"w":120,"h":241},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00024.png",
+	"frame": {"x":298,"y":250,"w":96,"h":241},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":31,"w":96,"h":241},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00026.png",
+	"frame": {"x":1,"y":250,"w":96,"h":243},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":29,"w":96,"h":243},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00028.png",
+	"frame": {"x":539,"y":249,"w":106,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":28,"w":106,"h":244},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00030.png",
+	"frame": {"x":928,"y":1,"w":120,"h":245},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":27,"w":120,"h":245},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00032.png",
+	"frame": {"x":671,"y":1,"w":131,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":26,"w":131,"h":246},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00034.png",
+	"frame": {"x":537,"y":1,"w":132,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":26,"w":132,"h":246},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00036.png",
+	"frame": {"x":804,"y":1,"w":122,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":26,"w":122,"h":246},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00038.png",
+	"frame": {"x":1,"y":1,"w":108,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":25,"w":108,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00040.png",
+	"frame": {"x":111,"y":1,"w":95,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":25,"w":95,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00042.png",
+	"frame": {"x":208,"y":1,"w":84,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":25,"w":84,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00044.png",
+	"frame": {"x":294,"y":1,"w":80,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":25,"w":80,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_ClapHigh_00046.png",
+	"frame": {"x":376,"y":1,"w":79,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":25,"w":79,"h":247},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "PINEAPPLE_ClapHigh.png",
+	"format": "RGBA8888",
+	"size": {"w":1264,"h":494},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3e06ddaf8ea9a5c2928867c6da666349:5f08367dffc8c8edcea8d1f18d12d8fa:f43eae2b531debabbacb273670b1ae07$"
+}
+}
