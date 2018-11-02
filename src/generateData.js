@@ -6,6 +6,16 @@ const ANIMATION_COUNT = danceParty.constants.MOVE_NAMES.length;
 const FRAMES_PER_ANIMATION = danceParty.constants.FRAMES;
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 
+// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setBackgroundEffect.json
+const BG_EFFECT_NAMES = [
+  "disco",
+  "rainbow",
+  "diamonds",
+  "splatter",
+  "swirl",
+  "spiral",
+];
+
 const myArgs = process.argv.slice(2);
 const FRAME_COUNT = parseInt(myArgs[0]);
 const SPRITE_COUNT = parseInt(myArgs[1]);
@@ -51,8 +61,20 @@ for (let i = 0; i < SPRITE_COUNT; ++i) {
 
 const frames = [];
 for (let i = 0; i < FRAME_COUNT; ++i) {
+  const frame = {};
   sprites.forEach(iterSprite);
-  frames.push(sprites.map(sprite => Object.assign({}, sprite)));
+  frame.sprites = sprites.map(sprite => Object.assign({}, sprite));
+  if (i > 0) {
+    frame.bg = frames[i-1].bg;
+  } else {
+    frame.bg = randFromArray(BG_EFFECT_NAMES);
+  }
+
+  if (Math.random() < 0.1) {
+    frame.bg = randFromArray(BG_EFFECT_NAMES);
+  }
+
+  frames.push(frame);
 }
 
 console.log(JSON.stringify(frames));

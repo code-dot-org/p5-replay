@@ -45,6 +45,7 @@ window.ImageData = Canvas.ImageData;
 
 const danceParty = require('@code-dot-org/dance-party');
 
+const Effects = danceParty.Effects;
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
@@ -61,6 +62,9 @@ const p5Inst = new P5(function (p5obj) {
 const canvas = window.document.createElement('canvas');
 p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
 p5Inst._renderer.resize(WIDTH, HEIGHT);
+
+const backgroundEffects = new Effects(p5Inst, 1);
+const foregroundEffects = new Effects(p5Inst, 0.8);
 
 function loadNewSpriteSheet(spriteName, moveName) {
   debug(`loading ${spriteName}@${moveName}`);
@@ -144,8 +148,8 @@ module.exports.runTestExport = async (outputPath, replay) => {
 module.exports.renderImages = async (replay, writer) => {
   const sprites = [];
   for (const frame of replay) {
-    for (let i = 0; i < frame.length; i++) {
-      const entry = frame[i];
+    for (let i = 0; i < frame.sprites.length; i++) {
+      const entry = frame.sprites[i];
 
       if (!sprites[i]) {
         sprites[i] = p5Inst.createSprite();
@@ -168,7 +172,7 @@ module.exports.renderImages = async (replay, writer) => {
       sprite.y = entry.y;
     }
 
-    p5Inst.background('#fff');
+    backgroundEffects[frame.bg].draw({});
     p5Inst.drawSprites();
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
