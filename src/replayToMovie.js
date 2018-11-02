@@ -1,7 +1,7 @@
 const spawn = require('child_process').spawn;
 const os = require('os');
+const Canvas = require('canvas');
 const danceParty = require('@code-dot-org/dance-party');
-const P5 = danceParty.loadP5
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
@@ -17,6 +17,33 @@ const IMAGE_BASE = "./images/";
 const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
+
+// Mock the browser environment for p5.
+global.window = global;
+window.performance = {now: Date.now};
+window.document = {
+  hasFocus: () => {
+  },
+  getElementsByTagName: () => [],
+  createElement: type => {
+    if (type !== 'canvas') {
+      throw new Error('Cannot create type.');
+    }
+    const created = Canvas.createCanvas();
+    created.style = {};
+    return created;
+  }
+};
+window.screen = {};
+window.addEventListener = () => {};
+window.removeEventListener = () => {};
+window.Image = Canvas.Image;
+window.ImageData = Canvas.ImageData;
+
+const P5 = require('@code-dot-org/p5');
+P5.disableFriendlyErrors = true;
+
+require('@code-dot-org/p5.play/lib/p5.play');
 
 const p5Inst = new P5(function (p5obj) {
   p5obj._fixedSpriteAnimationFrameSizes = true;
