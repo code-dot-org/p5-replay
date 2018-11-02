@@ -13,6 +13,7 @@ process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
+const IMAGE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/"
 const IMAGE_BASE = "./images/";
 const ANIMATIONS = {};
 const WIDTH = 400;
@@ -54,9 +55,13 @@ const canvas = window.document.createElement('canvas');
 p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
 p5Inst._renderer.resize(WIDTH, HEIGHT);
 
-function loadNewSpriteSheet(urlOrPath) {
+function loadNewSpriteSheet(spriteName, moveName) {
   return new Promise(function (resolve, reject) {
-    p5Inst.loadImage(urlOrPath, resolve, reject);
+    const localFile = IMAGE_BASE + spriteName + "_" + moveName + ".png";
+    p5Inst.loadImage(localFile, resolve, function () {
+      const s3File = IMAGE_S3_BASE + spriteName + "_" + moveName + ".png";
+      p5Inst.loadImage(s3File, resolve, reject);
+    });
   }).then(function (image) {
     return p5Inst.loadSpriteSheet(
       image,
@@ -75,8 +80,7 @@ async function loadSprite(spriteName) {
   ANIMATIONS[spriteName] = [];
   for (let j = 0; j < MOVE_NAMES.length; j++) {
     const moveName = MOVE_NAMES[j].name;
-    const file = IMAGE_BASE + spriteName + "_" + moveName + ".png";
-    const spriteSheet = await loadNewSpriteSheet(file);
+    const spriteSheet = await loadNewSpriteSheet(spriteName, moveName);
     ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet))
   }
 }
