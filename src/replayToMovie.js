@@ -1,6 +1,9 @@
-const spawn = require('child_process').spawn;
-const os = require('os');
 const Canvas = require('canvas');
+const fs = require('fs');
+const os = require('os');
+const request = require("request")
+const spawn = require('child_process').spawn;
+
 const danceParty = require('@code-dot-org/dance-party');
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
@@ -56,17 +59,44 @@ p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
 p5Inst._renderer.resize(WIDTH, HEIGHT);
 
 function loadNewSpriteSheet(spriteName, moveName) {
-  return new Promise(function (resolve, reject) {
-    const localFile = IMAGE_BASE + spriteName + "_" + moveName + ".png";
-    p5Inst.loadImage(localFile, resolve, function () {
-      const s3File = IMAGE_S3_BASE + spriteName + "_" + moveName + ".png";
+  debug(`loading ${spriteName}@${moveName}`);
+
+  const image = new Promise((resolve, reject) => {
+    const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".png";
+    p5Inst.loadImage(localFile, resolve, () => {
+      debug(`could not file ${spriteName}@${moveName} image locally, loading from S3`);
+      const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".png";
       p5Inst.loadImage(s3File, resolve, reject);
     });
-  }).then(function (image) {
+  });
+
+  const jsonData = new Promise((resolve, reject) => {
+    const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".json";
+    fs.readFile(SPRITE_BASE + spriteName + "_" + moveName + ".json", (err, data) => {  
+      if (err) {
+      debug(`could not file ${spriteName}@${moveName} json locally, loading from S3`);
+        const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".json";
+        request({
+          url: s3File,
+          json: true
+        }, (error, response, body) => {
+          if (!error && response.statusCode === 200) {
+            resolve(body);
+          } else {
+            reject(error);
+          }
+        });
+      } else {
+        resolve(JSON.parse(data));
+      }
+    });
+  });
+
+  return Promise.all([image, jsonData]).then(([image, jsonData]) => {
     return p5Inst.loadSpriteSheet(
       image,
-      danceParty.constants.SIZE, danceParty.constants.SIZE,
-      danceParty.constants.FRAMES
+      jsonData.frames,
+      true
     );
   });
 }
