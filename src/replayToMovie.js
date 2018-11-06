@@ -148,8 +148,15 @@ module.exports.runTestExport = async (outputPath, replay) => {
 module.exports.renderImages = async (replay, writer) => {
   const sprites = [];
   for (const frame of replay) {
-    for (let i = 0; i < frame.sprites.length; i++) {
-      const entry = frame.sprites[i];
+    // temporarily support both the new version of replay logs that contain
+    // sprites as well as envrionmental data, and the old version that contains
+    // just sprites
+    const onlySprites = !frame.sprites;
+
+    // Load sprites and set state
+    const frameSprites = onlySprites ? frame : frame.sprites;
+    for (let i = 0; i < frameSprites.length; i++) {
+      const entry = frameSprites[i];
 
       if (!sprites[i]) {
         sprites[i] = p5Inst.createSprite();
@@ -172,8 +179,21 @@ module.exports.renderImages = async (replay, writer) => {
       sprite.y = entry.y;
     }
 
-    backgroundEffects[frame.bg].draw({});
-    p5Inst.drawSprites();
+    // Draw frame
+    if (onlySprites) {
+      p5Inst.background('#fff');
+      p5Inst.drawSprites();
+    } else {
+      backgroundEffects[frame.bg || 'none'].draw(frame.context);
+      p5Inst.drawSprites();
+      if (frame.fg) {
+        p5Inst.push();
+        p5Inst.blendMode(foregroundEffects.blend);
+        backgroundEffects[frame.fg].draw(frame.context);
+        p5Inst.pop();
+      }
+    }
+
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
   }
