@@ -5,11 +5,17 @@ const Canvas = require('canvas');
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
 const CRF = process.env.QUALITY || 23;
+const IMAGE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/"
+const IMAGE_BASE = "./images/";
+const ANIMATIONS = {};
+const WIDTH = 400;
+const HEIGHT = 400;
 
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
 // Mock the browser environment for p5.
+// Note: must be done before requiring danceParty
 global.window = global;
 window.performance = {now: Date.now};
 window.document = {
@@ -27,36 +33,42 @@ window.document = {
 };
 window.screen = {};
 window.addEventListener = () => {};
+window.removeEventListener = () => {};
 window.Image = Canvas.Image;
 window.ImageData = Canvas.ImageData;
 
-// Initialize p5
-// sprite and move values copied from cdo/apps/src/dance/p5.dance.js
-// TODO elijah: find a less-fragile way to manage this shared data
-const SPRITE_NAMES = ["ALIEN", "BEAR", "CAT", "DOG", "DUCK", "FROG", "MOOSE", "PINEAPPLE", "ROBOT", "SHARK", "UNICORN"];
-const MOVE_NAMES = ["Rest", "ClapHigh", "Clown", "Dab", "DoubleJam", "Drop", "Floss", "Fresh", "Kick", "Roll", "ThisOrThat", "Thriller"];
+const danceParty = require('@code-dot-org/dance-party');
 
-const IMAGE_BASE = "./images/";
-const ANIMATIONS = {};
-const WIDTH = 400;
-const HEIGHT = 400;
+const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
+const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
-const p5 = require('./node_modules/@code-dot-org/p5.play/p5.js');
-require('./node_modules/@code-dot-org/p5.play/lib/p5.play.js');
-const p5Inst = new p5(function (p5obj) {
+const P5 = require('@code-dot-org/p5');
+P5.disableFriendlyErrors = true;
+
+require('@code-dot-org/p5.play/lib/p5.play');
+
+const p5Inst = new P5(function (p5obj) {
   p5obj._fixedSpriteAnimationFrameSizes = true;
 });
 
 // Create our emulated canvas.
 const canvas = window.document.createElement('canvas');
-p5Inst._renderer = new p5.Renderer2D(canvas, p5Inst, false);
+p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
 p5Inst._renderer.resize(WIDTH, HEIGHT);
 
-function loadNewSpriteSheet(urlOrPath) {
+function loadNewSpriteSheet(spriteName, moveName) {
   return new Promise(function (resolve, reject) {
-    p5Inst.loadImage(urlOrPath, resolve, reject);
+    const localFile = IMAGE_BASE + spriteName + "_" + moveName + ".png";
+    p5Inst.loadImage(localFile, resolve, function () {
+      const s3File = IMAGE_S3_BASE + spriteName + "_" + moveName + ".png";
+      p5Inst.loadImage(s3File, resolve, reject);
+    });
   }).then(function (image) {
-    return p5Inst.loadSpriteSheet(image, 300, 300, 24);
+    return p5Inst.loadSpriteSheet(
+      image,
+      danceParty.constants.SIZE, danceParty.constants.SIZE,
+      danceParty.constants.FRAMES
+    );
   });
 }
 
@@ -68,9 +80,8 @@ async function loadSprite(spriteName) {
   debug(`loading animations for ${spriteName}`);
   ANIMATIONS[spriteName] = [];
   for (let j = 0; j < MOVE_NAMES.length; j++) {
-    const moveName = MOVE_NAMES[j];
-    const file = IMAGE_BASE + spriteName + "_" + moveName + ".png";
-    const spriteSheet = await loadNewSpriteSheet(file);
+    const moveName = MOVE_NAMES[j].name;
+    const spriteSheet = await loadNewSpriteSheet(spriteName, moveName);
     ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet))
   }
 }
