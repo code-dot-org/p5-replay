@@ -1,25 +1,21 @@
 const spawn = require('child_process').spawn;
 const os = require('os');
 const Canvas = require('canvas');
-const danceParty = require('@code-dot-org/dance-party');
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
 const CRF = process.env.QUALITY || 23;
-
-// Allow binaries to run out of the bundle
-process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
-
-const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
-const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
-
 const IMAGE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/"
 const IMAGE_BASE = "./images/";
 const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
 
+// Allow binaries to run out of the bundle
+process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
+
 // Mock the browser environment for p5.
+// Note: must be done before requiring danceParty
 global.window = global;
 window.performance = {now: Date.now};
 window.document = {
@@ -40,6 +36,11 @@ window.addEventListener = () => {};
 window.removeEventListener = () => {};
 window.Image = Canvas.Image;
 window.ImageData = Canvas.ImageData;
+
+const danceParty = require('@code-dot-org/dance-party');
+
+const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
+const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
 const P5 = require('@code-dot-org/p5');
 P5.disableFriendlyErrors = true;
