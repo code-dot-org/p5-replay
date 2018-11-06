@@ -1,10 +1,41 @@
 // Generates some random animation data formatted to feed renderer
 // Usage:
 // node generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
+const Canvas = require('canvas');
+global.window = global;
+window.performance = {now: Date.now};
+window.document = {
+  hasFocus: () => {
+  },
+  getElementsByTagName: () => [],
+  createElement: type => {
+    if (type !== 'canvas') {
+      throw new Error('Cannot create type.');
+    }
+    const created = Canvas.createCanvas();
+    created.style = {};
+    return created;
+  }
+};
+window.screen = {};
+window.addEventListener = () => {};
+window.removeEventListener = () => {};
+window.Image = Canvas.Image;
+window.ImageData = Canvas.ImageData;
 const danceParty = require('@code-dot-org/dance-party');
 const ANIMATION_COUNT = danceParty.constants.MOVE_NAMES.length;
 const FRAMES_PER_ANIMATION = danceParty.constants.FRAMES;
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
+
+// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setBackgroundEffect.json
+const BG_EFFECT_NAMES = [
+  "disco",
+  "rainbow",
+  "diamonds",
+  "splatter",
+  "swirl",
+  "spiral",
+];
 
 const myArgs = process.argv.slice(2);
 const FRAME_COUNT = parseInt(myArgs[0]);
@@ -51,8 +82,29 @@ for (let i = 0; i < SPRITE_COUNT; ++i) {
 
 const frames = [];
 for (let i = 0; i < FRAME_COUNT; ++i) {
+  const frame = {
+    context: {
+      backgroundColor: '#fff',
+      isPeak: Math.random() < 0.05,
+      centroid: 0,
+      bpm: 133
+    }
+  };
+
+  if (i > 0) {
+    frame.bg = frames[i-1].bg;
+  } else {
+    frame.bg = randFromArray(BG_EFFECT_NAMES);
+  }
+
+  if (Math.random() < 0.05) {
+    frame.bg = randFromArray(BG_EFFECT_NAMES);
+  }
+
   sprites.forEach(iterSprite);
-  frames.push(sprites.map(sprite => Object.assign({}, sprite)));
+  frame.sprites = sprites.map(sprite => Object.assign({}, sprite));
+
+  frames.push(frame);
 }
 
 console.log(JSON.stringify(frames));

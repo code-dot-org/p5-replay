@@ -45,6 +45,7 @@ window.ImageData = Canvas.ImageData;
 
 const danceParty = require('@code-dot-org/dance-party');
 
+const Effects = danceParty.Effects;
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
@@ -55,12 +56,17 @@ require('@code-dot-org/p5.play/lib/p5.play');
 
 const p5Inst = new P5(function (p5obj) {
   p5obj._fixedSpriteAnimationFrameSizes = true;
+  p5obj.width = WIDTH;
+  p5obj.height = HEIGHT;
 });
 
 // Create our emulated canvas.
 const canvas = window.document.createElement('canvas');
 p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
 p5Inst._renderer.resize(WIDTH, HEIGHT);
+
+const backgroundEffects = new Effects(p5Inst, 1);
+const foregroundEffects = new Effects(p5Inst, 0.8);
 
 function loadNewSpriteSheet(spriteName, moveName) {
   debug(`loading ${spriteName}@${moveName}`);
@@ -144,8 +150,15 @@ module.exports.runTestExport = async (outputPath, replay) => {
 module.exports.renderImages = async (replay, writer) => {
   const sprites = [];
   for (const frame of replay) {
-    for (let i = 0; i < frame.length; i++) {
-      const entry = frame[i];
+    // temporarily support both the new version of replay logs that contain
+    // sprites as well as envrionmental data, and the old version that contains
+    // just sprites
+    const onlySprites = !frame.sprites;
+
+    // Load sprites and set state
+    const frameSprites = onlySprites ? frame : frame.sprites;
+    for (let i = 0; i < frameSprites.length; i++) {
+      const entry = frameSprites[i];
 
       if (!sprites[i]) {
         sprites[i] = p5Inst.createSprite();
@@ -168,8 +181,21 @@ module.exports.renderImages = async (replay, writer) => {
       sprite.y = entry.y;
     }
 
+    // Draw frame
     p5Inst.background('#fff');
-    p5Inst.drawSprites();
+    if (onlySprites) {
+      p5Inst.drawSprites();
+    } else {
+      backgroundEffects[frame.bg || 'none'].draw(frame.context);
+      p5Inst.drawSprites();
+      if (frame.fg) {
+        p5Inst.push();
+        p5Inst.blendMode(foregroundEffects.blend);
+        backgroundEffects[frame.fg].draw(frame.context);
+        p5Inst.pop();
+      }
+    }
+
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
   }
