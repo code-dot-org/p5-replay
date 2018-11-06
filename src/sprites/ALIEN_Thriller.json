@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "ALIEN_Thriller_00000.png",
+	"frame": {"x":406,"y":955,"w":86,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":47,"w":86,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00002.png",
+	"frame": {"x":201,"y":962,"w":85,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":49,"w":85,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00004.png",
+	"frame": {"x":1,"y":960,"w":89,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":54,"w":89,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00006.png",
+	"frame": {"x":1,"y":753,"w":104,"h":205},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":63,"w":104,"h":205},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00008.png",
+	"frame": {"x":120,"y":412,"w":109,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":74,"w":109,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00010.png",
+	"frame": {"x":245,"y":386,"w":110,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":84,"w":110,"h":186},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00012.png",
+	"frame": {"x":373,"y":379,"w":116,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":90,"w":116,"h":182},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00014.png",
+	"frame": {"x":1,"y":179,"w":123,"h":178},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":94,"w":123,"h":178},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00016.png",
+	"frame": {"x":1,"y":1,"w":126,"h":176},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":96,"w":126,"h":176},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00018.png",
+	"frame": {"x":254,"y":1,"w":123,"h":178},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":94,"w":123,"h":178},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00020.png",
+	"frame": {"x":373,"y":195,"w":117,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":90,"w":117,"h":182},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00022.png",
+	"frame": {"x":231,"y":574,"w":108,"h":187},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":85,"w":108,"h":187},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00024.png",
+	"frame": {"x":341,"y":761,"w":103,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":80,"w":103,"h":192},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00026.png",
+	"frame": {"x":111,"y":608,"w":106,"h":196},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":76,"w":106,"h":196},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00028.png",
+	"frame": {"x":1,"y":553,"w":108,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":74,"w":108,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00030.png",
+	"frame": {"x":317,"y":955,"w":87,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":74,"w":87,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00032.png",
+	"frame": {"x":219,"y":763,"w":96,"h":197},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":75,"w":96,"h":197},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00034.png",
+	"frame": {"x":357,"y":563,"w":108,"h":196},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":76,"w":108,"h":196},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00036.png",
+	"frame": {"x":1,"y":359,"w":117,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":80,"w":117,"h":192},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00038.png",
+	"frame": {"x":379,"y":1,"w":119,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":80,"w":119,"h":192},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00040.png",
+	"frame": {"x":126,"y":214,"w":117,"h":196},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":76,"w":117,"h":196},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00042.png",
+	"frame": {"x":254,"y":181,"w":117,"h":203},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":69,"w":117,"h":203},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00044.png",
+	"frame": {"x":129,"y":1,"w":123,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":61,"w":123,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Thriller_00046.png",
+	"frame": {"x":107,"y":806,"w":92,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":53,"w":92,"h":219},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ALIEN_Thriller.png",
+	"format": "RGBA8888",
+	"size": {"w":499,"h":1186},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:badac1d10325e0cf35df88b38c642d0c:786a5504b69259698d5952b51f9711c2:9c4b20e7298c1dfd4032eb5c8345dd8d$"
+}
+}

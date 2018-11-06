@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "PINEAPPLE_Roll_00000.png",
+	"frame": {"x":157,"y":1425,"w":78,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":25,"w":78,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00002.png",
+	"frame": {"x":1,"y":1671,"w":78,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":25,"w":78,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00004.png",
+	"frame": {"x":1,"y":1414,"w":75,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":25,"w":75,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00006.png",
+	"frame": {"x":79,"y":1175,"w":77,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":117,"y":26,"w":77,"h":246},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00008.png",
+	"frame": {"x":1,"y":1168,"w":76,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":120,"y":28,"w":76,"h":244},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00010.png",
+	"frame": {"x":80,"y":931,"w":76,"h":242},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":122,"y":30,"w":76,"h":242},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00012.png",
+	"frame": {"x":159,"y":695,"w":77,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":123,"y":34,"w":77,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00014.png",
+	"frame": {"x":1,"y":692,"w":77,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":123,"y":38,"w":77,"h":234},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00016.png",
+	"frame": {"x":81,"y":462,"w":77,"h":231},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":121,"y":41,"w":77,"h":231},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00018.png",
+	"frame": {"x":158,"y":231,"w":78,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":43,"w":78,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00020.png",
+	"frame": {"x":1,"y":1,"w":77,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":44,"w":77,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00022.png",
+	"frame": {"x":80,"y":1,"w":75,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":44,"w":75,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00024.png",
+	"frame": {"x":157,"y":1,"w":72,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":44,"w":72,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00026.png",
+	"frame": {"x":1,"y":231,"w":76,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":44,"w":76,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00028.png",
+	"frame": {"x":79,"y":231,"w":77,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":44,"w":77,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00030.png",
+	"frame": {"x":1,"y":461,"w":78,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":43,"w":78,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00032.png",
+	"frame": {"x":160,"y":462,"w":78,"h":231},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":41,"w":78,"h":231},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00034.png",
+	"frame": {"x":80,"y":695,"w":77,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":38,"w":77,"h":234},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00036.png",
+	"frame": {"x":1,"y":928,"w":77,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":34,"w":77,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00038.png",
+	"frame": {"x":158,"y":935,"w":78,"h":242},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":30,"w":78,"h":242},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00040.png",
+	"frame": {"x":158,"y":1179,"w":78,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":28,"w":78,"h":244},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00042.png",
+	"frame": {"x":78,"y":1423,"w":77,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":26,"w":77,"h":246},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00044.png",
+	"frame": {"x":81,"y":1674,"w":77,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":25,"w":77,"h":247},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "PINEAPPLE_Roll_00046.png",
+	"frame": {"x":160,"y":1674,"w":78,"h":247},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":25,"w":78,"h":247},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "PINEAPPLE_Roll.png",
+	"format": "RGBA8888",
+	"size": {"w":239,"h":1922},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8e9db2976fdb4ed816c403762df82e3d:24a92f55f3ca1ce605241c91cb7bf421:beccaa5828ab09843558e4516f17de2d$"
+}
+}
