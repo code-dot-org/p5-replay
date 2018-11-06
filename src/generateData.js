@@ -1,14 +1,14 @@
 // Generates some random animation data formatted to feed renderer
 // Usage:
 // node generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
-const danceParty = require('@code-dot-org/dance-party');
-const ANIMATION_COUNT = danceParty.constants.MOVE_NAMES.length;
-const FRAMES_PER_ANIMATION = danceParty.constants.FRAMES;
-const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 
 const myArgs = process.argv.slice(2);
 const FRAME_COUNT = parseInt(myArgs[0]);
 const SPRITE_COUNT = parseInt(myArgs[1]);
+
+const SPRITE_NAMES = ["ALIEN", "BEAR", "CAT", "DOG", "DUCK", "FROG", "MOOSE", "PINEAPPLE", "ROBOT", "SHARK", "UNICORN"];
+const FRAMES_PER_ANIMATION = 24;
+const ANIMATION_COUNT = 12;
 
 const randRange = (limit) => Math.floor(Math.random()*limit);
 const randFromArray = (a) => a[randRange(a.length)];
