@@ -56,6 +56,8 @@ require('@code-dot-org/p5.play/lib/p5.play');
 
 const p5Inst = new P5(function (p5obj) {
   p5obj._fixedSpriteAnimationFrameSizes = true;
+  p5obj.width = WIDTH;
+  p5obj.height = HEIGHT;
 });
 
 // Create our emulated canvas.
