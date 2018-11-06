@@ -182,8 +182,8 @@ module.exports.renderImages = async (replay, writer) => {
     }
 
     // Draw frame
+    p5Inst.background('#fff');
     if (onlySprites) {
-      p5Inst.background('#fff');
       p5Inst.drawSprites();
     } else {
       backgroundEffects[frame.bg || 'none'].draw(frame.context);
