@@ -1,6 +1,6 @@
 // Generates some random animation data formatted to feed renderer
 // Usage:
-// node generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
+// node ./scripts/generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
 const Canvas = require('canvas');
 global.window = global;
 window.performance = {now: Date.now};
