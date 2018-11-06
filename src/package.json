@@ -12,10 +12,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/code-dot-org/p5-replay.git"
   },
-  "author": "Josh Lory <josh.lory@code.org>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@code-dot-org/dance-party": "0.0.17",
+    "@code-dot-org/dance-party": "0.0.20",
     "@code-dot-org/p5.play": "1.3.5-cdo",
     "canvas": "2.0.0-alpha.13",
     "node-pre-gyp": "0.9.1",
