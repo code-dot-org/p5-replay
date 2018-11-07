@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@code-dot-org/dance-party@0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@code-dot-org/dance-party/-/dance-party-0.0.20.tgz#a8251796214c8a7e09edd4dc4ae17a1fab971bff"
+"@code-dot-org/dance-party@0.0.23":
+  version "0.0.23"
+  resolved "https://registry.yarnpkg.com/@code-dot-org/dance-party/-/dance-party-0.0.23.tgz#ec6f8cb7652577f260f9947829c9f0b5497437a5"
 
 "@code-dot-org/p5.play@1.3.5-cdo":
   version "1.3.5-cdo"
