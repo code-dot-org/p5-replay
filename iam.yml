@@ -49,6 +49,11 @@ Resources:
                 - "codepipeline:PutApprovalResult"
                 - "cloudformation:DescribeStacks"
               Resource: '*'
+            - Effect: Allow
+              Action:
+                - "xray:PutTraceSegments"
+                - "xray:PutTelemetryRecords"
+              Resource: '*'
       ManagedPolicyArns:
         - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 

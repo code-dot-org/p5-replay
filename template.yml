@@ -19,6 +19,7 @@ Globals:
     Runtime: nodejs8.10
     Timeout: 30
     MemorySize: 3008
+    Tracing: Active
     Environment:
       Variables:
         SOURCE_BUCKET: !Ref SourceBucketName
