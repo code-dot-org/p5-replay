@@ -2,6 +2,7 @@ const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 const {tmpdir} = require('os');
 const AWS = require('aws-sdk');
+const AWSXRay = require('aws-xray-sdk-core');
 const { join, basename } = require('path');
 
 const s3 = new AWS.S3();
@@ -19,6 +20,7 @@ const HEADERS = {
   'Access-Control-Allow-Origin': '*'
 };
 
+AWSXRay.enableManualMode()
 
 function getOutputURL(uuid) {
   return `/${DEST_KEY}/video-${uuid}.mp4`;
