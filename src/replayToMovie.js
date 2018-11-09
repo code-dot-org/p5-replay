@@ -151,15 +151,19 @@ async function loadSprite(spriteName) {
   }
 }
 
-module.exports.runTestExport = async (outputPath, replay) => {
+module.exports.runTestExport = async (outputPath, replay, parentSegment) => {
+  //const exportSegment = segment.addNewSubsegment('runExport')
+  const exportSegment = new AWSXRay.Segment('runExport', parentSegment.trace_id, parentSegment.id)
   let [pipe, promise] = module.exports.renderVideo(outputPath);
   pipe._handle.setBlocking(true);
   await module.exports.renderImages(replay, pipe);
   await promise.catch(err => {
+    exportSegment.addError(err);
     // eslint-disable-next-line no-console
     console.error(err);
     process.exit(1);
   });
+  exportSegment.close();
 };
 
 module.exports.renderImages = async (replay, writer) => {
