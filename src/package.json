@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Node.js .mp4 generator for p5.js sketches",
   "scripts": {
+    "lint": "eslint --ext .js .",
     "test": "docker run --rm -v $PWD:/wrk p5-replay/build-service /bin/bash -c 'cd /wrk && node /wrk/test/local.js",
     "test-sam": "sam local generate-event s3 put | sam local invoke --template ../template.yml RenderFromS3",
     "deploy": "serverless deploy",
@@ -21,5 +22,7 @@
     "request": "^2.88.0",
     "uuid": "^3.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
 }
