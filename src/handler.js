@@ -2,6 +2,8 @@ const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 const {tmpdir} = require('os');
 const AWS = require('aws-sdk');
+const AWSXRay = require('aws-xray-sdk-core');
+
 const s3 = new AWS.S3();
 const { join, basename } = require('path');
 
@@ -16,6 +18,8 @@ const HEADERS = {
   'Content-Type': 'application/json',
   'Access-Control-Allow-Origin': '*'
 };
+
+AWSXRay.enableManualMode()
 
 function debug(str) {
   if (LOCAL) {
