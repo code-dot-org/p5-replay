@@ -30,11 +30,12 @@ function getOutputURL(uuid) {
 async function renderVideo(replay, callback, forceUUID = null) {
   try {
     const uuid = forceUUID || uuidv4();
-    const outputPath = '/tmp/video-' + uuid + '.mp4';
+    const outputFile = `video-${uuid}.mp4`;
+    const outputPath = `/tmp/${outputFile}`
     await runTestExport(outputPath, replay);
 
     debug("Export complete, uploading");
-    await uploadFolder(BUCKET, DEST_KEY, '/tmp/');
+    await uploadFile(BUCKET, `${DEST_KEY}/${outputFile}`, outputPath);
 
     const fileStats = fs.statSync(outputPath);
     fs.unlinkSync(outputPath); // Delete file when done
@@ -119,16 +120,9 @@ function upload(Bucket, Key, Body, ContentEncoding, ContentType) {
   }).promise();
 }
 
-function uploadFolder(bucket, key, folder, contentEncoding, contentType) {
-  return new Promise((resolve, reject) => {
-    const files = fs.readdirSync(folder);
-    Promise.all(
-      files.map((file) => {
-        debug("Uploading file to " + file);
-        return upload(bucket, `${key}/${file}`, fs.createReadStream(join(folder, file)), contentEncoding, contentType);
-      })
-    ).then(resolve).catch(reject);
-  })
+function uploadFile(bucket, key, file, contentEncoding, contentType) {
+  debug(`Uploading local file at ${file} to ${key} in ${bucket}`);
+  return upload(bucket, key, fs.createReadStream(file), contentEncoding, contentType);
 }
 
 function download_and_return_tmp_path(Bucket, Key) {

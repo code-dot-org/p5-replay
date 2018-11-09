@@ -17,6 +17,11 @@ const ANIMATIONS = {};
 const WIDTH = 400;
 const HEIGHT = 400;
 
+// Some effects don't currently work, and should be skipped
+const BROKEN_FOREGROUND_EFFECTS = [
+  'raining_tacos'
+];
+
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
@@ -188,7 +193,7 @@ module.exports.renderImages = async (replay, writer) => {
     } else {
       backgroundEffects[frame.bg || 'none'].draw(frame.context);
       p5Inst.drawSprites();
-      if (frame.fg) {
+      if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
         p5Inst.push();
         p5Inst.blendMode(foregroundEffects.blend);
         backgroundEffects[frame.fg].draw(frame.context);
