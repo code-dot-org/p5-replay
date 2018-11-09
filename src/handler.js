@@ -2,10 +2,12 @@ const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 const {tmpdir} = require('os');
 const AWS = require('aws-sdk');
-const s3 = new AWS.S3();
 const { join, basename } = require('path');
 
+const s3 = new AWS.S3();
+
 const { runTestExport } = require('./replayToMovie');
+const { debug } = require('./utils');
 
 const BUCKET = process.env.DESTINATION_BUCKET;
 const SOURCE_BUCKET = process.env.SOURCE_BUCKET;
@@ -17,11 +19,6 @@ const HEADERS = {
   'Access-Control-Allow-Origin': '*'
 };
 
-function debug(str) {
-  if (LOCAL) {
-    console.log(str);
-  }
-}
 
 function getOutputURL(uuid) {
   return `/${DEST_KEY}/video-${uuid}.mp4`;
@@ -31,7 +28,7 @@ async function renderVideo(replay, callback, forceUUID = null) {
   try {
     const uuid = forceUUID || uuidv4();
     const outputFile = `video-${uuid}.mp4`;
-    const outputPath = `/tmp/${outputFile}`
+    const outputPath = `/tmp/${outputFile}`;
     await runTestExport(outputPath, replay);
 
     debug("Export complete, uploading");
