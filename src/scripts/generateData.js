@@ -1,6 +1,6 @@
 // Generates some random animation data formatted to feed renderer
 // Usage:
-// node generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
+// node ./scripts/generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
 const Canvas = require('canvas');
 global.window = global;
 window.performance = {now: Date.now};
@@ -64,7 +64,7 @@ const propertyChange = {
   tint: (tint) => (tint + 20 * (Math.random() - 0.5)) % 256,
   x: (x) => x + 10 * (Math.random() - 0.5),
   y: (y) => y + 10 * (Math.random() - 0.5),
-}
+};
 
 const iterSprite = (sprite) => {
   // advance animation
@@ -73,7 +73,7 @@ const iterSprite = (sprite) => {
   // modify one randomly-chosen property
   const propToChange = randFromArray(Object.keys(propertyChange));
   sprite[propToChange] = propertyChange[propToChange](sprite[propToChange]);
-}
+};
 
 const sprites = [];
 for (let i = 0; i < SPRITE_COUNT; ++i) {

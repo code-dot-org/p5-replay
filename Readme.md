@@ -26,7 +26,7 @@ The Serverless deploy should display two endpoints after completion:
 The `runTest` endpoint will generate a video based on the `replay.json` file deployed; `render` is a POST method that uses the body of the request. You can use the `replay.json` contents as the content of the POST request, just make sure the content type is `application/json` (use `raw` mode if you're sending requests via Postman).
 
 ## Sample Data
-`node generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json` will generate some random sample animation data with a given frame and sprite count.
+`node ./scripts/generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json` will generate some random sample animation data with a given frame and sprite count.
 
 ## Built With
 

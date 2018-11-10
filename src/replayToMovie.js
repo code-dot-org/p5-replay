@@ -1,8 +1,10 @@
 const Canvas = require('canvas');
 const fs = require('fs');
 const os = require('os');
-const request = require("request")
+const request = require("request");
 const spawn = require('child_process').spawn;
+
+const { debug } = require('./utils');
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
@@ -11,7 +13,7 @@ const CRF = process.env.QUALITY || 23;
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
-const SPRITE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/"
+const SPRITE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/";
 const SPRITE_BASE = "./sprites/";
 const ANIMATIONS = {};
 const WIDTH = 400;
@@ -51,7 +53,6 @@ window.ImageData = Canvas.ImageData;
 const danceParty = require('@code-dot-org/dance-party');
 
 const Effects = danceParty.Effects;
-const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
 
 const P5 = require('@code-dot-org/p5');
@@ -87,9 +88,9 @@ function loadNewSpriteSheet(spriteName, moveName) {
 
   const jsonData = new Promise((resolve, reject) => {
     const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".json";
-    fs.readFile(SPRITE_BASE + spriteName + "_" + moveName + ".json", (err, data) => {  
+    fs.readFile(localFile, (err, data) => {
       if (err) {
-      debug(`could not file ${spriteName}@${moveName} json locally, loading from S3`);
+        debug(`could not file ${spriteName}@${moveName} json locally, loading from S3`);
         const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".json";
         request({
           url: s3File,
@@ -132,13 +133,7 @@ async function loadSprite(spriteName) {
   for (let j = 0; j < MOVE_NAMES.length; j++) {
     const moveName = MOVE_NAMES[j].name;
     const spriteSheet = await loadNewSpriteSheet(spriteName, moveName);
-    ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet))
-  }
-}
-
-function debug(str) {
-  if (LOCAL) {
-    console.log(str);
+    ANIMATIONS[spriteName].push(p5Inst.loadAnimation(spriteSheet));
   }
 }
 
@@ -147,6 +142,7 @@ module.exports.runTestExport = async (outputPath, replay) => {
   pipe._handle.setBlocking(true);
   await module.exports.renderImages(replay, pipe);
   await promise.catch(err => {
+    // eslint-disable-next-line no-console
     console.error(err);
     process.exit(1);
   });
@@ -245,6 +241,7 @@ module.exports.renderVideo = (outputFile) => {
   const promise = new Promise((resolve, reject) => {
     debug('Waiting for ffmpeg to encode');
     child.on('error', function(err) {
+      // eslint-disable-next-line no-console
       console.error('Error during encoding: ' + err);
       reject();
     });
