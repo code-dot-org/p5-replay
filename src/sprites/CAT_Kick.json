@@ -2,7 +2,7 @@
 
 {
 	"filename": "CAT_Kick_00.png",
-	"frame": {"x":387,"y":229,"w":81,"h":228},
+	"frame": {"x":174,"y":1,"w":81,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "CAT_Kick_02.png",
-	"frame": {"x":855,"y":227,"w":82,"h":229},
+	"frame": {"x":1,"y":1,"w":82,"h":229},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":113,"y":45,"w":82,"h":229},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "CAT_Kick_04.png",
-	"frame": {"x":1603,"y":1,"w":85,"h":226},
+	"frame": {"x":1180,"y":1,"w":85,"h":226},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":119,"y":48,"w":85,"h":226},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "CAT_Kick_06.png",
-	"frame": {"x":1281,"y":227,"w":94,"h":220},
+	"frame": {"x":1,"y":232,"w":94,"h":220},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":124,"y":54,"w":94,"h":220},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "CAT_Kick_08.png",
-	"frame": {"x":1377,"y":229,"w":105,"h":213},
+	"frame": {"x":1325,"y":227,"w":105,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":126,"y":61,"w":105,"h":213},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "CAT_Kick_10.png",
-	"frame": {"x":1166,"y":227,"w":113,"h":206},
+	"frame": {"x":1441,"y":1,"w":113,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":127,"y":68,"w":113,"h":206},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "CAT_Kick_12.png",
-	"frame": {"x":735,"y":227,"w":118,"h":203},
+	"frame": {"x":1556,"y":208,"w":118,"h":203},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":127,"y":71,"w":118,"h":203},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "CAT_Kick_14.png",
-	"frame": {"x":613,"y":226,"w":120,"h":205},
+	"frame": {"x":1556,"y":1,"w":120,"h":205},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":118,"y":69,"w":120,"h":205},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "CAT_Kick_16.png",
-	"frame": {"x":1050,"y":227,"w":114,"h":211},
+	"frame": {"x":1432,"y":227,"w":114,"h":211},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":104,"y":63,"w":114,"h":211},
@@ -74,7 +74,7 @@
 },
 {
 	"filename": "CAT_Kick_18.png",
-	"frame": {"x":470,"y":226,"w":141,"h":215},
+	"frame": {"x":811,"y":230,"w":141,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":79,"y":59,"w":141,"h":215},
@@ -82,7 +82,7 @@
 },
 {
 	"filename": "CAT_Kick_20.png",
-	"frame": {"x":1293,"y":1,"w":162,"h":216},
+	"frame": {"x":278,"y":231,"w":162,"h":216},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":52,"y":58,"w":162,"h":216},
@@ -90,7 +90,7 @@
 },
 {
 	"filename": "CAT_Kick_22.png",
-	"frame": {"x":758,"y":1,"w":178,"h":224},
+	"frame": {"x":1145,"y":229,"w":178,"h":224},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":37,"y":50,"w":178,"h":224},
@@ -98,7 +98,7 @@
 },
 {
 	"filename": "CAT_Kick_24.png",
-	"frame": {"x":1,"y":1,"w":193,"h":227},
+	"frame": {"x":340,"y":1,"w":193,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":33,"y":47,"w":193,"h":227},
@@ -106,7 +106,7 @@
 },
 {
 	"filename": "CAT_Kick_26.png",
-	"frame": {"x":1,"y":230,"w":193,"h":227},
+	"frame": {"x":535,"y":1,"w":193,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":33,"y":47,"w":193,"h":227},
@@ -114,7 +114,7 @@
 },
 {
 	"filename": "CAT_Kick_28.png",
-	"frame": {"x":196,"y":1,"w":191,"h":226},
+	"frame": {"x":841,"y":1,"w":191,"h":226},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":33,"y":48,"w":191,"h":226},
@@ -122,15 +122,15 @@
 },
 {
 	"filename": "CAT_Kick_30.png",
-	"frame": {"x":196,"y":229,"w":189,"h":225},
+	"frame": {"x":954,"y":229,"w":189,"h":224},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":33,"y":49,"w":189,"h":225},
+	"spriteSourceSize": {"x":33,"y":50,"w":189,"h":224},
 	"sourceSize": {"w":300,"h":300}
 },
 {
 	"filename": "CAT_Kick_32.png",
-	"frame": {"x":389,"y":1,"w":184,"h":223},
+	"frame": {"x":442,"y":230,"w":184,"h":223},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":34,"y":51,"w":184,"h":223},
@@ -138,7 +138,7 @@
 },
 {
 	"filename": "CAT_Kick_34.png",
-	"frame": {"x":938,"y":1,"w":179,"h":222},
+	"frame": {"x":97,"y":231,"w":179,"h":222},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":36,"y":52,"w":179,"h":222},
@@ -146,7 +146,7 @@
 },
 {
 	"filename": "CAT_Kick_36.png",
-	"frame": {"x":575,"y":1,"w":181,"h":223},
+	"frame": {"x":628,"y":230,"w":181,"h":223},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":40,"y":51,"w":181,"h":223},
@@ -154,7 +154,7 @@
 },
 {
 	"filename": "CAT_Kick_38.png",
-	"frame": {"x":1119,"y":1,"w":172,"h":224},
+	"frame": {"x":1267,"y":1,"w":172,"h":224},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":52,"y":50,"w":172,"h":224},
@@ -162,7 +162,7 @@
 },
 {
 	"filename": "CAT_Kick_40.png",
-	"frame": {"x":1457,"y":1,"w":144,"h":226},
+	"frame": {"x":1034,"y":1,"w":144,"h":226},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":73,"y":48,"w":144,"h":226},
@@ -170,7 +170,7 @@
 },
 {
 	"filename": "CAT_Kick_42.png",
-	"frame": {"x":939,"y":225,"w":109,"h":227},
+	"frame": {"x":730,"y":1,"w":109,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":94,"y":47,"w":109,"h":227},
@@ -178,7 +178,7 @@
 },
 {
 	"filename": "CAT_Kick_44.png",
-	"frame": {"x":1484,"y":229,"w":87,"h":228},
+	"frame": {"x":85,"y":1,"w":87,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":106,"y":46,"w":87,"h":228},
@@ -186,7 +186,7 @@
 },
 {
 	"filename": "CAT_Kick_46.png",
-	"frame": {"x":1573,"y":229,"w":81,"h":228},
+	"frame": {"x":257,"y":1,"w":81,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "CAT_Kick.png",
 	"format": "RGBA8888",
-	"size": {"w":1689,"h":458},
+	"size": {"w":1677,"h":454},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:c293a8f38b14afccbee53b29c10a5f72:e06578a30735f76f21663d50274e5293:cf6d2111a4bb459f3efafa0cf6772bdb$"
+	"smartupdate": "$TexturePacker:SmartUpdate:8d245b8ed93a57875e76087178ef75d7:0561ad18aa558881bc0b4a1e398c1883:cf6d2111a4bb459f3efafa0cf6772bdb$"
 }
 }

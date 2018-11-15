@@ -1,103 +1,103 @@
 {"frames": [
 
 {
-	"filename": "FROG_Kick_00000.png",
-	"frame": {"x":1336,"y":198,"w":78,"h":207},
+	"filename": "FROG_Kick_00.png",
+	"frame": {"x":576,"y":1,"w":78,"h":207},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":65,"w":78,"h":207},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00002.png",
-	"frame": {"x":1258,"y":203,"w":76,"h":206},
+	"filename": "FROG_Kick_02.png",
+	"frame": {"x":823,"y":1,"w":76,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":114,"y":66,"w":76,"h":206},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00004.png",
-	"frame": {"x":701,"y":207,"w":78,"h":202},
+	"filename": "FROG_Kick_04.png",
+	"frame": {"x":1414,"y":205,"w":78,"h":202},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":119,"y":70,"w":78,"h":202},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00006.png",
-	"frame": {"x":364,"y":212,"w":85,"h":195},
+	"filename": "FROG_Kick_06.png",
+	"frame": {"x":164,"y":212,"w":85,"h":195},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":121,"y":77,"w":85,"h":195},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00008.png",
-	"frame": {"x":888,"y":207,"w":92,"h":187},
+	"filename": "FROG_Kick_08.png",
+	"frame": {"x":1109,"y":207,"w":92,"h":187},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":121,"y":85,"w":92,"h":187},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00010.png",
-	"frame": {"x":1416,"y":205,"w":99,"h":179},
+	"filename": "FROG_Kick_10.png",
+	"frame": {"x":1312,"y":206,"w":100,"h":179},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":120,"y":93,"w":99,"h":179},
+	"spriteSourceSize": {"x":119,"y":93,"w":100,"h":179},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00012.png",
-	"frame": {"x":781,"y":207,"w":105,"h":176},
+	"filename": "FROG_Kick_12.png",
+	"frame": {"x":1494,"y":205,"w":105,"h":176},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":118,"y":96,"w":105,"h":176},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00014.png",
-	"frame": {"x":1517,"y":205,"w":98,"h":178},
+	"filename": "FROG_Kick_14.png",
+	"frame": {"x":1519,"y":1,"w":99,"h":178},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":117,"y":94,"w":98,"h":178},
+	"spriteSourceSize": {"x":116,"y":94,"w":99,"h":178},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00016.png",
-	"frame": {"x":592,"y":206,"w":107,"h":184},
+	"filename": "FROG_Kick_16.png",
+	"frame": {"x":1203,"y":206,"w":107,"h":184},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":105,"y":88,"w":107,"h":184},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00018.png",
-	"frame": {"x":451,"y":210,"w":139,"h":190},
+	"filename": "FROG_Kick_18.png",
+	"frame": {"x":251,"y":212,"w":139,"h":190},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":80,"y":82,"w":139,"h":190},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00020.png",
-	"frame": {"x":1295,"y":1,"w":161,"h":195},
+	"filename": "FROG_Kick_20.png",
+	"frame": {"x":1,"y":212,"w":161,"h":195},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":52,"y":77,"w":161,"h":195},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00022.png",
-	"frame": {"x":764,"y":1,"w":175,"h":204},
+	"filename": "FROG_Kick_22.png",
+	"frame": {"x":901,"y":1,"w":175,"h":204},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":37,"y":68,"w":175,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00024.png",
+	"filename": "FROG_Kick_24.png",
 	"frame": {"x":1,"y":1,"w":190,"h":209},
 	"rotated": false,
 	"trimmed": true,
@@ -105,7 +105,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00026.png",
+	"filename": "FROG_Kick_26.png",
 	"frame": {"x":193,"y":1,"w":190,"h":209},
 	"rotated": false,
 	"trimmed": true,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00028.png",
+	"filename": "FROG_Kick_28.png",
 	"frame": {"x":385,"y":1,"w":189,"h":207},
 	"rotated": false,
 	"trimmed": true,
@@ -121,72 +121,72 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00030.png",
-	"frame": {"x":576,"y":1,"w":186,"h":203},
+	"filename": "FROG_Kick_30.png",
+	"frame": {"x":1187,"y":1,"w":186,"h":203},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":34,"y":69,"w":186,"h":203},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00032.png",
-	"frame": {"x":1,"y":212,"w":182,"h":197},
+	"filename": "FROG_Kick_32.png",
+	"frame": {"x":392,"y":210,"w":182,"h":197},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":34,"y":75,"w":182,"h":197},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00034.png",
-	"frame": {"x":185,"y":212,"w":177,"h":197},
+	"filename": "FROG_Kick_34.png",
+	"frame": {"x":576,"y":210,"w":177,"h":197},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":37,"y":75,"w":177,"h":197},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00036.png",
-	"frame": {"x":941,"y":1,"w":179,"h":198},
+	"filename": "FROG_Kick_36.png",
+	"frame": {"x":755,"y":209,"w":179,"h":198},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":41,"y":74,"w":179,"h":198},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00038.png",
-	"frame": {"x":1122,"y":1,"w":171,"h":200},
+	"filename": "FROG_Kick_38.png",
+	"frame": {"x":936,"y":207,"w":171,"h":200},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":52,"y":72,"w":171,"h":200},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00040.png",
-	"frame": {"x":1458,"y":1,"w":142,"h":202},
+	"filename": "FROG_Kick_40.png",
+	"frame": {"x":1375,"y":1,"w":142,"h":202},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":74,"y":70,"w":142,"h":202},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00042.png",
-	"frame": {"x":982,"y":201,"w":107,"h":204},
+	"filename": "FROG_Kick_42.png",
+	"frame": {"x":1078,"y":1,"w":107,"h":204},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":95,"y":68,"w":107,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00044.png",
-	"frame": {"x":1091,"y":203,"w":85,"h":206},
+	"filename": "FROG_Kick_44.png",
+	"frame": {"x":656,"y":1,"w":85,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":107,"y":66,"w":85,"h":206},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Kick_00046.png",
-	"frame": {"x":1178,"y":203,"w":78,"h":206},
+	"filename": "FROG_Kick_46.png",
+	"frame": {"x":743,"y":1,"w":78,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":66,"w":78,"h":206},
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "FROG_Kick.png",
 	"format": "RGBA8888",
-	"size": {"w":1616,"h":410},
+	"size": {"w":1619,"h":408},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:b4b3bce0fbf9c7b7169d2c39863b9a08:1f7d48cfcd5e8b7028ac30f61fe3a433:111fa26fd4a5535ed1633fdd147eb56f$"
+	"smartupdate": "$TexturePacker:SmartUpdate:810993a429b3c2d1ebc3535c3396b499:8a150c848ab8372dd7160d6b3d4653d7:111fa26fd4a5535ed1633fdd147eb56f$"
 }
 }

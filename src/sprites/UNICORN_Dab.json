@@ -42,7 +42,7 @@
 },
 {
 	"filename": "UNICORN_Dab_00010.png",
-	"frame": {"x":1,"y":814,"w":88,"h":219},
+	"frame": {"x":1,"y":813,"w":88,"h":219},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":109,"y":56,"w":88,"h":219},
@@ -74,10 +74,10 @@
 },
 {
 	"filename": "UNICORN_Dab_00018.png",
-	"frame": {"x":1,"y":601,"w":100,"h":211},
+	"frame": {"x":1,"y":601,"w":100,"h":210},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":100,"y":64,"w":100,"h":211},
+	"spriteSourceSize": {"x":100,"y":65,"w":100,"h":210},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":493,"h":1282},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:48cdd212e4cf77b69b6c09b0e6bf0e2e:55828b56a868417245ceae2d9903d6ea:dacbfb3b2eca6df0d732602cc99e1af9$"
+	"smartupdate": "$TexturePacker:SmartUpdate:04c8197919b37b33f20f35d59197e2fe:4b3737315830dce025656010ccc96ad2:dacbfb3b2eca6df0d732602cc99e1af9$"
 }
 }

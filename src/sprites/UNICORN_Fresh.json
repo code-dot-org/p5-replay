@@ -10,7 +10,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00002.png",
-	"frame": {"x":1203,"y":216,"w":79,"h":226},
+	"frame": {"x":1117,"y":212,"w":79,"h":226},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":49,"w":79,"h":226},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00004.png",
-	"frame": {"x":1117,"y":216,"w":84,"h":222},
+	"frame": {"x":849,"y":221,"w":84,"h":222},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":53,"w":84,"h":222},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00006.png",
-	"frame": {"x":105,"y":228,"w":94,"h":217},
+	"frame": {"x":104,"y":228,"w":94,"h":217},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":108,"y":58,"w":94,"h":217},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00008.png",
-	"frame": {"x":1180,"y":1,"w":105,"h":213},
+	"frame": {"x":542,"y":230,"w":105,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":105,"y":62,"w":105,"h":213},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00012.png",
-	"frame": {"x":312,"y":228,"w":116,"h":209},
+	"frame": {"x":311,"y":228,"w":116,"h":209},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":98,"y":63,"w":116,"h":209},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00014.png",
-	"frame": {"x":430,"y":228,"w":111,"h":212},
+	"frame": {"x":429,"y":228,"w":111,"h":212},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":99,"y":59,"w":111,"h":212},
@@ -122,15 +122,15 @@
 },
 {
 	"filename": "UNICORN_Fresh_00030.png",
-	"frame": {"x":1,"y":226,"w":102,"h":219},
+	"frame": {"x":1,"y":226,"w":101,"h":219},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":83,"y":56,"w":102,"h":219},
+	"spriteSourceSize": {"x":83,"y":56,"w":101,"h":219},
 	"sourceSize": {"w":300,"h":300}
 },
 {
 	"filename": "UNICORN_Fresh_00032.png",
-	"frame": {"x":647,"y":230,"w":98,"h":213},
+	"frame": {"x":649,"y":230,"w":98,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":75,"y":62,"w":98,"h":213},
@@ -138,7 +138,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00034.png",
-	"frame": {"x":543,"y":230,"w":102,"h":208},
+	"frame": {"x":1180,"y":1,"w":102,"h":208},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":71,"y":67,"w":102,"h":208},
@@ -146,7 +146,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00036.png",
-	"frame": {"x":847,"y":221,"w":100,"h":206},
+	"frame": {"x":935,"y":221,"w":100,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":73,"y":70,"w":100,"h":206},
@@ -154,7 +154,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00038.png",
-	"frame": {"x":747,"y":226,"w":98,"h":208},
+	"frame": {"x":749,"y":226,"w":98,"h":208},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":78,"y":69,"w":98,"h":208},
@@ -178,7 +178,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00044.png",
-	"frame": {"x":201,"y":225,"w":109,"h":220},
+	"frame": {"x":200,"y":225,"w":109,"h":220},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":94,"y":58,"w":109,"h":220},
@@ -186,7 +186,7 @@
 },
 {
 	"filename": "UNICORN_Fresh_00046.png",
-	"frame": {"x":949,"y":214,"w":86,"h":226},
+	"frame": {"x":1198,"y":211,"w":86,"h":226},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":106,"y":52,"w":86,"h":226},
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "UNICORN_Fresh.png",
 	"format": "RGBA8888",
-	"size": {"w":1286,"h":446},
+	"size": {"w":1285,"h":446},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:233bc8d5e45934a4479b3f68219bb846:7de5e7ef06db504f4afd63984beba0bc:bf6c322b3cb516a29de9bdbae0a1afc9$"
+	"smartupdate": "$TexturePacker:SmartUpdate:d12bacaaf8049c3a2384fc4e29cbfb24:f5f240fbf7881f9241b815e9f77bce8d:bf6c322b3cb516a29de9bdbae0a1afc9$"
 }
 }

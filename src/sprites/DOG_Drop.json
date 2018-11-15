@@ -10,7 +10,7 @@
 },
 {
 	"filename": "DOG_Drop_02.png",
-	"frame": {"x":863,"y":291,"w":98,"h":210},
+	"frame": {"x":863,"y":290,"w":98,"h":210},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":101,"y":63,"w":98,"h":210},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "DOG_Drop_04.png",
-	"frame": {"x":761,"y":291,"w":100,"h":214},
+	"frame": {"x":761,"y":290,"w":100,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":100,"y":59,"w":100,"h":214},
@@ -146,10 +146,10 @@
 },
 {
 	"filename": "DOG_Drop_36.png",
-	"frame": {"x":761,"y":146,"w":153,"h":143},
+	"frame": {"x":761,"y":146,"w":153,"h":142},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":71,"y":130,"w":153,"h":143},
+	"spriteSourceSize": {"x":71,"y":131,"w":153,"h":142},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "DOG_Drop.png",
 	"format": "RGBA8888",
-	"size": {"w":1327,"h":506},
+	"size": {"w":1327,"h":505},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:9f49a08bb648139a6bc70398fb06b377:b956c487c5918f3e4dc6542fbdf4c826:48552532c5ae200099033e578bc79f60$"
+	"smartupdate": "$TexturePacker:SmartUpdate:ebcaa396180e6720737d6fb822cde87c:8b19abdf07e22131aef3b278bb9bfe10:48552532c5ae200099033e578bc79f60$"
 }
 }

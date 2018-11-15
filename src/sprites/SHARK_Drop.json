@@ -10,7 +10,7 @@
 },
 {
 	"filename": "SHARK_Drop_00002.png",
-	"frame": {"x":265,"y":496,"w":130,"h":209},
+	"frame": {"x":265,"y":495,"w":130,"h":209},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":85,"y":66,"w":130,"h":209},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "SHARK_Drop_00004.png",
-	"frame": {"x":540,"y":510,"w":132,"h":213},
+	"frame": {"x":540,"y":509,"w":132,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":84,"y":62,"w":132,"h":213},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "SHARK_Drop_00010.png",
-	"frame": {"x":397,"y":496,"w":141,"h":210},
+	"frame": {"x":397,"y":495,"w":141,"h":210},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":80,"y":65,"w":141,"h":210},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "SHARK_Drop_00014.png",
-	"frame": {"x":1,"y":299,"w":137,"h":181},
+	"frame": {"x":1,"y":298,"w":137,"h":181},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":76,"y":94,"w":137,"h":181},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "SHARK_Drop_00016.png",
-	"frame": {"x":703,"y":1,"w":136,"h":150},
+	"frame": {"x":845,"y":1,"w":136,"h":150},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":72,"y":125,"w":136,"h":150},
@@ -98,7 +98,7 @@
 },
 {
 	"filename": "SHARK_Drop_00024.png",
-	"frame": {"x":360,"y":321,"w":219,"h":173},
+	"frame": {"x":360,"y":320,"w":219,"h":173},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":36,"y":123,"w":219,"h":173},
@@ -114,7 +114,7 @@
 },
 {
 	"filename": "SHARK_Drop_00028.png",
-	"frame": {"x":543,"y":153,"w":215,"h":166},
+	"frame": {"x":543,"y":152,"w":215,"h":166},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":38,"y":127,"w":215,"h":166},
@@ -122,10 +122,10 @@
 },
 {
 	"filename": "SHARK_Drop_00030.png",
-	"frame": {"x":1,"y":140,"w":209,"h":157},
+	"frame": {"x":1,"y":140,"w":209,"h":156},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":41,"y":133,"w":209,"h":157},
+	"spriteSourceSize": {"x":41,"y":133,"w":209,"h":156},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -154,10 +154,10 @@
 },
 {
 	"filename": "SHARK_Drop_00038.png",
-	"frame": {"x":841,"y":1,"w":140,"h":150},
+	"frame": {"x":703,"y":1,"w":140,"h":149},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":71,"y":125,"w":140,"h":150},
+	"spriteSourceSize": {"x":71,"y":126,"w":140,"h":149},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -170,7 +170,7 @@
 },
 {
 	"filename": "SHARK_Drop_00042.png",
-	"frame": {"x":581,"y":321,"w":133,"h":187},
+	"frame": {"x":581,"y":320,"w":133,"h":187},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":77,"y":88,"w":133,"h":187},
@@ -186,7 +186,7 @@
 },
 {
 	"filename": "SHARK_Drop_00046.png",
-	"frame": {"x":1,"y":482,"w":130,"h":206},
+	"frame": {"x":1,"y":481,"w":130,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":84,"y":69,"w":130,"h":206},
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":997,"h":743},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:b812dee211b3b0d19a71a7de1284f9ad:0702f4f97f38c0c284b1a362ea20d44e:edbfa43e4b658aebb3a711cea25df46c$"
+	"smartupdate": "$TexturePacker:SmartUpdate:96dead639727b5f73257028557919963:bd96796d777d9bd6ac6142c9ee9c1341:edbfa43e4b658aebb3a711cea25df46c$"
 }
 }

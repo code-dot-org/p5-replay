@@ -195,10 +195,10 @@
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "Duck_Drop.png",
+	"image": "DUCK_Drop.png",
 	"format": "RGBA8888",
 	"size": {"w":1331,"h":510},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:239311227130bc6b9c341a507bdd73de:142e4f3504545d9d2c676a2b32b5dc71:e0dabbe25ec66c45387892f5edc0d9a9$"
+	"smartupdate": "$TexturePacker:SmartUpdate:61b6450f8f8cefbabecf792cba377b14:c202bb0fbb76044bf40b8c5d34ca99dd:327244c0bb8cbd890ef4c31cecdb58be$"
 }
 }

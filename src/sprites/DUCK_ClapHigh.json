@@ -10,7 +10,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_02.png",
-	"frame": {"x":656,"y":217,"w":79,"h":214},
+	"frame": {"x":623,"y":1,"w":79,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":59,"w":79,"h":214},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_04.png",
-	"frame": {"x":747,"y":1,"w":75,"h":211},
+	"frame": {"x":780,"y":216,"w":75,"h":211},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":116,"y":62,"w":75,"h":211},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_06.png",
-	"frame": {"x":848,"y":211,"w":76,"h":207},
+	"frame": {"x":857,"y":211,"w":76,"h":207},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":118,"y":66,"w":76,"h":207},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_08.png",
-	"frame": {"x":1194,"y":205,"w":79,"h":203},
+	"frame": {"x":1200,"y":1,"w":79,"h":203},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":118,"y":70,"w":79,"h":203},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_10.png",
-	"frame": {"x":1194,"y":1,"w":85,"h":202},
+	"frame": {"x":1188,"y":206,"w":85,"h":202},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":115,"y":71,"w":85,"h":202},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_12.png",
-	"frame": {"x":1097,"y":1,"w":95,"h":203},
+	"frame": {"x":1091,"y":206,"w":95,"h":203},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":108,"y":70,"w":95,"h":203},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_14.png",
-	"frame": {"x":1082,"y":207,"w":110,"h":203},
+	"frame": {"x":1088,"y":1,"w":110,"h":203},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":96,"y":70,"w":110,"h":203},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_16.png",
-	"frame": {"x":969,"y":1,"w":126,"h":204},
+	"frame": {"x":960,"y":1,"w":126,"h":204},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":86,"y":69,"w":126,"h":204},
@@ -74,7 +74,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_18.png",
-	"frame": {"x":926,"y":211,"w":154,"h":206},
+	"frame": {"x":935,"y":211,"w":154,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":76,"y":67,"w":154,"h":206},
@@ -82,7 +82,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_20.png",
-	"frame": {"x":824,"y":1,"w":143,"h":208},
+	"frame": {"x":815,"y":1,"w":143,"h":208},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":98,"y":65,"w":143,"h":208},
@@ -114,7 +114,7 @@
 },
 {
 	"filename": "DUCK_ClapHigh_28.png",
-	"frame": {"x":737,"y":217,"w":109,"h":213},
+	"frame": {"x":704,"y":1,"w":109,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":100,"y":60,"w":109,"h":213},
@@ -122,10 +122,10 @@
 },
 {
 	"filename": "DUCK_ClapHigh_30.png",
-	"frame": {"x":623,"y":1,"w":122,"h":214},
+	"frame": {"x":656,"y":217,"w":122,"h":213},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":102,"y":59,"w":122,"h":214},
+	"spriteSourceSize": {"x":102,"y":60,"w":122,"h":213},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1280,"h":434},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:6e5956d0b801c62718238fc9aa9ce745:d5ca4925f3c6650eb1062c0d42d6f00d:0aca91d4f48bc34a43bf4fcdb0da2eff$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e71e0ccfcd7624d6daf97192f68f4c74:5ce6f179ad56374c4b9f7fae25463398:0aca91d4f48bc34a43bf4fcdb0da2eff$"
 }
 }

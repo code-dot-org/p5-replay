@@ -10,7 +10,7 @@
 },
 {
 	"filename": "SHARK_Dab_00002.png",
-	"frame": {"x":1,"y":1152,"w":122,"h":206},
+	"frame": {"x":1,"y":1156,"w":122,"h":206},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":88,"y":69,"w":122,"h":206},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "SHARK_Dab_00006.png",
-	"frame": {"x":117,"y":947,"w":115,"h":203},
+	"frame": {"x":117,"y":951,"w":115,"h":203},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":87,"y":72,"w":115,"h":203},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "SHARK_Dab_00008.png",
-	"frame": {"x":236,"y":751,"w":113,"h":202},
+	"frame": {"x":236,"y":750,"w":113,"h":202},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":87,"y":73,"w":113,"h":202},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "SHARK_Dab_00012.png",
-	"frame": {"x":117,"y":746,"w":117,"h":199},
+	"frame": {"x":117,"y":750,"w":117,"h":199},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":87,"y":76,"w":117,"h":199},
@@ -66,10 +66,10 @@
 },
 {
 	"filename": "SHARK_Dab_00016.png",
-	"frame": {"x":262,"y":555,"w":103,"h":194},
+	"frame": {"x":117,"y":551,"w":103,"h":193},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":100,"y":81,"w":103,"h":194},
+	"spriteSourceSize": {"x":100,"y":82,"w":103,"h":193},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -154,7 +154,7 @@
 },
 {
 	"filename": "SHARK_Dab_00038.png",
-	"frame": {"x":117,"y":551,"w":143,"h":193},
+	"frame": {"x":222,"y":555,"w":143,"h":193},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":84,"y":82,"w":143,"h":193},
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":493,"h":1369},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:8ea8ba079fbcb7dd0391121b18a0dedf:bc6d484f16157dd05c7e29587283d0f0:ad03add898e52887617e2f37af6c487f$"
+	"smartupdate": "$TexturePacker:SmartUpdate:54752d2bd77607fc81118bcaa012aa62:65552d3b86087bdcae3fc4e115ba8c62:ad03add898e52887617e2f37af6c487f$"
 }
 }

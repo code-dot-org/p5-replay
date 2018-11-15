@@ -2,7 +2,7 @@
 
 {
 	"filename": "UNICORN_Floss_00000.png",
-	"frame": {"x":328,"y":217,"w":78,"h":220},
+	"frame": {"x":369,"y":216,"w":78,"h":220},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":55,"w":78,"h":220},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00002.png",
-	"frame": {"x":130,"y":218,"w":93,"h":219},
+	"frame": {"x":569,"y":217,"w":93,"h":219},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":107,"y":56,"w":93,"h":219},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00004.png",
-	"frame": {"x":408,"y":217,"w":114,"h":217},
+	"frame": {"x":1003,"y":217,"w":114,"h":217},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":103,"y":58,"w":114,"h":217},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00006.png",
-	"frame": {"x":1207,"y":1,"w":124,"h":214},
+	"frame": {"x":1193,"y":1,"w":124,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":102,"y":61,"w":124,"h":214},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00008.png",
-	"frame": {"x":822,"y":1,"w":127,"h":214},
+	"frame": {"x":679,"y":1,"w":127,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":102,"y":61,"w":127,"h":214},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00010.png",
-	"frame": {"x":1080,"y":1,"w":125,"h":214},
+	"frame": {"x":1066,"y":1,"w":125,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":103,"y":61,"w":125,"h":214},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00012.png",
-	"frame": {"x":888,"y":217,"w":117,"h":214},
+	"frame": {"x":786,"y":222,"w":117,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":105,"y":61,"w":117,"h":214},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00014.png",
-	"frame": {"x":1215,"y":217,"w":96,"h":214},
+	"frame": {"x":905,"y":222,"w":96,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":109,"y":61,"w":96,"h":214},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00016.png",
-	"frame": {"x":1333,"y":1,"w":79,"h":215},
+	"frame": {"x":1319,"y":1,"w":79,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":112,"y":60,"w":79,"h":215},
@@ -74,7 +74,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00018.png",
-	"frame": {"x":1113,"y":217,"w":100,"h":215},
+	"frame": {"x":1306,"y":218,"w":100,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":94,"y":60,"w":100,"h":215},
@@ -82,7 +82,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00020.png",
-	"frame": {"x":768,"y":217,"w":118,"h":214},
+	"frame": {"x":449,"y":222,"w":118,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":79,"y":61,"w":118,"h":214},
@@ -90,7 +90,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00022.png",
-	"frame": {"x":951,"y":1,"w":127,"h":213},
+	"frame": {"x":937,"y":1,"w":127,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":71,"y":62,"w":127,"h":213},
@@ -98,7 +98,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00024.png",
-	"frame": {"x":560,"y":1,"w":130,"h":213},
+	"frame": {"x":417,"y":1,"w":130,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":68,"y":62,"w":130,"h":213},
@@ -106,7 +106,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00026.png",
-	"frame": {"x":427,"y":1,"w":131,"h":213},
+	"frame": {"x":284,"y":1,"w":131,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":67,"y":62,"w":131,"h":213},
@@ -114,7 +114,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00028.png",
-	"frame": {"x":692,"y":1,"w":128,"h":214},
+	"frame": {"x":549,"y":1,"w":128,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":68,"y":61,"w":128,"h":214},
@@ -122,7 +122,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00030.png",
-	"frame": {"x":524,"y":216,"w":120,"h":215},
+	"frame": {"x":664,"y":217,"w":120,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":73,"y":60,"w":120,"h":215},
@@ -130,7 +130,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00032.png",
-	"frame": {"x":1007,"y":217,"w":104,"h":215},
+	"frame": {"x":1119,"y":217,"w":104,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":85,"y":60,"w":104,"h":215},
@@ -138,7 +138,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00034.png",
-	"frame": {"x":1313,"y":218,"w":79,"h":215},
+	"frame": {"x":1225,"y":217,"w":79,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":107,"y":60,"w":79,"h":215},
@@ -146,7 +146,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00036.png",
-	"frame": {"x":646,"y":217,"w":120,"h":214},
+	"frame": {"x":144,"y":222,"w":120,"h":214},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":104,"y":61,"w":120,"h":214},
@@ -154,15 +154,15 @@
 },
 {
 	"filename": "UNICORN_Floss_00038.png",
-	"frame": {"x":288,"y":1,"w":137,"h":214},
+	"frame": {"x":145,"y":1,"w":137,"h":213},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":102,"y":61,"w":137,"h":214},
+	"spriteSourceSize": {"x":102,"y":62,"w":137,"h":213},
 	"sourceSize": {"w":300,"h":300}
 },
 {
 	"filename": "UNICORN_Floss_00040.png",
-	"frame": {"x":145,"y":1,"w":141,"h":213},
+	"frame": {"x":1,"y":218,"w":141,"h":213},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":102,"y":62,"w":141,"h":213},
@@ -178,7 +178,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00044.png",
-	"frame": {"x":1,"y":218,"w":127,"h":219},
+	"frame": {"x":808,"y":1,"w":127,"h":219},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":105,"y":56,"w":127,"h":219},
@@ -186,7 +186,7 @@
 },
 {
 	"filename": "UNICORN_Floss_00046.png",
-	"frame": {"x":225,"y":217,"w":101,"h":220},
+	"frame": {"x":266,"y":216,"w":101,"h":220},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":108,"y":55,"w":101,"h":220},
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "UNICORN_Floss.png",
 	"format": "RGBA8888",
-	"size": {"w":1413,"h":438},
+	"size": {"w":1407,"h":437},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:07b515f196131194781a9e58ef3bce91:7498d74a03f311133e7a8fe95dd4c350:53208b88f928ac973200b7acb5ead213$"
+	"smartupdate": "$TexturePacker:SmartUpdate:407516adef14fa536eff22f8154551cb:845dd356d16254f3cf96df54024c3703:53208b88f928ac973200b7acb5ead213$"
 }
 }

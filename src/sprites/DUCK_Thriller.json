@@ -195,10 +195,10 @@
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "Duck_Thriller.png",
+	"image": "DUCK_Thriller.png",
 	"format": "RGBA8888",
 	"size": {"w":1245,"h":391},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:0976498a1f9c46fe8e78ddc9906be788:c3d92d22424254a99368e751e0265551:1cbe9dc2e491a8a9b8d85f9ca7b0f5bc$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e92bf18a60bed6712a6a0a95c92dc8f7:9690992abaf9dd51f3c13b79d0be6b3c:47443f6a6ec752d25c6b03b4c76320e1$"
 }
 }

@@ -1,7 +1,7 @@
 {"frames": [
 
 {
-	"filename": "FROG_Drop_00000.png",
+	"filename": "FROG_Drop_00.png",
 	"frame": {"x":180,"y":211,"w":78,"h":207},
 	"rotated": false,
 	"trimmed": true,
@@ -9,7 +9,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00002.png",
+	"filename": "FROG_Drop_02.png",
 	"frame": {"x":168,"y":1,"w":78,"h":208},
 	"rotated": false,
 	"trimmed": true,
@@ -17,7 +17,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00004.png",
+	"filename": "FROG_Drop_04.png",
 	"frame": {"x":86,"y":1,"w":80,"h":212},
 	"rotated": false,
 	"trimmed": true,
@@ -25,7 +25,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00006.png",
+	"filename": "FROG_Drop_06.png",
 	"frame": {"x":1,"y":1,"w":83,"h":214},
 	"rotated": false,
 	"trimmed": true,
@@ -33,7 +33,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00008.png",
+	"filename": "FROG_Drop_08.png",
 	"frame": {"x":1,"y":217,"w":86,"h":213},
 	"rotated": false,
 	"trimmed": true,
@@ -41,7 +41,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00010.png",
+	"filename": "FROG_Drop_10.png",
 	"frame": {"x":89,"y":215,"w":89,"h":210},
 	"rotated": false,
 	"trimmed": true,
@@ -49,7 +49,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00012.png",
+	"filename": "FROG_Drop_12.png",
 	"frame": {"x":260,"y":208,"w":95,"h":201},
 	"rotated": false,
 	"trimmed": true,
@@ -57,7 +57,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00014.png",
+	"filename": "FROG_Drop_14.png",
 	"frame": {"x":408,"y":1,"w":86,"h":181},
 	"rotated": false,
 	"trimmed": true,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00016.png",
+	"filename": "FROG_Drop_16.png",
 	"frame": {"x":768,"y":360,"w":107,"h":150},
 	"rotated": false,
 	"trimmed": true,
@@ -73,7 +73,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00018.png",
+	"filename": "FROG_Drop_18.png",
 	"frame": {"x":1069,"y":335,"w":150,"h":151},
 	"rotated": false,
 	"trimmed": true,
@@ -81,7 +81,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00020.png",
+	"filename": "FROG_Drop_20.png",
 	"frame": {"x":962,"y":168,"w":188,"h":165},
 	"rotated": false,
 	"trimmed": true,
@@ -89,7 +89,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00022.png",
+	"filename": "FROG_Drop_22.png",
 	"frame": {"x":654,"y":182,"w":207,"h":176},
 	"rotated": false,
 	"trimmed": true,
@@ -97,7 +97,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00024.png",
+	"filename": "FROG_Drop_24.png",
 	"frame": {"x":441,"y":184,"w":211,"h":180},
 	"rotated": false,
 	"trimmed": true,
@@ -105,7 +105,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00026.png",
+	"filename": "FROG_Drop_26.png",
 	"frame": {"x":496,"y":1,"w":211,"h":179},
 	"rotated": false,
 	"trimmed": true,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00028.png",
+	"filename": "FROG_Drop_28.png",
 	"frame": {"x":709,"y":1,"w":207,"h":174},
 	"rotated": false,
 	"trimmed": true,
@@ -121,7 +121,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00030.png",
+	"filename": "FROG_Drop_30.png",
 	"frame": {"x":918,"y":1,"w":201,"h":165},
 	"rotated": false,
 	"trimmed": true,
@@ -129,7 +129,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00032.png",
+	"filename": "FROG_Drop_32.png",
 	"frame": {"x":877,"y":348,"w":190,"h":151},
 	"rotated": false,
 	"trimmed": true,
@@ -137,15 +137,15 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00034.png",
-	"frame": {"x":593,"y":366,"w":173,"h":135},
+	"filename": "FROG_Drop_34.png",
+	"frame": {"x":593,"y":366,"w":173,"h":136},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":60,"y":140,"w":173,"h":135},
+	"spriteSourceSize": {"x":60,"y":140,"w":173,"h":136},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00036.png",
+	"filename": "FROG_Drop_36.png",
 	"frame": {"x":441,"y":366,"w":150,"h":138},
 	"rotated": false,
 	"trimmed": true,
@@ -153,7 +153,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00038.png",
+	"filename": "FROG_Drop_38.png",
 	"frame": {"x":1121,"y":1,"w":118,"h":151},
 	"rotated": false,
 	"trimmed": true,
@@ -161,7 +161,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00040.png",
+	"filename": "FROG_Drop_40.png",
 	"frame": {"x":863,"y":177,"w":97,"h":169},
 	"rotated": false,
 	"trimmed": true,
@@ -169,7 +169,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00042.png",
+	"filename": "FROG_Drop_42.png",
 	"frame": {"x":357,"y":204,"w":82,"h":188},
 	"rotated": false,
 	"trimmed": true,
@@ -177,7 +177,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00044.png",
+	"filename": "FROG_Drop_44.png",
 	"frame": {"x":328,"y":1,"w":78,"h":201},
 	"rotated": false,
 	"trimmed": true,
@@ -185,7 +185,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Drop_00046.png",
+	"filename": "FROG_Drop_46.png",
 	"frame": {"x":248,"y":1,"w":78,"h":205},
 	"rotated": false,
 	"trimmed": true,
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1240,"h":511},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:2c5d9c495155a43a2ac806661eeecefc:5639f4586dace116aeae6d6475801833:e65aa5d3c18702abc5f6d1dd68df6c89$"
+	"smartupdate": "$TexturePacker:SmartUpdate:8930441e75c5754d4534fae3aef2a905:00f03847a22c7bd94dc8d44ca99f69e5:e65aa5d3c18702abc5f6d1dd68df6c89$"
 }
 }

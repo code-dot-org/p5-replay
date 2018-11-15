@@ -82,10 +82,10 @@
 },
 {
 	"filename": "ROBOT_ClapHigh_00020.png",
-	"frame": {"x":659,"y":235,"w":136,"h":225},
+	"frame": {"x":659,"y":235,"w":136,"h":224},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":100,"y":47,"w":136,"h":225},
+	"spriteSourceSize": {"x":100,"y":48,"w":136,"h":224},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1300,"h":466},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:167ea02fdaaf585e1970aafd8f77da0f:60f69e368a73fc4468201cc4aef6cc0d:d182327bca9581a33a8c31c0de8b8578$"
+	"smartupdate": "$TexturePacker:SmartUpdate:28a17ba744b914418cc482fd74dd9038:5b45172bfb2f022b481ff709e6607ed2:d182327bca9581a33a8c31c0de8b8578$"
 }
 }

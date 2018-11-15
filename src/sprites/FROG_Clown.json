@@ -1,15 +1,15 @@
 {"frames": [
 
 {
-	"filename": "FROG_Clown_00000.png",
-	"frame": {"x":236,"y":185,"w":78,"h":207},
+	"filename": "FROG_Clown_00.png",
+	"frame": {"x":159,"y":187,"w":78,"h":207},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":65,"w":78,"h":207},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00002.png",
+	"filename": "FROG_Clown_02.png",
 	"frame": {"x":424,"y":194,"w":81,"h":206},
 	"rotated": false,
 	"trimmed": true,
@@ -17,7 +17,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00004.png",
+	"filename": "FROG_Clown_04.png",
 	"frame": {"x":711,"y":195,"w":91,"h":203},
 	"rotated": false,
 	"trimmed": true,
@@ -25,7 +25,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00006.png",
+	"filename": "FROG_Clown_06.png",
 	"frame": {"x":607,"y":195,"w":102,"h":201},
 	"rotated": false,
 	"trimmed": true,
@@ -33,7 +33,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00008.png",
+	"filename": "FROG_Clown_08.png",
 	"frame": {"x":316,"y":194,"w":106,"h":200},
 	"rotated": false,
 	"trimmed": true,
@@ -41,15 +41,15 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00010.png",
-	"frame": {"x":1119,"y":1,"w":111,"h":198},
+	"filename": "FROG_Clown_10.png",
+	"frame": {"x":1119,"y":1,"w":112,"h":198},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":85,"y":74,"w":111,"h":198},
+	"spriteSourceSize": {"x":85,"y":74,"w":112,"h":198},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00012.png",
+	"filename": "FROG_Clown_12.png",
 	"frame": {"x":879,"y":1,"w":123,"h":194},
 	"rotated": false,
 	"trimmed": true,
@@ -57,7 +57,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00014.png",
+	"filename": "FROG_Clown_14.png",
 	"frame": {"x":466,"y":1,"w":145,"h":189},
 	"rotated": false,
 	"trimmed": true,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00016.png",
+	"filename": "FROG_Clown_16.png",
 	"frame": {"x":1,"y":187,"w":156,"h":186},
 	"rotated": false,
 	"trimmed": true,
@@ -73,7 +73,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00018.png",
+	"filename": "FROG_Clown_18.png",
 	"frame": {"x":613,"y":1,"w":131,"h":192},
 	"rotated": false,
 	"trimmed": true,
@@ -81,7 +81,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00020.png",
+	"filename": "FROG_Clown_20.png",
 	"frame": {"x":804,"y":197,"w":96,"h":204},
 	"rotated": false,
 	"trimmed": true,
@@ -89,23 +89,23 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00022.png",
-	"frame": {"x":1180,"y":203,"w":82,"h":208},
+	"filename": "FROG_Clown_22.png",
+	"frame": {"x":1179,"y":203,"w":83,"h":208},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":101,"y":59,"w":82,"h":208},
+	"spriteSourceSize": {"x":101,"y":59,"w":83,"h":208},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00024.png",
-	"frame": {"x":159,"y":201,"w":75,"h":215},
+	"filename": "FROG_Clown_24.png",
+	"frame": {"x":239,"y":185,"w":75,"h":215},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":57,"w":75,"h":215},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00026.png",
+	"filename": "FROG_Clown_26.png",
 	"frame": {"x":902,"y":197,"w":85,"h":214},
 	"rotated": false,
 	"trimmed": true,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00028.png",
+	"filename": "FROG_Clown_28.png",
 	"frame": {"x":507,"y":192,"w":98,"h":208},
 	"rotated": false,
 	"trimmed": true,
@@ -121,15 +121,15 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00030.png",
-	"frame": {"x":1232,"y":1,"w":107,"h":200},
+	"filename": "FROG_Clown_30.png",
+	"frame": {"x":1233,"y":1,"w":107,"h":200},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":104,"y":72,"w":107,"h":200},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00032.png",
+	"filename": "FROG_Clown_32.png",
 	"frame": {"x":989,"y":201,"w":101,"h":192},
 	"rotated": false,
 	"trimmed": true,
@@ -137,7 +137,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00034.png",
+	"filename": "FROG_Clown_34.png",
 	"frame": {"x":746,"y":1,"w":131,"h":186},
 	"rotated": false,
 	"trimmed": true,
@@ -145,7 +145,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00036.png",
+	"filename": "FROG_Clown_36.png",
 	"frame": {"x":163,"y":1,"w":153,"h":182},
 	"rotated": false,
 	"trimmed": true,
@@ -153,7 +153,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00038.png",
+	"filename": "FROG_Clown_38.png",
 	"frame": {"x":1,"y":1,"w":160,"h":184},
 	"rotated": false,
 	"trimmed": true,
@@ -161,7 +161,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00040.png",
+	"filename": "FROG_Clown_40.png",
 	"frame": {"x":318,"y":1,"w":146,"h":191},
 	"rotated": false,
 	"trimmed": true,
@@ -169,7 +169,7 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00042.png",
+	"filename": "FROG_Clown_42.png",
 	"frame": {"x":1004,"y":1,"w":113,"h":198},
 	"rotated": false,
 	"trimmed": true,
@@ -177,19 +177,19 @@
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00044.png",
-	"frame": {"x":1092,"y":201,"w":86,"h":203},
+	"filename": "FROG_Clown_44.png",
+	"frame": {"x":1092,"y":201,"w":85,"h":203},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":69,"w":86,"h":203},
+	"spriteSourceSize": {"x":110,"y":69,"w":85,"h":203},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "FROG_Clown_00046.png",
-	"frame": {"x":1264,"y":203,"w":77,"h":206},
+	"filename": "FROG_Clown_46.png",
+	"frame": {"x":1264,"y":203,"w":75,"h":206},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":112,"y":66,"w":77,"h":206},
+	"spriteSourceSize": {"x":114,"y":66,"w":75,"h":206},
 	"sourceSize": {"w":300,"h":300}
 }],
 "meta": {
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "FROG_Clown.png",
 	"format": "RGBA8888",
-	"size": {"w":1342,"h":417},
+	"size": {"w":1341,"h":412},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:2c72d8a40a24ae70e5e7387d87a02b44:5a28a262ecfcaf80cd17d7723e38256f:cb58297dae271b8083dd764eea33f9ae$"
+	"smartupdate": "$TexturePacker:SmartUpdate:ee25e6d5393946e810e1a017d7a07c1c:2745afcf162589ac5340f84ac3c0f52d:cb58297dae271b8083dd764eea33f9ae$"
 }
 }
