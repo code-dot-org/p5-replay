@@ -13,7 +13,7 @@ const CRF = process.env.QUALITY || 23;
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
-const SPRITE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/";
+const SPRITE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp2/";
 const SPRITE_BASE = "./sprites/";
 const ANIMATIONS = {};
 const WIDTH = 400;

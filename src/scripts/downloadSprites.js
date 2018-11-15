@@ -4,8 +4,8 @@
 const danceParty = require('@code-dot-org/dance-party');
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
-const IMAGE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp/";
-const IMAGE_BASE = "./images/";
+const IMAGE_S3_BASE = "http://s3.amazonaws.com/cdo-curriculum/images/sprites/spritesheet_tp2/";
+const IMAGE_BASE = "./sprites/";
 
 const http = require('http');
 const fs = require('fs');
