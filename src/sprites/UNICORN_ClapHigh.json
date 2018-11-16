@@ -42,10 +42,10 @@
 },
 {
 	"filename": "UNICORN_ClapHigh_00010.png",
-	"frame": {"x":1178,"y":219,"w":85,"h":215},
+	"frame": {"x":1178,"y":219,"w":85,"h":214},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":113,"y":60,"w":85,"h":215},
+	"spriteSourceSize": {"x":113,"y":61,"w":85,"h":214},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1271,"h":458},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:e4128ba813aff52a992dbc6ba54cf7c7:ede07b0b527bdfad252c2625d40fc2ec:919e581b95f7906571f068accf171e5d$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e0256bea6e8d52d8ddd8b5f8033857be:c4f32170948881251ca2ee61b647106c:919e581b95f7906571f068accf171e5d$"
 }
 }

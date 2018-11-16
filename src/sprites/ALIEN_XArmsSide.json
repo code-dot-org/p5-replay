@@ -1,108 +1,108 @@
 {"frames": [
 
 {
-	"filename": "CAT_XArmsSide_00.png",
-	"frame": {"x":1,"y":1,"w":114,"h":233},
+	"filename": "ALIEN_XArmsSide_00.png",
+	"frame": {"x":1,"y":1,"w":123,"h":222},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":95,"y":41,"w":114,"h":233},
+	"spriteSourceSize": {"x":116,"y":50,"w":123,"h":222},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_02.png",
-	"frame": {"x":117,"y":1,"w":132,"h":232},
+	"filename": "ALIEN_XArmsSide_02.png",
+	"frame": {"x":126,"y":1,"w":123,"h":222},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":103,"y":42,"w":132,"h":232},
+	"spriteSourceSize": {"x":116,"y":50,"w":123,"h":222},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_04.png",
-	"frame": {"x":251,"y":1,"w":133,"h":229},
+	"filename": "ALIEN_XArmsSide_04.png",
+	"frame": {"x":251,"y":1,"w":123,"h":222},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":45,"w":133,"h":229},
+	"spriteSourceSize": {"x":116,"y":50,"w":123,"h":222},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_06.png",
-	"frame": {"x":386,"y":1,"w":133,"h":229},
+	"filename": "ALIEN_XArmsSide_06.png",
+	"frame": {"x":585,"y":1,"w":124,"h":221},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":45,"w":133,"h":229},
+	"spriteSourceSize": {"x":116,"y":51,"w":124,"h":221},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_08.png",
-	"frame": {"x":521,"y":1,"w":133,"h":228},
+	"filename": "ALIEN_XArmsSide_08.png",
+	"frame": {"x":457,"y":1,"w":126,"h":221},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":46,"w":133,"h":228},
+	"spriteSourceSize": {"x":115,"y":51,"w":126,"h":221},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_10.png",
-	"frame": {"x":739,"y":1,"w":135,"h":227},
+	"filename": "ALIEN_XArmsSide_10.png",
+	"frame": {"x":877,"y":1,"w":124,"h":220},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":47,"w":135,"h":227},
+	"spriteSourceSize": {"x":115,"y":52,"w":124,"h":220},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_12.png",
-	"frame": {"x":1058,"y":1,"w":132,"h":226},
+	"filename": "ALIEN_XArmsSide_12.png",
+	"frame": {"x":1003,"y":1,"w":117,"h":220},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":48,"w":132,"h":226},
+	"spriteSourceSize": {"x":115,"y":52,"w":117,"h":220},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_14.png",
-	"frame": {"x":1192,"y":1,"w":124,"h":226},
+	"filename": "ALIEN_XArmsSide_14.png",
+	"frame": {"x":1122,"y":1,"w":104,"h":220},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":48,"w":124,"h":226},
+	"spriteSourceSize": {"x":115,"y":52,"w":104,"h":220},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_16.png",
-	"frame": {"x":1318,"y":1,"w":108,"h":226},
+	"filename": "ALIEN_XArmsSide_16.png",
+	"frame": {"x":1228,"y":1,"w":91,"h":220},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":48,"w":108,"h":226},
+	"spriteSourceSize": {"x":115,"y":52,"w":91,"h":220},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_18.png",
-	"frame": {"x":876,"y":1,"w":94,"h":227},
+	"filename": "ALIEN_XArmsSide_18.png",
+	"frame": {"x":711,"y":1,"w":82,"h":221},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":47,"w":94,"h":227},
+	"spriteSourceSize": {"x":115,"y":51,"w":82,"h":221},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_20.png",
-	"frame": {"x":972,"y":1,"w":84,"h":227},
+	"filename": "ALIEN_XArmsSide_20.png",
+	"frame": {"x":795,"y":1,"w":80,"h":221},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":110,"y":47,"w":84,"h":227},
+	"spriteSourceSize": {"x":112,"y":51,"w":80,"h":221},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_22.png",
-	"frame": {"x":656,"y":1,"w":81,"h":228},
+	"filename": "ALIEN_XArmsSide_22.png",
+	"frame": {"x":376,"y":1,"w":79,"h":222},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
+	"spriteSourceSize": {"x":111,"y":50,"w":79,"h":222},
 	"sourceSize": {"w":300,"h":300}
 }],
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "CAT_XArmsSide.png",
+	"image": "ALIEN_XArmsSide.png",
 	"format": "RGBA8888",
-	"size": {"w":1427,"h":235},
+	"size": {"w":1320,"h":224},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:954078fb7c2813c3d4fd8b722e70f12b:0ac8f83dd72b9ec7e0141c7f2157373b:3e89942f0b0eb2e456dc6df1a9bf124e$"
+	"smartupdate": "$TexturePacker:SmartUpdate:716047e0a207e246a8cb922016e444e1:02bafe2c1d6c6a02160ca25506eb5ace:26a824867fb80269b6d24fd5eb950929$"
 }
 }

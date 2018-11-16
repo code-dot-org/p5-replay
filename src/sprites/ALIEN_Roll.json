@@ -1,195 +1,195 @@
 {"frames": [
 
 {
-	"filename": "ALIEN_ThisOrThat_00000.png",
-	"frame": {"x":1,"y":1,"w":86,"h":225},
+	"filename": "ALIEN_Roll_00.png",
+	"frame": {"x":1,"y":1,"w":86,"h":223},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":47,"w":86,"h":225},
+	"spriteSourceSize": {"x":107,"y":49,"w":86,"h":223},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00002.png",
-	"frame": {"x":89,"y":227,"w":87,"h":224},
+	"filename": "ALIEN_Roll_02.png",
+	"frame": {"x":89,"y":1,"w":85,"h":223},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":48,"w":87,"h":224},
+	"spriteSourceSize": {"x":109,"y":49,"w":85,"h":223},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00004.png",
-	"frame": {"x":353,"y":224,"w":90,"h":221},
+	"filename": "ALIEN_Roll_04.png",
+	"frame": {"x":263,"y":1,"w":84,"h":223},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":110,"y":51,"w":90,"h":221},
+	"spriteSourceSize": {"x":112,"y":49,"w":84,"h":223},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00006.png",
-	"frame": {"x":547,"y":219,"w":92,"h":216},
+	"filename": "ALIEN_Roll_06.png",
+	"frame": {"x":435,"y":1,"w":81,"h":222},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":112,"y":56,"w":92,"h":216},
+	"spriteSourceSize": {"x":117,"y":50,"w":81,"h":222},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00008.png",
-	"frame": {"x":760,"y":213,"w":97,"h":210},
+	"filename": "ALIEN_Roll_08.png",
+	"frame": {"x":683,"y":1,"w":79,"h":220},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":113,"y":62,"w":97,"h":210},
+	"spriteSourceSize": {"x":121,"y":52,"w":79,"h":220},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00010.png",
-	"frame": {"x":978,"y":209,"w":108,"h":206},
+	"filename": "ALIEN_Roll_10.png",
+	"frame": {"x":847,"y":1,"w":78,"h":218},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":115,"y":66,"w":108,"h":206},
+	"spriteSourceSize": {"x":124,"y":54,"w":78,"h":218},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00012.png",
-	"frame": {"x":1093,"y":1,"w":114,"h":205},
+	"filename": "ALIEN_Roll_12.png",
+	"frame": {"x":927,"y":217,"w":78,"h":214},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":116,"y":67,"w":114,"h":205},
+	"spriteSourceSize": {"x":125,"y":58,"w":78,"h":214},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00014.png",
-	"frame": {"x":859,"y":211,"w":117,"h":206},
+	"filename": "ALIEN_Roll_14.png",
+	"frame": {"x":846,"y":221,"w":78,"h":210},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":116,"y":66,"w":117,"h":206},
+	"spriteSourceSize": {"x":125,"y":62,"w":78,"h":210},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00016.png",
-	"frame": {"x":643,"y":1,"w":111,"h":211},
+	"filename": "ALIEN_Roll_16.png",
+	"frame": {"x":683,"y":223,"w":78,"h":207},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":116,"y":61,"w":111,"h":211},
+	"spriteSourceSize": {"x":124,"y":65,"w":78,"h":207},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00018.png",
-	"frame": {"x":451,"y":1,"w":96,"h":216},
+	"filename": "ALIEN_Roll_18.png",
+	"frame": {"x":1,"y":226,"w":79,"h":205},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":115,"y":56,"w":96,"h":216},
+	"spriteSourceSize": {"x":121,"y":67,"w":79,"h":205},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00020.png",
-	"frame": {"x":267,"y":1,"w":91,"h":221},
+	"filename": "ALIEN_Roll_20.png",
+	"frame": {"x":327,"y":226,"w":79,"h":204},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":112,"y":51,"w":91,"h":221},
+	"spriteSourceSize": {"x":118,"y":68,"w":79,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00022.png",
-	"frame": {"x":89,"y":1,"w":88,"h":224},
+	"filename": "ALIEN_Roll_22.png",
+	"frame": {"x":408,"y":226,"w":79,"h":204},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":48,"w":88,"h":224},
+	"spriteSourceSize": {"x":114,"y":68,"w":79,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00024.png",
-	"frame": {"x":1,"y":228,"w":86,"h":225},
+	"filename": "ALIEN_Roll_24.png",
+	"frame": {"x":163,"y":226,"w":80,"h":204},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":47,"w":86,"h":225},
+	"spriteSourceSize": {"x":110,"y":68,"w":80,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00026.png",
-	"frame": {"x":178,"y":227,"w":86,"h":224},
+	"filename": "ALIEN_Roll_26.png",
+	"frame": {"x":245,"y":226,"w":80,"h":204},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":48,"w":86,"h":224},
+	"spriteSourceSize": {"x":106,"y":68,"w":80,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00028.png",
-	"frame": {"x":360,"y":1,"w":89,"h":221},
+	"filename": "ALIEN_Roll_28.png",
+	"frame": {"x":489,"y":225,"w":79,"h":204},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":103,"y":51,"w":89,"h":221},
+	"spriteSourceSize": {"x":103,"y":68,"w":79,"h":204},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00030.png",
-	"frame": {"x":549,"y":1,"w":92,"h":216},
+	"filename": "ALIEN_Roll_30.png",
+	"frame": {"x":82,"y":226,"w":79,"h":205},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":100,"y":56,"w":92,"h":216},
+	"spriteSourceSize": {"x":100,"y":67,"w":79,"h":205},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00032.png",
-	"frame": {"x":756,"y":1,"w":98,"h":210},
+	"filename": "ALIEN_Roll_32.png",
+	"frame": {"x":601,"y":223,"w":80,"h":207},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":94,"y":62,"w":98,"h":210},
+	"spriteSourceSize": {"x":97,"y":65,"w":80,"h":207},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00034.png",
-	"frame": {"x":977,"y":1,"w":114,"h":206},
+	"filename": "ALIEN_Roll_34.png",
+	"frame": {"x":764,"y":221,"w":80,"h":210},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":77,"y":66,"w":114,"h":206},
+	"spriteSourceSize": {"x":96,"y":62,"w":80,"h":210},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00036.png",
-	"frame": {"x":1088,"y":209,"w":120,"h":205},
+	"filename": "ALIEN_Roll_36.png",
+	"frame": {"x":927,"y":1,"w":80,"h":214},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":67,"y":67,"w":120,"h":205},
+	"spriteSourceSize": {"x":96,"y":58,"w":80,"h":214},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00038.png",
-	"frame": {"x":856,"y":1,"w":119,"h":208},
+	"filename": "ALIEN_Roll_38.png",
+	"frame": {"x":764,"y":1,"w":81,"h":218},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":64,"y":64,"w":119,"h":208},
+	"spriteSourceSize": {"x":97,"y":54,"w":81,"h":218},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00040.png",
-	"frame": {"x":641,"y":219,"w":117,"h":214},
+	"filename": "ALIEN_Roll_40.png",
+	"frame": {"x":601,"y":1,"w":80,"h":220},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":70,"y":58,"w":117,"h":214},
+	"spriteSourceSize": {"x":100,"y":52,"w":80,"h":220},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00042.png",
-	"frame": {"x":445,"y":224,"w":100,"h":219},
+	"filename": "ALIEN_Roll_42.png",
+	"frame": {"x":518,"y":1,"w":81,"h":222},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":91,"y":53,"w":100,"h":219},
+	"spriteSourceSize": {"x":102,"y":50,"w":81,"h":222},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "ALIEN_ThisOrThat_00044.png",
-	"frame": {"x":266,"y":227,"w":85,"h":223},
+	"filename": "ALIEN_Roll_44.png",
+	"frame": {"x":349,"y":1,"w":84,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":49,"w":84,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "ALIEN_Roll_46.png",
+	"frame": {"x":176,"y":1,"w":85,"h":223},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":106,"y":49,"w":85,"h":223},
-	"sourceSize": {"w":300,"h":300}
-},
-{
-	"filename": "ALIEN_ThisOrThat_00046.png",
-	"frame": {"x":179,"y":1,"w":86,"h":224},
-	"rotated": false,
-	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":48,"w":86,"h":224},
 	"sourceSize": {"w":300,"h":300}
 }],
 "meta": {
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "ALIEN_Roll.png",
 	"format": "RGBA8888",
-	"size": {"w":1209,"h":454},
+	"size": {"w":1008,"h":432},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:b86d6d450cf9a862436e7d6cbc4af4b5:3342b38d6e687520b369e4edb8f2e25a:fde7172977b0bf192e03229adc09bc46$"
+	"smartupdate": "$TexturePacker:SmartUpdate:04899c7c48065cf455f9cdeedbb6d58b:0874e10f6890f07c07e092a691958b54:fde7172977b0bf192e03229adc09bc46$"
 }
 }

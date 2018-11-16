@@ -2,7 +2,7 @@
 
 {
 	"filename": "CAT_Rest_00.png",
-	"frame": {"x":801,"y":225,"w":81,"h":228},
+	"frame": {"x":886,"y":226,"w":81,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "CAT_Rest_02.png",
-	"frame": {"x":884,"y":226,"w":81,"h":228},
+	"frame": {"x":969,"y":226,"w":81,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
@@ -18,15 +18,15 @@
 },
 {
 	"filename": "CAT_Rest_04.png",
-	"frame": {"x":967,"y":226,"w":83,"h":228},
+	"frame": {"x":545,"y":224,"w":83,"h":227},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":46,"w":83,"h":228},
+	"spriteSourceSize": {"x":109,"y":47,"w":83,"h":227},
 	"sourceSize": {"w":300,"h":300}
 },
 {
 	"filename": "CAT_Rest_06.png",
-	"frame": {"x":545,"y":224,"w":84,"h":227},
+	"frame": {"x":630,"y":224,"w":84,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":109,"y":47,"w":84,"h":227},
@@ -170,7 +170,7 @@
 },
 {
 	"filename": "CAT_Rest_42.png",
-	"frame": {"x":631,"y":224,"w":84,"h":227},
+	"frame": {"x":716,"y":225,"w":84,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":109,"y":47,"w":84,"h":227},
@@ -178,7 +178,7 @@
 },
 {
 	"filename": "CAT_Rest_44.png",
-	"frame": {"x":717,"y":225,"w":82,"h":227},
+	"frame": {"x":802,"y":225,"w":82,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":47,"w":82,"h":227},
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1134,"h":455},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:259e79edfe7bdd0ac2db00cff9c731a2:ff42cf91f7fed9b20c51c8261acb38ca:330a0e21742c87f82830a4ebb0d1cc35$"
+	"smartupdate": "$TexturePacker:SmartUpdate:5a4368e2ab6ec7b99b15822700e81ce6:5861a985bdd279a406a80d427c2c04f9:330a0e21742c87f82830a4ebb0d1cc35$"
 }
 }

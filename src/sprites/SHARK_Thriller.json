@@ -26,10 +26,10 @@
 },
 {
 	"filename": "SHARK - Thriller_00006.png",
-	"frame": {"x":527,"y":181,"w":135,"h":189},
+	"frame": {"x":527,"y":181,"w":135,"h":188},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":79,"y":83,"w":135,"h":189},
+	"spriteSourceSize": {"x":79,"y":84,"w":135,"h":188},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -74,10 +74,10 @@
 },
 {
 	"filename": "SHARK - Thriller_00018.png",
-	"frame": {"x":240,"y":392,"w":117,"h":169},
+	"frame": {"x":240,"y":392,"w":117,"h":168},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":82,"y":107,"w":117,"h":169},
+	"spriteSourceSize": {"x":82,"y":108,"w":117,"h":168},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -154,7 +154,7 @@
 },
 {
 	"filename": "SHARK - Thriller_00038.png",
-	"frame": {"x":598,"y":372,"w":120,"h":179},
+	"frame": {"x":598,"y":371,"w":120,"h":179},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":98,"y":97,"w":120,"h":179},
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1016,"h":562},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:3a2719619f7f905e0231cf9970d9e759:693f509d5484c2b07b260f92787d6840:e8f626a710beb12066347c927440445e$"
+	"smartupdate": "$TexturePacker:SmartUpdate:23a6a6da1ae091d76915059e1ce3daf8:b4da58a971d40970ddc59959789eea50:e8f626a710beb12066347c927440445e$"
 }
 }

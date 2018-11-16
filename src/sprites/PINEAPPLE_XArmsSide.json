@@ -1,108 +1,108 @@
 {"frames": [
 
 {
-	"filename": "CAT_XArmsSide_00.png",
-	"frame": {"x":1,"y":1,"w":114,"h":233},
+	"filename": "PINEAPPLE_XArmsSide_00.png",
+	"frame": {"x":125,"y":1,"w":121,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":95,"y":41,"w":114,"h":233},
+	"spriteSourceSize": {"x":118,"y":19,"w":121,"h":253},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_02.png",
-	"frame": {"x":117,"y":1,"w":132,"h":232},
+	"filename": "PINEAPPLE_XArmsSide_02.png",
+	"frame": {"x":248,"y":1,"w":121,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":103,"y":42,"w":132,"h":232},
+	"spriteSourceSize": {"x":118,"y":19,"w":121,"h":253},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_04.png",
-	"frame": {"x":251,"y":1,"w":133,"h":229},
+	"filename": "PINEAPPLE_XArmsSide_04.png",
+	"frame": {"x":371,"y":1,"w":121,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":45,"w":133,"h":229},
+	"spriteSourceSize": {"x":118,"y":19,"w":121,"h":253},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_06.png",
-	"frame": {"x":386,"y":1,"w":133,"h":229},
+	"filename": "PINEAPPLE_XArmsSide_06.png",
+	"frame": {"x":494,"y":1,"w":121,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":45,"w":133,"h":229},
+	"spriteSourceSize": {"x":119,"y":19,"w":121,"h":253},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_08.png",
-	"frame": {"x":521,"y":1,"w":133,"h":228},
+	"filename": "PINEAPPLE_XArmsSide_08.png",
+	"frame": {"x":1,"y":1,"w":122,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":46,"w":133,"h":228},
+	"spriteSourceSize": {"x":119,"y":19,"w":122,"h":253},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_10.png",
-	"frame": {"x":739,"y":1,"w":135,"h":227},
+	"filename": "PINEAPPLE_XArmsSide_10.png",
+	"frame": {"x":780,"y":1,"w":120,"h":252},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":107,"y":47,"w":135,"h":227},
+	"spriteSourceSize": {"x":119,"y":20,"w":120,"h":252},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_12.png",
-	"frame": {"x":1058,"y":1,"w":132,"h":226},
+	"filename": "PINEAPPLE_XArmsSide_12.png",
+	"frame": {"x":902,"y":1,"w":113,"h":252},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":48,"w":132,"h":226},
+	"spriteSourceSize": {"x":119,"y":20,"w":113,"h":252},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_14.png",
-	"frame": {"x":1192,"y":1,"w":124,"h":226},
+	"filename": "PINEAPPLE_XArmsSide_14.png",
+	"frame": {"x":1017,"y":1,"w":100,"h":252},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":48,"w":124,"h":226},
+	"spriteSourceSize": {"x":119,"y":20,"w":100,"h":252},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_16.png",
-	"frame": {"x":1318,"y":1,"w":108,"h":226},
+	"filename": "PINEAPPLE_XArmsSide_16.png",
+	"frame": {"x":1119,"y":1,"w":87,"h":252},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":48,"w":108,"h":226},
+	"spriteSourceSize": {"x":119,"y":20,"w":87,"h":252},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_18.png",
-	"frame": {"x":876,"y":1,"w":94,"h":227},
+	"filename": "PINEAPPLE_XArmsSide_18.png",
+	"frame": {"x":1208,"y":1,"w":82,"h":252},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":47,"w":94,"h":227},
+	"spriteSourceSize": {"x":115,"y":20,"w":82,"h":252},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_20.png",
-	"frame": {"x":972,"y":1,"w":84,"h":227},
+	"filename": "PINEAPPLE_XArmsSide_20.png",
+	"frame": {"x":617,"y":1,"w":80,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":110,"y":47,"w":84,"h":227},
+	"spriteSourceSize": {"x":112,"y":19,"w":80,"h":253},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "CAT_XArmsSide_22.png",
-	"frame": {"x":656,"y":1,"w":81,"h":228},
+	"filename": "PINEAPPLE_XArmsSide_22.png",
+	"frame": {"x":699,"y":1,"w":79,"h":253},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":110,"y":46,"w":81,"h":228},
+	"spriteSourceSize": {"x":111,"y":19,"w":79,"h":253},
 	"sourceSize": {"w":300,"h":300}
 }],
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "CAT_XArmsSide.png",
+	"image": "PINEAPPLE_XArmsSide.png",
 	"format": "RGBA8888",
-	"size": {"w":1427,"h":235},
+	"size": {"w":1291,"h":255},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:954078fb7c2813c3d4fd8b722e70f12b:0ac8f83dd72b9ec7e0141c7f2157373b:3e89942f0b0eb2e456dc6df1a9bf124e$"
+	"smartupdate": "$TexturePacker:SmartUpdate:db73e9336b570e0ea219e2390a92846e:2bd9b31ff20f1f48e7bb180bf5e8c565:73cfbea474e1859086652288cb860e57$"
 }
 }

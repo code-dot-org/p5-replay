@@ -1,195 +1,195 @@
 {"frames": [
 
 {
-	"filename": "PINEAPPLE_DoubleJam_00000.png",
-	"frame": {"x":176,"y":254,"w":78,"h":247},
+	"filename": "PINEAPPLE_DoubleJam_00.png",
+	"frame": {"x":649,"y":222,"w":78,"h":254},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":111,"y":25,"w":78,"h":247},
+	"spriteSourceSize": {"x":111,"y":18,"w":78,"h":254},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00002.png",
-	"frame": {"x":256,"y":253,"w":99,"h":249},
+	"filename": "PINEAPPLE_DoubleJam_02.png",
+	"frame": {"x":729,"y":224,"w":99,"h":256},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":101,"y":23,"w":99,"h":249},
+	"spriteSourceSize": {"x":101,"y":16,"w":99,"h":256},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00004.png",
-	"frame": {"x":93,"y":1,"w":88,"h":251},
+	"filename": "PINEAPPLE_DoubleJam_04.png",
+	"frame": {"x":1088,"y":235,"w":85,"h":258},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":114,"y":21,"w":88,"h":251},
+	"spriteSourceSize": {"x":117,"y":14,"w":85,"h":258},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00006.png",
-	"frame": {"x":1,"y":254,"w":89,"h":248},
+	"filename": "PINEAPPLE_DoubleJam_06.png",
+	"frame": {"x":908,"y":227,"w":86,"h":257},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":114,"y":23,"w":89,"h":248},
+	"spriteSourceSize": {"x":117,"y":15,"w":86,"h":257},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00008.png",
-	"frame": {"x":448,"y":1,"w":93,"h":237},
+	"filename": "PINEAPPLE_DoubleJam_08.png",
+	"frame": {"x":208,"y":216,"w":95,"h":245},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":115,"y":31,"w":93,"h":237},
+	"spriteSourceSize": {"x":113,"y":24,"w":95,"h":245},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00010.png",
-	"frame": {"x":728,"y":226,"w":117,"h":216},
+	"filename": "PINEAPPLE_DoubleJam_10.png",
+	"frame": {"x":904,"y":1,"w":119,"h":224},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":108,"y":52,"w":117,"h":216},
+	"spriteSourceSize": {"x":106,"y":44,"w":119,"h":224},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00012.png",
-	"frame": {"x":966,"y":213,"w":127,"h":208},
+	"filename": "PINEAPPLE_DoubleJam_12.png",
+	"frame": {"x":396,"y":1,"w":130,"h":215},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":100,"y":63,"w":127,"h":208},
+	"spriteSourceSize": {"x":97,"y":56,"w":130,"h":215},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00014.png",
-	"frame": {"x":1015,"y":1,"w":134,"h":205},
+	"filename": "PINEAPPLE_DoubleJam_14.png",
+	"frame": {"x":130,"y":1,"w":137,"h":212},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":93,"y":67,"w":134,"h":205},
+	"spriteSourceSize": {"x":90,"y":60,"w":137,"h":212},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00016.png",
-	"frame": {"x":768,"y":1,"w":123,"h":214},
+	"filename": "PINEAPPLE_DoubleJam_16.png",
+	"frame": {"x":776,"y":1,"w":126,"h":221},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":99,"y":57,"w":123,"h":214},
+	"spriteSourceSize": {"x":96,"y":50,"w":126,"h":221},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00018.png",
-	"frame": {"x":631,"y":228,"w":95,"h":225},
+	"filename": "PINEAPPLE_DoubleJam_18.png",
+	"frame": {"x":1,"y":214,"w":97,"h":233},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":106,"y":43,"w":95,"h":225},
+	"spriteSourceSize": {"x":104,"y":36,"w":97,"h":233},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00020.png",
-	"frame": {"x":445,"y":244,"w":78,"h":238},
+	"filename": "PINEAPPLE_DoubleJam_20.png",
+	"frame": {"x":305,"y":216,"w":77,"h":245},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":109,"y":31,"w":78,"h":238},
+	"spriteSourceSize": {"x":109,"y":24,"w":77,"h":245},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00022.png",
-	"frame": {"x":92,"y":254,"w":82,"h":247},
+	"filename": "PINEAPPLE_DoubleJam_22.png",
+	"frame": {"x":830,"y":227,"w":76,"h":256},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":104,"y":24,"w":82,"h":247},
+	"spriteSourceSize": {"x":104,"y":16,"w":76,"h":256},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00024.png",
-	"frame": {"x":1,"y":1,"w":90,"h":251},
+	"filename": "PINEAPPLE_DoubleJam_24.png",
+	"frame": {"x":1175,"y":235,"w":89,"h":259},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":96,"y":21,"w":90,"h":251},
+	"spriteSourceSize": {"x":96,"y":13,"w":89,"h":259},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00026.png",
-	"frame": {"x":183,"y":1,"w":89,"h":250},
+	"filename": "PINEAPPLE_DoubleJam_26.png",
+	"frame": {"x":996,"y":233,"w":90,"h":257},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":97,"y":22,"w":89,"h":250},
+	"spriteSourceSize": {"x":97,"y":15,"w":90,"h":257},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00028.png",
-	"frame": {"x":354,"y":1,"w":92,"h":241},
+	"filename": "PINEAPPLE_DoubleJam_28.png",
+	"frame": {"x":472,"y":220,"w":95,"h":250},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":96,"y":28,"w":92,"h":241},
+	"spriteSourceSize": {"x":96,"y":20,"w":95,"h":250},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00030.png",
-	"frame": {"x":543,"y":1,"w":108,"h":225},
+	"filename": "PINEAPPLE_DoubleJam_30.png",
+	"frame": {"x":1142,"y":1,"w":111,"h":232},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":85,"y":42,"w":108,"h":225},
+	"spriteSourceSize": {"x":85,"y":35,"w":111,"h":232},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00032.png",
-	"frame": {"x":893,"y":1,"w":120,"h":210},
+	"filename": "PINEAPPLE_DoubleJam_32.png",
+	"frame": {"x":528,"y":1,"w":123,"h":217},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":80,"y":59,"w":120,"h":210},
+	"spriteSourceSize": {"x":80,"y":52,"w":123,"h":217},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00034.png",
-	"frame": {"x":1151,"y":1,"w":121,"h":205},
+	"filename": "PINEAPPLE_DoubleJam_34.png",
+	"frame": {"x":269,"y":1,"w":125,"h":213},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":85,"y":66,"w":121,"h":205},
+	"spriteSourceSize": {"x":85,"y":59,"w":125,"h":213},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00036.png",
-	"frame": {"x":1095,"y":208,"w":123,"h":204},
+	"filename": "PINEAPPLE_DoubleJam_36.png",
+	"frame": {"x":1,"y":1,"w":127,"h":211},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":85,"y":68,"w":123,"h":204},
+	"spriteSourceSize": {"x":85,"y":61,"w":127,"h":211},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00038.png",
-	"frame": {"x":847,"y":217,"w":117,"h":212},
+	"filename": "PINEAPPLE_DoubleJam_38.png",
+	"frame": {"x":653,"y":1,"w":121,"h":219},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":85,"y":60,"w":117,"h":212},
+	"spriteSourceSize": {"x":85,"y":53,"w":121,"h":219},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00040.png",
-	"frame": {"x":653,"y":1,"w":113,"h":223},
+	"filename": "PINEAPPLE_DoubleJam_40.png",
+	"frame": {"x":1025,"y":1,"w":115,"h":230},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":83,"y":49,"w":113,"h":223},
+	"spriteSourceSize": {"x":83,"y":42,"w":115,"h":230},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00042.png",
-	"frame": {"x":525,"y":240,"w":104,"h":232},
+	"filename": "PINEAPPLE_DoubleJam_42.png",
+	"frame": {"x":100,"y":215,"w":106,"h":240},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":86,"y":40,"w":104,"h":232},
+	"spriteSourceSize": {"x":86,"y":32,"w":106,"h":240},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00044.png",
-	"frame": {"x":357,"y":244,"w":86,"h":240},
+	"filename": "PINEAPPLE_DoubleJam_44.png",
+	"frame": {"x":384,"y":218,"w":86,"h":247},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":104,"y":32,"w":86,"h":240},
+	"spriteSourceSize": {"x":104,"y":25,"w":86,"h":247},
 	"sourceSize": {"w":300,"h":300}
 },
 {
-	"filename": "PINEAPPLE_DoubleJam_00046.png",
-	"frame": {"x":274,"y":1,"w":78,"h":245},
+	"filename": "PINEAPPLE_DoubleJam_46.png",
+	"frame": {"x":569,"y":220,"w":78,"h":252},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":112,"y":27,"w":78,"h":245},
+	"spriteSourceSize": {"x":112,"y":20,"w":78,"h":252},
 	"sourceSize": {"w":300,"h":300}
 }],
 "meta": {
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "PINEAPPLE_DoubleJam.png",
 	"format": "RGBA8888",
-	"size": {"w":1273,"h":503},
+	"size": {"w":1265,"h":495},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:d601b547df0ca1922b8c4a7288fcb051:0ef81ef4770b48444ff7edb88a121271:d0cd5a0dafc5ae3aa1758d1b27ea3166$"
+	"smartupdate": "$TexturePacker:SmartUpdate:7f281d109dd8952fa733e77b61267c00:78e61511e60df06845bb7bc6bdda7950:d0cd5a0dafc5ae3aa1758d1b27ea3166$"
 }
 }

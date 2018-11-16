@@ -2,7 +2,7 @@
 
 {
 	"filename": "CAT_ClapHigh_00.png",
-	"frame": {"x":649,"y":233,"w":80,"h":228},
+	"frame": {"x":1,"y":219,"w":80,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":110,"y":46,"w":80,"h":228},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_02.png",
-	"frame": {"x":828,"y":229,"w":81,"h":227},
+	"frame": {"x":1116,"y":1,"w":81,"h":227},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":111,"y":47,"w":81,"h":227},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_04.png",
-	"frame": {"x":1174,"y":233,"w":81,"h":224},
+	"frame": {"x":758,"y":1,"w":81,"h":224},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":115,"y":50,"w":81,"h":224},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_06.png",
-	"frame": {"x":1089,"y":233,"w":83,"h":221},
+	"frame": {"x":517,"y":1,"w":83,"h":221},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":118,"y":53,"w":83,"h":221},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_08.png",
-	"frame": {"x":1002,"y":233,"w":85,"h":218},
+	"frame": {"x":301,"y":1,"w":85,"h":218},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":118,"y":56,"w":85,"h":218},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_10.png",
-	"frame": {"x":911,"y":233,"w":89,"h":217},
+	"frame": {"x":113,"y":1,"w":89,"h":217},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":115,"y":57,"w":89,"h":217},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_12.png",
-	"frame": {"x":731,"y":229,"w":95,"h":217},
+	"frame": {"x":204,"y":1,"w":95,"h":217},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":108,"y":57,"w":95,"h":217},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_14.png",
-	"frame": {"x":537,"y":233,"w":110,"h":216},
+	"frame": {"x":1,"y":1,"w":110,"h":216},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":96,"y":58,"w":110,"h":216},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_16.png",
-	"frame": {"x":838,"y":1,"w":127,"h":218},
+	"frame": {"x":388,"y":1,"w":127,"h":218},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":86,"y":56,"w":127,"h":218},
@@ -74,7 +74,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_18.png",
-	"frame": {"x":1,"y":1,"w":154,"h":221},
+	"frame": {"x":602,"y":1,"w":154,"h":221},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":76,"y":53,"w":154,"h":221},
@@ -82,7 +82,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_20.png",
-	"frame": {"x":157,"y":1,"w":143,"h":224},
+	"frame": {"x":841,"y":1,"w":143,"h":224},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":98,"y":50,"w":143,"h":224},
@@ -90,7 +90,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_22.png",
-	"frame": {"x":708,"y":1,"w":128,"h":226},
+	"frame": {"x":986,"y":1,"w":128,"h":226},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":96,"y":48,"w":128,"h":226},
@@ -98,15 +98,15 @@
 },
 {
 	"filename": "CAT_ClapHigh_24.png",
-	"frame": {"x":434,"y":233,"w":101,"h":228},
+	"frame": {"x":1199,"y":1,"w":101,"h":227},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":93,"y":46,"w":101,"h":228},
+	"spriteSourceSize": {"x":93,"y":47,"w":101,"h":227},
 	"sourceSize": {"w":300,"h":300}
 },
 {
 	"filename": "CAT_ClapHigh_26.png",
-	"frame": {"x":143,"y":233,"w":104,"h":229},
+	"frame": {"x":166,"y":220,"w":104,"h":229},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":94,"y":45,"w":104,"h":229},
@@ -114,7 +114,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_28.png",
-	"frame": {"x":1087,"y":1,"w":114,"h":230},
+	"frame": {"x":565,"y":224,"w":114,"h":230},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":95,"y":44,"w":114,"h":230},
@@ -122,7 +122,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_30.png",
-	"frame": {"x":578,"y":1,"w":128,"h":230},
+	"frame": {"x":681,"y":227,"w":128,"h":230},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":96,"y":44,"w":128,"h":230},
@@ -130,7 +130,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_32.png",
-	"frame": {"x":1,"y":224,"w":140,"h":230},
+	"frame": {"x":811,"y":227,"w":140,"h":230},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":97,"y":44,"w":140,"h":230},
@@ -138,7 +138,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_34.png",
-	"frame": {"x":302,"y":1,"w":140,"h":230},
+	"frame": {"x":953,"y":229,"w":140,"h":230},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":99,"y":44,"w":140,"h":230},
@@ -146,7 +146,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_36.png",
-	"frame": {"x":444,"y":1,"w":132,"h":230},
+	"frame": {"x":1095,"y":230,"w":132,"h":230},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":100,"y":44,"w":132,"h":230},
@@ -154,7 +154,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_38.png",
-	"frame": {"x":967,"y":1,"w":118,"h":230},
+	"frame": {"x":1229,"y":230,"w":118,"h":230},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":102,"y":44,"w":118,"h":230},
@@ -162,7 +162,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_40.png",
-	"frame": {"x":1203,"y":1,"w":106,"h":229},
+	"frame": {"x":272,"y":221,"w":106,"h":229},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":103,"y":45,"w":106,"h":229},
@@ -170,7 +170,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_42.png",
-	"frame": {"x":249,"y":233,"w":95,"h":229},
+	"frame": {"x":380,"y":221,"w":95,"h":229},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":105,"y":45,"w":95,"h":229},
@@ -178,7 +178,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_44.png",
-	"frame": {"x":346,"y":233,"w":86,"h":229},
+	"frame": {"x":477,"y":224,"w":86,"h":229},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":107,"y":45,"w":86,"h":229},
@@ -186,7 +186,7 @@
 },
 {
 	"filename": "CAT_ClapHigh_46.png",
-	"frame": {"x":1257,"y":232,"w":81,"h":228},
+	"frame": {"x":83,"y":220,"w":81,"h":228},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":109,"y":46,"w":81,"h":228},
@@ -197,8 +197,8 @@
 	"version": "1.0",
 	"image": "CAT_ClapHigh.png",
 	"format": "RGBA8888",
-	"size": {"w":1339,"h":463},
+	"size": {"w":1348,"h":461},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:36146c18d092a2c094105c55fd5b0708:bf22850d8523540dd4ec5c408f775f01:b722d662abe2133a012d4925da8b591b$"
+	"smartupdate": "$TexturePacker:SmartUpdate:ca938ebb792437ba4ebe5ff43e59fc8f:1e0f59f0ccd7d5188c06493f93958a14:b722d662abe2133a012d4925da8b591b$"
 }
 }

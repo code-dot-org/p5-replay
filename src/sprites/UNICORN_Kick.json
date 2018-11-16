@@ -34,7 +34,7 @@
 },
 {
 	"filename": "UNICORN_Kick_00008.png",
-	"frame": {"x":1314,"y":212,"w":94,"h":200},
+	"frame": {"x":1314,"y":211,"w":94,"h":200},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":122,"y":75,"w":94,"h":200},
@@ -66,7 +66,7 @@
 },
 {
 	"filename": "UNICORN_Kick_00016.png",
-	"frame": {"x":1410,"y":212,"w":106,"h":198},
+	"frame": {"x":1410,"y":211,"w":106,"h":198},
 	"rotated": false,
 	"trimmed": true,
 	"spriteSourceSize": {"x":106,"y":77,"w":106,"h":198},
@@ -74,10 +74,10 @@
 },
 {
 	"filename": "UNICORN_Kick_00018.png",
-	"frame": {"x":1281,"y":1,"w":137,"h":209},
+	"frame": {"x":1281,"y":1,"w":137,"h":208},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":81,"y":66,"w":137,"h":209},
+	"spriteSourceSize": {"x":81,"y":67,"w":137,"h":208},
 	"sourceSize": {"w":300,"h":300}
 },
 {
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1634,"h":460},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:b5296e0f3b0ddb5f49f6b0ef6f0e2881:c2d4a7cc17df8926cccf6f77bba5e93d:9e3031d668580052279a7b7b49d58c90$"
+	"smartupdate": "$TexturePacker:SmartUpdate:cefb49986178bc456dac0c5bf928e3d1:69e7f7b98ea22fa75d0e3cdd2bf441cb:9e3031d668580052279a7b7b49d58c90$"
 }
 }
