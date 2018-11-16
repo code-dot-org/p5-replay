@@ -180,6 +180,9 @@ module.exports.renderImages = async (replay, writer) => {
       sprite.setFrame(entry.animationFrame);
       sprite.x = entry.x;
       sprite.y = entry.y;
+      sprite.height = entry.height;
+      sprite.width = entry.width;
+      sprite.visible = entry.visible;
     }
 
     // Draw frame
