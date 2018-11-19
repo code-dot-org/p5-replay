@@ -166,7 +166,9 @@ Resources:
             AllowedMethods: [GET, HEAD, OPTIONS]
             Compress: true
             DefaultTTL: 0
-            ForwardedValues: {QueryString: false}
+            ForwardedValues:
+              QueryString: false
+              Headers: ["Origin"]
             ViewerProtocolPolicy: redirect-to-https
 Outputs:
   ApiUrl:
