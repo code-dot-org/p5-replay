@@ -20,8 +20,10 @@ const WIDTH = 400;
 const HEIGHT = 400;
 
 // Some effects don't currently work, and should be skipped
-const BROKEN_FOREGROUND_EFFECTS = [
-  'raining_tacos'
+const BROKEN_FOREGROUND_EFFECTS = [];
+const BROKEN_BACKGROUND_EFFECTS = [
+  'strobe',
+  'text'
 ];
 
 // Allow binaries to run out of the bundle
@@ -190,7 +192,9 @@ module.exports.renderImages = async (replay, writer) => {
     if (onlySprites) {
       p5Inst.drawSprites();
     } else {
-      backgroundEffects[frame.bg || 'none'].draw(frame.context);
+      if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
+        backgroundEffects[frame.bg || 'none'].draw(frame.context);
+      }
       p5Inst.drawSprites();
       if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
         p5Inst.push();
