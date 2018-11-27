@@ -29,12 +29,41 @@ const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 
 // inferred from /dashboard/config/blocks/Dancelab/Dancelab_setBackgroundEffect.json
 const BG_EFFECT_NAMES = [
-  "disco",
-  "rainbow",
+  "none",
+  "circles",
+  "color_cycle",
   "diamonds",
-  "splatter",
+  "disco_ball",
+  "fireworks",
   "swirl",
+  "kaleidoscope",
+  "lasers",
+  "splatter",
+  "rainbow",
+  "smile_face",
+  "snowflakes",
+  "galaxy",
+  "sparkles",
   "spiral",
+  "disco",
+  "stars",
+];
+
+// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setForegroundEffect.json
+const FG_EFFECT_NAMES = [
+  "none",
+  "bubbles",
+  "confetti",
+  "hearts_red",
+  "music_notes",
+  "pineapples",
+  "rain",
+  "floating_rainbows",
+  "smiling_poop",
+  "text",
+  "spotlight",
+  "color_lights",
+  "raining_tacos",
 ];
 
 const myArgs = process.argv.slice(2);
@@ -51,7 +80,9 @@ const createSprite = () => ({
   rotation: 0,
   scale: 1,
   style: randFromArray(SPRITE_NAMES),
-  tint: 0,
+  visible: true,
+  height: 300,
+  width: 300,
   x: 200 + 400 * (Math.random() - .5),
   y: 200 + 400 * (Math.random() - .5),
 });
@@ -87,7 +118,9 @@ for (let i = 0; i < FRAME_COUNT; ++i) {
       backgroundColor: '#fff',
       isPeak: Math.random() < 0.05,
       centroid: 0,
-      bpm: 133
+      bpm: 133,
+      artist: "artist",
+      title: "title"
     }
   };
 
@@ -101,10 +134,20 @@ for (let i = 0; i < FRAME_COUNT; ++i) {
     frame.bg = randFromArray(BG_EFFECT_NAMES);
   }
 
+  if (i > 0) {
+    frame.fg = frames[i-1].fg;
+  } else {
+    frame.fg = randFromArray(FG_EFFECT_NAMES);
+  }
+
+  if (Math.random() < 0.05) {
+    frame.fg = randFromArray(FG_EFFECT_NAMES);
+  }
+
   sprites.forEach(iterSprite);
   frame.sprites = sprites.map(sprite => Object.assign({}, sprite));
 
   frames.push(frame);
 }
 
-console.log(JSON.stringify(frames));
+console.log(JSON.stringify(frames, null, 2));

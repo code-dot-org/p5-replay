@@ -20,10 +20,17 @@ const WIDTH = 400;
 const HEIGHT = 400;
 
 // Some effects don't currently work, and should be skipped
-const BROKEN_FOREGROUND_EFFECTS = [];
+const BROKEN_FOREGROUND_EFFECTS = [
+  "hearts_red",
+  "music_notes",
+  "pineapples",
+  "floating_rainbows",
+  "smiling_poop",
+  "raining_tacos",
+];
 const BROKEN_BACKGROUND_EFFECTS = [
-  'strobe',
-  'text'
+  'fireworks',
+  "kaleidoscope",
 ];
 
 // Allow binaries to run out of the bundle
@@ -152,6 +159,9 @@ module.exports.runTestExport = async (outputPath, replay) => {
 
 module.exports.renderImages = async (replay, writer) => {
   const sprites = [];
+  let lastBackground;
+  let lastForeground;
+
   for (const frame of replay) {
     // temporarily support both the new version of replay logs that contain
     // sprites as well as envrionmental data, and the old version that contains
@@ -194,6 +204,10 @@ module.exports.renderImages = async (replay, writer) => {
     } else {
       if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
         const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
+        if (lastBackground != frame.bg && effect.init) {
+          effect.init();
+        }
+        lastBackground = frame.bg;
         effect.draw(frame.context);
       }
       p5Inst.drawSprites();
@@ -201,6 +215,10 @@ module.exports.renderImages = async (replay, writer) => {
         p5Inst.push();
         p5Inst.blendMode(foregroundEffects.blend);
         const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
+        if (lastForeground != frame.fg && effect.init) {
+          effect.init();
+        }
+        lastForeground = frame.fg;
         effect.draw(frame.context);
         p5Inst.pop();
       }
