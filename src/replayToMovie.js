@@ -193,13 +193,15 @@ module.exports.renderImages = async (replay, writer) => {
       p5Inst.drawSprites();
     } else {
       if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
-        backgroundEffects[frame.bg || 'none'].draw(frame.context);
+        const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
+        effect.draw(frame.context);
       }
       p5Inst.drawSprites();
       if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
         p5Inst.push();
         p5Inst.blendMode(foregroundEffects.blend);
-        backgroundEffects[frame.fg].draw(frame.context);
+        const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
+        effect.draw(frame.context);
         p5Inst.pop();
       }
     }
