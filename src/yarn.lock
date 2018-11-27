@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@code-dot-org/dance-party@0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@code-dot-org/dance-party/-/dance-party-0.0.32.tgz#4109ba19a3b7de07e73a2a438d6120a4ce42fe27"
+"@code-dot-org/dance-party@0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@code-dot-org/dance-party/-/dance-party-0.0.34.tgz#e3e65a7cedd8aedc2e89576431cd1c9224f3f33c"
 
 "@code-dot-org/p5.play@1.3.8-cdo":
   version "1.3.8-cdo"
