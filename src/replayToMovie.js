@@ -192,10 +192,16 @@ module.exports.renderImages = async (replay, writer) => {
     if (onlySprites) {
       p5Inst.drawSprites();
     } else {
+      if (frame.palette) {
+        backgroundEffects.currentPalette = frame.palette;
+      }
+
       if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
         backgroundEffects[frame.bg || 'none'].draw(frame.context);
       }
+
       p5Inst.drawSprites();
+
       if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
         p5Inst.push();
         p5Inst.blendMode(foregroundEffects.blend);
