@@ -10,6 +10,9 @@ const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
 const CRF = process.env.QUALITY || 23;
 
+const FRAME_LIMIT = 30 * 10; // 10 seconds @ 30 fps
+const SPRITE_LIMIT = 25;
+
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
@@ -162,6 +165,7 @@ module.exports.renderImages = async (replay, writer) => {
   let lastBackground;
   let lastForeground;
 
+  replay.length = Math.min(replay.length, FRAME_LIMIT);
   for (const frame of replay) {
     // temporarily support both the new version of replay logs that contain
     // sprites as well as envrionmental data, and the old version that contains
@@ -170,6 +174,7 @@ module.exports.renderImages = async (replay, writer) => {
 
     // Load sprites and set state
     const frameSprites = onlySprites ? frame : frame.sprites;
+    frameSprites.length = Math.min(frameSprites.length, SPRITE_LIMIT);
     for (let i = 0; i < frameSprites.length; i++) {
       const entry = frameSprites[i];
 
