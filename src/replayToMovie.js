@@ -24,9 +24,11 @@ const BROKEN_FOREGROUND_EFFECTS = [
   "hearts_red",
   "music_notes",
   "pineapples",
+  "pizzas",
   "floating_rainbows",
   "smiling_poop",
   "raining_tacos",
+  "smile_face",
 ];
 const BROKEN_BACKGROUND_EFFECTS = [
   'fireworks',
