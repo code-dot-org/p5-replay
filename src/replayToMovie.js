@@ -206,22 +206,30 @@ module.exports.renderImages = async (replay, writer) => {
     } else {
       if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
         const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
-        if (lastBackground != frame.bg && effect.init) {
-          effect.init();
+        try {
+          if (lastBackground != frame.bg && effect.init) {
+            effect.init();
+          }
+          lastBackground = frame.bg;
+          effect.draw(frame.context);
+        } catch (e) {
+          // pass
         }
-        lastBackground = frame.bg;
-        effect.draw(frame.context);
       }
       p5Inst.drawSprites();
       if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
         p5Inst.push();
         p5Inst.blendMode(foregroundEffects.blend);
-        const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
-        if (lastForeground != frame.fg && effect.init) {
-          effect.init();
+        try {
+          const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
+          if (lastForeground != frame.fg && effect.init) {
+            effect.init();
+          }
+          lastForeground = frame.fg;
+          effect.draw(frame.context);
+        } catch (e) {
+          // pass
         }
-        lastForeground = frame.fg;
-        effect.draw(frame.context);
         p5Inst.pop();
       }
     }
