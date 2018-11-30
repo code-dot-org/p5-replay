@@ -95,7 +95,7 @@ function loadNewSpriteSheet(spriteName, moveName) {
   const image = new Promise((resolve, reject) => {
     const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".png";
     p5Inst.loadImage(localFile, resolve, () => {
-      debug(`could not file ${spriteName}@${moveName} image locally, loading from S3`);
+      debug(`could not find ${spriteName}@${moveName} image locally, loading from S3`);
       const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".png";
       p5Inst.loadImage(s3File, resolve, reject);
     });
@@ -105,7 +105,7 @@ function loadNewSpriteSheet(spriteName, moveName) {
     const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".json";
     fs.readFile(localFile, (err, data) => {
       if (err) {
-        debug(`could not file ${spriteName}@${moveName} json locally, loading from S3`);
+        debug(`could not find ${spriteName}@${moveName} json locally, loading from S3`);
         const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".json";
         request({
           url: s3File,
