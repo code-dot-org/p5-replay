@@ -64,6 +64,9 @@ async function renderVideo(replay, callback, segment, forceUUID = null) {
 
 module.exports.render = async (event, context, callback) => {
   const segment = new AWSXRay.Segment('render');
+  segment.addMetadata('event', event);
+  segment.addMetadata('context', context);
+
   const replayJSON = event.body;
   const replay = JSON.parse(replayJSON);
   if (replay.log && replay.id) {
@@ -75,6 +78,9 @@ module.exports.render = async (event, context, callback) => {
 
 module.exports.renderFromS3 = async (event, context, callback) => {
   const segment = new AWSXRay.Segment('renderFromS3');
+  segment.addMetadata('event', event);
+  segment.addMetadata('context', context);
+
   const srcBucket = event.Records[0].s3.bucket.name;
   const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
   const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
@@ -116,6 +122,9 @@ module.exports.getS3UploadURL = async (event, context, callback) => {
 
 module.exports.runTest = async (event, context, callback) => {
   const segment = new AWSXRay.Segment('runTest');
+  segment.addMetadata('event', event);
+  segment.addMetadata('context', context);
+
   const replay = require('./test/fixtures/replay.json');
   await renderVideo(replay, callback, segment);
 };
