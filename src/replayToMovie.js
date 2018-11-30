@@ -176,6 +176,8 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
   const foregroundEffects = new Effects(p5Inst, 0.8);
 
   replay.length = Math.min(replay.length, FRAME_LIMIT);
+  debug("beginning render; renering " + replay.length + " frames");
+  debug(Object.keys(ANIMATIONS).length + " animations already loaded");
 
   for (const frame of replay) {
     // Load sprites and set state
@@ -243,6 +245,9 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
   }
+
+  debug("loaded a total of " + sprites.length + " sprites");
+  debug("p5 has a total of " + p5Inst.allSprites.length + " sprites");
 
   sprites.forEach(sprite => sprite.remove());
   writer.end();

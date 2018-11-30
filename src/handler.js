@@ -4,6 +4,7 @@ const {tmpdir} = require('os');
 const AWS = require('aws-sdk');
 const AWSXRay = require('aws-xray-sdk-core');
 const { join, basename } = require('path');
+const spawnSync = require('child_process').spawnSync;
 
 const s3 = new AWS.S3();
 
@@ -26,6 +27,8 @@ function getOutputURL(uuid) {
   return `/${DEST_KEY}/video-${uuid}.mp4`;
 }
 
+const executionContextId = uuidv4();
+
 async function renderVideo(replay, callback, segment, forceUUID = null) {
   try {
     const uuid = forceUUID || uuidv4();
@@ -40,12 +43,16 @@ async function renderVideo(replay, callback, segment, forceUUID = null) {
     const fileStats = fs.statSync(outputPath);
     fs.unlinkSync(outputPath); // Delete file when done
 
+    const freeSpace = spawnSync("du", ["-hs", "/tmp"]).stdout.toString();
+
     debug("Upload complete, returning response");
     const responseBody = JSON.stringify({
       path: outputPath,
       stats: fileStats, // TODO: probably don't need to return this to the client, may want to check size somewhere though
-      s3Path: getOutputURL(uuid)
+      s3Path: getOutputURL(uuid),
+      freeSpace
     });
+    debug(responseBody);
     callback(null, {
       statusCode: 200,
       body: responseBody,
@@ -77,8 +84,19 @@ module.exports.renderFromS3 = async (event, context, callback) => {
   const segment = new AWSXRay.Segment('renderFromS3');
   const srcBucket = event.Records[0].s3.bucket.name;
   const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
+
   const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
   const replayJSON = fs.readFileSync(tmpPath);
+  const replayJSONString = replayJSON.toString();
+  debug(JSON.stringify({
+    executionContextId,
+    srcBucket,
+    srcKey,
+    tmpPath,
+    replayJSONStringStart: replayJSONString.slice(0, 20),
+    replayJSONStringEnd: replayJSONString.slice(-20),
+    replayLogSize: replayJSON.length
+  }));
   fs.unlinkSync(tmpPath);
   let replay = [];
   try {
@@ -88,6 +106,7 @@ module.exports.renderFromS3 = async (event, context, callback) => {
     // eslint-disable-next-line no-console
     debug(err);
   }
+  debug("replay log length: " + replay.length);
 
   await renderVideo(replay, callback, segment, srcKey.replace(`${SOURCE_KEY}/`, ''));
 };
