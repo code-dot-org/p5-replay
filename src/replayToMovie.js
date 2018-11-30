@@ -34,6 +34,7 @@ const BROKEN_FOREGROUND_EFFECTS = [
   "raining_tacos",
   "smile_face",
 ];
+
 const BROKEN_BACKGROUND_EFFECTS = [
   'fireworks',
   "kaleidoscope",
@@ -80,6 +81,46 @@ const p5Inst = new P5(function (p5obj) {
   p5obj.width = WIDTH;
   p5obj.height = HEIGHT;
 });
+
+createNewP5RenderingCanvas();
+
+const backgroundEffects = new Effects(p5Inst, 1);
+const foregroundEffects = new Effects(p5Inst, 0.8);
+
+/**
+ * Create an emulated canvas for P5 to use as a rendering context.
+ *
+ * We have to create a new canvas on every request, otherwise under periods of
+ * high traffic the canvas can get into a state where it "freezes" and repeats
+ * a single frame for the length of an entire video.
+ *
+ * See https://github.com/code-dot-org/dance-party/issues/514 for more context
+ */
+function createNewP5RenderingCanvas() {
+  const canvas = window.document.createElement('canvas');
+  p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
+  p5Inst._renderer.resize(WIDTH, HEIGHT);
+
+  // stub p5.scale to prevent any attempt at scaling down to 0, since that
+  // breaks node canvas (even though it works fine in the browser). Instead
+  // just scale down to something really, really small.
+  //
+  // See https://github.com/Automattic/node-canvas/issues/702
+  const origScale = p5Inst._renderer.scale;
+  p5Inst._renderer.scale = function(x, y) {
+    if (x === 0) {
+      x = 0.001;
+    }
+
+    if (y === 0) {
+      y = 0.001;
+    }
+
+    return origScale.call(this, x, y);
+  };
+
+  return canvas;
+}
 
 function loadNewSpriteSheet(spriteName, moveName) {
   debug(`loading ${spriteName}@${moveName}`);
@@ -164,17 +205,7 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
   let lastBackground;
   let lastForeground;
 
-  // Create our emulated canvas.
-  // We have to create a new canvas on every request, otherwise under periods
-  // of high traffic the canvas can get into a state where it "freezes" and
-  // repeats a single frame for the length of an entire video.
-  // See https://github.com/code-dot-org/dance-party/issues/514 for more context
-  const canvas = window.document.createElement('canvas');
-  p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
-  p5Inst._renderer.resize(WIDTH, HEIGHT);
-
-  const backgroundEffects = new Effects(p5Inst, 1);
-  const foregroundEffects = new Effects(p5Inst, 0.8);
+  const canvas = createNewP5RenderingCanvas();
 
   replay.length = Math.min(replay.length, FRAME_LIMIT);
 
