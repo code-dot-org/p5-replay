@@ -91,14 +91,7 @@ module.exports.renderFromS3 = async (event, context, callback) => {
   const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
   const replayJSON = fs.readFileSync(tmpPath);
   fs.unlinkSync(tmpPath);
-  let replay = [];
-  try {
-    replay = JSON.parse(replayJSON);
-  } catch (err) {
-    segment.addError(err);
-    // eslint-disable-next-line no-console
-    debug(err);
-  }
+  const replay = JSON.parse(replayJSON);
 
   await renderVideo(replay, callback, segment, srcKey.replace(`${SOURCE_KEY}/`, ''));
 };
