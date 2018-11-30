@@ -25,12 +25,9 @@ const HEIGHT = 400;
 
 // Some effects don't currently work, and should be skipped
 const BROKEN_FOREGROUND_EFFECTS = [
-  "hearts_red",
   "music_notes",
-  "pineapples",
   "pizzas",
   "floating_rainbows",
-  "smiling_poop",
   "raining_tacos",
   "smile_face",
 ];
