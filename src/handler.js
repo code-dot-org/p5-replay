@@ -83,6 +83,11 @@ module.exports.renderFromS3 = async (event, context, callback) => {
 
   const srcBucket = event.Records[0].s3.bucket.name;
   const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
+  debug("renderFromS3 called with " + JSON.stringify({
+    srcBucket,
+    srcKey,
+  }));
+
   const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
   const replayJSON = fs.readFileSync(tmpPath);
   fs.unlinkSync(tmpPath);
