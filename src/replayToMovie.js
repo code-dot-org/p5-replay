@@ -1,3 +1,4 @@
+const AWSXRay = require('aws-xray-sdk-core');
 const Canvas = require('canvas');
 const fs = require('fs');
 const os = require('os');
@@ -151,12 +152,11 @@ async function loadSprite(spriteName) {
   }
 }
 
-module.exports.runTestExport = async (outputPath, replay, parentSegment) => {
-  //const exportSegment = segment.addNewSubsegment('runExport')
-  const exportSegment = new AWSXRay.Segment('runExport', parentSegment.trace_id, parentSegment.id)
-  let [pipe, promise] = module.exports.renderVideo(outputPath);
+module.exports.runTestExport = async (outputPath, replay, parentSegment = new AWSXRay.Segment('runExportStandalone')) => {
+  const exportSegment = new AWSXRay.Segment('runExport', parentSegment.trace_id, parentSegment.id);
+  let [pipe, promise] = module.exports.renderVideo(outputPath, exportSegment);
   pipe._handle.setBlocking(true);
-  await module.exports.renderImages(replay, pipe);
+  await module.exports.renderImages(replay, pipe, exportSegment);
   await promise.catch(err => {
     exportSegment.addError(err);
     // eslint-disable-next-line no-console
@@ -166,7 +166,8 @@ module.exports.runTestExport = async (outputPath, replay, parentSegment) => {
   exportSegment.close();
 };
 
-module.exports.renderImages = async (replay, writer) => {
+module.exports.renderImages = async (replay, writer, parentSegment) => {
+  const renderSegment = new AWSXRay.Segment('renderImages', parentSegment.trace_id, parentSegment.id);
   const sprites = [];
   let lastBackground;
   let lastForeground;
@@ -214,7 +215,7 @@ module.exports.renderImages = async (replay, writer) => {
         lastBackground = frame.bg;
         effect.draw(frame.context);
       } catch (err) {
-        // pass
+        renderSegment.addError(err);
       }
     }
 
@@ -231,7 +232,7 @@ module.exports.renderImages = async (replay, writer) => {
         lastForeground = frame.fg;
         effect.draw(frame.context);
       } catch (err) {
-        // pass
+        renderSegment.addError(err);
       }
       p5Inst.pop();
     }
@@ -243,6 +244,7 @@ module.exports.renderImages = async (replay, writer) => {
   sprites.forEach(sprite => sprite.remove());
   writer.end();
   debug('finished');
+  renderSegment.close();
 };
 
 module.exports.renderVideo = (outputFile) => {
@@ -272,8 +274,8 @@ module.exports.renderVideo = (outputFile) => {
     outputFile
   ];
   const stdout = LOCAL ? 'inherit' : 'ignore';
-  let options = {
-    stdio: ['pipe', stdout, stdout]
+  const options = {
+    stdio: ['pipe', stdout, stdout],
   };
   debug(`${FFMPEG_PATH} ${args.join(' ')}`);
   const child = spawn(FFMPEG_PATH, args, options);
