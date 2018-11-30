@@ -168,17 +168,12 @@ module.exports.renderImages = async (replay, writer) => {
   let lastForeground;
 
   replay.length = Math.min(replay.length, FRAME_LIMIT);
-  for (const frame of replay) {
-    // temporarily support both the new version of replay logs that contain
-    // sprites as well as envrionmental data, and the old version that contains
-    // just sprites
-    const onlySprites = !frame.sprites;
 
+  for (const frame of replay) {
     // Load sprites and set state
-    const frameSprites = onlySprites ? frame : frame.sprites;
-    frameSprites.length = Math.min(frameSprites.length, SPRITE_LIMIT);
-    for (let i = 0; i < frameSprites.length; i++) {
-      const entry = frameSprites[i];
+    frame.sprites.length = Math.min(frame.sprites.length, SPRITE_LIMIT);
+    for (let i = 0; i < frame.sprites.length; i++) {
+      const entry = frame.sprites[i];
 
       if (!sprites[i]) {
         sprites[i] = p5Inst.createSprite();
@@ -206,37 +201,35 @@ module.exports.renderImages = async (replay, writer) => {
 
     // Draw frame
     p5Inst.background('#fff');
-    if (onlySprites) {
-      p5Inst.drawSprites();
-    } else {
-      if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
-        const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
-        try {
-          if (lastBackground != frame.bg && effect.init) {
-            effect.init();
-          }
-          lastBackground = frame.bg;
-          effect.draw(frame.context);
-        } catch (e) {
-          // pass
+    if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
+      const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
+      try {
+        if (lastBackground != frame.bg && effect.init) {
+          effect.init();
         }
+        lastBackground = frame.bg;
+        effect.draw(frame.context);
+      } catch (err) {
+        // pass
       }
-      p5Inst.drawSprites();
-      if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
-        p5Inst.push();
-        p5Inst.blendMode(foregroundEffects.blend);
-        try {
-          const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
-          if (lastForeground != frame.fg && effect.init) {
-            effect.init();
-          }
-          lastForeground = frame.fg;
-          effect.draw(frame.context);
-        } catch (e) {
-          // pass
+    }
+
+    p5Inst.drawSprites();
+
+    if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
+      p5Inst.push();
+      p5Inst.blendMode(foregroundEffects.blend);
+      try {
+        const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
+        if (lastForeground != frame.fg && effect.init) {
+          effect.init();
         }
-        p5Inst.pop();
+        lastForeground = frame.fg;
+        effect.draw(frame.context);
+      } catch (err) {
+        // pass
       }
+      p5Inst.pop();
     }
 
     // Write an image.
