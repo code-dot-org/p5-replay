@@ -1,3 +1,4 @@
+const AWSXRay = require('aws-xray-sdk-core');
 const Canvas = require('canvas');
 const fs = require('fs');
 const os = require('os');
@@ -10,6 +11,9 @@ const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
 const LOCAL = process.env.AWS_SAM_LOCAL;
 const CRF = process.env.QUALITY || 23;
 
+const FRAME_LIMIT = 30 * 10; // 10 seconds @ 30 fps
+const SPRITE_LIMIT = 25;
+
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
@@ -20,10 +24,19 @@ const WIDTH = 400;
 const HEIGHT = 400;
 
 // Some effects don't currently work, and should be skipped
-const BROKEN_FOREGROUND_EFFECTS = [];
+const BROKEN_FOREGROUND_EFFECTS = [
+  "hearts_red",
+  "music_notes",
+  "pineapples",
+  "pizzas",
+  "floating_rainbows",
+  "smiling_poop",
+  "raining_tacos",
+  "smile_face",
+];
 const BROKEN_BACKGROUND_EFFECTS = [
-  'strobe',
-  'text'
+  'fireworks',
+  "kaleidoscope",
 ];
 
 // Allow binaries to run out of the bundle
@@ -68,21 +81,13 @@ const p5Inst = new P5(function (p5obj) {
   p5obj.height = HEIGHT;
 });
 
-// Create our emulated canvas.
-const canvas = window.document.createElement('canvas');
-p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
-p5Inst._renderer.resize(WIDTH, HEIGHT);
-
-const backgroundEffects = new Effects(p5Inst, 1);
-const foregroundEffects = new Effects(p5Inst, 0.8);
-
 function loadNewSpriteSheet(spriteName, moveName) {
   debug(`loading ${spriteName}@${moveName}`);
 
   const image = new Promise((resolve, reject) => {
     const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".png";
     p5Inst.loadImage(localFile, resolve, () => {
-      debug(`could not file ${spriteName}@${moveName} image locally, loading from S3`);
+      debug(`could not find ${spriteName}@${moveName} image locally, loading from S3`);
       const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".png";
       p5Inst.loadImage(s3File, resolve, reject);
     });
@@ -92,7 +97,7 @@ function loadNewSpriteSheet(spriteName, moveName) {
     const localFile = SPRITE_BASE + spriteName + "_" + moveName + ".json";
     fs.readFile(localFile, (err, data) => {
       if (err) {
-        debug(`could not file ${spriteName}@${moveName} json locally, loading from S3`);
+        debug(`could not find ${spriteName}@${moveName} json locally, loading from S3`);
         const s3File = SPRITE_S3_BASE + spriteName + "_" + moveName + ".json";
         request({
           url: s3File,
@@ -139,29 +144,45 @@ async function loadSprite(spriteName) {
   }
 }
 
-module.exports.runTestExport = async (outputPath, replay) => {
-  let [pipe, promise] = module.exports.renderVideo(outputPath);
+module.exports.runTestExport = async (outputPath, replay, parentSegment = new AWSXRay.Segment('runExportStandalone')) => {
+  const exportSegment = new AWSXRay.Segment('runExport', parentSegment.trace_id, parentSegment.id);
+  let [pipe, promise] = module.exports.renderVideo(outputPath, exportSegment);
   pipe._handle.setBlocking(true);
-  await module.exports.renderImages(replay, pipe);
+  await module.exports.renderImages(replay, pipe, exportSegment);
   await promise.catch(err => {
+    exportSegment.addError(err);
     // eslint-disable-next-line no-console
     console.error(err);
     process.exit(1);
   });
+  exportSegment.close();
 };
 
-module.exports.renderImages = async (replay, writer) => {
+module.exports.renderImages = async (replay, writer, parentSegment) => {
+  const renderSegment = new AWSXRay.Segment('renderImages', parentSegment.trace_id, parentSegment.id);
   const sprites = [];
-  for (const frame of replay) {
-    // temporarily support both the new version of replay logs that contain
-    // sprites as well as envrionmental data, and the old version that contains
-    // just sprites
-    const onlySprites = !frame.sprites;
+  let lastBackground;
+  let lastForeground;
 
+  // Create our emulated canvas.
+  // We have to create a new canvas on every request, otherwise under periods
+  // of high traffic the canvas can get into a state where it "freezes" and
+  // repeats a single frame for the length of an entire video.
+  // See https://github.com/code-dot-org/dance-party/issues/514 for more context
+  const canvas = window.document.createElement('canvas');
+  p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
+  p5Inst._renderer.resize(WIDTH, HEIGHT);
+
+  const backgroundEffects = new Effects(p5Inst, 1);
+  const foregroundEffects = new Effects(p5Inst, 0.8);
+
+  replay.length = Math.min(replay.length, FRAME_LIMIT);
+
+  for (const frame of replay) {
     // Load sprites and set state
-    const frameSprites = onlySprites ? frame : frame.sprites;
-    for (let i = 0; i < frameSprites.length; i++) {
-      const entry = frameSprites[i];
+    frame.sprites.length = Math.min(frame.sprites.length, SPRITE_LIMIT);
+    for (let i = 0; i < frame.sprites.length; i++) {
+      const entry = frame.sprites[i];
 
       if (!sprites[i]) {
         sprites[i] = p5Inst.createSprite();
@@ -189,25 +210,40 @@ module.exports.renderImages = async (replay, writer) => {
 
     // Draw frame
     p5Inst.background('#fff');
-    if (onlySprites) {
-      p5Inst.drawSprites();
-    } else {
-      if (frame.palette) {
-        backgroundEffects.currentPalette = frame.palette;
-      }
 
-      if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
-        backgroundEffects[frame.bg || 'none'].draw(frame.context);
-      }
+    if (frame.palette) {
+      backgroundEffects.currentPalette = frame.palette;
+    }
 
-      p5Inst.drawSprites();
-
-      if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
-        p5Inst.push();
-        p5Inst.blendMode(foregroundEffects.blend);
-        backgroundEffects[frame.fg].draw(frame.context);
-        p5Inst.pop();
+    if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
+      const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
+      try {
+        if (lastBackground != frame.bg && effect.init) {
+          effect.init();
+        }
+        lastBackground = frame.bg;
+        effect.draw(frame.context);
+      } catch (err) {
+        renderSegment.addError(err);
       }
+    }
+
+    p5Inst.drawSprites();
+
+    if (frame.fg && !BROKEN_FOREGROUND_EFFECTS.includes(frame.fg)) {
+      p5Inst.push();
+      p5Inst.blendMode(foregroundEffects.blend);
+      try {
+        const effect = foregroundEffects[frame.fg] || foregroundEffects.none;
+        if (lastForeground != frame.fg && effect.init) {
+          effect.init();
+        }
+        lastForeground = frame.fg;
+        effect.draw(frame.context);
+      } catch (err) {
+        renderSegment.addError(err);
+      }
+      p5Inst.pop();
     }
 
     // Write an image.
@@ -217,6 +253,7 @@ module.exports.renderImages = async (replay, writer) => {
   sprites.forEach(sprite => sprite.remove());
   writer.end();
   debug('finished');
+  renderSegment.close();
 };
 
 module.exports.renderVideo = (outputFile) => {
@@ -246,8 +283,8 @@ module.exports.renderVideo = (outputFile) => {
     outputFile
   ];
   const stdout = LOCAL ? 'inherit' : 'ignore';
-  let options = {
-    stdio: ['pipe', stdout, stdout]
+  const options = {
+    stdio: ['pipe', stdout, stdout],
   };
   debug(`${FFMPEG_PATH} ${args.join(' ')}`);
   const child = spawn(FFMPEG_PATH, args, options);
