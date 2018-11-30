@@ -168,6 +168,7 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
   // We have to create a new canvas on every request, otherwise under periods
   // of high traffic the canvas can get into a state where it "freezes" and
   // repeats a single frame for the length of an entire video.
+  // See https://github.com/code-dot-org/dance-party/issues/514 for more context
   const canvas = window.document.createElement('canvas');
   p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
   p5Inst._renderer.resize(WIDTH, HEIGHT);
