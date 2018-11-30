@@ -20,7 +20,7 @@ const HEADERS = {
   'Access-Control-Allow-Origin': '*'
 };
 
-AWSXRay.enableManualMode()
+AWSXRay.enableManualMode();
 
 function getOutputURL(uuid) {
   return `/${DEST_KEY}/video-${uuid}.mp4`;
@@ -52,13 +52,13 @@ async function renderVideo(replay, callback, segment, forceUUID = null) {
       headers: HEADERS
     });
   } catch (error) {
-    segment.addError(error)
+    segment.addError(error);
     callback(null, {
       statusCode: 500,
       body: JSON.stringify(error)
     });
   } finally {
-    segment.close()
+    segment.close();
   }
 }
 
@@ -80,7 +80,15 @@ module.exports.renderFromS3 = async (event, context, callback) => {
   const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
   const replayJSON = fs.readFileSync(tmpPath);
   fs.unlinkSync(tmpPath);
-  const replay = JSON.parse(replayJSON);
+  let replay = [];
+  try {
+    replay = JSON.parse(replayJSON);
+  } catch (err) {
+    segment.addError(err);
+    // eslint-disable-next-line no-console
+    debug(err);
+  }
+
   await renderVideo(replay, callback, segment, srcKey.replace(`${SOURCE_KEY}/`, ''));
 };
 
