@@ -99,6 +99,9 @@ const p5Inst = new P5(function (p5obj) {
   p5obj.height = HEIGHT;
 });
 
+// Create an initial rendering canvas; this will be replaced by the first
+// request, but we need a renderer applied to the p5 instance for the Effects
+// constructor to work, and the renderer needs a canvas. So here we are.
 createNewP5RenderingCanvas();
 
 const backgroundEffects = new Effects(p5Inst, 1);
