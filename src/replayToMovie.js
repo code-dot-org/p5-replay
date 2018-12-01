@@ -53,6 +53,26 @@ window.document = {
       throw new Error('Cannot create type.');
     }
     const created = Canvas.createCanvas();
+
+    // stub ctx.scale to prevent any attempt at scaling down to 0, since that
+    // breaks node canvas (even though it works fine in the browser). Instead
+    // just scale down to something really, really small.
+    //
+    // See https://github.com/Automattic/node-canvas/issues/702
+    const context = created.getContext('2d');
+    const origScale = context.scale;
+    context.scale = function(x, y) {
+      if (x === 0) {
+        x = 0.001;
+      }
+
+      if (y === 0) {
+        y = 0.001;
+      }
+
+      return origScale.call(this, x, y);
+    };
+
     created.style = {};
     return created;
   }
@@ -97,24 +117,6 @@ function createNewP5RenderingCanvas() {
   const canvas = window.document.createElement('canvas');
   p5Inst._renderer = new P5.Renderer2D(canvas, p5Inst, false);
   p5Inst._renderer.resize(WIDTH, HEIGHT);
-
-  // stub p5.scale to prevent any attempt at scaling down to 0, since that
-  // breaks node canvas (even though it works fine in the browser). Instead
-  // just scale down to something really, really small.
-  //
-  // See https://github.com/Automattic/node-canvas/issues/702
-  const origScale = p5Inst._renderer.scale;
-  p5Inst._renderer.scale = function(x, y) {
-    if (x === 0) {
-      x = 0.001;
-    }
-
-    if (y === 0) {
-      y = 0.001;
-    }
-
-    return origScale.call(this, x, y);
-  };
 
   return canvas;
 }
