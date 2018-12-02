@@ -30,6 +30,7 @@ const BROKEN_FOREGROUND_EFFECTS = [
 ];
 
 const BROKEN_BACKGROUND_EFFECTS = [
+  "kaleidoscope"
 ];
 
 // Allow binaries to run out of the bundle
