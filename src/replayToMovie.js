@@ -25,16 +25,11 @@ const HEIGHT = 400;
 
 // Some effects don't currently work, and should be skipped
 const BROKEN_FOREGROUND_EFFECTS = [
-  "music_notes",
   "pizzas",
-  "floating_rainbows",
-  "raining_tacos",
   "smile_face",
 ];
 
 const BROKEN_BACKGROUND_EFFECTS = [
-  'fireworks',
-  "kaleidoscope",
 ];
 
 // Allow binaries to run out of the bundle
@@ -45,8 +40,7 @@ process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 global.window = global;
 window.performance = {now: Date.now};
 window.document = {
-  hasFocus: () => {
-  },
+  hasFocus: () => {},
   getElementsByTagName: () => [],
   createElement: type => {
     if (type !== 'canvas') {
@@ -75,6 +69,9 @@ window.document = {
 
     created.style = {};
     return created;
+  },
+  body: {
+    appendChild: () => {}
   }
 };
 window.screen = {};
