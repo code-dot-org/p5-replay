@@ -29,6 +29,19 @@ const BG_EFFECTS = [
   "stars",
 ];
 
+const PALETTE_NAMES = [
+  null,
+  "rave",
+  "cool",
+  "electronic",
+  "iceCream",
+  "default",
+  "neon",
+  "tropical",
+  "vintage",
+  "warm",
+];
+
 const FG_EFFECTS = [
   null,
   "bubbles",
@@ -36,10 +49,11 @@ const FG_EFFECTS = [
   "hearts_red",
   "music_notes",
   "pineapples",
+  "pizzas",
+  "smiling_poop",
   "rain",
   "floating_rainbows",
-  "smiling_poop",
-  "text",
+  "smile_face",
   "spotlight",
   "color_lights",
   "raining_tacos",
@@ -101,24 +115,27 @@ const createWritableStreamTest = (subTest) => {
 };
 
 
-test('background effects can all be consumed without breaking canvas', (t) => {
-  t.plan(BG_EFFECTS.length);
+tape('background effects can all be consumed without breaking canvas in all palette combinations', (t) => {
+  t.plan(BG_EFFECTS.length * PALETTE_NAMES.length);
 
-  BG_EFFECTS.forEach((effect) => {
-    t.test(effect, (st) => {
+  BG_EFFECTS.forEach((bg) => {
+    PALETTE_NAMES.forEach((palette) => {
+      t.test(`${bg} (${palette})`, (st) => {
 
-      const replay = generateFrames({
-        bg: effect
+        const replay = generateFrames({
+          bg,
+          palette
+        });
+
+        const writableStream = createWritableStreamTest(st);
+
+        renderImages(replay, writableStream);
       });
-
-      const writableStream = createWritableStreamTest(st);
-
-      renderImages(replay, writableStream);
     });
   });
 });
 
-test('foreground effects can all be consumed without breaking canvas', (t) => {
+tape('foreground effects can all be consumed without breaking canvas', (t) => {
   t.plan(FG_EFFECTS.length);
 
   FG_EFFECTS.forEach((effect) => {
