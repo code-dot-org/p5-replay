@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint --ext .js .",
     "test:unit": "tape test/unit/*.js",
-    "test": "yarn lint && yarn test:unit'"
+    "test": "yarn lint && yarn test:unit"
   },
   "repository": {
     "type": "git",

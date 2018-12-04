@@ -10,12 +10,9 @@ cache:
   directories:
     - node_modules
 
-before_install:
-  - docker pull p5-replay/build-service
-  - docker run --rm -v ./src:/wrk p5-replay/build-service /bin/bash -c "cd /wrk && yarn test"
-
-script:
-  - yarn test
+before_install: bash build.sh
+before_script: cd src
+script: yarn test
 
 notifications:
   email: false
