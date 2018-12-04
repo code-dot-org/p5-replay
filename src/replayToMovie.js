@@ -243,7 +243,7 @@ module.exports.renderImages = async (replay, writer, parentSegment = new AWSXRay
 
 module.exports.renderVideo = (outputFile) => {
   // Spawn the ffmpeg process.
-  let args = [
+  const args = [
     '-f', 'rawvideo',
     '-r', '30',
     '-pix_fmt', (os.endianness() === 'LE' ? 'bgra' : 'argb'),
