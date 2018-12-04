@@ -4,7 +4,8 @@
   "description": "Node.js .mp4 generator for p5.js sketches",
   "scripts": {
     "lint": "eslint --ext .js .",
-    "test": "docker run --rm -v $PWD:/wrk p5-replay/build-service /bin/bash -c 'cd /wrk && node /wrk/test/local.js",
+    "test:unit": "tape test/unit/*.js",
+    "test": "yarn lint && docker run --rm -v $PWD:/wrk p5-replay/build-service /bin/bash -c 'cd /wrk && yarn test:unit'",
     "test-sam": "sam local generate-event s3 put | sam local invoke --template ../template.yml RenderFromS3",
     "deploy": "serverless deploy",
     "stack-destroy": "sls remove -v"
