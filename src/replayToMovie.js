@@ -153,7 +153,7 @@ module.exports.runTestExport = async (outputPath, replay, parentSegment = new AW
   exportSegment.close();
 };
 
-module.exports.renderImages = async (replay, writer, parentSegment) => {
+module.exports.renderImages = async (replay, writer, parentSegment = new AWSXRay.Segment('renderImagesStandalone')) => {
   const renderSegment = new AWSXRay.Segment('renderImages', parentSegment.trace_id, parentSegment.id);
   const sprites = [];
   let lastBackground;
