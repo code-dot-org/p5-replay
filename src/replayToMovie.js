@@ -241,6 +241,11 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
 
     // Draw frame
     p5Inst.background('#fff');
+
+    if (frame.palette) {
+      backgroundEffects.currentPalette = frame.palette;
+    }
+
     if (!BROKEN_BACKGROUND_EFFECTS.includes(frame.bg)) {
       const effect = backgroundEffects[frame.bg] || backgroundEffects.none;
       try {
