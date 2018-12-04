@@ -1,59 +1,8 @@
 const Stream = require('stream');
 const tape = require('tape');
 
-const danceParty = require('../../danceParty');
+const { constants } = require('../../danceParty');
 const { renderImages } = require('../../replayToMovie');
-
-const BG_EFFECTS = [
-  null,
-  "circles",
-  "color_cycle",
-  "diamonds",
-  "disco_ball",
-  "fireworks",
-  "swirl",
-  "kaleidoscope",
-  "lasers",
-  "splatter",
-  "rainbow",
-  "smile_face",
-  "snowflakes",
-  "galaxy",
-  "sparkles",
-  "spiral",
-  "disco",
-  "stars",
-];
-
-const PALETTE_NAMES = [
-  null,
-  "rave",
-  "cool",
-  "electronic",
-  "iceCream",
-  "default",
-  "neon",
-  "tropical",
-  "vintage",
-  "warm",
-];
-
-const FG_EFFECTS = [
-  null,
-  "bubbles",
-  "confetti",
-  "hearts_red",
-  "music_notes",
-  "pineapples",
-  "pizzas",
-  "smiling_poop",
-  "rain",
-  "floating_rainbows",
-  "smile_face",
-  "spotlight",
-  "color_lights",
-  "raining_tacos",
-];
 
 const generateFrames = (override = {}) => {
   return new Array(20).fill(null).map((_, i) => Object.assign({
@@ -68,7 +17,7 @@ const generateFrames = (override = {}) => {
     bg: null,
     fg: null,
     sprites: [{
-      "animationFrame": i % danceParty.constants.FRAMES,
+      "animationFrame": i % constants.FRAMES,
       "animationLabel": "anim0",
       "mirrorX": -1,
       "rotation": i,
@@ -110,12 +59,12 @@ const createWritableStreamTest = (subTest) => {
   return writableStream;
 };
 
-
 tape('background effects can all be consumed without breaking canvas in all palette combinations', (t) => {
-  t.plan(BG_EFFECTS.length * PALETTE_NAMES.length);
+  const palettes = Object.keys(constants.PALETTES);
+  t.plan(constants.BACKGROUND_EFFECTS.length * palettes.length);
 
-  BG_EFFECTS.forEach((bg) => {
-    PALETTE_NAMES.forEach((palette) => {
+  constants.BACKGROUND_EFFECTS.forEach((bg) => {
+    palettes.forEach((palette) => {
       t.test(`${bg} (${palette})`, (st) => {
 
         const replay = generateFrames({
@@ -132,9 +81,9 @@ tape('background effects can all be consumed without breaking canvas in all pale
 });
 
 tape('foreground effects can all be consumed without breaking canvas', (t) => {
-  t.plan(FG_EFFECTS.length);
+  t.plan(constants.FOREGROUND_EFFECTS.length);
 
-  FG_EFFECTS.forEach((effect) => {
+  constants.FOREGROUND_EFFECTS.forEach((effect) => {
     t.test(effect, (st) => {
 
       const replay = generateFrames({

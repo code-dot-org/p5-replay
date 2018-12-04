@@ -1,63 +1,8 @@
 // Generates some random animation data formatted to feed renderer
 // Usage:
 // node ./scripts/generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
-const danceParty = require('../danceParty');
-const ANIMATION_COUNT = danceParty.constants.MOVE_NAMES.length;
-const FRAMES_PER_ANIMATION = danceParty.constants.FRAMES;
-const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 
-// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setBackgroundEffectWithPalette.json
-const BG_EFFECT_NAMES = [
-  null,
-  "circles",
-  "color_cycle",
-  "diamonds",
-  "disco_ball",
-  "fireworks",
-  "swirl",
-  "kaleidoscope",
-  "lasers",
-  "splatter",
-  "rainbow",
-  "snowflakes",
-  "text",
-  "galaxy",
-  "sparkles",
-  "spiral",
-  "disco",
-  "stars",
-];
-
-const PALETTE_NAMES = [
-  null,
-  "rave",
-  "cool",
-  "electronic",
-  "iceCream",
-  "default",
-  "neon",
-  "tropical",
-  "vintage",
-  "warm",
-];
-
-// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setForegroundEffectExtended.json
-const FG_EFFECT_NAMES = [
-  null,
-  "bubbles",
-  "confetti",
-  "hearts_red",
-  "music_notes",
-  "pineapples",
-  "pizzas",
-  "smiling_poop",
-  "rain",
-  "floating_rainbows",
-  "smile_face",
-  "spotlight",
-  "color_lights",
-  "raining_tacos",
-];
+const { constants } = require('../danceParty');
 
 const myArgs = process.argv.slice(2);
 const FRAME_COUNT = parseInt(myArgs[0]);
@@ -72,7 +17,7 @@ const createSprite = () => ({
   mirrorX: -1,
   rotation: 0,
   scale: 1,
-  style: randFromArray(SPRITE_NAMES),
+  style: randFromArray(constants.SPRITE_NAMES),
   visible: true,
   height: 300,
   width: 300,
@@ -81,7 +26,7 @@ const createSprite = () => ({
 });
 
 const propertyChange = {
-  animationLabel: () => `anim${randRange(ANIMATION_COUNT)}`,
+  animationLabel: () => `anim${randRange(constants.MOVE_NAMES.length)}`,
   mirrorX: () => Math.random() < 0.5 ? -1 : 1,
   rotation: (rotation) => rotation + 2 * (Math.random() - 0.5),
   scale: (scale) => scale + (Math.random() - 0.5) / 5,
@@ -92,7 +37,7 @@ const propertyChange = {
 
 const iterSprite = (sprite) => {
   // advance animation
-  sprite.animationFrame = (sprite.animationFrame + 1) % FRAMES_PER_ANIMATION;
+  sprite.animationFrame = (sprite.animationFrame + 1) % constants.FRAMES;
 
   // modify one randomly-chosen property
   const propToChange = randFromArray(Object.keys(propertyChange));
@@ -120,31 +65,31 @@ for (let i = 0; i < FRAME_COUNT; ++i) {
   if (i > 0) {
     frame.bg = frames[i-1].bg;
   } else {
-    frame.bg = randFromArray(BG_EFFECT_NAMES);
+    frame.bg = randFromArray(constants.BACKGROUND_EFFECTS);
   }
 
   if (Math.random() < 0.05) {
-    frame.bg = randFromArray(BG_EFFECT_NAMES);
+    frame.bg = randFromArray(constants.BACKGROUND_EFFECTS);
   }
 
   if (i > 0) {
     frame.palette = frames[i-1].palette;
   } else {
-    frame.palette = randFromArray(PALETTE_NAMES);
+    frame.palette = randFromArray(Object.keys(constants.PALETTES));
   }
 
   if (Math.random() < 0.05) {
-    frame.palette = randFromArray(PALETTE_NAMES);
+    frame.palette = randFromArray(Object.keys(constants.PALETTES));
   }
 
   if (i > 0) {
     frame.fg = frames[i-1].fg;
   } else {
-    frame.fg = randFromArray(FG_EFFECT_NAMES);
+    frame.fg = randFromArray(constants.FOREGROUND_EFFECTS);
   }
 
   if (Math.random() < 0.05) {
-    frame.fg = randFromArray(FG_EFFECT_NAMES);
+    frame.fg = randFromArray(constants.FOREGROUND_EFFECTS);
   }
 
   sprites.forEach(iterSprite);
