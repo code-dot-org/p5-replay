@@ -1,28 +1,7 @@
 // Generates some random animation data formatted to feed renderer
 // Usage:
 // node ./scripts/generateData.js number_of_frames number_of_sprites > ./test/fixtures/replay.json
-const Canvas = require('canvas');
-global.window = global;
-window.performance = {now: Date.now};
-window.document = {
-  hasFocus: () => {
-  },
-  getElementsByTagName: () => [],
-  createElement: type => {
-    if (type !== 'canvas') {
-      throw new Error('Cannot create type.');
-    }
-    const created = Canvas.createCanvas();
-    created.style = {};
-    return created;
-  }
-};
-window.screen = {};
-window.addEventListener = () => {};
-window.removeEventListener = () => {};
-window.Image = Canvas.Image;
-window.ImageData = Canvas.ImageData;
-const danceParty = require('@code-dot-org/dance-party');
+const danceParty = require('../danceParty');
 const ANIMATION_COUNT = danceParty.constants.MOVE_NAMES.length;
 const FRAMES_PER_ANIMATION = danceParty.constants.FRAMES;
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
