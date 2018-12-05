@@ -1,9 +1,7 @@
 const fs = require('fs');
 const uuidv4 = require('uuid/v4');
-const {tmpdir} = require('os');
 const AWS = require('aws-sdk');
 const AWSXRay = require('aws-xray-sdk-core');
-const { join, basename } = require('path');
 
 const s3 = new AWS.S3();
 
@@ -83,16 +81,7 @@ module.exports.renderFromS3 = async (event, context, callback) => {
 
   const srcBucket = event.Records[0].s3.bucket.name;
   const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
-  debug("renderFromS3 called with " + JSON.stringify({
-    srcBucket,
-    srcKey,
-  }));
-
-  const tmpPath = await download_and_return_tmp_path(srcBucket, srcKey);
-  const replayJSON = fs.readFileSync(tmpPath);
-  fs.unlinkSync(tmpPath);
-  const replay = JSON.parse(replayJSON);
-
+  const replay = await getJSONFromS3(srcBucket, srcKey);
   await renderVideo(replay, callback, segment, srcKey.replace(`${SOURCE_KEY}/`, ''));
 };
 
@@ -133,11 +122,11 @@ function upload(Bucket, Key, Body, ContentEncoding, ContentType) {
     return Promise.resolve();
   }
   return s3.putObject({
-    Bucket: Bucket,
-    Key: Key,
-    Body: Body,
-    ContentEncoding: ContentEncoding,
-    ContentType: ContentType
+    Bucket,
+    Key,
+    Body,
+    ContentEncoding,
+    ContentType
   }).promise();
 }
 
@@ -146,24 +135,14 @@ function uploadFile(bucket, key, file, contentEncoding, contentType) {
   return upload(bucket, key, fs.createReadStream(file), contentEncoding, contentType);
 }
 
-function download_and_return_tmp_path(Bucket, Key) {
+async function getJSONFromS3(Bucket, Key) {
   debug(`Downloading file: ${Key} from bucket: ${Bucket}`);
 
-  return new Promise((resolve, reject) => {
-    const destPath = join(tmpdir(), basename(Key));
-    const file = fs.createWriteStream(destPath);
-    file.on('close', () => resolve(destPath));
-    file.on('error', reject);
+  if (LOCAL) {
+    debug("skipping download for local process");
+    return require('./test/fixtures/replay.json');
+  }
 
-    if (LOCAL) {
-      const replay = JSON.stringify(require('./test/fixtures/replay.json'));
-      file.write(replay);
-      file.end();
-    } else {
-      s3.getObject({Bucket, Key})
-        .on('error', reject)
-        .createReadStream()
-        .pipe(file);
-    }
-  });
+  const result = await s3.getObject({Bucket, Key}).promise();
+  return JSON.parse(result.Body);
 }
