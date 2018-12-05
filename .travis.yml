@@ -7,7 +7,9 @@ cache:
     - node_modules
 
 before_install: bash build.sh
-before_script: cd src
+before_script:
+  - cd src
+  - npm install --development
 script: npm run test
 
 notifications:
