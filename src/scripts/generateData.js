@@ -27,9 +27,9 @@ const ANIMATION_COUNT = danceParty.constants.MOVE_NAMES.length;
 const FRAMES_PER_ANIMATION = danceParty.constants.FRAMES;
 const SPRITE_NAMES = danceParty.constants.SPRITE_NAMES;
 
-// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setBackgroundEffect.json
+// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setBackgroundEffectWithPalette.json
 const BG_EFFECT_NAMES = [
-  "none",
+  null,
   "circles",
   "color_cycle",
   "diamonds",
@@ -40,8 +40,8 @@ const BG_EFFECT_NAMES = [
   "lasers",
   "splatter",
   "rainbow",
-  "smile_face",
   "snowflakes",
+  "text",
   "galaxy",
   "sparkles",
   "spiral",
@@ -49,18 +49,32 @@ const BG_EFFECT_NAMES = [
   "stars",
 ];
 
-// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setForegroundEffect.json
+const PALETTE_NAMES = [
+  null,
+  "rave",
+  "cool",
+  "electronic",
+  "iceCream",
+  "default",
+  "neon",
+  "tropical",
+  "vintage",
+  "warm",
+];
+
+// inferred from /dashboard/config/blocks/Dancelab/Dancelab_setForegroundEffectExtended.json
 const FG_EFFECT_NAMES = [
-  "none",
+  null,
   "bubbles",
   "confetti",
   "hearts_red",
   "music_notes",
   "pineapples",
+  "pizzas",
+  "smiling_poop",
   "rain",
   "floating_rainbows",
-  "smiling_poop",
-  "text",
+  "smile_face",
   "spotlight",
   "color_lights",
   "raining_tacos",
@@ -132,6 +146,16 @@ for (let i = 0; i < FRAME_COUNT; ++i) {
 
   if (Math.random() < 0.05) {
     frame.bg = randFromArray(BG_EFFECT_NAMES);
+  }
+
+  if (i > 0) {
+    frame.palette = frames[i-1].palette;
+  } else {
+    frame.palette = randFromArray(PALETTE_NAMES);
+  }
+
+  if (Math.random() < 0.05) {
+    frame.palette = randFromArray(PALETTE_NAMES);
   }
 
   if (i > 0) {

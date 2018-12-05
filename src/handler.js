@@ -1,6 +1,7 @@
 const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 const AWS = require('aws-sdk');
+const AWSXRay = require('aws-xray-sdk-core');
 
 const s3 = new AWS.S3();
 
@@ -17,17 +18,19 @@ const HEADERS = {
   'Access-Control-Allow-Origin': '*'
 };
 
+AWSXRay.enableManualMode();
 
 function getOutputURL(uuid) {
   return `/${DEST_KEY}/video-${uuid}.mp4`;
 }
 
-async function renderVideo(replay, callback, forceUUID = null) {
+async function renderVideo(replay, callback, segment, forceUUID = null) {
   try {
     const uuid = forceUUID || uuidv4();
+    segment.addMetadata('uuid', uuid);
     const outputFile = `video-${uuid}.mp4`;
     const outputPath = `/tmp/${outputFile}`;
-    await runTestExport(outputPath, replay);
+    await runTestExport(outputPath, replay, segment);
 
     debug("Export complete, uploading");
     await uploadFile(BUCKET, `${DEST_KEY}/${outputFile}`, outputPath);
@@ -47,28 +50,39 @@ async function renderVideo(replay, callback, forceUUID = null) {
       headers: HEADERS
     });
   } catch (error) {
+    segment.addError(error);
     callback(null, {
       statusCode: 500,
       body: JSON.stringify(error)
     });
+  } finally {
+    segment.close();
   }
 }
 
 module.exports.render = async (event, context, callback) => {
+  const segment = new AWSXRay.Segment('render');
+  segment.addMetadata('event', event);
+  segment.addMetadata('context', context);
+
   const replayJSON = event.body;
   const replay = JSON.parse(replayJSON);
   if (replay.log && replay.id) {
-    await renderVideo(replay.log, callback, replay.id);
+    await renderVideo(replay.log, callback, segment, replay.id);
   } else {
-    await renderVideo(replay, callback);
+    await renderVideo(replay, callback, segment);
   }
 };
 
 module.exports.renderFromS3 = async (event, context, callback) => {
+  const segment = new AWSXRay.Segment('renderFromS3');
+  segment.addMetadata('event', event);
+  segment.addMetadata('context', context);
+
   const srcBucket = event.Records[0].s3.bucket.name;
   const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
   const replay = await getJSONFromS3(srcBucket, srcKey);
-  await renderVideo(replay, callback, srcKey.replace(`${SOURCE_KEY}/`, ''));
+  await renderVideo(replay, callback, segment, srcKey.replace(`${SOURCE_KEY}/`, ''));
 };
 
 /**
@@ -94,8 +108,12 @@ module.exports.getS3UploadURL = async (event, context, callback) => {
 };
 
 module.exports.runTest = async (event, context, callback) => {
+  const segment = new AWSXRay.Segment('runTest');
+  segment.addMetadata('event', event);
+  segment.addMetadata('context', context);
+
   const replay = require('./test/fixtures/replay.json');
-  await renderVideo(replay, callback);
+  await renderVideo(replay, callback, segment);
 };
 
 // S3 functions modified from https://github.com/kvaggelakos/serverless-ffmpeg
@@ -117,24 +135,14 @@ function uploadFile(bucket, key, file, contentEncoding, contentType) {
   return upload(bucket, key, fs.createReadStream(file), contentEncoding, contentType);
 }
 
-async function getJSONFromS3(bucket, key) {
-  debug(`Downloading file: ${key} from bucket: ${bucket}`);
+async function getJSONFromS3(Bucket, Key) {
+  debug(`Downloading file: ${Key} from bucket: ${Bucket}`);
 
   if (LOCAL) {
     debug("skipping download for local process");
     return require('./test/fixtures/replay.json');
   }
 
-  const result = await s3.getObject({bucket, key}).promise();
-  try {
-    return JSON.parse(result);
-  } catch (err) {
-    if (err instanceof SyntaxError) {
-      // eslint-disable-next-line no-console
-      console.error(`Could not parse file: ${key} from bucket: ${bucket}`);
-      return [];
-    } else {
-      throw err;
-    }
-  }
+  const result = await s3.getObject({Bucket, Key}).promise();
+  return JSON.parse(result);
 }
