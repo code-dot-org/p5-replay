@@ -1,0 +1,16 @@
+language: node_js
+node_js: 8.10.0
+services: docker
+
+cache:
+  directories:
+    - node_modules
+
+before_install: bash build.sh
+before_script:
+  - cd src
+  - npm install --development
+script: npm run test
+
+notifications:
+  email: false

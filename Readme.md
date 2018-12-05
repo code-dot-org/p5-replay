@@ -1,4 +1,7 @@
 # p5-replay
+
+[![travis-ci](https://travis-ci.org/code-dot-org/p5-replay.svg?branch=master)](https://travis-ci.org/code-dot-org/p5-replay/builds)
+
 Generates a movie file based on a p5 animation replay file, and uploads it to S3.
 
 ### Based on [serverless-ffmpeg](https://github.com/kvaggelakos/serverless-ffmpeg)
@@ -15,7 +18,7 @@ Generates a movie file based on a p5 animation replay file, and uploads it to S3
 Local testing is possible via [`sam local`](https://github.com/awslabs/aws-sam-cli) and Docker:
 
 * [Install](https://github.com/awslabs/aws-sam-cli/blob/develop/docs/installation.rst) the `AWS SAM CLI`
-* `yarn test`
+* `npm run test`
 
 ## Remote Testing
 The Serverless deploy should display two endpoints after completion:

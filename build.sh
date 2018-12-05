@@ -23,7 +23,6 @@ docker build \
     .
 echo -e '\n---------- Building node modules ----------\n'
 rm -rf ./node_modules
-rm -f yarn.lock
 docker run \
     -v ${PWD}/src:/build/ \
     --rm \
