@@ -144,5 +144,5 @@ async function getJSONFromS3(Bucket, Key) {
   }
 
   const result = await s3.getObject({Bucket, Key}).promise();
-  return JSON.parse(result);
+  return JSON.parse(result.Body);
 }
