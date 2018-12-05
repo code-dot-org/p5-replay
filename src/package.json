@@ -15,7 +15,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@code-dot-org/dance-party": "0.0.38",
+    "@code-dot-org/dance-party": "code-dot-org/dance-party#expose-effect-names",
     "@code-dot-org/p5.play": "1.3.8-cdo",
     "aws-sdk": "2.290.0",
     "aws-xray-sdk-core": "^2.0.1",
@@ -25,6 +25,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "eslint": "^5.9.0"
+    "eslint": "^5.9.0",
+    "tape": "^4.9.1"
   }
 }

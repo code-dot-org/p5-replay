@@ -1,10 +1,10 @@
 const AWSXRay = require('aws-xray-sdk-core');
-const Canvas = require('canvas');
 const fs = require('fs');
 const os = require('os');
 const request = require("request");
 const spawn = require('child_process').spawn;
 
+const danceParty = require('./danceParty');
 const { debug } = require('./utils');
 
 const FFMPEG_PATH = "binaries/ffmpeg/ffmpeg";
@@ -36,52 +36,6 @@ const BROKEN_BACKGROUND_EFFECTS = [
 // Allow binaries to run out of the bundle
 process.env['PATH'] += ':' + process.env['LAMBDA_TASK_ROOT'];
 
-// Mock the browser environment for p5.
-// Note: must be done before requiring danceParty
-global.window = global;
-window.performance = {now: Date.now};
-window.document = {
-  hasFocus: () => {},
-  getElementsByTagName: () => [],
-  createElement: type => {
-    if (type !== 'canvas') {
-      throw new Error('Cannot create type.');
-    }
-    const created = Canvas.createCanvas();
-
-    // stub ctx.scale to prevent any attempt at scaling down to 0, since that
-    // breaks node canvas (even though it works fine in the browser). Instead
-    // just scale down to something really, really small.
-    //
-    // See https://github.com/Automattic/node-canvas/issues/702
-    const context = created.getContext('2d');
-    const origScale = context.scale;
-    context.scale = function(x, y) {
-      if (x === 0) {
-        x = 0.001;
-      }
-
-      if (y === 0) {
-        y = 0.001;
-      }
-
-      return origScale.call(this, x, y);
-    };
-
-    created.style = {};
-    return created;
-  },
-  body: {
-    appendChild: () => {}
-  }
-};
-window.screen = {};
-window.addEventListener = () => {};
-window.removeEventListener = () => {};
-window.Image = Canvas.Image;
-window.ImageData = Canvas.ImageData;
-
-const danceParty = require('@code-dot-org/dance-party');
 
 const Effects = danceParty.Effects;
 const MOVE_NAMES = danceParty.constants.MOVE_NAMES;
@@ -199,7 +153,7 @@ module.exports.runTestExport = async (outputPath, replay, parentSegment = new AW
   exportSegment.close();
 };
 
-module.exports.renderImages = async (replay, writer, parentSegment) => {
+module.exports.renderImages = async (replay, writer, parentSegment = new AWSXRay.Segment('renderImagesStandalone')) => {
   const renderSegment = new AWSXRay.Segment('renderImages', parentSegment.trace_id, parentSegment.id);
   const sprites = [];
   let lastBackground;
@@ -289,7 +243,7 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
 
 module.exports.renderVideo = (outputFile) => {
   // Spawn the ffmpeg process.
-  let args = [
+  const args = [
     '-f', 'rawvideo',
     '-r', '30',
     '-pix_fmt', (os.endianness() === 'LE' ? 'bgra' : 'argb'),
