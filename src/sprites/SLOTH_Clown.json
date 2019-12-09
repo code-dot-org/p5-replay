@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_Clown_00.png",
+	"frame": {"x":551,"y":428,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_02.png",
+	"frame": {"x":380,"y":427,"w":85,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":46,"w":85,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_04.png",
+	"frame": {"x":202,"y":420,"w":95,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":98,"y":49,"w":95,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_06.png",
+	"frame": {"x":1,"y":411,"w":106,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":90,"y":52,"w":106,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_08.png",
+	"frame": {"x":649,"y":210,"w":111,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":54,"w":111,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_10.png",
+	"frame": {"x":531,"y":207,"w":116,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":56,"w":116,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_12.png",
+	"frame": {"x":275,"y":205,"w":128,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":62,"w":128,"h":213},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_14.png",
+	"frame": {"x":665,"y":1,"w":157,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":84,"y":68,"w":157,"h":207},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_16.png",
+	"frame": {"x":346,"y":1,"w":171,"h":202},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":73,"w":171,"h":202},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_18.png",
+	"frame": {"x":824,"y":1,"w":143,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":68,"w":143,"h":207},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_20.png",
+	"frame": {"x":762,"y":210,"w":109,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":81,"y":54,"w":109,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_22.png",
+	"frame": {"x":299,"y":420,"w":79,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":42,"w":79,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_24.png",
+	"frame": {"x":831,"y":434,"w":83,"h":237},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":38,"w":83,"h":237},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_26.png",
+	"frame": {"x":740,"y":433,"w":89,"h":236},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":39,"w":89,"h":236},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_28.png",
+	"frame": {"x":635,"y":433,"w":103,"h":231},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":44,"w":103,"h":231},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_30.png",
+	"frame": {"x":873,"y":210,"w":111,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":53,"w":111,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_32.png",
+	"frame": {"x":162,"y":201,"w":111,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":63,"w":111,"h":212},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_34.png",
+	"frame": {"x":519,"y":1,"w":144,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":71,"w":144,"h":204},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_36.png",
+	"frame": {"x":1,"y":1,"w":167,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":77,"w":167,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_38.png",
+	"frame": {"x":170,"y":1,"w":174,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":77,"w":174,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_40.png",
+	"frame": {"x":1,"y":201,"w":159,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":67,"w":159,"h":208},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_42.png",
+	"frame": {"x":405,"y":207,"w":124,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":88,"y":57,"w":124,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_44.png",
+	"frame": {"x":109,"y":415,"w":91,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":50,"w":91,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Clown_46.png",
+	"frame": {"x":467,"y":428,"w":82,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":46,"w":82,"h":229},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_Clown.png",
+	"format": "RGBA8888",
+	"size": {"w":985,"h":672},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a38c569c2cf8984e64c22eb2bb5c691e:5e5364dd51dedf27caa0dd8f70b22910:44d05ded56ef8627f6a51a84906bfa04$"
+}
+}

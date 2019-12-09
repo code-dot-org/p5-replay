@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XKneel_00.png",
+	"frame": {"x":1,"y":1,"w":154,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":95,"w":154,"h":180},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_02.png",
+	"frame": {"x":157,"y":1,"w":153,"h":181},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":94,"w":153,"h":181},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_04.png",
+	"frame": {"x":312,"y":1,"w":151,"h":183},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":92,"w":151,"h":183},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_06.png",
+	"frame": {"x":465,"y":1,"w":149,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":89,"w":149,"h":186},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_08.png",
+	"frame": {"x":586,"y":213,"w":145,"h":190},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":85,"w":145,"h":190},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_10.png",
+	"frame": {"x":452,"y":189,"w":132,"h":195},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":80,"w":132,"h":195},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_12.png",
+	"frame": {"x":85,"y":184,"w":109,"h":202},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":73,"w":109,"h":202},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_14.png",
+	"frame": {"x":616,"y":1,"w":94,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":65,"w":94,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_16.png",
+	"frame": {"x":363,"y":186,"w":87,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":58,"w":87,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_18.png",
+	"frame": {"x":279,"y":186,"w":82,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":52,"w":82,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_20.png",
+	"frame": {"x":196,"y":184,"w":81,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":48,"w":81,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XKneel_22.png",
+	"frame": {"x":1,"y":183,"w":82,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":46,"w":82,"h":229},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XKneel.png",
+	"format": "RGBA8888",
+	"size": {"w":732,"h":413},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6b0177b35271fb05faa98e31dcc86e96:8270450b9cf7b99fde18bf15cd372538:27be39e2e9b910f0f5e024dfb27c44f6$"
+}
+}

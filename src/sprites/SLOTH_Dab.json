@@ -1,0 +1,396 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_Dab_00.png",
+	"frame": {"x":577,"y":215,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_01.png",
+	"frame": {"x":661,"y":212,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_02.png",
+	"frame": {"x":865,"y":204,"w":84,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":46,"w":84,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_03.png",
+	"frame": {"x":1879,"y":201,"w":89,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":47,"w":89,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_04.png",
+	"frame": {"x":244,"y":221,"w":93,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":49,"w":93,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_05.png",
+	"frame": {"x":1100,"y":203,"w":97,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":50,"w":97,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_06.png",
+	"frame": {"x":141,"y":224,"w":101,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":51,"w":101,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_07.png",
+	"frame": {"x":1099,"y":430,"w":104,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":52,"w":104,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_08.png",
+	"frame": {"x":1772,"y":201,"w":105,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":52,"w":105,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_09.png",
+	"frame": {"x":1378,"y":401,"w":103,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":53,"w":103,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_10.png",
+	"frame": {"x":1483,"y":404,"w":101,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":53,"w":101,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_11.png",
+	"frame": {"x":745,"y":434,"w":97,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":54,"w":97,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_12.png",
+	"frame": {"x":1771,"y":426,"w":93,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":54,"w":93,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_13.png",
+	"frame": {"x":844,"y":435,"w":87,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":55,"w":87,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_14.png",
+	"frame": {"x":933,"y":435,"w":80,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":56,"w":80,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_15.png",
+	"frame": {"x":1685,"y":416,"w":84,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":56,"w":84,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_16.png",
+	"frame": {"x":1866,"y":431,"w":88,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":58,"w":88,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_17.png",
+	"frame": {"x":1586,"y":416,"w":97,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":96,"y":60,"w":97,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_18.png",
+	"frame": {"x":1659,"y":201,"w":111,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":62,"w":111,"h":213},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_19.png",
+	"frame": {"x":450,"y":443,"w":125,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":65,"w":125,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_20.png",
+	"frame": {"x":577,"y":447,"w":136,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":68,"w":136,"h":207},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_21.png",
+	"frame": {"x":1,"y":450,"w":143,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":71,"w":143,"h":204},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_22.png",
+	"frame": {"x":1509,"y":201,"w":148,"h":201},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":74,"w":148,"h":201},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_23.png",
+	"frame": {"x":1817,"y":1,"w":151,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":77,"w":151,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_24.png",
+	"frame": {"x":1193,"y":1,"w":154,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":77,"w":154,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_25.png",
+	"frame": {"x":1349,"y":1,"w":154,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":77,"w":154,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_26.png",
+	"frame": {"x":1505,"y":1,"w":154,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":77,"w":154,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_27.png",
+	"frame": {"x":1661,"y":1,"w":154,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":77,"w":154,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_28.png",
+	"frame": {"x":1354,"y":201,"w":153,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":77,"w":153,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_29.png",
+	"frame": {"x":1199,"y":201,"w":153,"h":199},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":76,"w":153,"h":199},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_30.png",
+	"frame": {"x":883,"y":1,"w":153,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":75,"w":153,"h":200},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_31.png",
+	"frame": {"x":1038,"y":1,"w":153,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":75,"w":153,"h":200},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_32.png",
+	"frame": {"x":728,"y":1,"w":153,"h":201},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":74,"w":153,"h":201},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_33.png",
+	"frame": {"x":297,"y":449,"w":151,"h":203},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":72,"w":151,"h":203},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_34.png",
+	"frame": {"x":146,"y":450,"w":149,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":71,"w":149,"h":204},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_35.png",
+	"frame": {"x":951,"y":203,"w":147,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":68,"w":147,"h":207},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_36.png",
+	"frame": {"x":580,"y":1,"w":146,"h":209},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":66,"w":146,"h":209},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_37.png",
+	"frame": {"x":434,"y":1,"w":144,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":63,"w":144,"h":212},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_38.png",
+	"frame": {"x":289,"y":1,"w":143,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":60,"w":143,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_39.png",
+	"frame": {"x":144,"y":1,"w":143,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":85,"y":57,"w":143,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_40.png",
+	"frame": {"x":1,"y":1,"w":141,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":90,"y":54,"w":141,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_41.png",
+	"frame": {"x":1,"y":224,"w":138,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":95,"y":51,"w":138,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_42.png",
+	"frame": {"x":442,"y":215,"w":133,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":49,"w":133,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_43.png",
+	"frame": {"x":745,"y":204,"w":118,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":47,"w":118,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_44.png",
+	"frame": {"x":339,"y":218,"w":101,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":46,"w":101,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_45.png",
+	"frame": {"x":1205,"y":426,"w":88,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":46,"w":88,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_46.png",
+	"frame": {"x":1015,"y":412,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Dab_47.png",
+	"frame": {"x":1295,"y":402,"w":81,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":45,"w":81,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_Dab.png",
+	"format": "RGBA8888",
+	"size": {"w":1969,"h":656},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ef001a440f3b06deb475ad38025eee6a:1749db86a2b9cf1ba0a934a086ab88ff:8899e729ad2954891fba3218805f4b56$"
+}
+}

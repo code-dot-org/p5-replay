@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_Roll_00.png",
+	"frame": {"x":1,"y":1,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_02.png",
+	"frame": {"x":85,"y":1,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_04.png",
+	"frame": {"x":1,"y":233,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_06.png",
+	"frame": {"x":169,"y":1,"w":80,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":46,"w":80,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_08.png",
+	"frame": {"x":169,"y":463,"w":80,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":120,"y":47,"w":80,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_10.png",
+	"frame": {"x":167,"y":917,"w":79,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":125,"y":50,"w":79,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_12.png",
+	"frame": {"x":1,"y":697,"w":80,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":127,"y":54,"w":80,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_14.png",
+	"frame": {"x":84,"y":922,"w":80,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":126,"y":58,"w":80,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_16.png",
+	"frame": {"x":1,"y":1140,"w":80,"h":214},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":123,"y":61,"w":80,"h":214},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_18.png",
+	"frame": {"x":83,"y":1141,"w":80,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":119,"y":63,"w":80,"h":212},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_20.png",
+	"frame": {"x":1,"y":1356,"w":80,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":64,"w":80,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_22.png",
+	"frame": {"x":1,"y":1569,"w":80,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":64,"w":80,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_24.png",
+	"frame": {"x":83,"y":1571,"w":80,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":64,"w":80,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_26.png",
+	"frame": {"x":164,"y":1358,"w":80,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":64,"w":80,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_28.png",
+	"frame": {"x":165,"y":1571,"w":80,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":64,"w":80,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_30.png",
+	"frame": {"x":165,"y":1144,"w":80,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":101,"y":63,"w":80,"h":212},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_32.png",
+	"frame": {"x":83,"y":1355,"w":79,"h":214},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":61,"w":79,"h":214},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_34.png",
+	"frame": {"x":1,"y":920,"w":81,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":94,"y":57,"w":81,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_36.png",
+	"frame": {"x":167,"y":693,"w":82,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":53,"w":82,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_38.png",
+	"frame": {"x":85,"y":695,"w":80,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":96,"y":50,"w":80,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_40.png",
+	"frame": {"x":85,"y":465,"w":80,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":47,"w":80,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_42.png",
+	"frame": {"x":169,"y":232,"w":80,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":46,"w":80,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_44.png",
+	"frame": {"x":85,"y":233,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Roll_46.png",
+	"frame": {"x":1,"y":465,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_Roll.png",
+	"format": "RGBA8888",
+	"size": {"w":250,"h":1783},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:eda1634e3f15efb36c01e574f675316c:d517756ec890376b87067a4513b814bb:e208bd9997eec13a1b4ad0739d5dd2c8$"
+}
+}

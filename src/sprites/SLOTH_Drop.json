@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_Drop_00.png",
+	"frame": {"x":406,"y":918,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_02.png",
+	"frame": {"x":1,"y":1097,"w":82,"h":232},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":43,"w":82,"h":232},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_04.png",
+	"frame": {"x":180,"y":1104,"w":84,"h":236},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":39,"w":84,"h":236},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_06.png",
+	"frame": {"x":358,"y":1150,"w":88,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":37,"w":88,"h":238},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_08.png",
+	"frame": {"x":266,"y":1104,"w":90,"h":237},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":38,"w":90,"h":237},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_10.png",
+	"frame": {"x":85,"y":1101,"w":93,"h":233},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":42,"w":93,"h":233},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_12.png",
+	"frame": {"x":1,"y":870,"w":99,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":50,"w":99,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_14.png",
+	"frame": {"x":1,"y":476,"w":90,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":71,"w":90,"h":204},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_16.png",
+	"frame": {"x":1,"y":302,"w":113,"h":172},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":92,"y":103,"w":113,"h":172},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_18.png",
+	"frame": {"x":159,"y":156,"w":156,"h":155},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":120,"w":156,"h":155},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_20.png",
+	"frame": {"x":317,"y":170,"w":194,"h":165},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":115,"w":194,"h":165},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_22.png",
+	"frame": {"x":1,"y":688,"w":213,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":111,"w":213,"h":180},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_24.png",
+	"frame": {"x":186,"y":918,"w":218,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":110,"w":218,"h":184},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_26.png",
+	"frame": {"x":216,"y":733,"w":217,"h":183},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":110,"w":217,"h":183},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_28.png",
+	"frame": {"x":93,"y":508,"w":213,"h":178},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":114,"w":213,"h":178},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_30.png",
+	"frame": {"x":225,"y":337,"w":207,"h":169},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":119,"w":207,"h":169},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_32.png",
+	"frame": {"x":182,"y":1,"w":196,"h":153},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":48,"y":128,"w":196,"h":153},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_34.png",
+	"frame": {"x":1,"y":1,"w":179,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":131,"w":179,"h":144},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_36.png",
+	"frame": {"x":1,"y":147,"w":156,"h":153},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":122,"w":156,"h":153},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_38.png",
+	"frame": {"x":380,"y":1,"w":128,"h":167},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":108,"w":128,"h":167},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_40.png",
+	"frame": {"x":116,"y":313,"w":107,"h":187},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":88,"w":107,"h":187},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_42.png",
+	"frame": {"x":308,"y":508,"w":90,"h":209},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":66,"w":90,"h":209},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_44.png",
+	"frame": {"x":400,"y":508,"w":85,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":52,"w":85,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Drop_46.png",
+	"frame": {"x":102,"y":870,"w":82,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":46,"w":82,"h":229},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_Drop.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":1389},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4dcc96c7f59351fbbec58bbd1c3c1751:92d2600ceecc7cea0855254ff7141bea:d4f3dd18e96ccea5c06a26b961aaed6b$"
+}
+}

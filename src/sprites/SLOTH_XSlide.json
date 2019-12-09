@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XSlide_00.png",
+	"frame": {"x":169,"y":179,"w":141,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":130,"y":95,"w":141,"h":184},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_02.png",
+	"frame": {"x":1,"y":185,"w":141,"h":183},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":130,"y":95,"w":141,"h":183},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_04.png",
+	"frame": {"x":578,"y":214,"w":139,"h":179},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":130,"y":96,"w":139,"h":179},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_06.png",
+	"frame": {"x":719,"y":214,"w":137,"h":177},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":130,"y":98,"w":137,"h":177},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_08.png",
+	"frame": {"x":739,"y":1,"w":133,"h":174},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":130,"y":101,"w":133,"h":174},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_10.png",
+	"frame": {"x":491,"y":1,"w":143,"h":168},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":107,"w":143,"h":168},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_12.png",
+	"frame": {"x":335,"y":1,"w":154,"h":172},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":100,"y":103,"w":154,"h":172},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_14.png",
+	"frame": {"x":169,"y":1,"w":164,"h":176},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":99,"w":164,"h":176},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_16.png",
+	"frame": {"x":1,"y":1,"w":166,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":93,"w":166,"h":182},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_18.png",
+	"frame": {"x":335,"y":175,"w":140,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":95,"y":81,"w":140,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_20.png",
+	"frame": {"x":636,"y":1,"w":101,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":64,"w":101,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XSlide_22.png",
+	"frame": {"x":491,"y":171,"w":85,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":50,"w":85,"h":225},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XSlide.png",
+	"format": "RGBA8888",
+	"size": {"w":873,"h":397},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:392cde39f3d9d5edbb5172053d48d845:4971af28dd54d4b52837fbb85a17b9c7:ca400ce298ec4d2d41110ad218882eba$"
+}
+}

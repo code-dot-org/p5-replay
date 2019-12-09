@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XOle_00.png",
+	"frame": {"x":1,"y":685,"w":108,"h":199},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":76,"w":108,"h":199},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_02.png",
+	"frame": {"x":111,"y":686,"w":107,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":75,"w":107,"h":200},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_04.png",
+	"frame": {"x":229,"y":219,"w":103,"h":203},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":71,"w":103,"h":203},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_06.png",
+	"frame": {"x":220,"y":670,"w":103,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":66,"w":103,"h":208},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_08.png",
+	"frame": {"x":217,"y":456,"w":108,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":60,"w":108,"h":212},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_10.png",
+	"frame": {"x":218,"y":1,"w":114,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":55,"w":114,"h":216},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_12.png",
+	"frame": {"x":1,"y":463,"w":123,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":51,"w":123,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_14.png",
+	"frame": {"x":88,"y":1,"w":128,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":49,"w":128,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_16.png",
+	"frame": {"x":106,"y":227,"w":121,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":47,"w":121,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_18.png",
+	"frame": {"x":1,"y":233,"w":103,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":46,"w":103,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_20.png",
+	"frame": {"x":126,"y":456,"w":89,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":46,"w":89,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XOle_22.png",
+	"frame": {"x":1,"y":1,"w":85,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":45,"w":85,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XOle.png",
+	"format": "RGBA8888",
+	"size": {"w":333,"h":887},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e68d1ce6569298163332f99cda29271e:393942d1a7155017a417ad0157f944b5:531929d8c6c98f629171ec667250adf3$"
+}
+}

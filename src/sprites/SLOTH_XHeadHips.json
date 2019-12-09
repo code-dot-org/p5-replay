@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XHeadHips_00.png",
+	"frame": {"x":760,"y":1,"w":103,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":55,"w":103,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_02.png",
+	"frame": {"x":865,"y":1,"w":103,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":55,"w":103,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_04.png",
+	"frame": {"x":970,"y":1,"w":103,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":55,"w":103,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_06.png",
+	"frame": {"x":1075,"y":1,"w":103,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":55,"w":103,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_08.png",
+	"frame": {"x":1180,"y":1,"w":103,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":55,"w":103,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_10.png",
+	"frame": {"x":648,"y":1,"w":110,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":55,"w":110,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_12.png",
+	"frame": {"x":524,"y":1,"w":122,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":54,"w":122,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_14.png",
+	"frame": {"x":399,"y":1,"w":123,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":54,"w":123,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_16.png",
+	"frame": {"x":284,"y":1,"w":113,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":77,"y":53,"w":113,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_18.png",
+	"frame": {"x":179,"y":1,"w":103,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":90,"y":52,"w":103,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_20.png",
+	"frame": {"x":86,"y":1,"w":91,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":47,"w":91,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHeadHips_22.png",
+	"frame": {"x":1,"y":1,"w":83,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":83,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XHeadHips.png",
+	"format": "RGBA8888",
+	"size": {"w":1284,"h":232},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1bc3c96a88e5eec6978b3901c830551d:af181b050c18b741f8c109c880ca0caf:076f9bb5ddbcf76e39cdccf3490e5c31$"
+}
+}
