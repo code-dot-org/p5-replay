@@ -27,10 +27,13 @@ const HEIGHT = 400;
 const BROKEN_FOREGROUND_EFFECTS = [
   "pizzas",
   "smile_face",
+  "emojis",
+  "paint_drip"
 ];
 
 const BROKEN_BACKGROUND_EFFECTS = [
-  "kaleidoscope"
+  "kaleidoscope",
+  "quads"
 ];
 
 // Allow binaries to run out of the bundle

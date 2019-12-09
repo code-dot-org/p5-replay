@@ -1,8 +1,8 @@
 [
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 437.8913962240869,
@@ -44,7 +44,7 @@
         "mirrorX": 1,
         "rotation": -180,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -54,9 +54,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 437.8913962240869,
@@ -98,7 +98,7 @@
         "mirrorX": -1,
         "rotation": -180,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -108,9 +108,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 437.8913962240869,
@@ -152,7 +152,7 @@
         "mirrorX": -1,
         "rotation": -180,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -162,9 +162,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 709.7140707389888,
@@ -206,7 +206,7 @@
         "mirrorX": -1,
         "rotation": -146,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -216,9 +216,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 657.3119349449686,
@@ -260,7 +260,7 @@
         "mirrorX": -1,
         "rotation": -110,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -270,9 +270,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 611.210067958048,
@@ -314,7 +314,7 @@
         "mirrorX": -1,
         "rotation": -79,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -324,9 +324,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 611.210067958048,
@@ -368,7 +368,7 @@
         "mirrorX": -1,
         "rotation": -79,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -378,9 +378,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 570.0280924774672,
@@ -422,7 +422,7 @@
         "mirrorX": -1,
         "rotation": -57,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -432,9 +432,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 530.3565729238308,
@@ -476,7 +476,7 @@
         "mirrorX": -1,
         "rotation": -42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -486,9 +486,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 530.3565729238308,
@@ -530,7 +530,7 @@
         "mirrorX": -1,
         "rotation": -42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -540,9 +540,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 532.7436078405808,
@@ -584,7 +584,7 @@
         "mirrorX": -1,
         "rotation": -30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -594,9 +594,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 526.5257979825344,
@@ -638,7 +638,7 @@
         "mirrorX": -1,
         "rotation": -23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -648,9 +648,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 526.5257979825344,
@@ -692,7 +692,7 @@
         "mirrorX": -1,
         "rotation": -23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -702,9 +702,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 524.0241299647854,
@@ -746,7 +746,7 @@
         "mirrorX": -1,
         "rotation": -21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -756,9 +756,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 590.3824802256224,
@@ -800,7 +800,7 @@
         "mirrorX": -1,
         "rotation": -23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -810,9 +810,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 590.3824802256224,
@@ -854,7 +854,7 @@
         "mirrorX": -1,
         "rotation": -23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -864,9 +864,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 566.640642918578,
@@ -908,7 +908,7 @@
         "mirrorX": -1,
         "rotation": -27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -918,9 +918,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 566.640642918578,
@@ -962,7 +962,7 @@
         "mirrorX": -1,
         "rotation": -27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -972,9 +972,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 527.0928505739552,
@@ -1016,7 +1016,7 @@
         "mirrorX": -1,
         "rotation": -24,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1026,9 +1026,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 527.0928505739552,
@@ -1070,7 +1070,7 @@
         "mirrorX": -1,
         "rotation": -24,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1080,9 +1080,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 494.52284402928035,
@@ -1124,7 +1124,7 @@
         "mirrorX": -1,
         "rotation": -16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1134,9 +1134,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 494.52284402928035,
@@ -1178,7 +1178,7 @@
         "mirrorX": -1,
         "rotation": -16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1188,9 +1188,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 657.0460594956758,
@@ -1232,7 +1232,7 @@
         "mirrorX": -1,
         "rotation": -9,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1242,9 +1242,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 615.0735028233199,
@@ -1286,7 +1286,7 @@
         "mirrorX": -1,
         "rotation": -3,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1296,9 +1296,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 615.0735028233199,
@@ -1340,7 +1340,7 @@
         "mirrorX": -1,
         "rotation": -3,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1350,9 +1350,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 561.9852573405095,
@@ -1394,7 +1394,7 @@
         "mirrorX": 1,
         "rotation": 2,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1404,9 +1404,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 545.6707545269815,
@@ -1448,7 +1448,7 @@
         "mirrorX": 1,
         "rotation": 9,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1458,9 +1458,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 530.1528414359384,
@@ -1502,7 +1502,7 @@
         "mirrorX": 1,
         "rotation": 12,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1512,9 +1512,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 518.8610786580226,
@@ -1556,7 +1556,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1566,9 +1566,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 518.8610786580226,
@@ -1610,7 +1610,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1620,9 +1620,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 509.8831270973155,
@@ -1664,7 +1664,7 @@
         "mirrorX": 1,
         "rotation": 12,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1674,9 +1674,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 503.6490854423116,
@@ -1718,7 +1718,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1728,9 +1728,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 503.6490854423116,
@@ -1772,7 +1772,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1782,9 +1782,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 494.299852701935,
@@ -1826,7 +1826,7 @@
         "mirrorX": 1,
         "rotation": 7,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1836,9 +1836,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 491.9504258259078,
@@ -1880,7 +1880,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1890,9 +1890,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 460.55506819385596,
@@ -1934,7 +1934,7 @@
         "mirrorX": 1,
         "rotation": 15,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1944,9 +1944,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 433.5164381991777,
@@ -1988,7 +1988,7 @@
         "mirrorX": 1,
         "rotation": 17,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -1998,9 +1998,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 406.8929514721234,
@@ -2042,7 +2042,7 @@
         "mirrorX": 1,
         "rotation": 20,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2052,9 +2052,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 386.2931379183071,
@@ -2096,7 +2096,7 @@
         "mirrorX": 1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2106,9 +2106,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 386.2931379183071,
@@ -2150,7 +2150,7 @@
         "mirrorX": 1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2160,9 +2160,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 369.6413733511568,
@@ -2204,7 +2204,7 @@
         "mirrorX": 1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2214,9 +2214,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 369.6413733511568,
@@ -2258,7 +2258,7 @@
         "mirrorX": 1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2268,9 +2268,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 429.9432329136691,
@@ -2312,7 +2312,7 @@
         "mirrorX": 1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2322,9 +2322,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 442.5729723533664,
@@ -2366,7 +2366,7 @@
         "mirrorX": 1,
         "rotation": 20,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2376,9 +2376,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 449.4550160114841,
@@ -2420,7 +2420,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2430,9 +2430,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 449.4550160114841,
@@ -2474,7 +2474,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2484,9 +2484,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 455.4251284705149,
@@ -2528,7 +2528,7 @@
         "mirrorX": 1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2538,9 +2538,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 455.4251284705149,
@@ -2582,7 +2582,7 @@
         "mirrorX": 1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2592,9 +2592,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 456.62470963359044,
@@ -2636,7 +2636,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2646,9 +2646,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 455.7538733321629,
@@ -2690,7 +2690,7 @@
         "mirrorX": 1,
         "rotation": 11,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2700,9 +2700,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 455.7538733321629,
@@ -2744,7 +2744,7 @@
         "mirrorX": 1,
         "rotation": 11,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2754,9 +2754,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 436.5197467555387,
@@ -2798,7 +2798,7 @@
         "mirrorX": 1,
         "rotation": 12,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2808,9 +2808,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 415.77470373085777,
@@ -2852,7 +2852,7 @@
         "mirrorX": -1,
         "rotation": 15,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2862,9 +2862,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 401.4249079384024,
@@ -2906,7 +2906,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2916,9 +2916,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 401.4249079384024,
@@ -2960,7 +2960,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -2970,9 +2970,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 388.8065740837932,
@@ -3014,7 +3014,7 @@
         "mirrorX": -1,
         "rotation": 17,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3024,9 +3024,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 377.0323325783044,
@@ -3068,7 +3068,7 @@
         "mirrorX": -1,
         "rotation": 17,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3078,9 +3078,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 377.0323325783044,
@@ -3122,7 +3122,7 @@
         "mirrorX": -1,
         "rotation": 17,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3132,9 +3132,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 425.4629561623156,
@@ -3176,7 +3176,7 @@
         "mirrorX": -1,
         "rotation": 20,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3186,9 +3186,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 447.2721984118637,
@@ -3230,7 +3230,7 @@
         "mirrorX": -1,
         "rotation": 22,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3240,9 +3240,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 462.91791308472745,
@@ -3284,7 +3284,7 @@
         "mirrorX": -1,
         "rotation": 22,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3294,9 +3294,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 462.91791308472745,
@@ -3338,7 +3338,7 @@
         "mirrorX": -1,
         "rotation": 22,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3348,9 +3348,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 464.34678789536247,
@@ -3392,7 +3392,7 @@
         "mirrorX": -1,
         "rotation": 22,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3402,9 +3402,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 464.34678789536247,
@@ -3446,7 +3446,7 @@
         "mirrorX": -1,
         "rotation": 22,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3456,9 +3456,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 471.0232167424268,
@@ -3500,7 +3500,7 @@
         "mirrorX": -1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3510,9 +3510,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 480.8766135912357,
@@ -3554,7 +3554,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3564,9 +3564,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 457.29408171636464,
@@ -3608,7 +3608,7 @@
         "mirrorX": -1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3618,9 +3618,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 457.29408171636464,
@@ -3662,7 +3662,7 @@
         "mirrorX": -1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3672,9 +3672,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 438.86703603905096,
@@ -3716,7 +3716,7 @@
         "mirrorX": -1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3726,9 +3726,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 419.64439978966345,
@@ -3770,7 +3770,7 @@
         "mirrorX": -1,
         "rotation": 24,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3780,9 +3780,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 403.8570095010948,
@@ -3824,7 +3824,7 @@
         "mirrorX": -1,
         "rotation": 26,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3834,9 +3834,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 390.84710584943593,
@@ -3878,7 +3878,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3888,9 +3888,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 390.84710584943593,
@@ -3932,7 +3932,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3942,9 +3942,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 380.201239058661,
@@ -3986,7 +3986,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -3996,9 +3996,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 380.201239058661,
@@ -4040,7 +4040,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4050,9 +4050,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 413.3906037318512,
@@ -4094,7 +4094,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4104,9 +4104,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 438.4652733699762,
@@ -4148,7 +4148,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4158,9 +4158,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 463.4446652387495,
@@ -4202,7 +4202,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4212,9 +4212,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 463.4446652387495,
@@ -4256,7 +4256,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4266,9 +4266,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 491.8914855932627,
@@ -4310,7 +4310,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4320,9 +4320,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 491.8914855932627,
@@ -4364,7 +4364,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4374,9 +4374,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 511.72793774737215,
@@ -4418,7 +4418,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4428,9 +4428,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 541.3531036211037,
@@ -4472,7 +4472,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4482,9 +4482,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 541.3531036211037,
@@ -4526,7 +4526,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4536,9 +4536,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 515.066769308959,
@@ -4580,7 +4580,7 @@
         "mirrorX": -1,
         "rotation": 33,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4590,9 +4590,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 490.86879872682186,
@@ -4634,7 +4634,7 @@
         "mirrorX": -1,
         "rotation": 33,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4644,9 +4644,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 470.0829253635084,
@@ -4688,7 +4688,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4698,9 +4698,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 470.0829253635084,
@@ -4742,7 +4742,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4752,9 +4752,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 453.0600217601547,
@@ -4796,7 +4796,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4806,9 +4806,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 453.0600217601547,
@@ -4850,7 +4850,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4860,9 +4860,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 439.19239653176885,
@@ -4904,7 +4904,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4914,9 +4914,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 499.39585497273436,
@@ -4958,7 +4958,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -4968,9 +4968,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 499.39585497273436,
@@ -5012,7 +5012,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5022,9 +5022,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 534.7087184031222,
@@ -5066,7 +5066,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5076,9 +5076,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 560.5420003801383,
@@ -5120,7 +5120,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5130,9 +5130,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 579.7412487000528,
@@ -5174,7 +5174,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5184,9 +5184,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 579.7412487000528,
@@ -5228,7 +5228,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5238,9 +5238,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 594.8429062662648,
@@ -5282,7 +5282,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5292,9 +5292,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 594.8429062662648,
@@ -5336,7 +5336,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5346,9 +5346,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 596.6890886788356,
@@ -5390,7 +5390,7 @@
         "mirrorX": -1,
         "rotation": 28,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5400,9 +5400,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 568.3320712954334,
@@ -5444,7 +5444,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5454,9 +5454,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 542.9528787958826,
@@ -5498,7 +5498,7 @@
         "mirrorX": -1,
         "rotation": 30,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5508,9 +5508,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 523.4745029913997,
@@ -5552,7 +5552,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5562,9 +5562,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 523.4745029913997,
@@ -5606,7 +5606,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5616,9 +5616,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 506.9957642258359,
@@ -5660,7 +5660,7 @@
         "mirrorX": -1,
         "rotation": 28,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5670,9 +5670,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 506.9957642258359,
@@ -5714,7 +5714,7 @@
         "mirrorX": -1,
         "rotation": 28,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5724,9 +5724,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 513.3196331090517,
@@ -5768,7 +5768,7 @@
         "mirrorX": -1,
         "rotation": 26,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5778,9 +5778,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 568.0253274268105,
@@ -5822,7 +5822,7 @@
         "mirrorX": -1,
         "rotation": 26,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5832,9 +5832,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 568.0253274268105,
@@ -5876,7 +5876,7 @@
         "mirrorX": -1,
         "rotation": 26,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5886,9 +5886,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 594.7824565264947,
@@ -5930,7 +5930,7 @@
         "mirrorX": -1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5940,9 +5940,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 615.1395851783907,
@@ -5984,7 +5984,7 @@
         "mirrorX": -1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -5994,9 +5994,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 627.2369598840609,
@@ -6038,7 +6038,7 @@
         "mirrorX": -1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6048,9 +6048,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 627.2369598840609,
@@ -6092,7 +6092,7 @@
         "mirrorX": -1,
         "rotation": 21,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6102,9 +6102,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 636.2530060576123,
@@ -6146,7 +6146,7 @@
         "mirrorX": -1,
         "rotation": 17,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6156,9 +6156,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 628.472648329954,
@@ -6200,7 +6200,7 @@
         "mirrorX": -1,
         "rotation": 17,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6210,9 +6210,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 604.2131704085483,
@@ -6254,7 +6254,7 @@
         "mirrorX": -1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6264,9 +6264,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 604.2131704085483,
@@ -6308,7 +6308,7 @@
         "mirrorX": -1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6318,9 +6318,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 579.2946765773105,
@@ -6362,7 +6362,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6372,9 +6372,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 579.2946765773105,
@@ -6416,7 +6416,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6426,9 +6426,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 560.1354110054348,
@@ -6470,7 +6470,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6480,9 +6480,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 542.3316203219562,
@@ -6524,7 +6524,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6534,9 +6534,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 542.3316203219562,
@@ -6578,7 +6578,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6588,9 +6588,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 540.5988826308139,
@@ -6632,7 +6632,7 @@
         "mirrorX": -1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6642,9 +6642,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 569.2887776738743,
@@ -6686,7 +6686,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6696,9 +6696,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 575.9001294665298,
@@ -6740,7 +6740,7 @@
         "mirrorX": -1,
         "rotation": 12,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6750,9 +6750,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 575.9001294665298,
@@ -6794,7 +6794,7 @@
         "mirrorX": -1,
         "rotation": 12,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6804,9 +6804,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 577.3302009203743,
@@ -6848,7 +6848,7 @@
         "mirrorX": -1,
         "rotation": 7,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6858,9 +6858,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 577.3302009203743,
@@ -6902,7 +6902,7 @@
         "mirrorX": -1,
         "rotation": 7,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6912,9 +6912,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 581.4377543246195,
@@ -6956,7 +6956,7 @@
         "mirrorX": -1,
         "rotation": 1,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -6966,9 +6966,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 584.0740615764946,
@@ -7010,7 +7010,7 @@
         "mirrorX": -1,
         "rotation": -6,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7020,9 +7020,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6738.324076255251,
@@ -7064,7 +7064,7 @@
         "mirrorX": -1,
         "rotation": -7,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7074,9 +7074,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6866.639070815383,
@@ -7118,7 +7118,7 @@
         "mirrorX": -1,
         "rotation": -2,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7128,9 +7128,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6866.639070815383,
@@ -7172,7 +7172,7 @@
         "mirrorX": -1,
         "rotation": -2,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7182,9 +7182,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6717.2088273713825,
@@ -7226,7 +7226,7 @@
         "mirrorX": -1,
         "rotation": 2,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7236,9 +7236,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 7047.443565203525,
@@ -7280,7 +7280,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7290,9 +7290,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7047.443565203525,
@@ -7334,7 +7334,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7344,9 +7344,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6989.23197346207,
@@ -7388,7 +7388,7 @@
         "mirrorX": 1,
         "rotation": 15,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7398,9 +7398,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6877.3073282951445,
@@ -7442,7 +7442,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7452,9 +7452,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6877.3073282951445,
@@ -7496,7 +7496,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7506,9 +7506,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7119.641841067339,
@@ -7550,7 +7550,7 @@
         "mirrorX": 1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7560,9 +7560,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6965.074937028253,
@@ -7604,7 +7604,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7614,9 +7614,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6965.074937028253,
@@ -7658,7 +7658,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7668,9 +7668,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6787.046223725153,
@@ -7712,7 +7712,7 @@
         "mirrorX": 1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7722,9 +7722,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6844.322697361672,
@@ -7766,7 +7766,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7776,9 +7776,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6844.322697361672,
@@ -7820,7 +7820,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7830,9 +7830,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6639.692053804271,
@@ -7874,7 +7874,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7884,9 +7884,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6468.948567364177,
@@ -7928,7 +7928,7 @@
         "mirrorX": 1,
         "rotation": 7,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7938,9 +7938,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6706.024411826446,
@@ -7982,7 +7982,7 @@
         "mirrorX": 1,
         "rotation": 8,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -7992,9 +7992,9 @@
     ]
   },
   {
-    "palette": "vintage",
-    "bg": "disco",
-    "fg": "rain",
+    "palette": "default",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6706.024411826446,
@@ -8036,7 +8036,7 @@
         "mirrorX": 1,
         "rotation": 8,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8047,8 +8047,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6617.717716756203,
@@ -8090,7 +8090,7 @@
         "mirrorX": 1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8101,8 +8101,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6508.78749949984,
@@ -8144,7 +8144,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8155,8 +8155,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6508.78749949984,
@@ -8198,7 +8198,7 @@
         "mirrorX": 1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8209,8 +8209,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6371.661147390886,
@@ -8252,7 +8252,7 @@
         "mirrorX": 1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8263,8 +8263,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6220.054554338286,
@@ -8306,7 +8306,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8317,8 +8317,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6220.054554338286,
@@ -8360,7 +8360,7 @@
         "mirrorX": 1,
         "rotation": 18,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8371,8 +8371,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6714.4153544069295,
@@ -8414,7 +8414,7 @@
         "mirrorX": 1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8425,8 +8425,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6555.069274384625,
@@ -8468,7 +8468,7 @@
         "mirrorX": 1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8479,8 +8479,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6555.069274384625,
@@ -8522,7 +8522,7 @@
         "mirrorX": 1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8533,8 +8533,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6358.352525936456,
@@ -8576,7 +8576,7 @@
         "mirrorX": 1,
         "rotation": 26,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8587,8 +8587,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6864.739098113186,
@@ -8630,7 +8630,7 @@
         "mirrorX": 1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8641,8 +8641,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6782.720658353184,
@@ -8684,7 +8684,7 @@
         "mirrorX": 1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8695,8 +8695,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6603.3932310600985,
@@ -8738,7 +8738,7 @@
         "mirrorX": -1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8749,8 +8749,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6603.3932310600985,
@@ -8792,7 +8792,7 @@
         "mirrorX": -1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8803,8 +8803,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6915.35400412581,
@@ -8846,7 +8846,7 @@
         "mirrorX": -1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8857,8 +8857,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6915.35400412581,
@@ -8900,7 +8900,7 @@
         "mirrorX": -1,
         "rotation": 25,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8911,8 +8911,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6816.258733732392,
@@ -8954,7 +8954,7 @@
         "mirrorX": -1,
         "rotation": 29,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -8965,8 +8965,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6694.089185961054,
@@ -9008,7 +9008,7 @@
         "mirrorX": -1,
         "rotation": 34,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9019,8 +9019,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6545.846380805033,
@@ -9062,7 +9062,7 @@
         "mirrorX": -1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9073,8 +9073,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6545.846380805033,
@@ -9116,7 +9116,7 @@
         "mirrorX": -1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9127,8 +9127,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6377.963266089297,
@@ -9170,7 +9170,7 @@
         "mirrorX": -1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9181,8 +9181,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6182.536803480212,
@@ -9224,7 +9224,7 @@
         "mirrorX": -1,
         "rotation": 45,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9235,8 +9235,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6989.737417379581,
@@ -9278,7 +9278,7 @@
         "mirrorX": -1,
         "rotation": 49,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9289,8 +9289,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6989.737417379581,
@@ -9332,7 +9332,7 @@
         "mirrorX": -1,
         "rotation": 49,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9343,8 +9343,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6880.773161628175,
@@ -9386,7 +9386,7 @@
         "mirrorX": -1,
         "rotation": 52,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9397,8 +9397,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6707.564486446798,
@@ -9440,7 +9440,7 @@
         "mirrorX": -1,
         "rotation": 54,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9451,8 +9451,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6707.564486446798,
@@ -9494,7 +9494,7 @@
         "mirrorX": -1,
         "rotation": 54,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9505,8 +9505,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6728.04977034847,
@@ -9548,7 +9548,7 @@
         "mirrorX": -1,
         "rotation": 53,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9559,8 +9559,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6527.539436146231,
@@ -9602,7 +9602,7 @@
         "mirrorX": -1,
         "rotation": 50,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9613,8 +9613,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6527.539436146231,
@@ -9656,7 +9656,7 @@
         "mirrorX": -1,
         "rotation": 50,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9667,8 +9667,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6339.833701991456,
@@ -9710,7 +9710,7 @@
         "mirrorX": -1,
         "rotation": 46,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9721,8 +9721,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6558.068692102982,
@@ -9764,7 +9764,7 @@
         "mirrorX": -1,
         "rotation": 46,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9775,8 +9775,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6558.068692102982,
@@ -9818,7 +9818,7 @@
         "mirrorX": -1,
         "rotation": 46,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9829,8 +9829,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6470.43650537074,
@@ -9872,7 +9872,7 @@
         "mirrorX": -1,
         "rotation": 46,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9883,8 +9883,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6347.99056503132,
@@ -9926,7 +9926,7 @@
         "mirrorX": -1,
         "rotation": 49,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9937,8 +9937,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6207.332109984023,
@@ -9980,7 +9980,7 @@
         "mirrorX": -1,
         "rotation": 50,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -9991,8 +9991,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6207.332109984023,
@@ -10034,7 +10034,7 @@
         "mirrorX": -1,
         "rotation": 50,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10045,8 +10045,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6047.847046920558,
@@ -10088,7 +10088,7 @@
         "mirrorX": -1,
         "rotation": 51,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10099,8 +10099,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6405.879493841884,
@@ -10142,7 +10142,7 @@
         "mirrorX": -1,
         "rotation": 53,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10153,8 +10153,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6405.879493841884,
@@ -10196,7 +10196,7 @@
         "mirrorX": -1,
         "rotation": 53,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10207,8 +10207,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6227.865121515232,
@@ -10250,7 +10250,7 @@
         "mirrorX": -1,
         "rotation": 53,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10261,8 +10261,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6031.598892661442,
@@ -10304,7 +10304,7 @@
         "mirrorX": -1,
         "rotation": 51,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10315,8 +10315,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6031.598892661442,
@@ -10358,7 +10358,7 @@
         "mirrorX": -1,
         "rotation": 51,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10369,8 +10369,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6529.999969174878,
@@ -10412,7 +10412,7 @@
         "mirrorX": -1,
         "rotation": 49,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10423,8 +10423,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6529.999969174878,
@@ -10466,7 +10466,7 @@
         "mirrorX": -1,
         "rotation": 49,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10477,8 +10477,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6356.255670012848,
@@ -10520,7 +10520,7 @@
         "mirrorX": -1,
         "rotation": 45,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10531,8 +10531,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6283.925197494763,
@@ -10574,7 +10574,7 @@
         "mirrorX": -1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10585,8 +10585,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6599.233920438497,
@@ -10628,7 +10628,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10639,8 +10639,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6599.233920438497,
@@ -10682,7 +10682,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10693,8 +10693,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6463.314845520947,
@@ -10736,7 +10736,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10747,8 +10747,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6516.357730786363,
@@ -10790,7 +10790,7 @@
         "mirrorX": -1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10801,8 +10801,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6516.357730786363,
@@ -10844,7 +10844,7 @@
         "mirrorX": -1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10855,8 +10855,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6520.287087249233,
@@ -10898,7 +10898,7 @@
         "mirrorX": -1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10909,8 +10909,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6520.287087249233,
@@ -10952,7 +10952,7 @@
         "mirrorX": -1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -10963,8 +10963,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6352.699377514195,
@@ -11006,7 +11006,7 @@
         "mirrorX": -1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11017,8 +11017,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6583.550829270064,
@@ -11060,7 +11060,7 @@
         "mirrorX": -1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11071,8 +11071,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6583.550829270064,
@@ -11114,7 +11114,7 @@
         "mirrorX": -1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11125,8 +11125,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6354.96112672928,
@@ -11168,7 +11168,7 @@
         "mirrorX": -1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11179,8 +11179,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6093.019329940587,
@@ -11222,7 +11222,7 @@
         "mirrorX": -1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11233,8 +11233,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6093.019329940587,
@@ -11276,7 +11276,7 @@
         "mirrorX": -1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11287,8 +11287,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6685.178357884137,
@@ -11330,7 +11330,7 @@
         "mirrorX": -1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11341,8 +11341,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6459.723717743501,
@@ -11384,7 +11384,7 @@
         "mirrorX": -1,
         "rotation": 36,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11395,8 +11395,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6459.723717743501,
@@ -11438,7 +11438,7 @@
         "mirrorX": -1,
         "rotation": 36,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11449,8 +11449,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6402.15528889467,
@@ -11492,7 +11492,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11503,8 +11503,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6594.376897308317,
@@ -11546,7 +11546,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11557,8 +11557,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6492.40986335384,
@@ -11600,7 +11600,7 @@
         "mirrorX": -1,
         "rotation": 34,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11611,8 +11611,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6365.944777251859,
@@ -11654,7 +11654,7 @@
         "mirrorX": -1,
         "rotation": 37,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11665,8 +11665,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6365.944777251859,
@@ -11708,7 +11708,7 @@
         "mirrorX": -1,
         "rotation": 37,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11719,8 +11719,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6207.002707626404,
@@ -11762,7 +11762,7 @@
         "mirrorX": -1,
         "rotation": 38,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11773,8 +11773,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6028.5148515263945,
@@ -11816,7 +11816,7 @@
         "mirrorX": -1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11827,8 +11827,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6028.5148515263945,
@@ -11870,7 +11870,7 @@
         "mirrorX": -1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11881,8 +11881,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6088.367739320746,
@@ -11924,7 +11924,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11935,8 +11935,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 5925.693955009075,
@@ -11978,7 +11978,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -11989,8 +11989,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 5925.693955009075,
@@ -12032,7 +12032,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12043,8 +12043,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 5696.085323799875,
@@ -12086,7 +12086,7 @@
         "mirrorX": -1,
         "rotation": 38,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12097,8 +12097,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6183.5418209672225,
@@ -12140,7 +12140,7 @@
         "mirrorX": -1,
         "rotation": 36,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12151,8 +12151,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6024.747157129231,
@@ -12194,7 +12194,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12205,8 +12205,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6024.747157129231,
@@ -12248,7 +12248,7 @@
         "mirrorX": -1,
         "rotation": 32,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12259,8 +12259,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 5828.330763378158,
@@ -12302,7 +12302,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12313,8 +12313,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 5828.330763378158,
@@ -12356,7 +12356,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12367,8 +12367,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6574.238925226941,
@@ -12410,7 +12410,7 @@
         "mirrorX": -1,
         "rotation": 28,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12421,8 +12421,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6438.92701852655,
@@ -12464,7 +12464,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12475,8 +12475,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6438.92701852655,
@@ -12518,7 +12518,7 @@
         "mirrorX": -1,
         "rotation": 31,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12529,8 +12529,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6261.598783970951,
@@ -12572,7 +12572,7 @@
         "mirrorX": -1,
         "rotation": 34,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12583,8 +12583,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6038.032042305425,
@@ -12626,7 +12626,7 @@
         "mirrorX": -1,
         "rotation": 37,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12637,8 +12637,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6038.032042305425,
@@ -12680,7 +12680,7 @@
         "mirrorX": -1,
         "rotation": 37,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12691,8 +12691,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 5795.257944129993,
@@ -12734,7 +12734,7 @@
         "mirrorX": -1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12745,8 +12745,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6095.708830287499,
@@ -12788,7 +12788,7 @@
         "mirrorX": -1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12799,8 +12799,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6095.708830287499,
@@ -12842,7 +12842,7 @@
         "mirrorX": -1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12853,8 +12853,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6160.758452566588,
@@ -12896,7 +12896,7 @@
         "mirrorX": -1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12907,8 +12907,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6124.099100626106,
@@ -12950,7 +12950,7 @@
         "mirrorX": -1,
         "rotation": 45,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -12961,8 +12961,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6124.099100626106,
@@ -13004,7 +13004,7 @@
         "mirrorX": -1,
         "rotation": 45,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13015,8 +13015,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 7121.486469312627,
@@ -13058,7 +13058,7 @@
         "mirrorX": -1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13069,8 +13069,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7020.261159501068,
@@ -13112,7 +13112,7 @@
         "mirrorX": 1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13123,8 +13123,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7020.261159501068,
@@ -13166,7 +13166,7 @@
         "mirrorX": 1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13177,8 +13177,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6915.2355749890285,
@@ -13220,7 +13220,7 @@
         "mirrorX": 1,
         "rotation": 38,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13231,8 +13231,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6908.034783881765,
@@ -13274,7 +13274,7 @@
         "mirrorX": 1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13285,8 +13285,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6908.034783881765,
@@ -13328,7 +13328,7 @@
         "mirrorX": 1,
         "rotation": 39,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13339,8 +13339,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6812.878015379242,
@@ -13382,7 +13382,7 @@
         "mirrorX": 1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13393,8 +13393,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6812.878015379242,
@@ -13436,7 +13436,7 @@
         "mirrorX": 1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13447,8 +13447,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6693.107199514919,
@@ -13490,7 +13490,7 @@
         "mirrorX": 1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13501,8 +13501,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6637.181766906325,
@@ -13544,7 +13544,7 @@
         "mirrorX": 1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13555,8 +13555,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6582.751543577504,
@@ -13598,7 +13598,7 @@
         "mirrorX": 1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13609,8 +13609,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6582.751543577504,
@@ -13652,7 +13652,7 @@
         "mirrorX": 1,
         "rotation": 41,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13663,8 +13663,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 6791.591787422127,
@@ -13706,7 +13706,7 @@
         "mirrorX": 1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13717,8 +13717,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6708.961812457535,
@@ -13760,7 +13760,7 @@
         "mirrorX": 1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13771,8 +13771,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6708.961812457535,
@@ -13814,7 +13814,7 @@
         "mirrorX": 1,
         "rotation": 44,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13825,8 +13825,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6622.905787541973,
@@ -13868,7 +13868,7 @@
         "mirrorX": 1,
         "rotation": 46,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13879,8 +13879,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 7025.826294739158,
@@ -13922,7 +13922,7 @@
         "mirrorX": 1,
         "rotation": 47,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13933,8 +13933,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6961.331876415549,
@@ -13976,7 +13976,7 @@
         "mirrorX": 1,
         "rotation": 45,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -13987,8 +13987,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6961.331876415549,
@@ -14030,7 +14030,7 @@
         "mirrorX": 1,
         "rotation": 45,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14041,8 +14041,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 6873.27199008702,
@@ -14084,7 +14084,7 @@
         "mirrorX": 1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14095,8 +14095,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 7239.775022289703,
@@ -14138,7 +14138,7 @@
         "mirrorX": 1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14149,8 +14149,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7182.32032425294,
@@ -14192,7 +14192,7 @@
         "mirrorX": 1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14203,8 +14203,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7182.32032425294,
@@ -14246,7 +14246,7 @@
         "mirrorX": 1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14257,8 +14257,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7094.730454817596,
@@ -14300,7 +14300,7 @@
         "mirrorX": 1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14311,8 +14311,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7094.730454817596,
@@ -14354,7 +14354,7 @@
         "mirrorX": 1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14365,8 +14365,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7347.472665939546,
@@ -14408,7 +14408,7 @@
         "mirrorX": 1,
         "rotation": 43,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14419,8 +14419,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7284.778778315308,
@@ -14462,7 +14462,7 @@
         "mirrorX": 1,
         "rotation": 42,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14473,8 +14473,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7197.305914374598,
@@ -14516,7 +14516,7 @@
         "mirrorX": 1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14527,8 +14527,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7197.305914374598,
@@ -14570,7 +14570,7 @@
         "mirrorX": -1,
         "rotation": 40,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14581,8 +14581,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7412.745099637376,
@@ -14624,7 +14624,7 @@
         "mirrorX": -1,
         "rotation": 37,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14635,8 +14635,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7335.600897291357,
@@ -14678,7 +14678,7 @@
         "mirrorX": -1,
         "rotation": 33,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14689,8 +14689,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7335.600897291357,
@@ -14732,7 +14732,7 @@
         "mirrorX": -1,
         "rotation": 33,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14743,8 +14743,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7535.147139364475,
@@ -14786,7 +14786,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14797,8 +14797,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7535.147139364475,
@@ -14840,7 +14840,7 @@
         "mirrorX": -1,
         "rotation": 27,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14851,8 +14851,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7504.411746389122,
@@ -14894,7 +14894,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14905,8 +14905,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7422.761750104087,
@@ -14948,7 +14948,7 @@
         "mirrorX": -1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -14959,8 +14959,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7422.761750104087,
@@ -15002,7 +15002,7 @@
         "mirrorX": -1,
         "rotation": 10,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15013,8 +15013,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7560.544437007171,
@@ -15056,7 +15056,7 @@
         "mirrorX": -1,
         "rotation": 5,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15067,8 +15067,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7518.1508340961445,
@@ -15110,7 +15110,7 @@
         "mirrorX": -1,
         "rotation": 5,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15121,8 +15121,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7518.1508340961445,
@@ -15164,7 +15164,7 @@
         "mirrorX": -1,
         "rotation": 5,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15175,8 +15175,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7445.330444881524,
@@ -15218,7 +15218,7 @@
         "mirrorX": -1,
         "rotation": 7,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15229,8 +15229,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7472.377996210831,
@@ -15272,7 +15272,7 @@
         "mirrorX": -1,
         "rotation": 11,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15283,8 +15283,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7472.377996210831,
@@ -15326,7 +15326,7 @@
         "mirrorX": -1,
         "rotation": 11,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15337,8 +15337,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7394.4202453071075,
@@ -15380,7 +15380,7 @@
         "mirrorX": -1,
         "rotation": 14,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15391,8 +15391,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7313.426631020757,
@@ -15434,7 +15434,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15445,8 +15445,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7262.758754114721,
@@ -15488,7 +15488,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15499,8 +15499,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7262.758754114721,
@@ -15542,7 +15542,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15553,8 +15553,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7135.103608447953,
@@ -15596,7 +15596,7 @@
         "mirrorX": -1,
         "rotation": 15,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15607,8 +15607,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": true,
       "centroid": 7368.166100818514,
@@ -15650,7 +15650,7 @@
         "mirrorX": -1,
         "rotation": 15,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15661,8 +15661,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7368.166100818514,
@@ -15704,7 +15704,7 @@
         "mirrorX": -1,
         "rotation": 15,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15715,8 +15715,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7358.570622352072,
@@ -15758,7 +15758,7 @@
         "mirrorX": -1,
         "rotation": 14,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15769,8 +15769,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7247.397839785063,
@@ -15812,7 +15812,7 @@
         "mirrorX": -1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15823,8 +15823,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7247.397839785063,
@@ -15866,7 +15866,7 @@
         "mirrorX": -1,
         "rotation": 13,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15877,8 +15877,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7429.198846541548,
@@ -15920,7 +15920,7 @@
         "mirrorX": -1,
         "rotation": 16,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15931,8 +15931,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7358.208130079441,
@@ -15974,7 +15974,7 @@
         "mirrorX": -1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -15985,8 +15985,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7358.208130079441,
@@ -16028,7 +16028,7 @@
         "mirrorX": 1,
         "rotation": 19,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -16039,8 +16039,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7251.4394704760125,
@@ -16082,7 +16082,7 @@
         "mirrorX": 1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -16093,8 +16093,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7251.4394704760125,
@@ -16136,7 +16136,7 @@
         "mirrorX": 1,
         "rotation": 23,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
@@ -16147,8 +16147,8 @@
   },
   {
     "palette": "electronic",
-    "bg": "disco",
-    "fg": "rain",
+    "bg": "ripples_random",
+    "fg": "exploding_stars",
     "context": {
       "isPeak": false,
       "centroid": 7365.513797138073,
@@ -16190,7 +16190,7 @@
         "mirrorX": 1,
         "rotation": 24,
         "scale": 1,
-        "style": "ROBOT",
+        "style": "SLOTH",
         "visible": true,
         "height": 300,
         "width": 300,
