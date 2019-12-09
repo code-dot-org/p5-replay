@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XBend_00.png",
+	"frame": {"x":986,"y":1,"w":120,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":65,"w":120,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_02.png",
+	"frame": {"x":1108,"y":1,"w":118,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":65,"w":118,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_04.png",
+	"frame": {"x":770,"y":1,"w":111,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":99,"y":64,"w":111,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_06.png",
+	"frame": {"x":883,"y":1,"w":101,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":64,"w":101,"h":211},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_08.png",
+	"frame": {"x":1228,"y":1,"w":98,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":67,"w":98,"h":208},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_10.png",
+	"frame": {"x":652,"y":1,"w":116,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":62,"w":116,"h":213},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_12.png",
+	"frame": {"x":515,"y":1,"w":135,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":117,"y":57,"w":135,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_14.png",
+	"frame": {"x":382,"y":1,"w":131,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":53,"w":131,"h":222},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_16.png",
+	"frame": {"x":268,"y":1,"w":112,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":50,"w":112,"h":225},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_18.png",
+	"frame": {"x":172,"y":1,"w":94,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":47,"w":94,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_20.png",
+	"frame": {"x":85,"y":1,"w":85,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":46,"w":85,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XBend_22.png",
+	"frame": {"x":1,"y":1,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XBend.png",
+	"format": "RGBA8888",
+	"size": {"w":1327,"h":232},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:990aacf7c85de78307bc932ac17c8b6b:4d48035242eb208144732f070f56ac31:6e6db196933ca593b4bfaad1db4a538c$"
+}
+}

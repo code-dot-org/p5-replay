@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_ThisOrThat_00.png",
+	"frame": {"x":86,"y":1,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_02.png",
+	"frame": {"x":268,"y":232,"w":83,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":46,"w":83,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_04.png",
+	"frame": {"x":353,"y":232,"w":86,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":49,"w":86,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_06.png",
+	"frame": {"x":535,"y":223,"w":89,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":55,"w":89,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_08.png",
+	"frame": {"x":735,"y":221,"w":93,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":60,"w":93,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_10.png",
+	"frame": {"x":950,"y":1,"w":105,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":116,"y":65,"w":105,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_12.png",
+	"frame": {"x":1061,"y":212,"w":111,"h":209},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":66,"w":111,"h":209},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_14.png",
+	"frame": {"x":835,"y":1,"w":113,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":65,"w":113,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_16.png",
+	"frame": {"x":626,"y":221,"w":107,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":118,"y":60,"w":107,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_18.png",
+	"frame": {"x":441,"y":226,"w":92,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":117,"y":54,"w":92,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_20.png",
+	"frame": {"x":88,"y":233,"w":88,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":49,"w":88,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_22.png",
+	"frame": {"x":254,"y":1,"w":85,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":111,"y":46,"w":85,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_24.png",
+	"frame": {"x":1,"y":1,"w":83,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":83,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_26.png",
+	"frame": {"x":341,"y":1,"w":83,"h":229},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":46,"w":83,"h":229},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_28.png",
+	"frame": {"x":178,"y":233,"w":88,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":49,"w":88,"h":226},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_30.png",
+	"frame": {"x":526,"y":1,"w":93,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":55,"w":93,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_32.png",
+	"frame": {"x":736,"y":1,"w":97,"h":214},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":61,"w":97,"h":214},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_34.png",
+	"frame": {"x":948,"y":213,"w":111,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":65,"w":111,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_36.png",
+	"frame": {"x":1057,"y":1,"w":117,"h":209},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":66,"w":117,"h":209},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_38.png",
+	"frame": {"x":830,"y":217,"w":116,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":62,"w":116,"h":213},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_40.png",
+	"frame": {"x":621,"y":1,"w":113,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":57,"w":113,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_42.png",
+	"frame": {"x":426,"y":1,"w":98,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":92,"y":52,"w":98,"h":223},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_44.png",
+	"frame": {"x":1,"y":233,"w":85,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":105,"y":47,"w":85,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_ThisOrThat_46.png",
+	"frame": {"x":170,"y":1,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_ThisOrThat.png",
+	"format": "RGBA8888",
+	"size": {"w":1175,"h":462},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b31921b633613264e63ab43bff99d93e:29c168fd3bc1dd6f036cb13fe69f3335:3abf81b6fbbb11cc35968e8d86ea3199$"
+}
+}

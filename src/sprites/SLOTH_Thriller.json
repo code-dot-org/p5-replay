@@ -1,0 +1,204 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_Thriller_00.png",
+	"frame": {"x":461,"y":654,"w":82,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":45,"w":82,"h":230},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_02.png",
+	"frame": {"x":342,"y":779,"w":82,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":47,"w":82,"h":227},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_04.png",
+	"frame": {"x":484,"y":227,"w":91,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":52,"w":91,"h":221},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_06.png",
+	"frame": {"x":364,"y":377,"w":105,"h":210},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":98,"y":61,"w":105,"h":210},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_08.png",
+	"frame": {"x":1,"y":403,"w":109,"h":199},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":72,"w":109,"h":199},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_10.png",
+	"frame": {"x":102,"y":613,"w":111,"h":190},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":83,"w":111,"h":190},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_12.png",
+	"frame": {"x":238,"y":399,"w":120,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":89,"w":120,"h":186},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_14.png",
+	"frame": {"x":221,"y":587,"w":126,"h":179},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":96,"w":126,"h":179},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_16.png",
+	"frame": {"x":365,"y":1,"w":128,"h":178},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":97,"w":128,"h":178},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_18.png",
+	"frame": {"x":215,"y":768,"w":125,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":95,"w":125,"h":180},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_20.png",
+	"frame": {"x":1,"y":218,"w":119,"h":183},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":92,"w":119,"h":183},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_22.png",
+	"frame": {"x":349,"y":589,"w":110,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":87,"w":110,"h":188},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_24.png",
+	"frame": {"x":102,"y":805,"w":101,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":91,"y":81,"w":101,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_26.png",
+	"frame": {"x":112,"y":412,"w":107,"h":199},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":98,"y":76,"w":107,"h":199},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_28.png",
+	"frame": {"x":471,"y":450,"w":109,"h":202},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":73,"w":109,"h":202},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_30.png",
+	"frame": {"x":1,"y":807,"w":93,"h":202},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":73,"w":93,"h":202},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_32.png",
+	"frame": {"x":1,"y":604,"w":99,"h":201},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":73,"w":99,"h":201},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_34.png",
+	"frame": {"x":127,"y":210,"w":109,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":75,"w":109,"h":200},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_36.png",
+	"frame": {"x":246,"y":202,"w":116,"h":195},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":80,"w":116,"h":195},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_38.png",
+	"frame": {"x":365,"y":181,"w":117,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":81,"w":117,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_40.png",
+	"frame": {"x":246,"y":1,"w":117,"h":199},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":76,"w":117,"h":199},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_42.png",
+	"frame": {"x":127,"y":1,"w":117,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":68,"w":117,"h":207},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_44.png",
+	"frame": {"x":1,"y":1,"w":124,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":85,"y":60,"w":124,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_Thriller_46.png",
+	"frame": {"x":495,"y":1,"w":91,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":106,"y":51,"w":91,"h":224},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_Thriller.png",
+	"format": "RGBA8888",
+	"size": {"w":587,"h":1010},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6ef7a176e713415e32cde0ca172836d8:6ff59e8b3e212ef6e11263550b3985a4:417f7054531aa87a3d1d03742623cd1f$"
+}
+}

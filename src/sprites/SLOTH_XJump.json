@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XJump_00.png",
+	"frame": {"x":1,"y":1,"w":161,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":18,"w":161,"h":220},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_02.png",
+	"frame": {"x":434,"y":1,"w":160,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":19,"w":160,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_04.png",
+	"frame": {"x":260,"y":1,"w":172,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":22,"w":172,"h":219},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_06.png",
+	"frame": {"x":596,"y":1,"w":199,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":31,"w":199,"h":218},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_08.png",
+	"frame": {"x":704,"y":221,"w":213,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":48,"w":213,"h":215},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_10.png",
+	"frame": {"x":1,"y":223,"w":180,"h":206},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":66,"w":180,"h":206},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_12.png",
+	"frame": {"x":293,"y":222,"w":150,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":76,"w":150,"h":198},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_14.png",
+	"frame": {"x":445,"y":222,"w":134,"h":195},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":80,"w":134,"h":195},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_16.png",
+	"frame": {"x":797,"y":1,"w":127,"h":193},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":82,"w":127,"h":193},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_18.png",
+	"frame": {"x":581,"y":222,"w":121,"h":195},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":80,"w":121,"h":195},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_20.png",
+	"frame": {"x":183,"y":223,"w":108,"h":206},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":96,"y":69,"w":108,"h":206},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XJump_22.png",
+	"frame": {"x":164,"y":1,"w":94,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":103,"y":55,"w":94,"h":220},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XJump.png",
+	"format": "RGBA8888",
+	"size": {"w":925,"h":437},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fcc0eef6e9cc6a5a6e18becfde50406d:83aaa00040ae285d1e96004d285159a3:1361082aafe4161a0f6e50950360e0f3$"
+}
+}

@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "SLOTH_XHighKick_00.png",
+	"frame": {"x":579,"y":1,"w":176,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":71,"w":176,"h":204},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_02.png",
+	"frame": {"x":540,"y":212,"w":178,"h":197},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":78,"w":178,"h":197},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_04.png",
+	"frame": {"x":359,"y":220,"w":179,"h":189},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":86,"w":179,"h":189},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_06.png",
+	"frame": {"x":1,"y":233,"w":178,"h":178},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":97,"w":178,"h":178},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_08.png",
+	"frame": {"x":181,"y":227,"w":176,"h":186},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":89,"w":176,"h":186},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_10.png",
+	"frame": {"x":757,"y":1,"w":173,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":81,"w":173,"h":194},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_12.png",
+	"frame": {"x":720,"y":207,"w":169,"h":202},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":73,"w":169,"h":202},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_14.png",
+	"frame": {"x":420,"y":1,"w":157,"h":209},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":66,"w":157,"h":209},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_16.png",
+	"frame": {"x":284,"y":1,"w":134,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":58,"w":134,"h":217},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_18.png",
+	"frame": {"x":176,"y":1,"w":106,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":51,"w":106,"h":224},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_20.png",
+	"frame": {"x":86,"y":1,"w":88,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":47,"w":88,"h":228},
+	"sourceSize": {"w":300,"h":300}
+},
+{
+	"filename": "SLOTH_XHighKick_22.png",
+	"frame": {"x":1,"y":1,"w":83,"h":230},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":45,"w":83,"h":230},
+	"sourceSize": {"w":300,"h":300}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "SLOTH_XHighKick.png",
+	"format": "RGBA8888",
+	"size": {"w":931,"h":414},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d566ac33318d480c0dc0613064fe6ce4:6abca2021958dbe9faf8ff86f5fb4aaa:4ab3110bbff78a6531ccf4c1299eeb02$"
+}
+}
