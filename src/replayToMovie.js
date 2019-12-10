@@ -218,6 +218,13 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
     for (let i = 0; i < frame.sprites.length; i++) {
       const entry = frame.sprites[i];
 
+      if (!(entry.style && entry.animationLabel)) {
+        // A sprite was created without a dancer skin or a dance animation;
+        // this could be because a non-dancer sprite was incorrectly logged as
+        // a dancer.
+        continue;
+      }
+
       if (!sprites[i]) {
         sprites[i] = p5Inst.createSprite();
         await loadSprite(entry.style);
