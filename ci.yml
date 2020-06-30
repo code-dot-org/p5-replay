@@ -18,7 +18,7 @@ Parameters:
     Description: GitHub repository name
   GitHubBranch:
     Type: String
-    Default: master
+    Default: main
     Description: GitHub repository branch
   GitHubToken:
     Type: String
