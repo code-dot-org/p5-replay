@@ -13,6 +13,9 @@ Parameters:
     ConstraintDescription: Must end with trailing dot `.`
   DomainName:
     Type: String
+  LogBucket:
+    Type: String
+    Default: cdo-logs.s3.amazonaws.com
 
 Globals:
   Function:
@@ -133,6 +136,10 @@ Resources:
         CustomErrorResponses:
           - ErrorCode: 403
             ErrorCachingMinTTL: 0
+        Logging:
+          Bucket: !Ref LogBucket
+          IncludeCookies: false
+          Prefix: !Ref DomainName
         Origins:
           - Id: API
             # ServerlessRestApi is the Implicit API Logical Resource ID created by SAM, Prod is the default Stage name.
