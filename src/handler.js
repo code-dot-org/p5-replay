@@ -137,7 +137,7 @@ function upload(Bucket, Key, Body, ContentEncoding, ContentType) {
     Key: Key,
     Body: Body,
     ContentEncoding: ContentEncoding,
-    ContentType: ContentType
+    ContentType: 'video/mp4' // This ensures that when the Object is served up via HTTP by S3, the content-type is set correctly.
   }).promise();
 }
 
