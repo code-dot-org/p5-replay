@@ -25,10 +25,8 @@ const HEIGHT = 400;
 
 // Some effects don't currently work, and should be skipped
 const BROKEN_FOREGROUND_EFFECTS = [
+  // fails with: node: cairo-arc.c:189: _cairo_arc_in_direction: Assertion `angle_max >= angle_min' failed.
   "pizzas",
-  "smile_face",
-  "emojis",
-  "paint_drip"
 ];
 
 const BROKEN_BACKGROUND_EFFECTS = [
@@ -286,6 +284,10 @@ module.exports.renderImages = async (replay, writer, parentSegment) => {
       }
       p5Inst.pop();
     }
+
+    // Manually increment frameCount; some effects depend on it, and because we
+    // aren't using the regular P5 draw loop it won't increment automatically.
+    p5Inst.frameCount += 1;
 
     // Write an image.
     writer.write(canvas.toBuffer('raw'));
