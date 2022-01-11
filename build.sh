@@ -56,3 +56,11 @@ docker run \
     p5-replay/ffmpeg \
     ffmpeg/build/ffmpeg \
     /root/binaries/ffmpeg/
+
+# Set fixed timestamps for idempotent Lambda packages.
+find \
+    src/binaries \
+    src/node_modules \
+    -type f \
+    -exec \
+    touch -d '2018-01-01T00:00:00Z' {} +
